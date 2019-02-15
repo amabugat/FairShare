@@ -14,15 +14,11 @@ export default class ProfileImage extends React.Component {
                         <Image style={styles.profilepic} source={require('../images/logo.png')} />
                     </View>
 
-                    <Text style={styles.name}>FairShare</Text>
-
                 </View>
 
         );
     }
 }
-
-
 
 const styles = StyleSheet.create({
     headerBackground:{
@@ -31,11 +27,9 @@ const styles = StyleSheet.create({
         alignSelf: 'stretch'
     },
     header:{
-        // flex:1,
         alignItems:'center',
         justifyContent:'center',
         padding:5,
-        // backgroundColor:'rgba(0,0,0,0.5)',
     },
     profilepicWrap:{
         width:180,
@@ -52,12 +46,6 @@ const styles = StyleSheet.create({
         borderRadius:100,
         borderColor:'#e5dddd',
         borderWidth:4,
-    },
-    name:{
-        marginTop:20,
-        fontSize:25,
-        color:'#4f4f69',
-        fontWeight:'bold',
     },
     pos:{
         fontSize:14,

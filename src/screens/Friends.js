@@ -1,22 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
 
 export default class Friends extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Button
-                    title="Back to home"
-                    onPress={() =>
-                        this.props.navigation.navigate('Home')
-                    }
-                />
-                <Button
-                    title="Split Bill"
-                    onPress={() =>
-                        this.props.navigation.navigate('BillPrompt')
-                    }
-                />
+
+                <TouchableOpacity onPress={() =>
+                    this.props.navigation.navigate('Home')
+                } style={styles.button1}>
+                    <Text style = {styles.buttonText}> Back to Home </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity onPress={() =>
+                    this.props.navigation.navigate('BillPrompt')
+                } style={styles.button2}>
+                    <Text style = {styles.buttonText}> Split Bill </Text>
+                </TouchableOpacity>
             </View>
         );
     }
@@ -29,7 +29,30 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    titleText: {
-
-    }
+    button1: {
+        width: '30%',
+        backgroundColor: '#559535',
+        paddingTop: 10,
+        paddingBottom: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom:10,
+        marginTop:10,
+        elevation: 3,
+    },
+    button2: {
+        width: '30%',
+        backgroundColor: '#559535',
+        paddingTop: 10,
+        paddingBottom: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom:10,
+        marginTop:10,
+        elevation: 3,
+    },
+    buttonText: {
+        fontFamily: "Raleway-Regular",
+        color: 'white',
+    },
 });

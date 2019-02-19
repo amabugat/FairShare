@@ -79,24 +79,30 @@ export default class Home extends React.Component {
         )
     }
 
-    signup = ( email, password) => {
+     signup = ( email, password) => {
         var that = this
         firebase.auth().createUserWithEmailAndPassword(email, password).then(
             function(user) {
                 console.log(user.user.uid);
                 console.log(user);
                 var userid = user.user.uid;
+                firebase.database().ref('/Users').child(userid).set(
+                    {
+                      userID: userid,
+                      Email: email,
+                      Password: password,
+                      FirstName: "",
+                      LastName: "",
+                      //JoinDate: new Date().getTime(),
+                      DateofBirth: "",
+                      Groups: {},
+                      Venmo: "",
+                      PhoneNum: "",
+                    }
+                  );
 
-                // Store user's information in Users table
-                // firebase.database().ref('/Users').child(userid).set(
-                //   {
-                //     FirstName: first,
-                //     LastName: last,
-                //     Email: email,
-                //   }
-                // );
-                // navigate('Welcome');
-                that.props.navigation.navigate('Friends');
+
+                that.props.navigation.navigate('EditProfile');
             }
         ).catch(
             function(error) {

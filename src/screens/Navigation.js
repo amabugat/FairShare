@@ -1,5 +1,6 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Home from './Home';
+import EditProfile from './EditProfile';
 import Friends from './Friends';
 import BillPrompt from './billsplit/BillPrompt';
 import SplitStep1 from './billsplit/SplitStep1';
@@ -11,6 +12,9 @@ import BillSplitProcess from './billsplit/BillSplitProcess';
 
 const Navigation = createStackNavigator({
     Home: { screen: Home, navigationOptions: () => ({
+            header:null,
+        }), },
+    EditProfile: { screen: EditProfile, navigationOptions: () => ({
             header:null,
         }), },
     Friends: { screen: Friends, navigationOptions: () => ({

@@ -7,6 +7,7 @@ import SplitStep1 from './billsplit/SplitStep1';
 import SplitStep2 from './billsplit/SplitStep2';
 import SplitStep3 from './billsplit/SplitStep3';
 import NoSplit from './billsplit/NoSplit';
+import ChargePeople from './billsplit/ChargePeople';
 import BillSplitProcess from './billsplit/BillSplitProcess';
 
 
@@ -15,6 +16,9 @@ const Navigation = createStackNavigator({
             header:null,
         }), },
     EditProfile: { screen: EditProfile, navigationOptions: () => ({
+            header:null,
+        }), },
+    ChargePeople: { screen: ChargePeople, navigationOptions: () => ({
             header:null,
         }), },
     Friends: { screen: Friends, navigationOptions: () => ({

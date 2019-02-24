@@ -54,9 +54,11 @@ export default class Home extends React.Component {
                             <Text style = {styles.buttonText}> HOME </Text>
                         </TouchableOpacity>
 
-
-
-
+                        <TouchableOpacity onPress={() =>
+                            this.props.navigation.navigate('Row')
+                        } style={styles.button2}>
+                            <Text style = {styles.buttonText}> TEST </Text>
+                        </TouchableOpacity>
 
                     </View>
                 </TouchableWithoutFeedback>

@@ -7,6 +7,7 @@ import SplitStep2 from './billsplit/SplitStep2';
 import SplitStep3 from './billsplit/SplitStep3';
 import NoSplit from './billsplit/NoSplit';
 import BillSplitProcess from './billsplit/BillSplitProcess';
+import Row from './Row';
 
 
 const Navigation = createStackNavigator({
@@ -27,6 +28,7 @@ const Navigation = createStackNavigator({
     SplitStep3: {screen: SplitStep3},
     NoSplit: {screen: NoSplit},
     BillSplitProcess: {screen: BillSplitProcess},
+    Row: {screen: Row},
 });
 
 const App = createAppContainer(Navigation);

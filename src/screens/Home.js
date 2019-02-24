@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard} from 'react-native';
-import ProfileImage from './ProfileImage'
+import ProfileImage from './ProfileImage';
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
@@ -55,7 +55,7 @@ export default class Home extends React.Component {
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() =>
-                            this.props.navigation.navigate('Row')
+                            this.props.navigation.navigate('Landing')
                         } style={styles.button2}>
                             <Text style = {styles.buttonText}> TEST </Text>
                         </TouchableOpacity>

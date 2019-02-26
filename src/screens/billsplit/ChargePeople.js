@@ -1,9 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { ScrollView, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import ProfileImage from '../ProfileImage';
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
+
+
+var data = []
 
 export default class ChargePeople extends React.Component {
     constructor(props) {
@@ -13,24 +16,51 @@ export default class ChargePeople extends React.Component {
           result: this.props.navigation.state.params.amounts,
           emailID: "",
           email: "",
+          chargeDescription: "",
+          chargingPeople: data,
         };
     }
 
     render() {
         return (
+<View style={styles.container}>
+            <ScrollView>
 
-            <View style={styles.container}>
                 <ProfileImage/>
                 <Text style={styles.name}>{this.state.people}</Text>
                 <Text style={styles.name}>{this.state.result} per person</Text>
                 <Text style={styles.name}>{this.state.emailID}</Text>
                 <TextInput
+                    style={styles.textInput1}
+                    placeholder='Description '
+                    onChangeText={(chargeDescription) => this.setState({chargeDescription})}
+                />
+                <TextInput
+                    style={styles.textInput1}
+                    placeholder='Email '
                     onChangeText={(email) => this.setState({email})}
                 />
-                <TouchableOpacity onPress={() => this.findUID(this.state.email)
+                <TouchableOpacity
+                    style={styles.button1}
+                    onPress={() => this.findUID(this.state.email)
                 } >
                     <Text> Find emailID </Text>
                 </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.button1}
+                    onPress={() => this.chargePeople(this.state)
+                } >
+                    <Text> Charge THESE HOES </Text>
+                </TouchableOpacity>
+
+
+                <View>
+                {this.state.chargingPeople.map((data, index) => {
+                  return(
+                    <Text>{data}</Text>
+                  );
+                })}
+                </View>
 
 
 
@@ -40,6 +70,7 @@ export default class ChargePeople extends React.Component {
                     {/*<Text style = {styles.buttonText}> Yes </Text>*/}
                 {/*</TouchableOpacity>*/}
 
+            </ScrollView>
             </View>
         );
     }
@@ -60,16 +91,70 @@ export default class ChargePeople extends React.Component {
                 snapshot.forEach( user => {
                   // console.log(user.key);
                   if (user.child("userID").val()) {
-                    that.setState({emailID : user.child("userID").val()});
+                    var newData = [... that.state.chargingPeople]
+                    newData.push(user.child("userID").val())
+
+                    that.setState(
+                      {
+                        emailID : user.child("userID").val(),
+                        chargingPeople : newData
+                      });
+                    // that.state.chargingPeople.append(user.child("userID").val()) //dont know if will work
+
                   } else {
                     alert("User with email " + email + " does not have a uid");
                   }
                 });
               }
             });
-
           return;
     }
+
+    chargePeople = async (state) => {
+      var user = firebase.auth().currentUser;
+      var uid = user.uid;
+      var that = this
+      if(user == null){
+      alert("not logged in");
+      return;
+      }
+      var userRequestRef = firebase.database().ref('/Payments').child(uid).child('/Requesting')
+      for(i = 0; i < state.chargingPeople.length; i++){
+      //  console.log(state.chargingPeople[i]);
+        var chargedRef = firebase.database().ref('/Payments').child(state.chargingPeople[i]).child('/GettingCharged')
+        var key = chargedRef.push().key;
+        chargedRef.child(key).set(
+          {
+            PaymentTitle: "",
+            Description: that.state.chargeDescription,
+            Amount: that.state.result,
+            Requester: uid,
+            Charged: that.state.chargingPeople[i],
+            RequesterName: "",
+            ChargedName: "",
+            Paid: false,
+          }
+        );
+        userRequestRef.child(key).set(
+          {
+            PaymentTitle: "",
+            Description: that.state.chargeDescription,
+            Amount: that.state.result,
+            Requester: uid,
+            Charged: that.state.chargingPeople[i],
+            RequesterName: "",
+            ChargedName: "",
+            Paid: false,
+          }
+        );
+    //    alert(state.chargingPeople[i])
+
+      }
+
+    }
+
+
+
 //     joinByEmail(email) {
 //   var ref = firebase.database().ref("/Users");
 //   var uid = "";
@@ -101,12 +186,24 @@ export default class ChargePeople extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#82b85a',
+        backgroundColor: '#fcfcfe',
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'column',
     },
+    wrapper: {
+        flex: 1,
+    },
+    name:{
+        fontFamily: "Futura-Medium-Italic",
+        fontStyle: 'italic',
+        marginTop:20,
+        fontSize:40,
+        color:'#559535',
+        fontWeight:'bold',
+    },
     button1: {
+        fontFamily: "Raleway-Regular",
         width: '30%',
         backgroundColor: '#559535',
         paddingTop: 10,
@@ -114,10 +211,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom:10,
-        marginTop:30,
+        marginTop:10,
         elevation: 3,
     },
     button2: {
+        fontFamily: "Raleway-Regular",
         width: '30%',
         backgroundColor: '#3d3e52',
         paddingTop: 10,
@@ -129,13 +227,15 @@ const styles = StyleSheet.create({
         elevation: 3,
     },
     buttonText: {
-        fontFamily: "Raleway-Regular",
         color: 'white',
     },
-    name:{
+    textInput1:{
         fontFamily: "Raleway-Regular",
-        marginTop:20,
-        fontSize:25,
-        color:'#fcfcfe',
+        marginTop:10,
     },
+    textInput2:{
+        fontFamily: "Raleway-Regular",
+        marginBottom:10,
+        marginTop:10,
+    }
 });

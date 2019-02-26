@@ -2,6 +2,9 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Home from './Home';
 import EditProfile from './EditProfile';
 import Friends from './Friends';
+import ViewChargedScreen from './ViewChargedScreen';
+import ViewRequestScreen from './ViewRequestScreen';
+
 import BillPrompt from './billsplit/BillPrompt';
 import SplitStep1 from './billsplit/SplitStep1';
 import SplitStep2 from './billsplit/SplitStep2';
@@ -16,6 +19,12 @@ const Navigation = createStackNavigator({
             header:null,
         }), },
     EditProfile: { screen: EditProfile, navigationOptions: () => ({
+            header:null,
+        }), },
+    ViewCharged: { screen: ViewChargedScreen, navigationOptions: () => ({
+            header:null,
+        }), },
+    ViewRequest: { screen: ViewRequestScreen, navigationOptions: () => ({
             header:null,
         }), },
     ChargePeople: { screen: ChargePeople, navigationOptions: () => ({

@@ -17,6 +17,18 @@ export default class Friends extends React.Component {
                 } style={styles.button2}>
                     <Text style = {styles.buttonText}> Split Bill </Text>
                 </TouchableOpacity>
+
+                <TouchableOpacity onPress={() =>
+                    this.props.navigation.navigate('ViewCharged')
+                } style={styles.button2}>
+                    <Text style = {styles.buttonText}> View charged </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity onPress={() =>
+                    this.props.navigation.navigate('ViewRequest')
+                } style={styles.button2}>
+                    <Text style = {styles.buttonText}> View your Request </Text>
+                </TouchableOpacity>
             </View>
         );
     }

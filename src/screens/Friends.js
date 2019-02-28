@@ -1,26 +1,43 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, Button, TouchableOpacity, ScrollView} from 'react-native';
 import Landing from './Landing.js';
+import ActionButton from "react-native-circular-action-menu";
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export default class Friends extends React.Component {
     render() {
         return (
+            //<ScrollView>
             <View style={styles.container}>
+                <Landing/>
 
-                {/*<Landing/>*/}
 
-                <TouchableOpacity onPress={() =>
-                    this.props.navigation.navigate('Home')
-                } style={styles.button1}>
-                    <Text style = {styles.buttonText}> Back to Home </Text>
-                </TouchableOpacity>
 
-                <TouchableOpacity onPress={() =>
-                    this.props.navigation.navigate('BillPrompt')
-                } style={styles.button2}>
-                    <Text style = {styles.buttonText}> Split Bill </Text>
-                </TouchableOpacity>
+
+                    <ActionButton buttonColor="#559535">
+                        <ActionButton.Item buttonColor='#9b59b6' title="Home" onPress={() =>
+                            this.props.navigation.navigate('Home')
+                        }>
+                            <Icon name="home" style={styles.actionButtonIcon} />
+                        </ActionButton.Item>
+                        <ActionButton.Item buttonColor='#9b59b6' title="Profile" onPress={() => console.log("notes tapped!")}>
+                            <Icon name="face" style={styles.actionButtonIcon} />
+                        </ActionButton.Item>
+                        <ActionButton.Item buttonColor='#3498db' title="Split New Bill"  onPress={() =>
+                            this.props.navigation.navigate('BillPrompt')
+                        }>
+                            <Icon name="receipt" style={styles.actionButtonIcon} />
+                        </ActionButton.Item>
+
+                        <ActionButton.Item buttonColor='#1abc9c' title="Groups" onPress={() =>
+                            this.props.navigation.navigate('Groups')
+                        }>
+                            <Icon name="group" style={styles.actionButtonIcon} />
+                        </ActionButton.Item>
+                    </ActionButton>
+
             </View>
+            // </ScrollView>
         );
     }
 }
@@ -56,6 +73,11 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         fontFamily: "Raleway-Regular",
+        color: 'white',
+    },
+    actionButtonIcon: {
+        fontSize: 20,
+        height: 22,
         color: 'white',
     },
 });

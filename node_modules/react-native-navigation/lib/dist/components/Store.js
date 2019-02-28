@@ -1,25 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const _ = require("lodash");
 class Store {
     constructor() {
         this.componentsByName = {};
         this.propsById = {};
     }
     setPropsForId(componentId, props) {
-        _.set(this.propsById, componentId, props);
+        this.propsById[componentId] = props;
     }
     getPropsForId(componentId) {
-        return _.get(this.propsById, componentId, {});
+        return this.propsById[componentId] || {};
     }
     cleanId(componentId) {
-        _.unset(this.propsById, componentId);
+        delete this.propsById[componentId];
     }
     setComponentClassForName(componentName, ComponentClass) {
-        _.set(this.componentsByName, componentName.toString(), ComponentClass);
+        this.componentsByName[componentName.toString()] = ComponentClass;
     }
     getComponentClassForName(componentName) {
-        return _.get(this.componentsByName, componentName.toString());
+        return this.componentsByName[componentName.toString()];
     }
 }
 exports.Store = Store;

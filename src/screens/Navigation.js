@@ -6,6 +6,8 @@ import SplitStep1 from './billsplit/SplitStep1';
 import SplitStep2 from './billsplit/SplitStep2';
 import SplitStep3 from './billsplit/SplitStep3';
 import NoSplit from './billsplit/NoSplit';
+import Groups from './groups/Groups.js';
+import SearchFriends from './groups/SearchFriends.js';
 import BillSplitProcess from './billsplit/BillSplitProcess';
 import Row from './Row';
 import Landing from './Landing';
@@ -30,7 +32,11 @@ const Navigation = createStackNavigator({
     NoSplit: {screen: NoSplit},
     BillSplitProcess: {screen: BillSplitProcess},
     Row: {screen: Row},
-    Landing: {screen: Landing}
+    Landing: {screen: Landing, navigationOptions: () => ({
+            header:null,
+        }),},
+    Groups: {screen: Groups},
+    SearchFriends: {screen: SearchFriends},
 });
 
 const App = createAppContainer(Navigation);

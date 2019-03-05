@@ -57,6 +57,9 @@ export default class ViewRequestScreen extends React.Component {
             </View>
         );
     }
+
+    //Cancel fcn Where it deleted it from charged table of person youre charging and your request Table
+    //Remind button for notifications
 }
 
 const styles = StyleSheet.create({

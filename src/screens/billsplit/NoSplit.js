@@ -17,7 +17,7 @@ export default class NoSplit extends Component{
                     <View style={styles.row}>
                         <Text> </Text>
                         <View style={styles.change}>
-                            <TouchableOpacity onPress={() => this.props.navigation.navigate('ChargePeople', {peps: this.state.people, amounts: this.state.split})
+                            <TouchableOpacity onPress={() => this.props.navigation.navigate('ChargePeople', {peps: this.state.people, amounts: this.state.split, tax: this.state.tax, tip: this.state.tip})
                             }
                             >
                                 <Text style={styles.buttonFont}>Charge</Text>

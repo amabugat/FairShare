@@ -93,10 +93,11 @@ export default class Home extends React.Component {
                       Password: password,
                       FirstName: "",
                       LastName: "",
+                      FullName: "",
                       //JoinDate: new Date().getTime(),
                       DateofBirth: "",
                       Groups: {},
-                      Venmo: "",
+                      PayPal: "",
                       PhoneNum: "",
                     }
                   );

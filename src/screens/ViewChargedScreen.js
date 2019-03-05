@@ -36,6 +36,8 @@ export default class ViewChargedScreen extends React.Component {
             newData.push(data)
             that.setState({listViewData : newData})
          });
+
+   //have a child removed function
          //that.setState({listViewData : newData})
   }
 
@@ -57,6 +59,11 @@ export default class ViewChargedScreen extends React.Component {
             </View>
         );
     }
+
+    //Pay Charged function
+    //connect to payment api/ get venmo or something confirmation
+    //mark thing as paid both in charged and also in request for the person who requested interval
+
 }
 
 const styles = StyleSheet.create({

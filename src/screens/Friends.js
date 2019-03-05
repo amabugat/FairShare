@@ -29,6 +29,12 @@ export default class Friends extends React.Component {
                 } style={styles.button2}>
                     <Text style = {styles.buttonText}> View your Request </Text>
                 </TouchableOpacity>
+
+                <TouchableOpacity onPress={() =>
+                    this.props.navigation.navigate('Profile')
+                } style={styles.button2}>
+                    <Text style = {styles.buttonText}> View Profile </Text>
+                </TouchableOpacity>
             </View>
         );
     }

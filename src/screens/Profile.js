@@ -4,7 +4,7 @@ import ProfileImage from './ProfileImage'
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
-export default class EditProfile extends React.Component {
+export default class Profile extends React.Component {
 
     state = {
         firstName: '',
@@ -52,36 +52,12 @@ componentDidMount(){
                         <ProfileImage/>
 
                         <Text style={styles.name}>FAIRSHARE </Text>
+                        <Text> First Name: {this.state.firstName}</Text>
+                        <Text> Last Name: {this.state.lastName}</Text>
+                        <Text> Last Name: {this.state.email}</Text>
+                        <Text> Last Name: {this.state.phoneNum}</Text>
 
-                        <TextInput
-                            style={styles.textInput1}
-                            placeholder='First Name'
-                            value={this.state.firstName}
-                            onChangeText={
-                                (firstName) => this.setState({firstName})}
-                        />
 
-                        <TextInput
-                            style={styles.textInput2}
-                            value={this.state.lastName}
-                            onChangeText={
-                                (lastName) => this.setState({lastName})
-                            }
-                            placeholder=' Last Name ' />
-
-                            <TextInput
-                                style={styles.textInput2}
-                                keyboardType = 'numeric'
-                                maxLength={10}
-                                value={this.state.phoneNum}
-                                onChangeText={
-                                    (phoneNum) => this.setState({phoneNum})
-                                }
-                                placeholder='Phone Number' />
-
-                            <Text>{this.state.email}</Text>
-
-                            <Text style={styles.name}>DATE INPUT with datepicker </Text>
 
 
 
@@ -91,15 +67,15 @@ componentDidMount(){
 
 
                         <TouchableOpacity onPress={() =>
-                            this.editProfile(this.state.firstName, this.state.lastName, this.state.phoneNum)
+                            this.props.navigation.navigate('EditProfile')
                         } style={styles.button2}>
-                            <Text style = {styles.buttonText}> Save </Text>
+                            <Text style = {styles.buttonText}> Edit Profile </Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() =>
                             this.props.navigation.navigate('Friends')
                         } style={styles.button2}>
-                            <Text style = {styles.buttonText}> Cancel </Text>
+                            <Text style = {styles.buttonText}> Back </Text>
                         </TouchableOpacity>
 
 
@@ -112,21 +88,7 @@ componentDidMount(){
         );
     }
 
-    editProfile = ( firstName, lastName, phoneNum) => {
-        var that = this
-         var user = firebase.auth().currentUser
-         var uid = user.uid;
-         var userDBref = firebase.database().ref('/Users').child(uid);
-         userDBref.update({
-           FirstName: firstName,
-           LastName: lastName,
-           FullName : firstName + " " + lastName,
-           PhoneNum: phoneNum,
-         });
-         alert("saved yay!")
-         //go to profile page
 
-    }
 
 }
 

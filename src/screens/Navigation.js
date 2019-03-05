@@ -1,4 +1,7 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
+import React from "react";
+import Icon from 'native-base';
+import Button from 'react-native';
 import Home from './Home';
 import Friends from './Friends';
 import BillPrompt from './billsplit/BillPrompt';
@@ -8,6 +11,7 @@ import SplitStep3 from './billsplit/SplitStep3';
 import NoSplit from './billsplit/NoSplit';
 import Groups from './groups/Groups.js';
 import SearchFriends from './groups/SearchFriends.js';
+import ProfilePage from './profilePage/ProfilePage.js';
 import BillSplitProcess from './billsplit/BillSplitProcess';
 import Row from './Row';
 import Landing from './Landing';
@@ -31,13 +35,28 @@ const Navigation = createStackNavigator({
     SplitStep3: {screen: SplitStep3},
     NoSplit: {screen: NoSplit},
     BillSplitProcess: {screen: BillSplitProcess},
+    ProfilePage: {screen: ProfilePage, navigationOptions: () => ({
+            headerStyle:{backgroundColor: '#fcfcfe', elevation:0},
+            // headerRight: (
+            //     <Button transparent
+            //             onPress={() =>
+            //                 this.props.navigation.navigate('Groups')
+            //             }
+            //     >
+            //         <Icon active name="edit" />
+            //     </Button>
+            //
+            // ),
+        }),},
     Row: {screen: Row},
     Landing: {screen: Landing, navigationOptions: () => ({
             header:null,
         }),},
-    Groups: {screen: Groups},
+    Groups: { screen: Groups, navigationOptions: () => ({
+    headerStyle:{backgroundColor: '#559535', elevation:0, fontFamily: "Raleway-Regular"},
+        }),},
     SearchFriends: {screen: SearchFriends},
-});
+        });
 
 const App = createAppContainer(Navigation);
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
-import ProfileImage from '../ProfileImage'
+import ProfileImage from '../profilePage/ProfileImage'
 
 export default class BillPrompt extends React.Component {
     render() {

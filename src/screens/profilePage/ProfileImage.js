@@ -11,7 +11,7 @@ export default class ProfileImage extends React.Component {
         return (
                 <View style={styles.header}>
                     <View style={styles.profilepicWrap}>
-                        <Image style={styles.profilepic} source={require('../images/logo.png')} />
+                        <Image style={styles.profilepic} source={require('../../images/logo.png')} />
                     </View>
 
                 </View>

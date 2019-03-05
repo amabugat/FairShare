@@ -13,14 +13,15 @@ export default class Friends extends React.Component {
 
 
 
-
                     <ActionButton buttonColor="#559535">
                         <ActionButton.Item buttonColor='#9b59b6' title="Home" onPress={() =>
                             this.props.navigation.navigate('Home')
                         }>
                             <Icon name="home" style={styles.actionButtonIcon} />
                         </ActionButton.Item>
-                        <ActionButton.Item buttonColor='#9b59b6' title="Profile" onPress={() => console.log("notes tapped!")}>
+                        <ActionButton.Item buttonColor='#9b59b6' title="Profile"onPress={() =>
+                            this.props.navigation.navigate('ProfilePage')
+                        }>
                             <Icon name="face" style={styles.actionButtonIcon} />
                         </ActionButton.Item>
                         <ActionButton.Item buttonColor='#3498db' title="Split New Bill"  onPress={() =>

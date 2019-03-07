@@ -22,8 +22,6 @@ const cardImage = require("../images/puppy-dog.jpg");
 class Landing extends Component {
     render() {
         return (
-
-
             <Container style={styles.container}>
 
                 <Content padder>

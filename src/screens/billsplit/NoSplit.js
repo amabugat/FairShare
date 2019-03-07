@@ -17,9 +17,8 @@ export default class NoSplit extends Component{
                     <View style={styles.row}>
                         <Text> </Text>
                         <View style={styles.change}>
-                            <TouchableOpacity onPress={() => {
-
-                            }}
+                            <TouchableOpacity onPress={() => this.props.navigation.navigate('ChargePeople', {peps: this.state.people, amounts: this.state.split})
+                            }
                             >
                                 <Text style={styles.buttonFont}>Charge</Text>
                             </TouchableOpacity>
@@ -81,7 +80,7 @@ export default class NoSplit extends Component{
 
                     <View style={styles.row}>
                         <Text style={styles.fontSet}>$Total Price</Text>
-                        <View style={styles.box}>
+                        <View style={styles.outputBox}>
                             <Text
                                 style={styles.output}>{ this.state.result ? this.state.result.toFixed(2) : null }
                             </Text>
@@ -90,7 +89,7 @@ export default class NoSplit extends Component{
 
                     <View style={styles.row}>
                         <Text style={styles.fontSet}>$Price per Person</Text>
-                        <View style={styles.box}>
+                        <View style={styles.outputBox}>
                             <Text
                                 style={styles.output}>{ this.state.split ? this.state.split.toFixed(2) : null }</Text>
                         </View>
@@ -175,6 +174,18 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         margin: 10,
         backgroundColor: 'rgba(117,125,117,0.2)',
+        color: '#000000',
+        width: 120,
+        height: 40,
+        fontFamily: 'Raleway-Bold',
+
+    },
+    outputBox: {
+        borderRadius: 100,
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 10,
+        backgroundColor: '#82b85a',
         color: '#000000',
         width: 120,
         height: 40,

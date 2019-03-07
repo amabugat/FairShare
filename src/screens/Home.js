@@ -54,12 +54,6 @@ export default class Home extends React.Component {
                             <Text style = {styles.buttonText}> HOME </Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity onPress={() =>
-                            this.props.navigation.navigate('Landing')
-                        } style={styles.button2}>
-                            <Text style = {styles.buttonText}> TEST </Text>
-                        </TouchableOpacity>
-
                     </View>
                 </TouchableWithoutFeedback>
             </KeyboardAvoidingView>
@@ -88,17 +82,24 @@ export default class Home extends React.Component {
                 console.log(user.user.uid);
                 console.log(user);
                 var userid = user.user.uid;
+                firebase.database().ref('/Users').child(userid).set(
+                    {
+                        userID: userid,
+                        Email: email,
+                        Password: password,
+                        FirstName: "",
+                        LastName: "",
+                        FullName: "",
+                        //JoinDate: new Date().getTime(),
+                        DateofBirth: "",
+                        Groups: {},
+                        PayPal: "",
+                        PhoneNum: "",
+                    }
+                );
 
-                // Store user's information in Users table
-                // firebase.database().ref('/Users').child(userid).set(
-                //   {
-                //     FirstName: first,
-                //     LastName: last,
-                //     Email: email,
-                //   }
-                // );
-                // navigate('Welcome');
-                that.props.navigation.navigate('Friends');
+
+                that.props.navigation.navigate('EditProfile');
             }
         ).catch(
             function(error) {
@@ -166,4 +167,3 @@ const styles = StyleSheet.create({
         marginTop:10,
     }
 });
-

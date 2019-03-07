@@ -15,6 +15,10 @@ import ProfilePage from './profilePage/ProfilePage.js';
 import BillSplitProcess from './billsplit/BillSplitProcess';
 import Row from './Row';
 import Landing from './Landing';
+import ViewChargedScreen from './ViewChargedScreen';
+import ViewRequestScreen from './ViewRequestScreen';
+import ChargePeople from './billsplit/ChargePeople';
+import EditProfile from './profilePage/EditProfile';
 
 
 const Navigation = createStackNavigator({
@@ -55,7 +59,19 @@ const Navigation = createStackNavigator({
     Groups: { screen: Groups, navigationOptions: () => ({
     headerStyle:{backgroundColor: '#559535', elevation:0, fontFamily: "Raleway-Regular"},
         }),},
+    ViewCharged: { screen: ViewChargedScreen, navigationOptions: () => ({
+            header:null,
+        }), },
+    ViewRequest: { screen: ViewRequestScreen, navigationOptions: () => ({
+            header:null,
+        }), },
+    ChargePeople: { screen: ChargePeople, navigationOptions: () => ({
+            header:null,
+        }), },
     SearchFriends: {screen: SearchFriends},
+    EditProfile: { screen: EditProfile, navigationOptions: () => ({
+            header:null,
+        }), },
         });
 
 const App = createAppContainer(Navigation);

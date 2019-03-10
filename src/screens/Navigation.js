@@ -4,6 +4,7 @@ import Icon from 'native-base';
 import Button from 'react-native';
 import Home from './Home';
 import Friends from './Friends';
+import Activity from './Activity';
 import BillPrompt from './billsplit/BillPrompt';
 import SplitStep1 from './billsplit/SplitStep1';
 import SplitStep2 from './billsplit/SplitStep2';
@@ -26,6 +27,12 @@ const Navigation = createStackNavigator({
             header:null,
         }), },
     Friends: { screen: Friends, navigationOptions: () => ({
+            title: 'My Activity',
+            headerStyle:{backgroundColor: '#3d3e52', elevation:0, fontFamily: "Raleway-Regular"},
+            headerTitleStyle: {alignSelf:'center', color: '#fcfcfe', textAlign: 'center', fontFamily: "Raleway-Regular"},
+            headerLeft:null,
+        }),},
+    Activity: { screen: Activity, navigationOptions: () => ({
             title: 'My Activity',
             headerStyle:{backgroundColor: '#3d3e52', elevation:0, fontFamily: "Raleway-Regular"},
             headerTitleStyle: {alignSelf:'center', color: '#fcfcfe', textAlign: 'center', fontFamily: "Raleway-Regular"},

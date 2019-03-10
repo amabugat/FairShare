@@ -49,7 +49,7 @@ export default class Home extends React.Component {
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() =>
-                            this.props.navigation.navigate('Friends')
+                            this.props.navigation.navigate('Activity')
                         } style={styles.button2}>
                             <Text style = {styles.buttonText}> HOME </Text>
                         </TouchableOpacity>
@@ -66,7 +66,7 @@ export default class Home extends React.Component {
                 function(user) {
                     that.setState( {password: ''} );
                     console.log(user);
-                    that.props.navigation.navigate('Friends');
+                    that.props.navigation.navigate('Activity');
                 }
             ).catch(
             function(error) {

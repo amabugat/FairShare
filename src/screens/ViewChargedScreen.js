@@ -42,7 +42,7 @@ export default class ViewChargedScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style = {styles.buttonText}> You're Requesting </Text>
+                <Text style = {styles.buttonText}> You're Getting Charged </Text>
                 {this.state.listViewData.map((data, index) => {
                     return(
                         <View>

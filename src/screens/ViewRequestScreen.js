@@ -1,9 +1,25 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, Button, TouchableOpacity, Image} from 'react-native';
+import {
+    Container,
+    Header,
+    Title,
+    Content,
+    Icon,
+    Card,
+    CardItem,
+    Thumbnail,
+    Left,
+    Body,
+    Right
+} from "native-base";
+import Landing from './Landing.js';
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
 
+const logo = require("../images/logo.png");
+const cardImage = require("../images/puppy-dog.jpg");
 
 var data = []
 export default class ViewRequestScreen extends React.Component {
@@ -41,18 +57,37 @@ export default class ViewRequestScreen extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Text style = {styles.buttonText}> You're Requesting </Text>
-                {this.state.listViewData.map((data, index) => {
-                    return(
-                        <View>
-                            <Text style = {styles.buttonText}>Total: ${data.val().Amount}</Text>
-                            <Text style = {styles.buttonText}>Description: {data.val().Description}</Text>
-                            <Text style = {styles.buttonText}>Charging: {data.val().Charged}</Text>
-                        </View>
-                    );
-                })}
-            </View>
+            <Container>
+                <Content>
+                    <Card>
+                        {
+                            this.state.items.map((data, index)=>{
+                                return (
+                                    <CardItem key={index}>
+                                        <View>
+                                            <Text>{data.val().Amount}</Text>
+                                        </View>
+                                    </CardItem>
+                                )
+                            })
+                        }
+                    </Card>
+                </Content>
+            </Container>
+            //
+            // <View style={styles.container}>
+            //
+            //     <Text style = {styles.buttonText}> You're Requesting </Text>
+            //     {this.state.listViewData.map((data, index) => {
+            //         return(
+            //             <View>
+            //                 <Text style = {styles.buttonText}>Total: ${data.val().Amount}</Text>
+            //                 <Text style = {styles.buttonText}>Description: {data.val().Description}</Text>
+            //                 <Text style = {styles.buttonText}>Charging: {data.val().Charged}</Text>
+            //             </View>
+            //         );
+            //     })}
+            // </View>
         );
     }
 }

@@ -4,6 +4,7 @@ ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest
 INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-27:12
 INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-27:12
 INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-27:12
+MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\134947f4e8de01bffc4a40ac3860cbdd\AndroidManifest.xml:2:1-15:12
@@ -122,6 +123,8 @@ uses-sdk
 INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41

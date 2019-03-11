@@ -79,6 +79,15 @@ export default class ViewRequestScreen extends React.Component {
                                             <Text>{data.val().Amount}</Text>
                                         </View>
                                     </CardItem>
+                                    <CardItem key={index}>
+                                        <View>
+                                        <TouchableOpacity onPress={() => this.markAsPaid(data)
+                                        }
+                                        >
+                                            <Text style={styles.buttonFont}>Mark As Paid</Text>
+                                        </TouchableOpacity>
+                                        </View>
+                                    </CardItem>
                                   </Card>
                                 )
                             })
@@ -86,22 +95,62 @@ export default class ViewRequestScreen extends React.Component {
 
                 </Content>
             </Container>
-            //
-            // <View style={styles.container}>
-            //
-            //     <Text style = {styles.buttonText}> You're Requesting </Text>
-            //     {this.state.items.map((data, index) => {
-            //         return(
-            //             <View>
-            //                 <Text style = {styles.buttonText}>Total: ${data.val().Amount}</Text>
-            //                 <Text style = {styles.buttonText}>Description: {data.val().Description}</Text>
-            //                 <Text style = {styles.buttonText}>Charging: {data.val().Charged}</Text>
-            //             </View>
-            //         );
-            //     })}
-            // </View>
+
         );
     }
+
+   markAsPaid = async (data) => {
+     var user = firebase.auth().currentUser;
+     var uid = user.uid;
+      var paymentsRef = firebase.database().ref('/Payments');
+      var paymentsUserRef = paymentsRef.child(uid);
+      var userRequestingRef = paymentsUserRef.child('/Requesting');
+      var userHistoryRef = paymentsUserRef.child('/History');
+
+
+      var chargedUserRef = paymentsRef.child(data.val().Charged);
+      var chargedUserTable = chargedUserRef.child('/GettingCharged');
+      var chargedUserHistory = chargedUserRef.child('/History');
+
+      chargedUserHistory.child(data.val().ReceiptID).set(
+          {
+              PaymentTitle: data.val().PaymentTitle,
+              ReceiptID: data.val().ReceiptID,
+              Description: data.val().Description,
+              Amount: data.val().Amount,
+              Tip: data.val().Tip,
+              Tax: data.val().Tax,
+              Requester: data.val().Requester,
+              Charged: data.val().Charged,
+              RequesterName: data.val().RequesterName,
+              ChargedName: data.val().ChargedName,
+              ReceiptPic: "",
+              Paid: true,
+          }
+      );
+      userHistoryRef.child(data.val().ReceiptID).set(
+          {
+              PaymentTitle: data.val().PaymentTitle,
+              ReceiptID: data.val().ReceiptID,
+              Description: data.val().Description,
+              Amount: data.val().Amount,
+              Tip: data.val().Tip,
+              Tax: data.val().Tax,
+              Requester: data.val().Requester,
+              Charged: data.val().Charged,
+              RequesterName: data.val().RequesterName,
+              ChargedName: data.val().ChargedName,
+              ReceiptPic: "",
+              Paid: true,
+          }
+      );
+      //remove the item
+      chargedUserTable.child(data.val().ReceiptID).remove();
+      userRequestingRef.child(data.val().ReceiptID).remove();
+
+   }
+
+
 }
 const styles = StyleSheet.create({
     container: {

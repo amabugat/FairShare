@@ -31,7 +31,7 @@ export default class ViewRequestScreen extends React.Component {
         // this.ds = new ListView.DataSource({rowHasChanged: (r1,r2) => r1 != r2})
 
         this.state = {
-            listViewData: data,
+            items: data,
             userID: "",
             userName: "",
         }
@@ -46,39 +46,51 @@ export default class ViewRequestScreen extends React.Component {
             return;
         }
         var uid = user.uid;
-        var newData = [... that.state.listViewData]
+        var newData = [... that.state.items]
         var requestRef = firebase.database().ref('/Payments').child(uid).child('/Requesting');
         await requestRef.on('child_added', function(data){
             newData.push(data)
-            that.setState({listViewData : newData})
+            that.setState({items : newData})
         });
-        //that.setState({listViewData : newData})
+
+        await requestRef.on('child_removed', function(data){
+          var newData = [... that.state.items]
+         for(var i = newData.length - 1; i >= 0; i--){
+           if(newData[i].val().ReceiptID == data.val().ReceiptID){
+             newData.splice(i, 1);
+             break;
+           }
+         }
+          that.setState({items : newData})
+        });
     }
 
     render() {
         return (
             <Container>
                 <Content>
-                    <Card>
+
                         {
                             this.state.items.map((data, index)=>{
                                 return (
+                                  <Card>
                                     <CardItem key={index}>
                                         <View>
                                             <Text>{data.val().Amount}</Text>
                                         </View>
                                     </CardItem>
+                                  </Card>
                                 )
                             })
                         }
-                    </Card>
+
                 </Content>
             </Container>
             //
             // <View style={styles.container}>
             //
             //     <Text style = {styles.buttonText}> You're Requesting </Text>
-            //     {this.state.listViewData.map((data, index) => {
+            //     {this.state.items.map((data, index) => {
             //         return(
             //             <View>
             //                 <Text style = {styles.buttonText}>Total: ${data.val().Amount}</Text>

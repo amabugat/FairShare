@@ -1,5 +1,18 @@
 import React from 'react';
 import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
+import {
+    Container,
+    Header,
+    Title,
+    Content,
+    Icon,
+    Card,
+    CardItem,
+    Thumbnail,
+    Left,
+    Body,
+    Right
+} from "native-base";
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
@@ -15,7 +28,7 @@ export default class ViewChargedScreen extends React.Component {
         // this.ds = new ListView.DataSource({rowHasChanged: (r1,r2) => r1 != r2})
 
         this.state = {
-            listViewData: data,
+            items: data,
             userID: "",
             userName: "",
         }
@@ -30,26 +43,58 @@ export default class ViewChargedScreen extends React.Component {
             return;
         }
         var uid = user.uid;
-        var newData = [... that.state.listViewData]
+        var newData = [... that.state.items]
         var requestRef = firebase.database().ref('/Payments').child(uid).child('/GettingCharged');
         await requestRef.on('child_added', function(data){
             newData.push(data)
-            that.setState({listViewData : newData})
+            that.setState({items : newData})
         });
-        //that.setState({listViewData : newData})
+
+        await requestRef.on('child_removed', function(data){
+          var newData = [... that.state.items]
+         for(var i = newData.length - 1; i >= 0; i--){
+           if(newData[i].val().ReceiptID == data.val().ReceiptID){
+             newData.splice(i, 1);
+             break;
+           }
+         }
+          that.setState({items : newData})
+        });
     }
 
     render() {
         return (
             <View style={styles.container}>
                 <Text style = {styles.buttonText}> You're Getting Charged </Text>
-                {this.state.listViewData.map((data, index) => {
+                {this.state.items.map((data, index) => {
                     return(
-                        <View>
-                            <Text style = {styles.buttonText}>Total: ${data.val().Amount}</Text>
-                            <Text style = {styles.buttonText}>Description: {data.val().Description}</Text>
-                            <Text style = {styles.buttonText}>Charging: {data.val().Charged}</Text>
-                        </View>
+                        <Card>
+                            <CardItem key={index}>
+                                <View>
+                                    <Text>CHARGING YOU:{data.val().RequesterName}</Text>
+                                </View>
+                            </CardItem>
+                            <CardItem key={index}>
+                                <View>
+                                    <Text>THIS AMMOUNT{data.val().Amount}</Text>
+                                </View>
+                            </CardItem>
+                            <CardItem key={index}>
+                                <View>
+                                    <Text>Description: {data.val().Description}</Text>
+                                </View>
+                            </CardItem>
+                            <CardItem key={index}>
+                                <View>
+                                    <Text>YOU ARE{data.val().ChargedName}</Text>
+                                </View>
+                            </CardItem>
+                            <CardItem key={index}>
+                                <View>
+                                    <Text>TIP CHARGED: {data.val().Tip}%</Text>
+                                </View>
+                            </CardItem>
+                        </Card>
                     );
                 })}
             </View>

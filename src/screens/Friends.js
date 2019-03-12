@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {
     TabView,
@@ -51,14 +51,15 @@ export default class Friends extends React.Component<*, State> {
 
     render() {
         return (
-            <TabView
-                lazy
-                style={this.props.style}
-                navigationState={this.state}
-                renderScene={this._renderScene}
-                renderTabBar={this._renderTabBar}
-                onIndexChange={this._handleIndexChange}
-            />
+                <TabView
+                    lazy
+                    style={this.props.style}
+                    navigationState={this.state}
+                    renderScene={this._renderScene}
+                    renderTabBar={this._renderTabBar}
+                    onIndexChange={this._handleIndexChange}
+                />
+
         );
     }
 }

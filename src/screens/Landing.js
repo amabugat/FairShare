@@ -23,7 +23,6 @@ class Landing extends Component {
     render() {
         return (
             <Container style={styles.container}>
-
                 <Content padder>
                     <Card style={styles.mb}>
                         <CardItem>

@@ -1,9 +1,24 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, Button, TouchableOpacity, Image} from 'react-native';
+import {
+    Container,
+    Header,
+    Title,
+    Content,
+    Icon,
+    Card,
+    CardItem,
+    Thumbnail,
+    Left,
+    Body,
+    Right
+} from "native-base";
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
 
+const logo = require("../images/logo.png");
+const cardImage = require("../images/puppy-dog.jpg");
 
 var data = []
 export default class ViewChargedScreen extends React.Component {
@@ -15,7 +30,7 @@ export default class ViewChargedScreen extends React.Component {
         // this.ds = new ListView.DataSource({rowHasChanged: (r1,r2) => r1 != r2})
 
         this.state = {
-            listViewData: data,
+            items: data,
             userID: "",
             userName: "",
         }
@@ -30,26 +45,60 @@ export default class ViewChargedScreen extends React.Component {
             return;
         }
         var uid = user.uid;
-        var newData = [... that.state.listViewData]
+        var newData = [... that.state.items]
         var requestRef = firebase.database().ref('/Payments').child(uid).child('/GettingCharged');
         await requestRef.on('child_added', function(data){
             newData.push(data)
-            that.setState({listViewData : newData})
+            that.setState({items : newData})
         });
-        //that.setState({listViewData : newData})
+
+        await requestRef.on('child_removed', function(data){
+            var newData = [... that.state.items]
+            for(var i = newData.length - 1; i >= 0; i--){
+                if(newData[i].val().ReceiptID == data.val().ReceiptID){
+                    newData.splice(i, 1);
+                    break;
+                }
+            }
+            that.setState({items : newData})
+        });
     }
 
     render() {
         return (
             <View style={styles.container}>
-                <Text style = {styles.buttonText}> You're Getting Charged </Text>
-                {this.state.listViewData.map((data, index) => {
+                {/*<Text style = {styles.buttonText}> You're Getting Charged </Text>*/}
+                {this.state.items.map((data, index) => {
                     return(
-                        <View>
-                            <Text style = {styles.buttonText}>Total: ${data.val().Amount}</Text>
-                            <Text style = {styles.buttonText}>Description: {data.val().Description}</Text>
-                            <Text style = {styles.buttonText}>Charging: {data.val().Charged}</Text>
-                        </View>
+                        <Card style = {styles.cardStyle}>
+                            <CardItem key = {index}>
+                                <Left>
+                                    <Thumbnail source={logo} />
+                                    <Body>
+                                    <Text>CHARGING YOU: {data.val().RequesterName}</Text>
+                                    <Text note>Total: {data.val().Amount}</Text>
+                                    </Body>
+                                </Left>
+                            </CardItem>
+
+                            <CardItem cardBody key = {index}>
+                                <Image
+                                    style={{
+                                        resizeMode: "cover",
+                                        width: null,
+                                        height: 200,
+                                        flex: 1
+                                    }}
+                                    source={cardImage}
+                                />
+                            </CardItem>
+
+                            <CardItem key={index}>
+                                <View>
+                                    <Text>Description: {data.val().Description}</Text>
+                                </View>
+                            </CardItem>
+                        </Card>
                     );
                 })}
             </View>
@@ -61,28 +110,23 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#3d3e52',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
+    },
+    cardStyle: {
+        width: "80%",
+        // height:"50%",
+        // paddingVertical: 5,
     },
     button1: {
-        width: '30%',
+        // width: '30%',
         backgroundColor: '#559535',
-        paddingTop: 10,
-        paddingBottom: 10,
+        // paddingTop: 10,
+        // paddingBottom: 10,
+        padding:10,
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom:10,
-        marginTop:10,
-        elevation: 3,
-    },
-    button2: {
-        width: '30%',
-        backgroundColor: '#559535',
-        paddingTop: 10,
-        paddingBottom: 10,
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginBottom:10,
-        marginTop:10,
+        // marginBottom:10,
+        // marginTop:10,
         elevation: 3,
     },
     buttonText: {

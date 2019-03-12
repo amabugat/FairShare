@@ -1,64 +1,71 @@
 import React, { Component } from "react";
 import {StyleSheet, Text, View, Button, TouchableOpacity, ScrollView} from 'react-native';
 import Landing from './Landing.js';
-import ActionButton from "react-native-circular-action-menu";
+import ActionButton from 'react-native-action-button';
+// import ActionButton from "react-native-circular-action-menu";
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Friends from './Friends';
 import { Container, Content,} from 'native-base'
+import firebase from '@firebase/app';
+import '@firebase/auth';
+import '@firebase/database';
 
 
 export default class Activity extends React.Component {
+
+    state = {loggedIn : null};
+
+    componentWillMount() {
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                this.setState({ loggedIn: true });
+            } else {
+                this.setState({ loggedIn: false });
+            }
+        });
+    }
+
     render() {
         return (
             <Container>
                 <Content>
-                    <Friends/>
-                    {/*<Landing/>*/}
-                    {/*<View style={styles.container}>*/}
-                        {/*/!*<TouchableOpacity onPress={() =>*!/*/}
-                            {/*/!*this.props.navigation.navigate('ViewCharged')*!/*/}
-                        {/*/!*} style={styles.button1}>*!/*/}
-                            {/*/!*<Text style = {styles.buttonText}> View charged </Text>*!/*/}
-                        {/*/!*</TouchableOpacity>*!/*/}
-
-                        {/*/!*<TouchableOpacity onPress={() =>*!/*/}
-                            {/*/!*this.props.navigation.navigate('ViewRequest')*!/*/}
-                        {/*/!*} style={styles.button2}>*!/*/}
-                            {/*/!*<Text style = {styles.buttonText}> View your Request </Text>*!/*/}
-                        {/*/!*</TouchableOpacity>*!/*/}
-
-                        {/*<ActionButton buttonColor="#559535">*/}
-                            {/*<ActionButton.Item buttonColor='#9b59b6' title="Home" onPress={() =>*/}
-                                {/*this.props.navigation.navigate('Home')*/}
-                            {/*}>*/}
-                                {/*<Icon name="home" style={styles.actionButtonIcon} />*/}
-                            {/*</ActionButton.Item>*/}
-                            {/*<ActionButton.Item buttonColor='#9b59b6' title="Profile"onPress={() =>*/}
-                                {/*this.props.navigation.navigate('ProfilePage')*/}
-                            {/*}>*/}
-                                {/*<Icon name="face" style={styles.actionButtonIcon} />*/}
-                            {/*</ActionButton.Item>*/}
-                            {/*<ActionButton.Item buttonColor='#3498db' title="Split New Bill"  onPress={() =>*/}
-                                {/*this.props.navigation.navigate('BillPrompt')*/}
-                            {/*}>*/}
-                                {/*<Icon name="receipt" style={styles.actionButtonIcon} />*/}
-                            {/*</ActionButton.Item>*/}
-
-                            {/*<ActionButton.Item buttonColor='#1abc9c' title="Groups" onPress={() =>*/}
-                                {/*this.props.navigation.navigate('Groups')*/}
-                            {/*}>*/}
-                                {/*<Icon name="group" style={styles.actionButtonIcon} />*/}
-                            {/*</ActionButton.Item>*/}
-                        {/*</ActionButton>*/}
-                    {/*</View>*/}
-
-
-
+                    <View>
+                        <Friends/>
+                        <ActionButton buttonColor="#559535" position = "right">
+                            <ActionButton.Item buttonColor='#ff0000' title="Log Out" onPress={() => {
+                                if(this.state.loggedIn)
+                                {
+                                    firebase.auth().signOut()
+                                    this.props.navigation.navigate('Home')
+                                }
+                                else{
+                                    this.props.navigation.navigate('Home')
+                                }
+                            }
+                                // this.props.navigation.navigate('Home')
+                            }>
+                                <Icon name="home" style={styles.actionButtonIcon} />
+                            </ActionButton.Item>
+                            <ActionButton.Item buttonColor='#9b59b6' title="Profile" style = {styles.actionButtonText} onPress={() =>
+                                this.props.navigation.navigate('ProfilePage')
+                            }>
+                                <Icon name="face" style={styles.actionButtonIcon} />
+                            </ActionButton.Item>
+                            <ActionButton.Item buttonColor='#1abc9c' title="Groups" onPress={() =>
+                                this.props.navigation.navigate('Groups')
+                            }>
+                                <Icon name="group" style={styles.actionButtonIcon} />
+                            </ActionButton.Item>
+                            <ActionButton.Item buttonColor='#3498db' title="Split New Bill"  onPress={() =>
+                                this.props.navigation.navigate('BillPrompt')
+                            }>
+                                <Icon name="receipt" style={styles.actionButtonIcon} />
+                            </ActionButton.Item>
+                        </ActionButton>
+                    </View>
                 </Content>
             </Container>
-            //<ScrollView>
 
-            // </ScrollView>
         );
     }
 }
@@ -96,10 +103,12 @@ const styles = StyleSheet.create({
         fontFamily: "Raleway-Regular",
         color: 'white',
     },
+    actionButtonText: {
+        fontFamily: "Raleway-Regular",
+    },
     actionButtonIcon: {
         fontSize: 20,
         height: 22,
         color: 'white',
-
     },
 });

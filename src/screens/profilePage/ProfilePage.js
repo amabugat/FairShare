@@ -55,15 +55,10 @@ export default class ProfilePage extends React.Component {
 
                             <TouchableOpacity onPress={() =>
                                 this.props.navigation.navigate('EditProfile')
-                            } style={styles.button2}>
+                            } style={styles.button1}>
                                 <Text style = {styles.buttonText}> Edit Profile </Text>
                             </TouchableOpacity>
 
-                            <TouchableOpacity onPress={() =>
-                                this.props.navigation.navigate('Friends')
-                            } style={styles.button2}>
-                                <Text style = {styles.buttonText}> Back </Text>
-                            </TouchableOpacity>
                         </View>
 
                     </View>
@@ -89,6 +84,16 @@ const styles = StyleSheet.create({
     wrapper: {
         flex: 1,
     },
+    button1: {
+        // width: '30%',
+        backgroundColor: '#559535',
+        padding:10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom:10,
+        marginTop:10,
+        elevation: 3,
+    },
     name:{
         fontFamily: "Futura-Medium-Italic",
         fontStyle: 'italic',
@@ -102,7 +107,11 @@ const styles = StyleSheet.create({
         alignSelf:'flex-start',
         fontSize: 20,
         paddingVertical:20,
-    }
+    },
+    buttonText: {
+        fontFamily: "Raleway-Regular",
+        color: 'white',
+    },
 
 });
 

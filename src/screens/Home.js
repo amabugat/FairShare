@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard} from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, ScrollView} from 'react-native';
 import ProfileImage from './profilePage/ProfileImage';
 import firebase from '@firebase/app';
 import '@firebase/auth';
@@ -9,9 +9,33 @@ export default class Home extends React.Component {
     state = {
         email: '',
         password: '',
+        loggedIn: null,
+    };
+
+    componentWillMount() {
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                this.setState({ loggedIn: true });
+            } else {
+                this.setState({ loggedIn: false });
+            }
+        });
     }
 
     render() {
+        switch (this.state.loggedIn) {
+            case true:
+                return (
+                    this.props.navigation.navigate('Activity')
+                );
+            case false:
+                return this.renderContent()
+            default:
+                return this.renderContent()
+        }
+    }
+
+    renderContent() {
         return (
             <KeyboardAvoidingView behavior='padding' style={styles.wrapper} enabled>
                 <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -23,6 +47,7 @@ export default class Home extends React.Component {
                         <TextInput
                             style={styles.textInput1}
                             placeholder='Email '
+                            autoCapitalize = {'none'}
                             onChangeText={
                                 (email) => this.setState({email})}
                         />
@@ -34,7 +59,8 @@ export default class Home extends React.Component {
                             onChangeText={
                                 (password) => this.setState({password})
                             }
-                            placeholder='Password ' />
+                            placeholder='Password '
+                            autoCapitalize = {'none'}/>
 
                         <TouchableOpacity onPress={() =>
                             this.login(this.state.email, this.state.password)
@@ -46,12 +72,6 @@ export default class Home extends React.Component {
                             this.signup(this.state.email, this.state.password)
                         } style={styles.button2}>
                             <Text style = {styles.buttonText}> SIGN UP </Text>
-                        </TouchableOpacity>
-
-                        <TouchableOpacity onPress={() =>
-                            this.props.navigation.navigate('Activity')
-                        } style={styles.button2}>
-                            <Text style = {styles.buttonText}> HOME </Text>
                         </TouchableOpacity>
 
                     </View>

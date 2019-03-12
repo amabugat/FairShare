@@ -12,36 +12,13 @@ export default class ChargePeople extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            paymentTitle: "",
             people: this.props.navigation.state.params.peps,
             result: this.props.navigation.state.params.amounts,
-            tip: this.props.navigation.state.params.tip,
-            tax: this.props.navigation.state.params.tax,
             emailID: "",
             email: "",
             chargeDescription: "",
             chargingPeople: data,
         };
-    }
-    componentDidMount(){
-        var user = firebase.auth().currentUser;
-        var uid = user.uid;
-        var that = this
-        if(user == null){
-            alert("not logged in");
-            //return to home screen
-            return;
-        }
-        var userDBref = firebase.database().ref('/Users').child(uid)
-
-//set the states with info in users table
-        userDBref.on('value', function(snapshot){
-            userData = snapshot.val();
-            that.setState({
-                userID: uid,
-                fullName: userData.FullName,
-            });
-        })
     }
 
     render() {
@@ -50,22 +27,19 @@ export default class ChargePeople extends React.Component {
                 <ScrollView>
 
                     <ProfileImage/>
-                    <Text style={styles.name}>{this.state.people}</Text>
+                    <Text style={styles.name}>Please enter {this.state.people} User Email</Text>
                     <Text style={styles.name}>{this.state.result} per person</Text>
                     <Text style={styles.name}>{this.state.emailID}</Text>
                     <TextInput
                         style={styles.textInput1}
-                        placeholder='PaymentTitle '
-                        onChangeText={(paymentTitle) => this.setState({paymentTitle})}
-                    />
-                    <TextInput
-                        style={styles.textInput1}
                         placeholder='Description '
+                        autoCapitalize={'none'}
                         onChangeText={(chargeDescription) => this.setState({chargeDescription})}
                     />
                     <TextInput
                         style={styles.textInput1}
                         placeholder='Email '
+                        autoCapitalize={'none'}
                         onChangeText={(email) => this.setState({email})}
                     />
                     <TouchableOpacity
@@ -78,25 +52,17 @@ export default class ChargePeople extends React.Component {
                         style={styles.button1}
                         onPress={() => this.chargePeople(this.state)
                         } >
-                        <Text> Charge THESE HOES </Text>
+                        <Text> Charge Them </Text>
                     </TouchableOpacity>
 
 
                     <View>
                         {this.state.chargingPeople.map((data, index) => {
                             return(
-                                <Text>{data.fullName}</Text>
+                                <Text>{data}</Text>
                             );
                         })}
                     </View>
-
-
-
-                    {/*<TouchableOpacity onPress={() =>*/}
-                    {/*this.props.navigation.navigate('SplitStep1')*/}
-                    {/*} style={styles.button1}>*/}
-                    {/*<Text style = {styles.buttonText}> Yes </Text>*/}
-                    {/*</TouchableOpacity>*/}
 
                 </ScrollView>
             </View>
@@ -107,8 +73,6 @@ export default class ChargePeople extends React.Component {
         var ref = firebase.database().ref("/Users");
         var uid = "";
         var that = this;
-
-
         await ref.orderByChild("Email").equalTo(email).limitToFirst(1)
             .once("value", snapshot => {
                 // console.log(snapshot);
@@ -121,12 +85,13 @@ export default class ChargePeople extends React.Component {
                     snapshot.forEach( user => {
                         // console.log(user.key);
                         if (user.child("userID").val()) {
-                            var newData = [... that.state.chargingPeople]
-                            var dataDic = {
-                                userID: user.child("userID").val(),
-                                fullName: user.child("FullName").val()
+                            if(that.state.chargingPeople.length >= that.state.people)
+                            {
+                                alert("you have reached the maximum number of users to charge");
+                                return;
                             }
-                            newData.push(dataDic)
+                            var newData = [... that.state.chargingPeople]
+                            newData.push(user.child("userID").val())
 
                             that.setState(
                                 {
@@ -152,50 +117,38 @@ export default class ChargePeople extends React.Component {
             alert("not logged in");
             return;
         }
-        // var userRef = firebase.database().ref('/Users').child(uid)
-        // // var userFullName = userRef.child("FullName").val()
         var userRequestRef = firebase.database().ref('/Payments').child(uid).child('/Requesting')
         for(i = 0; i < state.chargingPeople.length; i++){
             //  console.log(state.chargingPeople[i]);
-            var chargedRef = firebase.database().ref('/Payments').child(state.chargingPeople[i].userID).child('/GettingCharged')
+            var chargedRef = firebase.database().ref('/Payments').child(state.chargingPeople[i]).child('/GettingCharged')
             var key = chargedRef.push().key;
             chargedRef.child(key).set(
                 {
-                    PaymentTitle: that.state.paymentTitle,
-                    ReceiptID: key,
+                    PaymentTitle: "",
                     Description: that.state.chargeDescription,
                     Amount: that.state.result,
-                    Tip: that.state.tip,
-                    Tax: that.state.tax,
                     Requester: uid,
-                    Charged: that.state.chargingPeople[i].userID,
-                    RequesterName: that.state.fullName,
-                    ChargedName: that.state.chargingPeople[i].fullName,
-                    ReceiptPic: "",
+                    Charged: that.state.chargingPeople[i],
+                    RequesterName: "",
+                    ChargedName: "",
                     Paid: false,
                 }
             );
             userRequestRef.child(key).set(
                 {
-                    PaymentTitle: that.state.paymentTitle,
-                    ReceiptID: key,
+                    PaymentTitle: "",
                     Description: that.state.chargeDescription,
                     Amount: that.state.result,
-                    Tip: that.state.tip,
-                    Tax: that.state.tax,
                     Requester: uid,
-                    Charged: that.state.chargingPeople[i].userID,
-                    RequesterName: that.state.fullName,
-                    ChargedName: that.state.chargingPeople[i].fullName,
-                    ReceiptPic: "",
+                    Charged: that.state.chargingPeople[i],
+                    RequesterName: "",
+                    ChargedName: "",
                     Paid: false,
                 }
             );
             //    alert(state.chargingPeople[i])
 
         }
-
-        this.props.navigation.navigate('Friends')
 
     }
 
@@ -241,15 +194,15 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     name:{
-        fontFamily: "Futura-Medium-Italic",
+        //fontFamily: "Futura-Medium-Italic",
         fontStyle: 'italic',
         marginTop:20,
-        fontSize:40,
+        fontSize:20,
         color:'#559535',
         fontWeight:'bold',
     },
     button1: {
-        fontFamily: "Raleway-Regular",
+        //fontFamily: "Raleway-Regular",
         width: '30%',
         backgroundColor: '#559535',
         paddingTop: 10,
@@ -261,7 +214,7 @@ const styles = StyleSheet.create({
         elevation: 3,
     },
     button2: {
-        fontFamily: "Raleway-Regular",
+        //fontFamily: "Raleway-
         width: '30%',
         backgroundColor: '#3d3e52',
         paddingTop: 10,
@@ -276,12 +229,13 @@ const styles = StyleSheet.create({
         color: 'white',
     },
     textInput1:{
-        fontFamily: "Raleway-Regular",
-        marginTop:10,
+        //fontFamily: "Raleway-Regular",
+        height: 40, width: "95%", borderColor: 'gray', borderWidth: 1,  marginBottom: 20,
+        paddingLeft: 10,
     },
     textInput2:{
-        fontFamily: "Raleway-Regular",
-        marginBottom:10,
-        marginTop:10,
+        height: 40, width: "95%", borderColor: 'gray', borderWidth: 1,  marginBottom: 20,
+        paddingLeft: 10,
+        //fontFamily: "Raleway-Regular",
     }
 });

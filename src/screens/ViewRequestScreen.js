@@ -75,8 +75,9 @@ export default class ViewRequestScreen extends React.Component {
                                 <Left>
                                     <Thumbnail source={logo} />
                                     <Body>
-                                    <Text>YOU ARE CHARGING: {data.val().ChargedName}</Text>
-                                    <Text note>Total: {data.val().Amount}</Text>
+                                    {/*Switch back later*/}
+                                    <Text>CHARGING YOU: {data.val().ChargedName}</Text>
+                                    <Text note>Total: {data.val().Amount.toFixed(2)}</Text>
                                     </Body>
                                 </Left>
                             </CardItem>
@@ -104,7 +105,7 @@ export default class ViewRequestScreen extends React.Component {
                                     <TouchableOpacity style = {styles.button1} onPress={() => this.markAsPaid(data)
                                     }
                                     >
-                                        <Text style={styles.buttonText}>Mark As Paid</Text>
+                                        <Text style={styles.buttonText}>Pay with Paypal</Text>
                                     </TouchableOpacity>
                                 </View>
                             </CardItem>
@@ -183,7 +184,7 @@ const styles = StyleSheet.create({
     },
     button1: {
         // width: '30%',
-        backgroundColor: '#559535',
+        backgroundColor: '#01B9F5',
         // paddingTop: 10,
         // paddingBottom: 10,
         padding:10,

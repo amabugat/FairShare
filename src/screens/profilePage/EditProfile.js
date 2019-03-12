@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard} from 'react-native';
-import ProfileImage from './ProfileImage'
+import ProfileImage from './ProfileImage';
+import DatePicker from 'react-native-datepicker';
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
@@ -13,6 +14,7 @@ export default class EditProfile extends React.Component {
         phoneNum: '',
         email: '',
         userID: '',
+        date: '',
     }
     componentDidMount(){
         var user = firebase.auth().currentUser
@@ -46,7 +48,7 @@ export default class EditProfile extends React.Component {
 
     render() {
         return (
-            <KeyboardAvoidingView behavior='padding' style={styles.wrapper} enabled>
+
                 <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                     <View style={styles.container}>
                         <ProfileImage/>
@@ -81,6 +83,30 @@ export default class EditProfile extends React.Component {
 
                         <Text>{this.state.email}</Text>
 
+                        <DatePicker
+                          style={{width: 200}}
+                          date={this.state.date}
+                          mode="date"
+                          placeholder="select date"
+                          format="YYYY-MM-DD"
+                          minDate="1900-01-01"
+                          maxDate="2018-12-31"
+                          confirmBtnText="Confirm"
+                          cancelBtnText="Cancel"
+                          customStyles={{
+                            dateIcon: {
+                              position: 'absolute',
+                              left: 0,
+                              top: 4,
+                              marginLeft: 0
+                            },
+                            dateInput: {
+                              marginLeft: 36
+                            }
+                            // ... You can check the source to find the other keys.
+                          }}
+                          onDateChange={(date) => {this.setState({date: date})}}
+                        />
                         {/*<Text style={styles.name}>DATE INPUT with datepicker </Text>*/}
 
 
@@ -91,7 +117,7 @@ export default class EditProfile extends React.Component {
 
 
                         <TouchableOpacity onPress={() =>
-                            this.editProfile(this.state.firstName, this.state.lastName, this.state.phoneNum)
+                            this.editProfile(this.state.firstName, this.state.lastName, this.state.phoneNum, this.state.date)
                         } style={styles.button2}>
                             <Text style = {styles.buttonText}> Save </Text>
                         </TouchableOpacity>
@@ -108,11 +134,11 @@ export default class EditProfile extends React.Component {
 
                     </View>
                 </TouchableWithoutFeedback>
-            </KeyboardAvoidingView>
+
         );
     }
 
-    editProfile = ( firstName, lastName, phoneNum) => {
+    editProfile = ( firstName, lastName, phoneNum, date) => {
         var that = this
         var user = firebase.auth().currentUser
         var uid = user.uid;
@@ -122,8 +148,10 @@ export default class EditProfile extends React.Component {
             LastName: lastName,
             FullName : firstName + " " + lastName,
             PhoneNum: phoneNum,
+            DateofBirth: date,
         });
         alert("saved yay!")
+        this.props.navigation.navigate('ProfilePage')
         //go to profile page
 
     }

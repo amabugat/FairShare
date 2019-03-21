@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import ProfileImage from '../profilePage/ProfileImage'
 
+//Menu for asking how bill is being split
 export default class BillPrompt extends React.Component {
     render() {
         return (
@@ -9,12 +10,6 @@ export default class BillPrompt extends React.Component {
             <View style={styles.container}>
                 <ProfileImage/>
                 <Text style={styles.name}>Will the bill be split evenly?</Text>
-
-                {/*<TouchableOpacity onPress={() =>*/}
-                    {/*this.props.navigation.navigate('SplitStep1')*/}
-                {/*} style={styles.button1}>*/}
-                    {/*<Text style = {styles.buttonText}> Yes </Text>*/}
-                {/*</TouchableOpacity>*/}
 
                 <TouchableOpacity onPress={() =>
                 this.props.navigation.navigate('NoSplit')

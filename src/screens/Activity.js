@@ -1,15 +1,12 @@
 import React, { Component } from "react";
 import {StyleSheet, Text, View, Button, TouchableOpacity, ScrollView} from 'react-native';
-import Landing from './Landing.js';
 import ActionButton from 'react-native-action-button';
-// import ActionButton from "react-native-circular-action-menu";
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Friends from './Friends';
 import { Container, Content,} from 'native-base'
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
-
 
 export default class Activity extends React.Component {
 
@@ -25,6 +22,7 @@ export default class Activity extends React.Component {
         });
     }
 
+    //Rendering the main activity page with tab view, Action button and dynamic cards
     render() {
         return (
             <Container>
@@ -42,7 +40,6 @@ export default class Activity extends React.Component {
                                     this.props.navigation.navigate('Home')
                                 }
                             }
-                                // this.props.navigation.navigate('Home')
                             }>
                                 <Icon name="home" style={styles.actionButtonIcon} />
                             </ActionButton.Item>
@@ -51,7 +48,7 @@ export default class Activity extends React.Component {
                             }>
                                 <Icon name="face" style={styles.actionButtonIcon} />
                             </ActionButton.Item>
-                            <ActionButton.Item buttonColor='#1abc9c' title="Groups" onPress={() =>
+                            <ActionButton.Item buttonColor='#1abc9c' title="History" onPress={() =>
                                 this.props.navigation.navigate('ViewHistory')
                             }>
                                 <Icon name="group" style={styles.actionButtonIcon} />

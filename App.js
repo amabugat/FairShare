@@ -12,7 +12,8 @@ const firebaseConfig = {
     projectId: "fairshare-96c68",
     storageBucket: "fairshare-96c68.appspot.com",
 };
-
+//Getting rid of low warnings
+console.disableYellowBox = true;
 
 firebase.initializeApp(firebaseConfig);
 

@@ -54,7 +54,7 @@ export default class ChargePeople extends React.Component {
 
                     <ProfileImage/>
                     <Text style={styles.name}>{this.state.people}</Text>
-                    <Text style={styles.name}>{this.state.result} per person</Text>
+                    <Text style={styles.name}>{this.state.result.toFixed(2)} per person</Text>
                     <Text style={styles.name}>{this.state.emailID}</Text>
                     <TextInput
                         style={styles.textInput1}
@@ -81,7 +81,7 @@ export default class ChargePeople extends React.Component {
                         style={styles.button1}
                         onPress={() => this.chargePeople(this.state)
                         } >
-                        <Text> Charge THESE HOES </Text>
+                        <Text> Charge Users </Text>
                     </TouchableOpacity>
 
 

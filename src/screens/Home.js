@@ -27,6 +27,7 @@ export default class Home extends React.Component {
             case true:
                 return (
                     this.props.navigation.navigate('Activity')
+                    // this.props.navigation.navigate('Home')
                 );
             case false:
                 return this.renderContent()
@@ -86,7 +87,7 @@ export default class Home extends React.Component {
                 function(user) {
                     that.setState( {password: ''} );
                     console.log(user);
-                    that.props.navigation.navigate('Activity');
+                    // that.props.navigation.navigate('Activity');
                 }
             ).catch(
             function(error) {

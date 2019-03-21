@@ -76,7 +76,7 @@ export default class ViewRequestScreen extends React.Component {
                                     <Thumbnail source={logo} />
                                     <Body>
                                     {/*Switch back later*/}
-                                    <Text>CHARGING YOU: {data.val().ChargedName}</Text>
+                                    <Text>YOU ARE REQUESTING: {data.val().ChargedName}</Text>
                                     <Text note>Total: {data.val().Amount.toFixed(2)}</Text>
                                     </Body>
                                 </Left>
@@ -99,76 +99,12 @@ export default class ViewRequestScreen extends React.Component {
                                     <Text>Description: {data.val().Description}</Text>
                                 </View>
                             </CardItem>
-
-                            <CardItem key={index}>
-                                <View>
-                                    <TouchableOpacity style = {styles.button1} onPress={() => this.markAsPaid(data)
-                                    }
-                                    >
-                                        <Text style={styles.buttonText}>Pay with Paypal</Text>
-                                    </TouchableOpacity>
-                                </View>
-                            </CardItem>
                         </Card>
                     );
                 })}
             </View>
-
         );
     }
-
-    markAsPaid = async (data) => {
-        var user = firebase.auth().currentUser;
-        var uid = user.uid;
-        var paymentsRef = firebase.database().ref('/Payments');
-        var paymentsUserRef = paymentsRef.child(uid);
-        var userRequestingRef = paymentsUserRef.child('/Requesting');
-        var userHistoryRef = paymentsUserRef.child('/History');
-
-
-        var chargedUserRef = paymentsRef.child(data.val().Charged);
-        var chargedUserTable = chargedUserRef.child('/GettingCharged');
-        var chargedUserHistory = chargedUserRef.child('/History');
-
-        chargedUserHistory.child(data.val().ReceiptID).set(
-            {
-                PaymentTitle: data.val().PaymentTitle,
-                ReceiptID: data.val().ReceiptID,
-                Description: data.val().Description,
-                Amount: data.val().Amount,
-                Tip: data.val().Tip,
-                Tax: data.val().Tax,
-                Requester: data.val().Requester,
-                Charged: data.val().Charged,
-                RequesterName: data.val().RequesterName,
-                ChargedName: data.val().ChargedName,
-                ReceiptPic: "",
-                Paid: true,
-            }
-        );
-        userHistoryRef.child(data.val().ReceiptID).set(
-            {
-                PaymentTitle: data.val().PaymentTitle,
-                ReceiptID: data.val().ReceiptID,
-                Description: data.val().Description,
-                Amount: data.val().Amount,
-                Tip: data.val().Tip,
-                Tax: data.val().Tax,
-                Requester: data.val().Requester,
-                Charged: data.val().Charged,
-                RequesterName: data.val().RequesterName,
-                ChargedName: data.val().ChargedName,
-                ReceiptPic: "",
-                Paid: true,
-            }
-        );
-        //remove the item
-        chargedUserTable.child(data.val().ReceiptID).remove();
-        userRequestingRef.child(data.val().ReceiptID).remove();
-
-    }
-
-
 }
 const styles = StyleSheet.create({
     container: {
@@ -179,19 +115,12 @@ const styles = StyleSheet.create({
     },
     cardStyle: {
         width: "80%",
-        // height:"50%",
-        // paddingVertical: 5,
     },
     button1: {
-        // width: '30%',
         backgroundColor: '#01B9F5',
-        // paddingTop: 10,
-        // paddingBottom: 10,
         padding:10,
         justifyContent: 'center',
         alignItems: 'center',
-        // marginBottom:10,
-        // marginTop:10,
         elevation: 3,
     },
     buttonText: {

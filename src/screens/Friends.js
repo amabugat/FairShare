@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, ScrollView } from 'react-native';
+import {StyleSheet, ScrollView, Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {
     TabView,
@@ -23,6 +23,10 @@ export default class Friends extends React.Component<*, State> {
             { key: 'charged', icon: 'md-card' },
         ],
     };
+
+    // componentDidMount() {
+    //     this.props.navigation.navigate('BillPrompt');
+    // }
 
     _handleIndexChange = index =>
         this.setState({
@@ -49,8 +53,11 @@ export default class Friends extends React.Component<*, State> {
         charged: ViewChargedScreen,
     });
 
+
+
     render() {
         return (
+
                 <TabView
                     lazy
                     style={this.props.style}
@@ -59,7 +66,6 @@ export default class Friends extends React.Component<*, State> {
                     renderTabBar={this._renderTabBar}
                     onIndexChange={this._handleIndexChange}
                 />
-
         );
     }
 }

@@ -13,6 +13,7 @@ import {
     Body,
     Right
 } from "native-base";
+import PayPal from 'react-native-paypal-wrapper';
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
@@ -75,7 +76,7 @@ export default class ViewChargedScreen extends React.Component {
                                 <Left>
                                     <Thumbnail source={logo} />
                                     <Body>
-                                    <Text>YOU ARE CHARGING: {data.val().RequesterName}</Text>
+                                    <Text>YOU ARE BEING CHARGED: {data.val().RequesterName}</Text>
                                     <Text note>Total: {data.val().Amount.toFixed(2)}</Text>
                                     </Body>
                                 </Left>
@@ -98,13 +99,88 @@ export default class ViewChargedScreen extends React.Component {
                                     <Text>Description: {data.val().Description}</Text>
                                 </View>
                             </CardItem>
+
+                            <CardItem key={index}>
+                                <View>
+                                    <TouchableOpacity onPress={() =>
+                                        this.payment(data)
+                                    } style={styles.button1}>
+                                        <Text style={styles.buttonText}> Pay Now </Text>
+                                    </TouchableOpacity>
+                                </View>
+                            </CardItem>
                         </Card>
                     );
                 })}
             </View>
         );
     }
+
+    payment = (data) => {
+        PayPal.initialize(PayPal.SANDBOX, "AZoR-_FPTqdYVrW0pk5dZ_wFEPji2ptMc6AyM-VdqIyOmaefQr69uw5piF4AoFXfeWb3zs5j72edRWay");
+        PayPal.pay({
+            price: data.val().Amount.toString(),
+            currency: 'USD',
+            description: data.val().Description,
+        }).then(confirm => console.log(confirm),
+            this.markAsPaid(data))
+            .catch(error => console.log(error));
+    };
+
+    markAsPaid = async (data) => {
+        var user = firebase.auth().currentUser;
+        var uid = user.uid;
+        var paymentsRef = firebase.database().ref('/Payments');
+        var paymentsUserRef = paymentsRef.child(data.val().Requester);
+        var userRequestingRef = paymentsUserRef.child('/Requesting');
+        var userHistoryRef = paymentsUserRef.child('/History');
+
+        var chargedUserRef = paymentsRef.child(data.val().Charged);
+        var chargedUserTable = chargedUserRef.child('/GettingCharged');
+        var chargedUserHistory = chargedUserRef.child('/History');
+
+        chargedUserHistory.child(data.val().ReceiptID).set(
+            {
+                PaymentTitle: data.val().PaymentTitle,
+                ReceiptID: data.val().ReceiptID,
+                Description: data.val().Description,
+                Amount: data.val().Amount,
+                Tip: data.val().Tip,
+                Tax: data.val().Tax,
+                Requester: data.val().Requester,
+                Charged: data.val().Charged,
+                RequesterName: data.val().RequesterName,
+                ChargedName: data.val().ChargedName,
+                ReceiptPic: "",
+                Paid: true,
+            }
+        );
+        userHistoryRef.child(data.val().ReceiptID).set(
+            {
+                PaymentTitle: data.val().PaymentTitle,
+                ReceiptID: data.val().ReceiptID,
+                Description: data.val().Description,
+                Amount: data.val().Amount,
+                Tip: data.val().Tip,
+                Tax: data.val().Tax,
+                Requester: data.val().Requester,
+                Charged: data.val().Charged,
+                RequesterName: data.val().RequesterName,
+                ChargedName: data.val().ChargedName,
+                ReceiptPic: "",
+                Paid: true,
+            }
+        );
+        //remove the item
+        chargedUserTable.child(data.val().ReceiptID).remove();
+        userRequestingRef.child(data.val().ReceiptID).remove();
+
+    }
+
 }
+
+
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -118,15 +194,10 @@ const styles = StyleSheet.create({
         // paddingVertical: 5,
     },
     button1: {
-        // width: '30%',
         backgroundColor: '#559535',
-        // paddingTop: 10,
-        // paddingBottom: 10,
         padding:10,
         justifyContent: 'center',
         alignItems: 'center',
-        // marginBottom:10,
-        // marginTop:10,
         elevation: 3,
     },
     buttonText: {

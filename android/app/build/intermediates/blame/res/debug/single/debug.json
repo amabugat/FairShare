@@ -624,6 +624,10 @@
         "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\color\\abc_primary_text_material_light.xml"
     },
     {
+        "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\raw_tokenize_credit_card_mutation.graphql.flat",
+        "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\braintree-2.17.0.aar\\a62243f40fbc740a4b33c74f5e675492\\res\\raw\\tokenize_credit_card_mutation.graphql"
+    },
+    {
         "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_abc_control_background_material.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\drawable-v23\\abc_control_background_material.xml"
     },
@@ -662,6 +666,10 @@
     {
         "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\raw_delete_payment_method_mutation.graphql.flat",
+        "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\braintree-2.17.0.aar\\a62243f40fbc740a4b33c74f5e675492\\res\\raw\\delete_payment_method_mutation.graphql"
     },
     {
         "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_redbox_item_title.xml.flat",
@@ -1080,12 +1088,12 @@
         "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
-        "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
         "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
         "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
+        "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\anim\\abc_popup_enter.xml"
     },
     {
         "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
@@ -1116,12 +1124,12 @@
         "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\a0e325e4774cb661beb419a767f46c9f\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\admin\\IdeaProjects\\Test\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_dialog_title_material.xml.flat",

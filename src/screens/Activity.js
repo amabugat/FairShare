@@ -52,7 +52,7 @@ export default class Activity extends React.Component {
                                 <Icon name="face" style={styles.actionButtonIcon} />
                             </ActionButton.Item>
                             <ActionButton.Item buttonColor='#1abc9c' title="Groups" onPress={() =>
-                                this.props.navigation.navigate('Groups')
+                                this.props.navigation.navigate('ViewHistory')
                             }>
                                 <Icon name="group" style={styles.actionButtonIcon} />
                             </ActionButton.Item>

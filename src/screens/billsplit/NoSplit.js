@@ -23,7 +23,7 @@ export default class NoSplit extends Component{
                                     }
                                     else
                                     {
-                                        this.props.navigation.navigate('ChargePeople', {peps: this.state.people, amounts: this.state.split});
+                                        this.props.navigation.navigate('ChargePeople', {peps: this.state.people, amounts: this.state.split, tax: this.state.tax, tip: this.state.tip});
                                     }
 
                                 }}

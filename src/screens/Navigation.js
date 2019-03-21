@@ -18,6 +18,7 @@ import Row from './Row';
 import Landing from './Landing';
 import ViewChargedScreen from './ViewChargedScreen';
 import ViewRequestScreen from './ViewRequestScreen';
+import ViewHistoryScreen from './ViewHistoryScreen';
 import ChargePeople from './billsplit/ChargePeople';
 import EditProfile from './profilePage/EditProfile';
 
@@ -70,6 +71,9 @@ const Navigation = createStackNavigator({
             header:null,
         }), },
     ViewRequest: { screen: ViewRequestScreen, navigationOptions: () => ({
+            header:null,
+        }), },
+    ViewHistory: { screen: ViewHistoryScreen, navigationOptions: () => ({
             header:null,
         }), },
     ChargePeople: { screen: ChargePeople, navigationOptions: () => ({

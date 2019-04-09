@@ -814,6 +814,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout dev_loading_view
 layout fps_view
+layout list_item
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -1068,6 +1069,7 @@ style CalendarDatePickerDialog
 style CalendarDatePickerStyle
 style ClockTimePickerDialog
 style ClockTimePickerStyle
+style DefaultExplainingPermissionsTheme
 style DialogAnimationFade
 style DialogAnimationSlide
 style Platform_AppCompat
@@ -1319,3 +1321,4 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewStubCompat android_id android_layout android_inflatedId
 xml network_security_config
 xml preferences
+xml provider_paths

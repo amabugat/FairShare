@@ -75,6 +75,12 @@ export default class Home extends React.Component {
                             <Text style = {styles.buttonText}> SIGN UP </Text>
                         </TouchableOpacity>
 
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('Camera')
+                        } style={styles.button2}>
+                            <Text style = {styles.buttonText}> Camera Fcn </Text>
+                        </TouchableOpacity>
+
+
                     </View>
                 </TouchableWithoutFeedback>
             </KeyboardAvoidingView>

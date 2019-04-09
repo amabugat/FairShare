@@ -4,6 +4,7 @@ import Icon from 'native-base';
 import Button from 'react-native';
 import Home from './Home';
 import Friends from './Friends';
+import Camera from './Camera';
 import Activity from './Activity';
 import BillPrompt from './billsplit/BillPrompt';
 import SplitStep1 from './billsplit/SplitStep1';
@@ -74,6 +75,9 @@ const Navigation = createStackNavigator({
             header:null,
         }), },
     ViewHistory: { screen: ViewHistory, navigationOptions: () => ({
+            header:null,
+        }), },
+    Camera: { screen: Camera, navigationOptions: () => ({
             header:null,
         }), },
     ChargePeople: { screen: ChargePeople, navigationOptions: () => ({

@@ -18,6 +18,7 @@ import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
 
+
 import ImagePicker from 'react-native-image-picker';
 
 
@@ -65,13 +66,46 @@ export default class Camera extends React.Component {
       });
     }
 
+    async storeFcn(){
+      var storage = firebase.storage();
+      var storageRef = storage.ref();
+      var recieptRef = storageRef.child('Reciepts');
+//      var recieptChargeRef = recieptRef.child(recieptIDKEY);
+       var recieptChargeRef = recieptRef.child('Test');
+       await recieptChargeRef.put(this.state.avatarSource).then(function(snapshot){
+         alert('yay it worked');
+       })
+    }
+
+    getFromFirebase(){
+      //var starsRef = storageRef.child('Reciepts/' +recieptIDKET);
+     var starsRef = storageRef.child('Reciepts/' +'Test');
+// Get the download URL
+      starsRef.getDownloadURL().then(function(url) {
+        // Insert url into an <img> tag to "download"
+
+      })
+
+        // A full list of error codes is available at
+
+      }
+
+
 
     render() {
         return (
             <View style={styles.container}>
               <Text>Hi </Text>
+              <Image
+                 style={{width: 66, height: 58}}
+                 source={{uri: this.state.avatarSource}}
+               />
               <TouchableOpacity onPress = {this.picFcn}>
                 <Text>Select Image</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity onPress = {this.storeFcn}>
+                <Text>store Image</Text>
               </TouchableOpacity>
             </View>
 

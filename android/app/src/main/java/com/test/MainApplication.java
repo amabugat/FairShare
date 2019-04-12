@@ -3,6 +3,8 @@ package com.test;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.smarkets.paypal.RNPaypalPackage;
+import com.RNFetchBlob.RNFetchBlobPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.taessina.paypal.RNPaypalWrapperPackage;
 import com.swmansion.reanimated.ReanimatedPackage;
@@ -28,6 +30,8 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
+            new RNPaypalPackage(),
+            new RNFetchBlobPackage(),
             new ImagePickerPackage(),
             new RNPaypalWrapperPackage(),
             new ReanimatedPackage(),

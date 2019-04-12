@@ -4,6 +4,8 @@ ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidM
 INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
 INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
 INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-29:12
+MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-reanimated] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
@@ -71,6 +73,8 @@ INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\Andro
 		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:12:5-67
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:12:5-67
 MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:10:5-67
@@ -99,6 +103,10 @@ ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidM
 		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:8:22-78
 application
 ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:10:5-28:19
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
+MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
 MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
 MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\210734be96031c2e3c244a917cbf8993\AndroidManifest.xml:13:5-20
@@ -159,6 +167,10 @@ uses-sdk
 INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
@@ -263,6 +275,34 @@ INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\Andro
 		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
+activity#com.braintreepayments.api.BraintreeBrowserSwitchActivity
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:9-26:20
+	android:launchMode
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-44
+	android:theme
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-72
+	android:name
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-84
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:${applicationId}.braintree
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:com.test.braintree
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
+action#android.intent.action.VIEW
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:25-66
+category#android.intent.category.DEFAULT
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:17-76
+	android:name
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:17-78
+	android:name
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:27-75
+data
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:17-69
+	android:scheme
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:23-66
 provider#com.imagepicker.FileProvider
 ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions

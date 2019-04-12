@@ -135,6 +135,8 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-paypal')
+    implementation project(':react-native-fetch-blob')
     implementation project(':react-native-image-picker')
     implementation project(':react-native-paypal-wrapper')
     implementation project(':react-native-reanimated')

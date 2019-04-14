@@ -28,6 +28,7 @@ export default class Home extends React.Component {
                 return (
                     this.props.navigation.navigate('Activity')
                     // this.props.navigation.navigate('Home')
+                    //this.props.navigation.navigate('NoSplit')
                 );
             case false:
                 return this.renderContent()

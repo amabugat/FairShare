@@ -82,17 +82,23 @@ export default class ViewChargedScreen extends React.Component {
                                 </Left>
                             </CardItem>
 
-                            <CardItem cardBody key = {index}>
-                                <Image
-                                    style={{
-                                        resizeMode: "cover",
-                                        width: null,
-                                        height: 200,
-                                        flex: 1
-                                    }}
-                                    source={cardImage}
-                                />
-                            </CardItem>
+                            {data.val().ReceiptPic == null ? (
+                              <CardItem cardBody key = {index}>
+                                <Text>No Photo</Text>
+                              </CardItem>
+                            ) : (
+                              <CardItem cardBody key = {index}>
+                                  <Image
+                                      style={{
+                                          resizeMode: "cover",
+                                          width: null,
+                                          height: 200,
+                                          flex: 1
+                                      }}
+                                      source={{ uri: data.val().ReceiptPic}}
+                                  />
+                              </CardItem>
+                            )}
 
                             <CardItem key={index}>
                                 <View>

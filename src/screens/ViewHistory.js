@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button, TouchableOpacity, Image} from 'react-native';
+import {StyleSheet, Text, View, Button, TouchableOpacity, ScrollView, Image} from 'react-native';
 import {
     Container,
     Header,
@@ -67,7 +67,9 @@ export default class ViewHistoryScreen extends React.Component {
 
     render() {
         return (
+            <ScrollView>
             <View style={styles.container}>
+
                 {this.state.items.map((data, index) => {
                     return (
                         <Card style = {styles.cardStyle}>
@@ -76,7 +78,7 @@ export default class ViewHistoryScreen extends React.Component {
                                     <Thumbnail source={logo} />
                                     <Body>
                                     <Text>{data.val().ChargedName} Paid {data.val().RequesterName}</Text>
-                                    <Text note>Total: {data.val().Amount}</Text>
+                                    <Text note>Total: {data.val().Amount.toFixed(2)}</Text>
                                     </Body>
                                 </Left>
                             </CardItem>
@@ -109,8 +111,9 @@ export default class ViewHistoryScreen extends React.Component {
                         </Card>
                     );
                 })}
-            </View>
 
+            </View>
+            </ScrollView>
         );
     }
 

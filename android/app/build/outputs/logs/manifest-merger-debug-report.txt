@@ -1,419 +1,419 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-29:12
-MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
-MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-reanimated] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-vector-icons] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-gesture-handler] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\210734be96031c2e3c244a917cbf8993\AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b7465f3843de1385c5b73bb7197ff8d6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:2:1-26:12
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:2:1-28:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ce227695c8cb02984c3dc5c90286e90b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\b0008bbb085b1aeff38f097500be2449\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\14ea553b676113f56fe4fdd6952d8216\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\71120cc132b058d36077f5a608ee12f7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\548f0f1f80a87470fdaf6a18958df27a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\91c5ed0109349de9cf1c8765ebb629b1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3e4bb17764cfe05d537bf53a6581c6b7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\62d8d328340141210a45689b0a1321da\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\7b0c0f8a22d06ec2ed6ad70fe63bbf3e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\c0ee8ae79183135d09986ac0fd0785b5\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\171f4656634619111956efaad616370c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\fd4762dba0d714ef9aa6ae79f449c8f7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\baea42f02026e57c38f8267d3de805ff\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fb8852f059ceea989356d34b748b28c9\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d028f0a964e20182a3b2ca7f2a8cb597\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\835ad814a5e1da8e4e5999093236a161\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\94a9a0efaee1e184552ed497b8f1f2ec\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\4ade4c753fedb6103484a4e9a28c0e79\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1f8f97ab3b22d315c92ea6a1fd054c58\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\dfeb3eba896160b8bcdcc94b93f660de\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\8520d6e539f9d558e92fffcbc4fa9885\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\30e1c5faf9241db9024ba5ad065a3cf5\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\d704092abb8ce8c1737eb499f5f763c4\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1de39afda331ee078f226c5011ed44c7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\b07f953b1c459105a9ba33cb4899087e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.braintreepayments.api:visa-checkout:1.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\visa-checkout-1.0.0.aar\9b6760083bd9ffee2a3430dd2d9f0f15\AndroidManifest.xml:2:1-12:12
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.17.0.aar\c32a34cdc5c44e58a41657a76ccc69e4\AndroidManifest.xml:2:1-13:12
-MERGED from [com.braintreepayments.api:core:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\core-2.17.0.aar\3d39804985338ed3f6d7c01114460590\AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\16e6a138ae34cf54a347857e652aaa78\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\165f1def1584ab5ed5608942d128166f\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\04d949a578abde1d9552c5346877a67b\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\8d4d58f66d8f76baef36067deb117d2e\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\5f4efcadf4aaf35fc2a3896f5f09ca20\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\4957b085534c50a8aa3f66562e42ab6f\AndroidManifest.xml:2:1-13:12
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\1df58d9a167b80dbb73938df54f8335d\AndroidManifest.xml:1:1-3:12
-MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:2:1-26:12
-MERGED from [com.braintreepayments:browser-switch:0.1.5] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.5.aar\dcc9fae425f8045e1f49d816e7d7b94d\AndroidManifest.xml:2:1-12:12
-MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\872e724140e3a78b82ff1f6c95baa520\AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\90e96927fa0232e191021fc52e32d975\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-29:12
+MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-paypal-wrapper] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\134947f4e8de01bffc4a40ac3860cbdd\AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\a0e325e4774cb661beb419a767f46c9f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:2:1-26:12
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:2:1-28:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\42f70429e4545b37c78355dc3e6686dc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\992a5349a175d402b8c3406468af78d5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c214585709677f5eb8d0821cfd713b7e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\baacf5b4a9643b3949b94a8cfa007691\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\473e9bb330149b631b0abc583e0a9007\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\a59caffae538cd440a33bea9593e648f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\95b3df57a7562ab7a24a31e23a508903\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\560dc30f3902d870b01e0aab6cd65097\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\3a2f62e9221cfee12b244a44bc0ecbab\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\d7bf257a0a5ca46dc88768861652a27a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\690eaac0a6b1716f697f89a93a05a46c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\aede16a3a82ecdce228dd9d6966c602f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\db444d3adc07410c46c7e78798d7ad61\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\861204fc298965b69786028304a98187\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\4bc7b5679a8a644f20dcb9052a8a4fc2\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\5c780dfe57a55577097c123d6697aab7\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\897c18c068806ee3e6be71edf3aa9c95\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1be6827fb7356a71803c5431d0a995af\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\68bcc0c3a61cf5b66b4272905e442018\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\db3baeef0c0ff816e7dc881252804225\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\121b25df0fdb728efdc322a0f68e2f2e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\a26223e0c3114dba6bd9d16bc4c349ba\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\4740f82906c53cd67a9979910b3bb9e8\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\26f0888859f8ffa91e1c5822dbe1832b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9a939a9a43364c34b36b5ebb1efe4256\AndroidManifest.xml:17:1-22:12
+MERGED from [com.braintreepayments.api:visa-checkout:1.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\visa-checkout-1.0.0.aar\ec42d2f855d92685d3daf461011b821c\AndroidManifest.xml:2:1-12:12
+MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.17.0.aar\c278367061c368002c4fec5b0e44e1d7\AndroidManifest.xml:2:1-13:12
+MERGED from [com.braintreepayments.api:core:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\core-2.17.0.aar\667c387d5376f475ded7cdbab143d098\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\6673f4b0ab24e5746d26807e0db3699e\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\2adf47858aed5db42fc6e609359b29ef\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\5dd5de9fefb6db85708fbe88ce4fc013\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\7575a3ee5f45d3907b88e6366864b7e2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\c725e431f88700755ee01501f7c4c691\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\7d383ed4c058fd7b369e95701d273adf\AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\b572539a1f48de7c559fc41641f2c79e\AndroidManifest.xml:1:1-3:12
+MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:2:1-26:12
+MERGED from [com.braintreepayments:browser-switch:0.1.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.5.aar\9e2eac563707cd92529d97b1bc63e948\AndroidManifest.xml:2:1-12:12
+MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\ce223c3ddd5f440c1d9a9f1fc89fcc72\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\4632076009bb3e2cf2880939cf5fb1a3\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12
 	package
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:2:5-23
-		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:2:5-23
+		INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
-		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12
+		INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12
-		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12
+		INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
-MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:12:5-67
-MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:12:5-67
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:10:5-67
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:10:5-67
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.17.0.aar\c32a34cdc5c44e58a41657a76ccc69e4\AndroidManifest.xml:11:5-67
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.17.0.aar\c32a34cdc5c44e58a41657a76ccc69e4\AndroidManifest.xml:11:5-67
-MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\872e724140e3a78b82ff1f6c95baa520\AndroidManifest.xml:11:5-67
-MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\872e724140e3a78b82ff1f6c95baa520\AndroidManifest.xml:11:5-67
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:12:5-67
+MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:12:5-67
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:10:5-67
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:10:5-67
+MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.17.0.aar\c278367061c368002c4fec5b0e44e1d7\AndroidManifest.xml:11:5-67
+MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.17.0.aar\c278367061c368002c4fec5b0e44e1d7\AndroidManifest.xml:11:5-67
+MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\ce223c3ddd5f440c1d9a9f1fc89fcc72\AndroidManifest.xml:11:5-67
+MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\ce223c3ddd5f440c1d9a9f1fc89fcc72\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\210734be96031c2e3c244a917cbf8993\AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\210734be96031c2e3c244a917cbf8993\AndroidManifest.xml:11:5-78
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\134947f4e8de01bffc4a40ac3860cbdd\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\134947f4e8de01bffc4a40ac3860cbdd\AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:5:22-75
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:5:22-75
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:7:5-65
-MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:9:5-65
-MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:9:5-65
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:7:5-65
+MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:9:5-65
+MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:7:22-62
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:7:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:8:5-80
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:10:5-28:19
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
-MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\210734be96031c2e3c244a917cbf8993\AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\210734be96031c2e3c244a917cbf8993\AndroidManifest.xml:13:5-20
-MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:14:5-24:19
-MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:14:5-24:19
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:12:5-26:19
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:12:5-26:19
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fb8852f059ceea989356d34b748b28c9\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fb8852f059ceea989356d34b748b28c9\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d028f0a964e20182a3b2ca7f2a8cb597\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d028f0a964e20182a3b2ca7f2a8cb597\AndroidManifest.xml:22:5-23:19
-MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\4957b085534c50a8aa3f66562e42ab6f\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\4957b085534c50a8aa3f66562e42ab6f\AndroidManifest.xml:11:5-20
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\1df58d9a167b80dbb73938df54f8335d\AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\1df58d9a167b80dbb73938df54f8335d\AndroidManifest.xml:2:3-17
-MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:19:5-24:19
-MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:19:5-24:19
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:10:5-28:19
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
+MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\134947f4e8de01bffc4a40ac3860cbdd\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\134947f4e8de01bffc4a40ac3860cbdd\AndroidManifest.xml:13:5-20
+MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:14:5-24:19
+MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:14:5-24:19
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:12:5-26:19
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:12:5-26:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\861204fc298965b69786028304a98187\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\861204fc298965b69786028304a98187\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\4bc7b5679a8a644f20dcb9052a8a4fc2\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\4bc7b5679a8a644f20dcb9052a8a4fc2\AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\7d383ed4c058fd7b369e95701d273adf\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\7d383ed4c058fd7b369e95701d273adf\AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\b572539a1f48de7c559fc41641f2c79e\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\b572539a1f48de7c559fc41641f2c79e\AndroidManifest.xml:2:3-17
+MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:19:5-24:19
+MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:19:5-24:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fb8852f059ceea989356d34b748b28c9\AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\861204fc298965b69786028304a98187\AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:12:7-39
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:12:7-39
 	android:roundIcon
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:14:7-52
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:14:7-52
 	android:icon
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:13:7-41
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:13:7-41
 	android:allowBackup
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:15:7-34
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:15:7-34
 	android:theme
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:16:7-38
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:16:7-38
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:11:7-38
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:11:7-38
 activity#com.test.MainActivity
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:17:7-26:18
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:17:7-26:18
 	android:label
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:19:9-41
 	android:windowSoftInputMode
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:21:9-51
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:21:9-51
 	android:configChanges
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:20:9-79
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:20:9-79
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:18:9-37
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:18:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:22:9-25:25
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:22:9-25:25
 action#android.intent.action.MAIN
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:23:13-65
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:23:13-65
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:23:21-62
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:23:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:24:13-73
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:24:13-73
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:24:23-70
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:24:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:27:7-84
+ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:27:7-84
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:27:17-81
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:27:17-81
 uses-sdk
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\210734be96031c2e3c244a917cbf8993\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\210734be96031c2e3c244a917cbf8993\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b7465f3843de1385c5b73bb7197ff8d6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b7465f3843de1385c5b73bb7197ff8d6\AndroidManifest.xml:20:5-44
-MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:7:5-9:41
-MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:7:5-9:41
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:5:5-7:41
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ce227695c8cb02984c3dc5c90286e90b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\ce227695c8cb02984c3dc5c90286e90b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\b0008bbb085b1aeff38f097500be2449\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\b0008bbb085b1aeff38f097500be2449\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\14ea553b676113f56fe4fdd6952d8216\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\14ea553b676113f56fe4fdd6952d8216\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\71120cc132b058d36077f5a608ee12f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\71120cc132b058d36077f5a608ee12f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\548f0f1f80a87470fdaf6a18958df27a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\548f0f1f80a87470fdaf6a18958df27a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\91c5ed0109349de9cf1c8765ebb629b1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\91c5ed0109349de9cf1c8765ebb629b1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3e4bb17764cfe05d537bf53a6581c6b7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3e4bb17764cfe05d537bf53a6581c6b7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\62d8d328340141210a45689b0a1321da\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\62d8d328340141210a45689b0a1321da\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\7b0c0f8a22d06ec2ed6ad70fe63bbf3e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\7b0c0f8a22d06ec2ed6ad70fe63bbf3e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\c0ee8ae79183135d09986ac0fd0785b5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\c0ee8ae79183135d09986ac0fd0785b5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\171f4656634619111956efaad616370c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\171f4656634619111956efaad616370c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\fd4762dba0d714ef9aa6ae79f449c8f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\fd4762dba0d714ef9aa6ae79f449c8f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\baea42f02026e57c38f8267d3de805ff\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\baea42f02026e57c38f8267d3de805ff\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fb8852f059ceea989356d34b748b28c9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fb8852f059ceea989356d34b748b28c9\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d028f0a964e20182a3b2ca7f2a8cb597\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\d028f0a964e20182a3b2ca7f2a8cb597\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\835ad814a5e1da8e4e5999093236a161\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\835ad814a5e1da8e4e5999093236a161\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\94a9a0efaee1e184552ed497b8f1f2ec\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\94a9a0efaee1e184552ed497b8f1f2ec\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\4ade4c753fedb6103484a4e9a28c0e79\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\4ade4c753fedb6103484a4e9a28c0e79\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1f8f97ab3b22d315c92ea6a1fd054c58\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\1f8f97ab3b22d315c92ea6a1fd054c58\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\dfeb3eba896160b8bcdcc94b93f660de\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\dfeb3eba896160b8bcdcc94b93f660de\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\8520d6e539f9d558e92fffcbc4fa9885\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\8520d6e539f9d558e92fffcbc4fa9885\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\30e1c5faf9241db9024ba5ad065a3cf5\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\30e1c5faf9241db9024ba5ad065a3cf5\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\d704092abb8ce8c1737eb499f5f763c4\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\d704092abb8ce8c1737eb499f5f763c4\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1de39afda331ee078f226c5011ed44c7\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1de39afda331ee078f226c5011ed44c7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\b07f953b1c459105a9ba33cb4899087e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\b07f953b1c459105a9ba33cb4899087e\AndroidManifest.xml:20:5-44
-MERGED from [com.braintreepayments.api:visa-checkout:1.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\visa-checkout-1.0.0.aar\9b6760083bd9ffee2a3430dd2d9f0f15\AndroidManifest.xml:8:5-10:41
-MERGED from [com.braintreepayments.api:visa-checkout:1.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\visa-checkout-1.0.0.aar\9b6760083bd9ffee2a3430dd2d9f0f15\AndroidManifest.xml:8:5-10:41
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.17.0.aar\c32a34cdc5c44e58a41657a76ccc69e4\AndroidManifest.xml:7:5-9:41
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.17.0.aar\c32a34cdc5c44e58a41657a76ccc69e4\AndroidManifest.xml:7:5-9:41
-MERGED from [com.braintreepayments.api:core:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\core-2.17.0.aar\3d39804985338ed3f6d7c01114460590\AndroidManifest.xml:7:5-9:41
-MERGED from [com.braintreepayments.api:core:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\core-2.17.0.aar\3d39804985338ed3f6d7c01114460590\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\16e6a138ae34cf54a347857e652aaa78\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\16e6a138ae34cf54a347857e652aaa78\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\165f1def1584ab5ed5608942d128166f\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\165f1def1584ab5ed5608942d128166f\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\04d949a578abde1d9552c5346877a67b\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\04d949a578abde1d9552c5346877a67b\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\8d4d58f66d8f76baef36067deb117d2e\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\8d4d58f66d8f76baef36067deb117d2e\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\5f4efcadf4aaf35fc2a3896f5f09ca20\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\5f4efcadf4aaf35fc2a3896f5f09ca20\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\4957b085534c50a8aa3f66562e42ab6f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\4957b085534c50a8aa3f66562e42ab6f\AndroidManifest.xml:7:5-9:41
-MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:5:5-7:41
-MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:5:5-7:41
-MERGED from [com.braintreepayments:browser-switch:0.1.5] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.5.aar\dcc9fae425f8045e1f49d816e7d7b94d\AndroidManifest.xml:8:5-10:41
-MERGED from [com.braintreepayments:browser-switch:0.1.5] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.5.aar\dcc9fae425f8045e1f49d816e7d7b94d\AndroidManifest.xml:8:5-10:41
-MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\872e724140e3a78b82ff1f6c95baa520\AndroidManifest.xml:7:5-9:41
-MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\872e724140e3a78b82ff1f6c95baa520\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\90e96927fa0232e191021fc52e32d975\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\90e96927fa0232e191021fc52e32d975\AndroidManifest.xml:5:5-7:41
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal-wrapper] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal-wrapper] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\134947f4e8de01bffc4a40ac3860cbdd\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\134947f4e8de01bffc4a40ac3860cbdd\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\a0e325e4774cb661beb419a767f46c9f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\a0e325e4774cb661beb419a767f46c9f\AndroidManifest.xml:20:5-44
+MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:7:5-9:41
+MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:7:5-9:41
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\42f70429e4545b37c78355dc3e6686dc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\42f70429e4545b37c78355dc3e6686dc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\992a5349a175d402b8c3406468af78d5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\992a5349a175d402b8c3406468af78d5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c214585709677f5eb8d0821cfd713b7e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\c214585709677f5eb8d0821cfd713b7e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\baacf5b4a9643b3949b94a8cfa007691\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\baacf5b4a9643b3949b94a8cfa007691\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\473e9bb330149b631b0abc583e0a9007\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\473e9bb330149b631b0abc583e0a9007\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\a59caffae538cd440a33bea9593e648f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\a59caffae538cd440a33bea9593e648f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\95b3df57a7562ab7a24a31e23a508903\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\95b3df57a7562ab7a24a31e23a508903\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\560dc30f3902d870b01e0aab6cd65097\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\560dc30f3902d870b01e0aab6cd65097\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\3a2f62e9221cfee12b244a44bc0ecbab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\3a2f62e9221cfee12b244a44bc0ecbab\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\d7bf257a0a5ca46dc88768861652a27a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\d7bf257a0a5ca46dc88768861652a27a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\690eaac0a6b1716f697f89a93a05a46c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\690eaac0a6b1716f697f89a93a05a46c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\aede16a3a82ecdce228dd9d6966c602f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\aede16a3a82ecdce228dd9d6966c602f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\db444d3adc07410c46c7e78798d7ad61\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\db444d3adc07410c46c7e78798d7ad61\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\861204fc298965b69786028304a98187\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\861204fc298965b69786028304a98187\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\4bc7b5679a8a644f20dcb9052a8a4fc2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\4bc7b5679a8a644f20dcb9052a8a4fc2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\5c780dfe57a55577097c123d6697aab7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\5c780dfe57a55577097c123d6697aab7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\897c18c068806ee3e6be71edf3aa9c95\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\897c18c068806ee3e6be71edf3aa9c95\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1be6827fb7356a71803c5431d0a995af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1be6827fb7356a71803c5431d0a995af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\68bcc0c3a61cf5b66b4272905e442018\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\68bcc0c3a61cf5b66b4272905e442018\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\db3baeef0c0ff816e7dc881252804225\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\db3baeef0c0ff816e7dc881252804225\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\121b25df0fdb728efdc322a0f68e2f2e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\121b25df0fdb728efdc322a0f68e2f2e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\a26223e0c3114dba6bd9d16bc4c349ba\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\a26223e0c3114dba6bd9d16bc4c349ba\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\4740f82906c53cd67a9979910b3bb9e8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\4740f82906c53cd67a9979910b3bb9e8\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\26f0888859f8ffa91e1c5822dbe1832b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\26f0888859f8ffa91e1c5822dbe1832b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9a939a9a43364c34b36b5ebb1efe4256\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\9a939a9a43364c34b36b5ebb1efe4256\AndroidManifest.xml:20:5-44
+MERGED from [com.braintreepayments.api:visa-checkout:1.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\visa-checkout-1.0.0.aar\ec42d2f855d92685d3daf461011b821c\AndroidManifest.xml:8:5-10:41
+MERGED from [com.braintreepayments.api:visa-checkout:1.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\visa-checkout-1.0.0.aar\ec42d2f855d92685d3daf461011b821c\AndroidManifest.xml:8:5-10:41
+MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.17.0.aar\c278367061c368002c4fec5b0e44e1d7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.17.0.aar\c278367061c368002c4fec5b0e44e1d7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.braintreepayments.api:core:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\core-2.17.0.aar\667c387d5376f475ded7cdbab143d098\AndroidManifest.xml:7:5-9:41
+MERGED from [com.braintreepayments.api:core:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\core-2.17.0.aar\667c387d5376f475ded7cdbab143d098\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\6673f4b0ab24e5746d26807e0db3699e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\6673f4b0ab24e5746d26807e0db3699e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\2adf47858aed5db42fc6e609359b29ef\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\2adf47858aed5db42fc6e609359b29ef\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\5dd5de9fefb6db85708fbe88ce4fc013\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\5dd5de9fefb6db85708fbe88ce4fc013\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\7575a3ee5f45d3907b88e6366864b7e2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\7575a3ee5f45d3907b88e6366864b7e2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\c725e431f88700755ee01501f7c4c691\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\c725e431f88700755ee01501f7c4c691\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\7d383ed4c058fd7b369e95701d273adf\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\7d383ed4c058fd7b369e95701d273adf\AndroidManifest.xml:7:5-9:41
+MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:5:5-7:41
+MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.braintreepayments:browser-switch:0.1.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.5.aar\9e2eac563707cd92529d97b1bc63e948\AndroidManifest.xml:8:5-10:41
+MERGED from [com.braintreepayments:browser-switch:0.1.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.5.aar\9e2eac563707cd92529d97b1bc63e948\AndroidManifest.xml:8:5-10:41
+MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\ce223c3ddd5f440c1d9a9f1fc89fcc72\AndroidManifest.xml:7:5-9:41
+MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\ce223c3ddd5f440c1d9a9f1fc89fcc72\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\4632076009bb3e2cf2880939cf5fb1a3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\4632076009bb3e2cf2880939cf5fb1a3\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml
 activity#com.braintreepayments.api.BraintreeBrowserSwitchActivity
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:9-26:20
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:9-26:20
 	android:launchMode
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-44
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-44
 	android:theme
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-72
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-72
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-84
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-84
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:${applicationId}.braintree
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:com.test.braintree
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
 action#android.intent.action.VIEW
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-69
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:25-66
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:25-66
 category#android.intent.category.DEFAULT
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:17-76
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:17-76
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:27-73
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:27-73
 category#android.intent.category.BROWSABLE
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:17-78
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:17-78
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:27-75
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:27-75
 data
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:17-69
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:17-69
 	android:scheme
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:23-66
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:23-66
 provider#com.imagepicker.FileProvider
-ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:13-60
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:13-60
 	android:exported
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:13-56
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:13-56
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-19:58
+ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-19:58
 	android:resource
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-55
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-55
 	android:name
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\FairShare\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:17-67
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\Test\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:11:5-79
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:9:5-79
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:9:5-79
+ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:11:5-79
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:9:5-79
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:11:22-76
+		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:11:22-76
 activity#com.braintreepayments.api.AndroidPayActivity
-ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:15:9-17:62
+ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:15:9-17:62
 	android:theme
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:17:13-59
+		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:17:13-59
 	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:16:13-72
+		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:16:13-72
 activity#com.braintreepayments.api.GooglePaymentActivity
-ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:18:9-20:62
+ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:18:9-20:62
 	android:theme
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:20:13-59
+		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:20:13-59
 	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:19:13-75
+		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:19:13-75
 activity#com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity
-ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:21:9-103
+ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:21:9-103
 	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:21:19-100
+		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:21:19-100
 service#com.braintreepayments.api.internal.AnalyticsIntentService
-ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:23:9-93
+ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:23:9-93
 	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:23:18-90
+		ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:23:18-90
 activity#com.paypal.android.sdk.payments.PaymentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:13:9-84
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:13:9-84
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:13:19-81
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:13:19-81
 activity#com.paypal.android.sdk.payments.PaymentMethodActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:14:9-90
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:14:9-90
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:14:19-87
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:14:19-87
 activity#com.paypal.android.sdk.payments.PaymentConfirmActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:15:9-91
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:15:9-91
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:15:19-88
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:15:19-88
 activity#com.paypal.android.sdk.payments.LoginActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:16:9-82
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:16:9-82
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:16:19-79
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:16:19-79
 activity#com.paypal.android.sdk.payments.PayPalFuturePaymentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:17:9-96
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:17:9-96
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:17:19-93
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:17:19-93
 activity#com.paypal.android.sdk.payments.FuturePaymentConsentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:18:9-97
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:18:9-97
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:18:19-94
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:18:19-94
 activity#com.paypal.android.sdk.payments.FuturePaymentInfoActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:19:9-94
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:19:9-94
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:19:19-91
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:19:19-91
 activity#com.paypal.android.sdk.payments.PayPalProfileSharingActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:20:9-97
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:20:9-97
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:20:19-94
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:20:19-94
 activity#com.paypal.android.sdk.payments.ProfileSharingConsentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:21:9-98
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:21:9-98
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:21:19-95
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:21:19-95
 service#com.paypal.android.sdk.payments.PayPalService
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:23:9-25:40
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:23:9-25:40
 	android:exported
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:25:13-37
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:24:13-73
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:24:13-73
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from C:\Users\Andy\Desktop\cmps117\FairShare\android\app\src\main\AndroidManifest.xml:1:1-30:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\admin\IdeaProjects\Test\android\app\src\main\AndroidManifest.xml:1:1-30:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
 uses-permission#android.permission.VIBRATE
-ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:10:5-66
+ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:10:5-66
 	android:name
-		ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:10:22-63
+		ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:10:22-63
 uses-feature#android.hardware.camera
-ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:12:5-14:36
+ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:12:5-14:36
 	android:required
-		ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:14:9-33
+		ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:14:9-33
 	android:name
-		ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:13:9-47
+		ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:13:9-47
 uses-feature#android.hardware.camera.autofocus
-ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:15:5-17:36
+ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:15:5-17:36
 	android:required
-		ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:17:9-33
+		ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:17:9-33
 	android:name
-		ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:16:9-57
+		ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:16:9-57
 activity#io.card.payment.CardIOActivity
-ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:20:9-22:66
+ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:20:9-22:66
 	android:configChanges
-		ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:22:13-63
+		ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:22:13-63
 	android:name
-		ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:21:13-58
+		ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:21:13-58
 activity#io.card.payment.DataEntryActivity
-ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:23:9-70
+ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:23:9-70
 	android:name
-		ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:23:19-67
+		ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:23:19-67

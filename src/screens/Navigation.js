@@ -75,7 +75,7 @@ const Navigation = createStackNavigator({
             header:null,
         }), },
     ViewHistory: { screen: ViewHistory, navigationOptions: () => ({
-            header:null,
+            // header:null,
         }), },
     Camera: { screen: Camera, navigationOptions: () => ({
             header:null,

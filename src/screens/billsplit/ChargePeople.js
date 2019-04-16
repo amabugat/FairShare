@@ -393,16 +393,13 @@ export default class ChargePeople extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <ScrollView>
-
-                    <ProfileImage/>
-
+                {/*<ScrollView>*/}
                     <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
                       <View
                         style={[
                           styles.avatar,
                           styles.avatarContainer,
-                          { marginBottom: 20 },
+                          { marginTop:20, marginBottom: 20 },
                         ]}
                       >
                         {this.state.avatarSource === null ? (
@@ -413,12 +410,13 @@ export default class ChargePeople extends React.Component {
                       </View>
                     </TouchableOpacity>
 
-                    <Text style={styles.name}>{this.state.people}</Text>
-                    <Text style={styles.name}>{this.state.result.toFixed(2)} per person</Text>
-                    <Text style={styles.name}>{this.state.emailID}</Text>
+                    <Text style={styles.name}>Splitting between {this.state.people} people</Text>
+                    <Text style={styles.name}>Split Cost: {this.state.result.toFixed(2)} per person</Text>
+                    {/*<Text style={styles.name}>{this.state.emailID}</Text>*/}
+
                     <TextInput
                         style={styles.textInput1}
-                        placeholder='PaymentTitle '
+                        placeholder='Payment Title '
                         onChangeText={(paymentTitle) => this.setState({paymentTitle})}
                     />
                     <TextInput
@@ -444,7 +442,6 @@ export default class ChargePeople extends React.Component {
                         <Text> Charge Users </Text>
                     </TouchableOpacity>
 
-
                     <View>
                         {this.state.chargingPeople.map((data, index) => {
                             return(
@@ -452,9 +449,7 @@ export default class ChargePeople extends React.Component {
                             );
                         })}
                     </View>
-
-
-                </ScrollView>
+                {/*</ScrollView>*/}
             </View>
         );
     }
@@ -496,7 +491,6 @@ export default class ChargePeople extends React.Component {
             });
         return;
     }
-
 }
 
 const styles = StyleSheet.create({
@@ -522,15 +516,14 @@ const styles = StyleSheet.create({
       height: 150,
     },
     name:{
-        //fontFamily: "Futura-Medium-Italic",
-        fontStyle: 'italic',
+        fontFamily: "Raleway-Regular",
         marginTop:20,
         fontSize:20,
-        color:'#559535',
+        color:'#3d3e52',
         fontWeight:'bold',
     },
     button1: {
-        //fontFamily: "Raleway-Regular",
+        fontFamily: "Raleway-Regular",
         width: '30%',
         backgroundColor: '#559535',
         paddingTop: 10,
@@ -540,9 +533,10 @@ const styles = StyleSheet.create({
         marginBottom:10,
         marginTop:10,
         elevation: 3,
+        color: "#fcfcfe"
     },
     button2: {
-        //fontFamily: "Raleway-
+        fontFamily: "Raleway-Regular",
         width: '30%',
         backgroundColor: '#3d3e52',
         paddingTop: 10,
@@ -557,15 +551,24 @@ const styles = StyleSheet.create({
         color: 'white',
     },
     textInput1:{
-        //fontFamily: "Raleway-Regular",
-        height: 40, width: "95%", borderColor: 'gray', borderWidth: 1,  marginBottom: 20,
-        paddingLeft: 10,
+        fontFamily: "Raleway-Regular",
+        marginTop:10,
     },
     textInput2:{
-        height: 40, width: "95%", borderColor: 'gray', borderWidth: 1,  marginBottom: 20,
-        paddingLeft: 10,
-        //fontFamily: "Raleway-Regular",
+        fontFamily: "Raleway-Regular",
+        marginBottom:10,
+        marginTop:10,
     }
+    // textInput1:{
+    //     //fontFamily: "Raleway-Regular",
+    //     height: 40, width: "95%", borderColor: 'gray', borderWidth: 1,  marginBottom: 20,
+    //     paddingLeft: 10,
+    // },
+    // textInput2:{
+    //     height: 40, width: "95%", borderColor: 'gray', borderWidth: 1,  marginBottom: 20,
+    //     paddingLeft: 10,
+    //     //fontFamily: "Raleway-Regular",
+    // }
 });
 
 

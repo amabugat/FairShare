@@ -334,9 +334,9 @@ export default class ChargePeople extends React.Component {
           .then((url) => {
             // URL of the image uploaded on Firebase storage
             console.log(url);
-            alert(url)
-            alert("current time" + currentTimeStamp)
-            alert("chariging people length " +  that.state.chargingPeople.length)
+          //  alert(url)
+          //  alert("current time" + currentTimeStamp)
+        //    alert("chariging people length " +  that.state.chargingPeople.length)
             // alert(url);
             var receiptpicURL = url
             var userRequestRef = firebase.database().ref('/Payments').child(uid).child('/Requesting')

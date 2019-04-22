@@ -4,6 +4,7 @@ import ProfileImage from './profilePage/ProfileImage';
 import firebase from '@firebase/app';
 import '@firebase/auth';
 import '@firebase/database';
+import Splitstep1 from '../components/Splitstep1'
 export default class Home extends React.Component {
 
     state = {
@@ -26,7 +27,7 @@ export default class Home extends React.Component {
         switch (this.state.loggedIn) {
             case true:
                 return (
-                    this.props.navigation.navigate('Activity')
+                    this.props.navigation.navigate('BillPrompt')
                     // this.props.navigation.navigate('Home')
                     //this.props.navigation.navigate('NoSplit')
                 );

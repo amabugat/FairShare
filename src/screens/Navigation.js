@@ -7,6 +7,7 @@ import Friends from './Friends';
 import Camera from './Camera';
 import Activity from './Activity';
 import BillPrompt from './billsplit/BillPrompt';
+import Splitstep1 from '../components/Splitstep1';
 import SplitStep1 from './billsplit/SplitStep1';
 import SplitStep2 from './billsplit/SplitStep2';
 import SplitStep3 from './billsplit/SplitStep3';
@@ -43,6 +44,7 @@ const Navigation = createStackNavigator({
     BillPrompt: {screen: BillPrompt, navigationOptions: () => ({
             headerStyle:{backgroundColor: '#82b85a', elevation:0},
         }),},
+    Splitstep1: {screen: Splitstep1},
     SplitStep1: {screen: SplitStep1},
     SplitStep2: {screen: SplitStep2},
     SplitStep3: {screen: SplitStep3},

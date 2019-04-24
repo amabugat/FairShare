@@ -12,6 +12,7 @@ import {
 import userFlatList from "../../data/userFlatList";
 import flatListData from "../../data/flatListData";
 import BasicFlatList from "../../components/BasicFlatList";
+import ChargeUnevenly from "../../components/ChargeUnevenly";
 export default class BillSplitProcess extends Component {
    constructor() {
       super();
@@ -30,19 +31,30 @@ export default class BillSplitProcess extends Component {
       }
    }
 
-   sum() {
-      var sum = 0;
-      for (var i = 0; i < flatListData.length; i++) {
-         sum = sum + parseFloat(flatListData[i].itemPrice);
-         console.log(sum);
+   createCalc = () => {
+      for (var i = 0; i < userFlatList.length; i++) {
+         userFlatList[i].items = [];
+         for (var j = 0; j < flatListData.length; j++) {
+            for (var k = 0; k < flatListData[j].user.length; k++) {
+               if (userFlatList[i].name == flatListData[j].user[k].newUser) {
+                  const addItem = {
+                     addedItem: flatListData[j].name,
+                     addedPrice: flatListData[j].user[k].newPrice
+                  };
+                  userFlatList[i].items.push(addItem);
+               }
+            }
+         }
       }
-      console.log(flatListData);
-      return sum;
-   }
-
-   reList() {
-      for (var i = 0; i < userFlatList.length; i++) {}
-   }
+      for (var i = 0; i < userFlatList.length; i++) {
+         var sum = 0;
+         for (var j = 0; j < userFlatList[i].items.length; j++) {
+            sum = sum + parseFloat(userFlatList[i].items[j].addedPrice);
+         }
+         this.setState({ total: sum });
+         userFlatList[i].price = sum;
+      }
+   };
 
    render() {
       return (
@@ -59,16 +71,8 @@ export default class BillSplitProcess extends Component {
                <View style={styles.change}>
                   <TouchableOpacity
                      onPress={() => {
-                        if (this.state.total == null) {
-                           Alert.alert("Please Calculate First");
-                        } else {
-                           this.props.navigation.navigate("ChargePeople", {
-                              peps: 2,
-                              amounts: this.state.total,
-                              tip: 0,
-                              tax: 0
-                           });
-                        }
+                        this.createCalc();
+                        this.props.navigation.navigate("ChargeUnevenly");
                      }}
                   >
                      <Text style={styles.buttonFont}>Charge</Text>

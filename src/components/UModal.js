@@ -95,6 +95,7 @@ export default class UModal extends Component {
                   const newName = this.state.newItemName;
                   const newItem = {
                      name: newName,
+                     price: 0,
                      items: []
                   };
                   userFlatList.push(newItem);

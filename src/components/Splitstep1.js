@@ -224,7 +224,7 @@ export default class Splitstep1 extends Component {
                flex: 1,
                marginTop: Platform.OS === "ios" ? 34 : 0,
                flexDirection: "column",
-               justifyContent: "space-around"
+               justifyContent: "center"
             }}
          >
             <FlatList
@@ -244,38 +244,36 @@ export default class Splitstep1 extends Component {
                }}
             />
             <Modal ref={"addModal"} parentFlatList={this} />
-            <TouchableOpacity
-               style={{ marginRight: 10 }}
-               onPress={this._onPressAdd}
-            >
-               <Text
-                  style={{
-                     color: "rgba(117,125,117,0.5)",
-                     fontSize: 25,
-                     fontFamily: "Raleway-Bold"
-                  }}
+            <View style={{ alignItems: "center" }}>
+               <TouchableOpacity
+                  style={{ marginRight: 10 }}
+                  onPress={this._onPressAdd}
                >
-                  {" "}
-                  Tap to Add Charge Person{" "}
-               </Text>
-            </TouchableOpacity>
+                  <Text
+                     style={{
+                        color: "rgba(117,125,117,0.5)",
+                        fontSize: 25,
+                        fontFamily: "Raleway-Bold"
+                     }}
+                  >
+                     {" "}
+                     Tap to Add Charge Person{" "}
+                  </Text>
+               </TouchableOpacity>
 
-            <TouchableOpacity
-               style={{ marginRight: 10 }}
-               onPress={() =>
-                  this.props.navigation.navigate("BillSplitProcess")
-               }
-            >
-               <Text
-                  style={{
-                     color: "rgba(117,125,117,0.5)",
-                     fontSize: 25,
-                     fontFamily: "Raleway-Bold"
+               <TouchableOpacity
+                  style={styles.calcContainer}
+                  onPress={() => {
+                     if (userFlatList.length > 0) {
+                        this.props.navigation.navigate("BillSplitProcess");
+                     } else {
+                        alert("Please Add Charge People");
+                     }
                   }}
                >
-                  Next
-               </Text>
-            </TouchableOpacity>
+                  <Text style={styles.buttonFont}>Next</Text>
+               </TouchableOpacity>
+            </View>
          </View>
       );
    }

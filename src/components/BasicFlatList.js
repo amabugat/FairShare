@@ -9,10 +9,11 @@ import {
    Image,
    Alert,
    Platform,
+   Picker,
    TouchableOpacity
 } from "react-native";
 import flatListData from "../data/flatListData";
-import priceList from "../data/priceList";
+import userFlatList from "../data/userFlatList";
 import Swipeout from "react-native-swipeout";
 import AddModal from "./AddModal";
 import UserModal from "../screens/billsplit/AddModal";
@@ -23,7 +24,7 @@ class UserListItem extends Component {
       this.state = {
          activeRowKey: null,
          total: null,
-         data: null
+         PickerValue: ""
       };
    }
 
@@ -42,7 +43,6 @@ class UserListItem extends Component {
             if (this.props.item.index == 0) {
                this.setState({ activeRowKey: null });
             } else {
-               console.log(this.props.item.newUser);
                this.setState({ activeRowKey: this.props.item.newUser });
             }
          },
@@ -50,17 +50,12 @@ class UserListItem extends Component {
             {
                onPress: () => {
                   const deletingRow = this.state.activeRowKey;
-                  console.log(
-                     flatListData[this.props.userFlatList.props.index].user
-                  );
-                  console.log(deletingRow);
                   Alert.alert(
                      "Alert",
                      "Are you sure you want to delete ?",
                      [
                         {
                            text: "No",
-                           onPress: () => console.log("Cancel Pressed"),
                            style: "cancel"
                         },
                         {
@@ -85,13 +80,14 @@ class UserListItem extends Component {
                                  ) {
                                     flatListData[
                                        this.props.userFlatList.props.index
-                                    ].user[i].newPrice =
+                                    ].user[i].newPrice = (
                                        flatListData[
                                           this.props.userFlatList.props.index
                                        ].itemPrice /
                                        flatListData[
                                           this.props.userFlatList.props.index
-                                       ].user.length;
+                                       ].user.length
+                                    ).toFixed(2);
                                  }
                               }
 
@@ -163,14 +159,25 @@ class FlatListItem extends Component {
    }
 
    createFnc = () => {
-      const newUser = {
-         newUser: this.state.data,
-         newPrice: (
-            flatListData[this.props.index].itemPrice /
-            (flatListData[this.props.index].user.length + 1)
-         ).toFixed(2)
+      var price = (
+         flatListData[this.props.index].itemPrice /
+         (flatListData[this.props.index].user.length + 1)
+      ).toFixed(2);
+      const newUserName = {
+         newUser: this.state.PickerValue,
+         newPrice: price
       };
-      flatListData[this.props.index].user.push(newUser);
+      flatListData[this.props.index].user.push(newUserName);
+      /*for (var i = 0; i < userFlatList.length; i++) {
+         if (userFlatList[i].name == this.state.PickerValue) {
+            const addItem = {
+               addedItem: flatListData[this.props.index].name,
+               addedPrice: price
+            };
+            userFlatList[i].items.push(addItem);
+         }
+      }*/
+      //userFlatList.
       if (flatListData[this.props.index].user.length > 1) {
          for (
             var i = flatListData[this.props.index].user.length - 1;
@@ -181,8 +188,21 @@ class FlatListItem extends Component {
                flatListData[this.props.index].user[i].newPrice;
          }
       }
-      this.setState({ data: "" });
-      // console.log(flatListData[this.props.index].user);
+
+      this.setState({ PickerValue: null });
+   };
+
+   createDrop = () => {
+      var dropDown = [];
+      for (var i = 0; i < userFlatList.length; i++) {
+         dropDown.push(
+            <Picker.Item
+               label={userFlatList[i].name}
+               value={userFlatList[i].name}
+            />
+         );
+      }
+      return dropDown;
    };
 
    render() {
@@ -206,7 +226,6 @@ class FlatListItem extends Component {
          right: [
             {
                onPress: () => {
-                  console.log(this.props.index);
                   const deletingRow = this.state.activeRowKey;
                   Alert.alert(
                      "Alert",
@@ -214,13 +233,11 @@ class FlatListItem extends Component {
                      [
                         {
                            text: "No",
-                           onPress: () => console.log("Cancel Pressed"),
                            style: "cancel"
                         },
                         {
                            text: "Yes",
                            onPress: () => {
-                              console.log(flatListData);
                               flatListData.splice(this.props.index, 1);
 
                               //Refresh FlatList !
@@ -240,6 +257,7 @@ class FlatListItem extends Component {
          rowId: this.props.index,
          sectionId: 1
       };
+
       return (
          <Swipeout {...swipeSettings}>
             <View
@@ -264,22 +282,32 @@ class FlatListItem extends Component {
                   </Text>
                   <TouchableOpacity
                      style={styles.calcContainer}
-                     onPress={() => this.createFnc()}
+                     onPress={() => {
+                        if (
+                           this.state.PickerValue == "Username" ||
+                           this.state.PickerValue == null
+                        ) {
+                           alert("Please Select A Person's Name");
+                        } else {
+                           this.createFnc();
+                        }
+                     }}
                   >
                      <Text style={styles.buttonFont}> ADD TO </Text>
                   </TouchableOpacity>
-                  <TextInput
+                  <Picker
                      style={{
-                        height: 40,
-                        borderBottomColor: "gray",
-                        marginRight: 30,
-                        marginTop: 20,
-                        marginBottom: 10
+                        width: "40%",
+                        margin: 10
                      }}
-                     onChangeText={text => this.setState({ data: text })}
-                     placeholder="Username"
-                     value={this.state.data}
-                  />
+                     selectedValue={this.state.PickerValue}
+                     onValueChange={(itemValue, itemIndex) =>
+                        this.setState({ PickerValue: itemValue })
+                     }
+                  >
+                     <Picker.Item label="Username" value="Username" />
+                     {this.createDrop()}
+                  </Picker>
                </View>
 
                <View
@@ -295,8 +323,6 @@ class FlatListItem extends Component {
                ref={"flatList"}
                data={flatListData[this.props.index].user}
                renderItem={({ item, index }) => {
-                  //console.log(Item = ${JSON.stringify(item)}, index = ${index});
-
                   return (
                      <UserListItem
                         item={item}
@@ -316,7 +342,7 @@ const styles = StyleSheet.create({
       color: "black",
       padding: 25,
       paddingLeft: 15,
-      fontSize: 22
+      fontSize: 18
    },
    UserListItem: {
       fontFamily: "Raleway-Bold",
@@ -356,7 +382,7 @@ const styles = StyleSheet.create({
    },
    calcContainer: {
       borderRadius: 90,
-      width: 120,
+      width: 100,
       height: 40,
       backgroundColor: "#26A65B",
       marginLeft: "2%",
@@ -366,7 +392,7 @@ const styles = StyleSheet.create({
    },
    cancelContainer: {
       borderRadius: 90,
-      width: 120,
+      width: 100,
       height: 40,
       backgroundColor: "#F47983",
       marginRight: "2%",
@@ -375,7 +401,7 @@ const styles = StyleSheet.create({
       elevation: 3
    },
    buttonFont: {
-      fontSize: 20,
+      fontSize: 18,
       marginTop: 7,
       fontFamily: "Raleway-Bold",
       color: "#FFFFFF",
@@ -438,8 +464,6 @@ export default class BasicFlatList extends Component {
                ref={"flatList"}
                data={flatListData}
                renderItem={({ item, index }) => {
-                  //console.log(Item = ${JSON.stringify(item)}, index = ${index});
-
                   return (
                      <FlatListItem
                         item={item}

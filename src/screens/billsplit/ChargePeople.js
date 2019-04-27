@@ -196,7 +196,7 @@
 // });
 
 import React from 'react';
-import { AppRegistry, ScrollView, StyleSheet, Text, View, TextInput, TouchableOpacity, PixelRatio, Image} from 'react-native';
+import { AppRegistry, ScrollView, StyleSheet, Text, View, TextInput, TouchableOpacity, PixelRatio, Image, Picker} from 'react-native';
 import ProfileImage from '../profilePage/ProfileImage'
 import ImagePicker from 'react-native-image-picker';
 import RNFetchBlob from 'react-native-fetch-blob';
@@ -226,7 +226,8 @@ export default class ChargePeople extends React.Component {
             email: "",
             chargeDescription: "",
             chargingPeople: data,
-
+            interest: "NONE",
+            interestRate: 0,
         };
         this.chargePeople = this.chargePeople.bind(this);
         this.selectPhotoTapped = this.selectPhotoTapped.bind(this);
@@ -296,102 +297,165 @@ export default class ChargePeople extends React.Component {
             alert("not logged in");
             return;
         }
-        alert("in charge people")
-        const image = this.state.avatarSource.uri
-
-        const Blob = RNFetchBlob.polyfill.Blob
-        const fs = RNFetchBlob.fs
-        window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest
-        window.Blob = Blob
-    //    alert("after window blob")
-
-        let uploadBlob = null
-        var paymentuidkey = firebase.database().ref('/NewKey').push().key
-        const imageRef = firebase.storage().ref('reciepts').child(paymentuidkey)
-      //  alert("do i even get here")
-
-        let mime = 'image/jpg'
+      //  alert("in charge people")
         var currentTimeStamp = new Date().getTime()
-      //  alert(currentTimeStamp)
+        if(this.state.avatarSource != null){
+          const image = this.state.avatarSource.uri
 
-        fs.readFile(image, 'base64')
-          .then((data) => {
-    //        alert("return blob")
-            return Blob.build(data, { type: `${mime};BASE64` })
+          const Blob = RNFetchBlob.polyfill.Blob
+          const fs = RNFetchBlob.fs
+          window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest
+          window.Blob = Blob
+      //    alert("after window blob")
 
-        })
-        .then((blob) => {
-            uploadBlob = blob
-    //        alert("put blob")
-      //      alert(blob)
-            return imageRef.put(blob, { contentType: mime })
+          let uploadBlob = null
+          var paymentuidkey = firebase.database().ref('/NewKey').push().key
+          const imageRef = firebase.storage().ref('reciepts').child(paymentuidkey)
+        //  alert("do i even get here")
+
+          let mime = 'image/jpg'
+              //var currentTimeStamp = new Date().getTime()
+        //  alert(currentTimeStamp)
+
+          fs.readFile(image, 'base64')
+            .then((data) => {
+      //        alert("return blob")
+              return Blob.build(data, { type: `${mime};BASE64` })
+
           })
-          .then(() => {
-            uploadBlob.close()
-      //      alert("close blob")
-            return imageRef.getDownloadURL()
-          })
-          .then((url) => {
-            // URL of the image uploaded on Firebase storage
-            console.log(url);
-          //  alert(url)
-          //  alert("current time" + currentTimeStamp)
-        //    alert("chariging people length " +  that.state.chargingPeople.length)
-            // alert(url);
-            var receiptpicURL = url
-            var userRequestRef = firebase.database().ref('/Payments').child(uid).child('/Requesting')
-            for(i = 0; i < that.state.chargingPeople.length; i++){
-                var chargedRef = firebase.database().ref('/Payments').child(that.state.chargingPeople[i].userID).child('/GettingCharged')
-                var key = chargedRef.push().key;
-                alert(key)
-                chargedRef.child(key).set(
-                    {
-                        PaymentTitle: that.state.paymentTitle,
-                        ReceiptID: key,
-                        Description: that.state.chargeDescription,
-                        Amount: that.state.result,
-                        Tip: that.state.tip,
-                        Tax: that.state.tax,
-                        Requester: uid,
-                        Charged: that.state.chargingPeople[i].userID,
-                        RequesterName: that.state.fullName,
-                        ChargedName: that.state.chargingPeople[i].fullName,
-                        ReceiptPic: receiptpicURL,
-                        PhotoKey: paymentuidkey,
-                        TimeStamp: currentTimeStamp,
-                        Paid: false,
-                    }
-                );
-                userRequestRef.child(key).set(
-                    {
-                        PaymentTitle: that.state.paymentTitle,
-                        ReceiptID: key,
-                        Description: that.state.chargeDescription,
-                        Amount: that.state.result,
-                        Tip: that.state.tip,
-                        Tax: that.state.tax,
-                        Requester: uid,
-                        Charged: that.state.chargingPeople[i].userID,
-                        RequesterName: that.state.fullName,
-                        ChargedName: that.state.chargingPeople[i].fullName,
-                        ReceiptPic: receiptpicURL,
-                        PhotoKey: paymentuidkey,
-                        TimeStamp: currentTimeStamp,
-                        Paid: false,
-                    }
-                );
+          .then((blob) => {
+              uploadBlob = blob
+      //        alert("put blob")
+        //      alert(blob)
+              return imageRef.put(blob, { contentType: mime })
+            })
+            .then(() => {
+              uploadBlob.close()
+        //      alert("close blob")
+              return imageRef.getDownloadURL()
+            })
+            .then((url) => {
+              // URL of the image uploaded on Firebase storage
+              console.log(url);
+            //  alert(url)
+            //  alert("current time" + currentTimeStamp)
+          //    alert("chariging people length " +  that.state.chargingPeople.length)
+              // alert(url);
+              var receiptpicURL = url
+              var userRequestRef = firebase.database().ref('/Payments').child(uid).child('/Requesting')
+              for(i = 0; i < that.state.chargingPeople.length; i++){
+                  var chargedRef = firebase.database().ref('/Payments').child(that.state.chargingPeople[i].userID).child('/GettingCharged')
+                  var key = chargedRef.push().key;
+                //  alert(key)
+                  chargedRef.child(key).set(
+                      {
+                          PaymentTitle: that.state.paymentTitle,
+                          ReceiptID: key,
+                          Description: that.state.chargeDescription,
+                          Amount: that.state.result,
+                          OriginalAmount:that.state.result,
+                          Tip: that.state.tip,
+                          Tax: that.state.tax,
+                          Requester: uid,
+                          Charged: that.state.chargingPeople[i].userID,
+                          RequesterName: that.state.fullName,
+                          ChargedName: that.state.chargingPeople[i].fullName,
+                          ReceiptPic: receiptpicURL,
+                          PhotoKey: paymentuidkey,
+                          TimeStamp: currentTimeStamp,
+                          InterestTimeStamp: currentTimeStamp,
+                          Interest: that.state.interest,
+                          InterestRate: (that.state.interestRate*.01),
+                          Paid: false,
+                      }
+                  );
+                  userRequestRef.child(key).set(
+                      {
+                          PaymentTitle: that.state.paymentTitle,
+                          ReceiptID: key,
+                          Description: that.state.chargeDescription,
+                          Amount: that.state.result,
+                          OriginalAmount:that.state.result,
+                          Tip: that.state.tip,
+                          Tax: that.state.tax,
+                          Requester: uid,
+                          Charged: that.state.chargingPeople[i].userID,
+                          RequesterName: that.state.fullName,
+                          ChargedName: that.state.chargingPeople[i].fullName,
+                          ReceiptPic: receiptpicURL,
+                          PhotoKey: paymentuidkey,
+                          TimeStamp: currentTimeStamp,
+                          InterestTimeStamp: currentTimeStamp,
+                          Interest: that.state.interest,
+                          InterestRate: (that.state.interestRate*.01),
+                          Paid: false,
+                      }
+                  );
+              }
+              this.props.navigation.navigate('Activity')
+            })
+            .catch((error) => {
+              console.log(error);
+
+            })}else{
+              var userRequestRef = firebase.database().ref('/Payments').child(uid).child('/Requesting')
+              for(i = 0; i < that.state.chargingPeople.length; i++){
+                  var chargedRef = firebase.database().ref('/Payments').child(that.state.chargingPeople[i].userID).child('/GettingCharged')
+                  var key = chargedRef.push().key;
+                //  alert(key)
+                  chargedRef.child(key).set(
+                      {
+                          PaymentTitle: that.state.paymentTitle,
+                          ReceiptID: key,
+                          Description: that.state.chargeDescription,
+                          Amount: that.state.result,
+                          OriginalAmount:that.state.result,
+                          Tip: that.state.tip,
+                          Tax: that.state.tax,
+                          Requester: uid,
+                          Charged: that.state.chargingPeople[i].userID,
+                          RequesterName: that.state.fullName,
+                          ChargedName: that.state.chargingPeople[i].fullName,
+                          ReceiptPic: null,
+                          PhotoKey: null,
+                          TimeStamp: currentTimeStamp,
+                          InterestTimeStamp: currentTimeStamp,
+                          Interest: that.state.interest,
+                          InterestRate: (that.state.interestRate*.01),
+                          Paid: false,
+                      }
+                  );
+                  userRequestRef.child(key).set(
+                      {
+                          PaymentTitle: that.state.paymentTitle,
+                          ReceiptID: key,
+                          Description: that.state.chargeDescription,
+                          Amount: that.state.result,
+                          OriginalAmount:that.state.result,
+                          Tip: that.state.tip,
+                          Tax: that.state.tax,
+                          Requester: uid,
+                          Charged: that.state.chargingPeople[i].userID,
+                          RequesterName: that.state.fullName,
+                          ChargedName: that.state.chargingPeople[i].fullName,
+                          ReceiptPic: null,
+                          PhotoKey: null,
+                          TimeStamp: currentTimeStamp,
+                          InterestTimeStamp: currentTimeStamp,
+                          Interest: that.state.interest,
+                          InterestRate: (that.state.interestRate*.01),
+                          Paid: false,
+                      }
+                  );
+              }
+              this.props.navigation.navigate('Activity')
             }
-            this.props.navigation.navigate('Activity')
-          })
-          .catch((error) => {
-            console.log(error);
-
-          })
 
     }
 
     render() {
         return (
+          <ScrollView>
             <View style={styles.container}>
                 {/*<ScrollView>*/}
                     <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
@@ -429,6 +493,26 @@ export default class ChargePeople extends React.Component {
                         placeholder='Email '
                         onChangeText={(email) => this.setState({email})}
                     />
+
+                    <Picker selectedValue={this.state.interest}
+                            style={{ height: 50, width: 100}}
+                            onValueChange={(itemValue, itemIndex) => this.setState({interest: itemValue})}>
+                            <Picker.Item label="No Interest" value="NONE"/>
+                            <Picker.Item label="minute" value="MIN"/>
+                            <Picker.Item label="24 Hrs" value="DAY"/>
+                            <Picker.Item label="1 Week" value="WEEK"/>
+                            <Picker.Item label="1 Month" value="MONTH"/>
+                    </Picker>
+
+                    {this.state.interest != "NONE" &&
+                      <TextInput
+                          style={styles.textInput1}
+                          keyboardType = 'numeric'
+                          placeholder='interest rate %'
+                          onChangeText={(interestRate) => this.setState({interestRate})}
+                      />
+                      }
+
                     <TouchableOpacity
                         style={styles.button1}
                         onPress={() => this.findUID(this.state.email)
@@ -450,7 +534,9 @@ export default class ChargePeople extends React.Component {
                         })}
                     </View>
                 {/*</ScrollView>*/}
-            </View>
+                </View>
+
+            </ScrollView>
         );
     }
 

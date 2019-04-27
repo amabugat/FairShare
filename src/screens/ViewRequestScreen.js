@@ -81,7 +81,7 @@ export default class ViewRequestScreen extends React.Component {
                                     </Body>
                                 </Left>
                             </CardItem>
-                            {data.val().ReceiptPic === null ? (
+                            {data.val().ReceiptPic == null ? (
                               <CardItem cardBody key = {index}>
                                 <Text>No Photo</Text>
                               </CardItem>

@@ -48,7 +48,51 @@ export default class ViewChargedScreen extends React.Component {
         var uid = user.uid;
         var newData = [... that.state.items]
         var requestRef = firebase.database().ref('/Payments').child(uid).child('/GettingCharged');
+        var todayTime = new Date().getTime();
+        console.log(" todayTime " + todayTime)
         await requestRef.on('child_added', function(data){
+          console.log(data)
+            //alert("adding")
+            if(data.val().Interest != "NONE"){
+            //  alert(interestTime)
+              var interestTime = 1000;
+              var timeStamp = data.val().InterestTimeStamp;
+              var newAmount = data.val().Amount;
+              //  alert(interestTime);
+              var todayTime = new Date().getTime();
+              if(data.val().Interest == "MIN"){
+                 interestTime = (60*1000);
+              }else if(data.val().Interest == "DAY"){
+                 interestTime = (24*60*60*1000);
+              }else if(data.val().Interest == "WEEK"){
+                 interestTime = (24*60*60*1000*7);
+              }else{
+                 interestTime = (24*60*60*1000*30);
+              }
+                while((timeStamp +  interestTime) < todayTime){
+                  newAmount = newAmount + (newAmount*data.val().InterestRate);
+                  timeStamp = timeStamp + interestTime;
+                 }
+              //  timeStamp = timeStamp + interestTime;
+              //  console.log(data);
+              //  alert("new timestamp " + timeStamp + "  and old " +  data.val().InterestTimeStamp);
+              data.val().Amount = newAmount;
+              alert("newamount " + newAmount +" old amount " + data.val().Amount)
+              var userChargedRef = firebase.database().ref('/Payments').child(uid).child('/GettingCharged');
+              var chargerUserRef = firebase.database().ref('/Payments').child(data.val().Requester).child('/Requesting');
+              userChargedRef.child(data.val().ReceiptID).update(
+                {
+                Amount: newAmount,
+                InterestTimeStamp : timeStamp,
+              });
+              chargerUserRef.child(data.val().ReceiptID).update(
+                {
+                Amount: newAmount,
+                InterestTimeStamp : timeStamp,
+              });
+            }
+              //alert("added");
+
             newData.push(data)
             that.setState({items : newData})
         });

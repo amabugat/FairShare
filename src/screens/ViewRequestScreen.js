@@ -49,7 +49,48 @@ export default class ViewRequestScreen extends React.Component {
         var newData = [... that.state.items]
         var requestRef = firebase.database().ref('/Payments').child(uid).child('/Requesting');
         await requestRef.on('child_added', function(data){
-            newData.push(data)
+            var dic= {};
+            dic = data.val();
+            if(data.val().Interest != "NONE"){
+            //  alert(interestTime)
+              var interestTime = 1000;
+              var timeStamp = data.val().InterestTimeStamp;
+              var newAmount = data.val().Amount;
+              //  alert(interestTime);
+              var todayTime = new Date().getTime();
+              if(data.val().Interest == "MIN"){
+                 interestTime = (60*1000);
+              }else if(data.val().Interest == "DAY"){
+                 interestTime = (24*60*60*1000);
+              }else if(data.val().Interest == "WEEK"){
+                 interestTime = (24*60*60*1000*7);
+              }else{
+                 interestTime = (24*60*60*1000*30);
+              }
+                while((timeStamp +  interestTime) < todayTime){
+                  newAmount = newAmount + (newAmount*data.val().InterestRate);
+                  timeStamp = timeStamp + interestTime;
+                 }
+
+              if(data.val().InterestTimeStamp != timeStamp ){
+                  var userChargedRef = firebase.database().ref('/Payments').child(data.val().Charged).child('/GettingCharged');
+                  var chargerUserRef = firebase.database().ref('/Payments').child(data.val().Requester).child('/Requesting');
+                  userChargedRef.child(data.val().ReceiptID).update(
+                    {
+                    Amount: newAmount,
+                    InterestTimeStamp : timeStamp,
+                  });
+                  chargerUserRef.child(data.val().ReceiptID).update(
+                    {
+                    Amount: newAmount,
+                    InterestTimeStamp : timeStamp,
+                  });
+
+                  dic.InterestTimeStamp = timeStamp;
+                  dic.Amount = newAmount;
+              }
+            }
+            newData.push(dic)
             that.setState({items : newData})
         });
 
@@ -76,12 +117,12 @@ export default class ViewRequestScreen extends React.Component {
                                     <Thumbnail source={logo} />
                                     <Body>
                                     {/*Switch back later*/}
-                                    <Text>YOU ARE REQUESTING: {data.val().ChargedName}</Text>
-                                    <Text note>Total: {data.val().Amount.toFixed(2)}</Text>
+                                    <Text>YOU ARE REQUESTING: {data.ChargedName}</Text>
+                                    <Text note>Total: {data.Amount.toFixed(2)}</Text>
                                     </Body>
                                 </Left>
                             </CardItem>
-                            {data.val().ReceiptPic == null ? (
+                            {data.ReceiptPic == null ? (
                               <CardItem cardBody key = {index}>
                                 <Text>No Photo</Text>
                               </CardItem>
@@ -94,7 +135,7 @@ export default class ViewRequestScreen extends React.Component {
                                           height: 200,
                                           flex: 1
                                       }}
-                                      source={{ uri: data.val().ReceiptPic}}
+                                      source={{ uri: data.ReceiptPic}}
                                   />
                               </CardItem>
                             )}
@@ -102,7 +143,7 @@ export default class ViewRequestScreen extends React.Component {
 
                             <CardItem key={index}>
                                 <View>
-                                    <Text>Description: {data.val().Description}</Text>
+                                    <Text>Description: {data.Description}</Text>
                                 </View>
                             </CardItem>
                         </Card>

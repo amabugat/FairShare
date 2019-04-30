@@ -40,6 +40,7 @@ export default class ViewChargedScreen extends React.Component {
     async componentDidMount(){
         var that = this;
         var user = firebase.auth().currentUser;
+
         if(user == null){
             alert("not logged in");
             this.props.navigation.navigate('Home');
@@ -51,7 +52,9 @@ export default class ViewChargedScreen extends React.Component {
         var todayTime = new Date().getTime();
         console.log(" todayTime " + todayTime)
         await requestRef.on('child_added', function(data){
-          console.log(data)
+        //  console.log(data)
+          var dic = {}
+          dic = data.val();
             //alert("adding")
             if(data.val().Interest != "NONE"){
             //  alert(interestTime)
@@ -69,31 +72,34 @@ export default class ViewChargedScreen extends React.Component {
               }else{
                  interestTime = (24*60*60*1000*30);
               }
-                while((timeStamp +  interestTime) < todayTime){
+                while((timeStamp + interestTime) < todayTime){
                   newAmount = newAmount + (newAmount*data.val().InterestRate);
                   timeStamp = timeStamp + interestTime;
                  }
-              //  timeStamp = timeStamp + interestTime;
-              //  console.log(data);
-              //  alert("new timestamp " + timeStamp + "  and old " +  data.val().InterestTimeStamp);
-              data.val().Amount = newAmount;
-              alert("newamount " + newAmount +" old amount " + data.val().Amount)
-              var userChargedRef = firebase.database().ref('/Payments').child(uid).child('/GettingCharged');
-              var chargerUserRef = firebase.database().ref('/Payments').child(data.val().Requester).child('/Requesting');
-              userChargedRef.child(data.val().ReceiptID).update(
-                {
-                Amount: newAmount,
-                InterestTimeStamp : timeStamp,
-              });
-              chargerUserRef.child(data.val().ReceiptID).update(
-                {
-                Amount: newAmount,
-                InterestTimeStamp : timeStamp,
-              });
-            }
-              //alert("added");
 
-            newData.push(data)
+              //alert("newamount " + newAmount +" old amount " + data.val().Amount)
+              if(data.val().InterestTimeStamp != timeStamp ){
+                  var userChargedRef = firebase.database().ref('/Payments').child(uid).child('/GettingCharged');
+                  var chargerUserRef = firebase.database().ref('/Payments').child(data.val().Requester).child('/Requesting');
+                  userChargedRef.child(data.val().ReceiptID).update(
+                    {
+                    Amount: newAmount,
+                    InterestTimeStamp : timeStamp,
+                  });
+                  chargerUserRef.child(data.val().ReceiptID).update(
+                    {
+                    Amount: newAmount,
+                    InterestTimeStamp : timeStamp,
+                  });
+
+                  dic.InterestTimeStamp = timeStamp;
+                  dic.Amount = newAmount;
+              }
+            }
+
+
+
+            newData.push(dic)
             that.setState({items : newData})
         });
 
@@ -120,13 +126,13 @@ export default class ViewChargedScreen extends React.Component {
                                 <Left>
                                     <Thumbnail source={logo} />
                                     <Body>
-                                    <Text>YOU ARE BEING CHARGED: {data.val().RequesterName}</Text>
-                                    <Text note>Total: {data.val().Amount.toFixed(2)}</Text>
+                                    <Text>YOU ARE BEING CHARGED: {data.RequesterName}</Text>
+                                    <Text note>Total: {data.Amount.toFixed(2)}</Text>
                                     </Body>
                                 </Left>
                             </CardItem>
 
-                            {data.val().ReceiptPic == null ? (
+                            {data.ReceiptPic == null ? (
                               <CardItem cardBody key = {index}>
                                 <Text>No Photo</Text>
                               </CardItem>
@@ -139,14 +145,14 @@ export default class ViewChargedScreen extends React.Component {
                                           height: 200,
                                           flex: 1
                                       }}
-                                      source={{ uri: data.val().ReceiptPic}}
+                                      source={{ uri: data.ReceiptPic}}
                                   />
                               </CardItem>
                             )}
 
                             <CardItem key={index}>
                                 <View>
-                                    <Text>Description: {data.val().Description}</Text>
+                                    <Text>Description: {data.Description}</Text>
                                 </View>
                             </CardItem>
 

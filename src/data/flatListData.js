@@ -1,9 +1,3 @@
-
-var flatListData = [
-  {
-    name: 'item',
-    itemPrice: 'price'
-  }
-];
+var flatListData = [];
 
 module.exports = flatListData;

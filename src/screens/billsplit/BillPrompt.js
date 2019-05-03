@@ -18,7 +18,7 @@ export default class BillPrompt extends React.Component {
                 </TouchableOpacity>
 
                 <TouchableOpacity onPress={() =>
-                    this.props.navigation.navigate('BillSplitProcess')
+                    this.props.navigation.navigate('Splitstep1')
                 } style={styles.button2}>
                     <Text style = {styles.buttonText}> No </Text>
                 </TouchableOpacity>

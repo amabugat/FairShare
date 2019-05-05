@@ -1,17 +1,17 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-29:12
-MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
-MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-reanimated] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-vector-icons] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-gesture-handler] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\48b6f709e89968bc8aad163d6985cbd4\AndroidManifest.xml:2:1-15:12
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-29:12
+MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\6a9ca282bbf35636b064349bea2d5cea\AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b7465f3843de1385c5b73bb7197ff8d6\AndroidManifest.xml:17:1-22:12
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:2:1-26:12
 MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:2:1-28:12
@@ -54,27 +54,27 @@ MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-
 MERGED from [com.braintreepayments:browser-switch:0.1.5] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.5.aar\dcc9fae425f8045e1f49d816e7d7b94d\AndroidManifest.xml:2:1-12:12
 MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\872e724140e3a78b82ff1f6c95baa520\AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\90e96927fa0232e191021fc52e32d975\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12
 	package
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:2:5-23
-		INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:2:5-23
+		INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12
-		INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12
+		INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12
-		INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12
+		INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:12:5-67
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:12:5-67
 MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:10:5-67
@@ -84,33 +84,37 @@ MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\Andy\.grad
 MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\872e724140e3a78b82ff1f6c95baa520\AndroidManifest.xml:11:5-67
 MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\872e724140e3a78b82ff1f6c95baa520\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\48b6f709e89968bc8aad163d6985cbd4\AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\48b6f709e89968bc8aad163d6985cbd4\AndroidManifest.xml:11:5-78
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\6a9ca282bbf35636b064349bea2d5cea\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\6a9ca282bbf35636b064349bea2d5cea\AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:5:22-75
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:5:22-75
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:7:5-65
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:7:5-65
 MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:9:5-65
 MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:7:22-62
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:7:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:8:5-80
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:10:5-28:19
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
-MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\48b6f709e89968bc8aad163d6985cbd4\AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\48b6f709e89968bc8aad163d6985cbd4\AndroidManifest.xml:13:5-20
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:12:5-30:19
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
+MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\6a9ca282bbf35636b064349bea2d5cea\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\6a9ca282bbf35636b064349bea2d5cea\AndroidManifest.xml:13:5-20
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:14:5-24:19
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:14:5-24:19
 MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:12:5-26:19
@@ -128,61 +132,61 @@ MERGED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\fb8852f059ceea989356d34b748b28c9\AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:12:7-39
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:14:7-39
 	android:roundIcon
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:14:7-52
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:16:7-52
 	android:icon
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:13:7-41
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:15:7-41
 	android:allowBackup
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:15:7-34
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:17:7-34
 	android:theme
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:16:7-38
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:18:7-38
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:11:7-38
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:13:7-38
 activity#com.test.MainActivity
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:17:7-26:18
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:19:7-28:18
 	android:label
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:21:9-41
 	android:windowSoftInputMode
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:21:9-51
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:23:9-51
 	android:configChanges
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:20:9-79
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:22:9-79
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:18:9-37
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:20:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:22:9-25:25
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:24:9-27:25
 action#android.intent.action.MAIN
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:23:13-65
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:25:13-65
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:23:21-62
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:25:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:24:13-73
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:26:13-73
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:24:23-70
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:26:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:27:7-84
+ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:29:7-84
 	android:name
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:27:17-81
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:29:17-81
 uses-sdk
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\48b6f709e89968bc8aad163d6985cbd4\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\48b6f709e89968bc8aad163d6985cbd4\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal-wrapper] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\6a9ca282bbf35636b064349bea2d5cea\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\6a9ca282bbf35636b064349bea2d5cea\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b7465f3843de1385c5b73bb7197ff8d6\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b7465f3843de1385c5b73bb7197ff8d6\AndroidManifest.xml:20:5-44
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:7:5-9:41
@@ -265,60 +269,60 @@ MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\Andy\.gradle
 MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\872e724140e3a78b82ff1f6c95baa520\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\90e96927fa0232e191021fc52e32d975\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\90e96927fa0232e191021fc52e32d975\AndroidManifest.xml:5:5-7:41
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml
 activity#com.braintreepayments.api.BraintreeBrowserSwitchActivity
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:9-26:20
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:9-26:20
 	android:launchMode
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-44
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-44
 	android:theme
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-72
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-72
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-84
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-84
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:${applicationId}.braintree
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:com.test.braintree
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
 action#android.intent.action.VIEW
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-69
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:25-66
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:25-66
 category#android.intent.category.DEFAULT
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:17-76
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:17-76
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:27-73
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:27-73
 category#android.intent.category.BROWSABLE
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:17-78
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:17-78
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:27-75
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:27-75
 data
-ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:17-69
+ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:17-69
 	android:scheme
-		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:23-66
+		ADDED from [:react-native-paypal] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:23-66
 provider#com.imagepicker.FileProvider
-ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:13-60
+		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:13-60
 	android:exported
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:13-56
+		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:13-56
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-19:58
+ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-19:58
 	android:resource
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-55
+		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-55
 	android:name
-		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\fairshare_Camera\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:17-67
+		ADDED from [:react-native-image-picker] C:\Users\Andy\Desktop\cmps117\Fairsgare_location\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\1fae26ce9bcfdd1d14d2f5378874a937\AndroidManifest.xml:11:5-79
 MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:9:5-79
@@ -388,9 +392,9 @@ ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\cach
 	android:name
 		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\851cc02cb44cbb2d2cd1aa9de1f8543b\AndroidManifest.xml:24:13-73
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from C:\Users\Andy\Desktop\cmps117\fairshare_Camera\android\app\src\main\AndroidManifest.xml:1:1-30:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\Andy\Desktop\cmps117\Fairsgare_location\android\app\src\main\AndroidManifest.xml:1:1-32:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
 uses-permission#android.permission.VIBRATE
 ADDED from [io.card:android-sdk:5.4.2] C:\Users\Andy\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\b0e2ded54994e5d3d480f47cba9b2722\AndroidManifest.xml:10:5-66
 	android:name

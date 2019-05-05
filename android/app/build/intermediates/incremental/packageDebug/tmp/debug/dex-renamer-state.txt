@@ -1,4 +1,4 @@
-#Sun Apr 21 14:45:26 PDT 2019
-base.0=C\:\\Users\\Andy\\Desktop\\cmps117\\fairshare_Camera\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Sun May 05 09:59:27 PDT 2019
+base.0=C\:\\Users\\Andy\\Desktop\\cmps117\\Fairsgare_location\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

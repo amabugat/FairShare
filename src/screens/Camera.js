@@ -13,56 +13,55 @@ import {
     Body,
     Right
 } from "native-base";
+import Geocoder from 'react-native-geocoding';
 export default class Camera extends React.Component {
     constructor(props){
         super(props);
         this.state = {
           lat: 0,
           lng: 0,
+          address: "",
+          tax: 0,
         }
     }
 
     componentWillMount(){
       //geolocation.requestAuthorization();
+      var that = this;
+      Geocoder.init("AIzaSyDudPsdRKAG97FEjG0-HCKAeBYDiPblxmE");
       navigator.geolocation.getCurrentPosition(position => {
-        this.setState({
+        that.setState({
           lat: position.coords.latitude,
           lng: position.coords.longitude,
         })
+        Geocoder.getFromLocation(position.coords.latitude,position.coords.longitude)
+          .then(json => {
+          		var addressComponent = json.results[0].address_components[0];
+  			      console.log(addressComponent);
+              that.setState({
+                address: addressComponent,
+              })
+              //fetch("https://api.zip-tax.com/request/v40?key=1234567890&postalcode=90264")
+              // .then(response => response.json())
+              // .then((responseJson)=> {
+              //   this.setState({
+              //    tax: responseJson.taxSales,
+              //   })
+              // })
+              // .catch(error=>console.log(error)) //to catch the errors if any
+              // }
+
+  		     })
+  		    .catch(error => console.warn(error));
       })
     }
-// async function requestCameraPermission() {
-//   try {
-//     const granted = await PermissionsAndroid.request(
-//       PermissionsAndroid.PERMISSIONS.CAMERA,
-//       {
-//         title: 'Cool Photo App Camera Permission',
-//         message:
-//           'Cool Photo App needs access to your camera ' +
-//           'so you can take awesome pictures.',
-//         buttonNeutral: 'Ask Me Later',
-//         buttonNegative: 'Cancel',
-//         buttonPositive: 'OK',
-//       },
-//     );
-//     if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-//       console.log('You can use the camera');
-//     } else {
-//       console.log('Camera permission denied');
-//     }
-//   } catch (err) {
-//     console.warn(err);
-//   }
-// }
-
-
-
 
     render() {
         return (
             <View style={styles.container}>
               <Text>Lat: {this.state.lat} </Text>
               <Text>Lng: {this.state.lng} </Text>
+              <Text> Address: {this.state.address} </Text>
             </View>
 
         );

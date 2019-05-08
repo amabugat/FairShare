@@ -25,36 +25,86 @@ export default class Camera extends React.Component {
         }
     }
 
-    componentWillMount(){
+  async componentWillMount(){
       //geolocation.requestAuthorization();
       var that = this;
-      Geocoder.init("AIzaSyDudPsdRKAG97FEjG0-HCKAeBYDiPblxmE");
-      navigator.geolocation.getCurrentPosition(position => {
+    //  Geocoder.init("AIzaSyDFyouQS3-6HaTjtyRp-wpEVogv6EVC_0s");
+      await navigator.geolocation.getCurrentPosition(position => {
         that.setState({
           lat: position.coords.latitude,
           lng: position.coords.longitude,
         })
-        Geocoder.getFromLocation(position.coords.latitude,position.coords.longitude)
-          .then(json => {
-          		var addressComponent = json.results[0].address_components[0];
-  			      console.log(addressComponent);
-              that.setState({
-                address: addressComponent,
-              })
-              //fetch("https://api.zip-tax.com/request/v40?key=1234567890&postalcode=90264")
-              // .then(response => response.json())
-              // .then((responseJson)=> {
-              //   this.setState({
-              //    tax: responseJson.taxSales,
-              //   })
-              // })
-              // .catch(error=>console.log(error)) //to catch the errors if any
-              // }
 
-  		     })
-  		    .catch(error => console.warn(error));
+
+      //  alert("in here")
+        // Geocoder.from(position.coords.latitude,position.coords.longitude)
+        //   .then(json => {
+        //     alert("hi")
+        //   	//	var addressComponent = json.results[0].address_components[0];
+        //     var addressComponent = json.results[0].formatted_address;
+  			//       console.log(addressComponent);
+        //       that.setState({
+        //         address: addressComponent.long_name,
+        //       })
+        //       //fetch("https://api.zip-tax.com/request/v40?key=1234567890&postalcode=90264")
+        //       // .then(response => response.json())
+        //       // .then((responseJson)=> {
+        //       //   this.setState({
+        //       //    tax: responseJson.taxSales,
+        //       //   })
+        //       // })
+        //       // .catch(error=>console.log(error)) //to catch the errors if any
+        //       // }
+        //
+  		  //    })
+  		  //   .catch(error => console.warn(error));
       })
-    }
+       fetch('https://maps.googleapis.com/maps/api/geocode/json?latlng=34.1397,-118.0353&key=AIzaSyDfAZDo1UpXtkp2dO9VaZ1VIWrLtc7TjQc')
+      .then(response => response.json())
+      .then((responseJson)=> {
+        // this.setState({
+        //  tax: responseJson.taxSales,
+        // })
+        //alert(responseJson)
+        var result = responseJson.results[0].address_components[6].long_name;
+        console.log(result)
+        // fetch("https://api.zip-tax.com/request/v40?key=1234567890&postalcode="+ result)
+        //      .then(response => response.json())
+        //      .then((responseJson)=> {
+        //        this.setState({
+        //         tax: responseJson.taxSales,
+        //        })
+        //      })
+        //      .catch(error=>console.log(error)) //to catch the errors if any
+             }
+
+          })
+         .catch(error => console.log(error));
+      })
+      .catch(error=>console.log(error)) //to catch the errors if any
+      }
+      // Geocoder.from(28.6139, 77.2090)
+      //   .then(json => {
+      //     console.log(json)
+      //     //	var addressComponent = json.results[0].address_components[0];
+      //     var addressComponent = json.results[0].formatted_address;
+      //       console.log(addressComponent);
+      //       that.setState({
+      //         address: addressComponent.long_name,
+      //       })
+      //       //fetch("https://api.zip-tax.com/request/v40?key=1234567890&postalcode=90264")
+      //       // .then(response => response.json())
+      //       // .then((responseJson)=> {
+      //       //   this.setState({
+      //       //    tax: responseJson.taxSales,
+      //       //   })
+      //       // })
+      //       // .catch(error=>console.log(error)) //to catch the errors if any
+      //       // }
+      //
+      //    })
+      //   .catch(error => console.log(error));
+//}
 
     render() {
         return (
@@ -62,6 +112,7 @@ export default class Camera extends React.Component {
               <Text>Lat: {this.state.lat} </Text>
               <Text>Lng: {this.state.lng} </Text>
               <Text> Address: {this.state.address} </Text>
+
             </View>
 
         );

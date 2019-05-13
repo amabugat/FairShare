@@ -72,13 +72,33 @@ class Camera extends Component {
             //                     .substring(0, index)
             //                     .trim(),
             //                 line
-            //                     .substring(index)
+            //                    s .substring(index)
             //                     .trim()
             //             ]; //return array of two trimmed strings
             //         });
             // })
             .then((result) => {
-                this.setState({ isLoading: false, extractedText: result });
+                var output = result.split('\n');
+                var item = [];
+                var price = [];
+                var test = 0;
+                for(var i = 0; i < output.length; i++)
+                {
+                    if(output[i].includes('Grand'))
+                    {
+                        item.push(output[i]);
+
+                            price.push(output[i].split(' '));
+                    }
+                }
+                test = price[0][2];
+                console.log(test);
+                console.log(price);
+                // console.log(item);
+                this.setState({ isLoading: false, extractedText: result});
+                // var test = output.match(/(.*)\sTotal.+/g);
+                // console.log(test);
+                // console.log(result.split('\n'));
             })
             .catch((err) => {
                 this.setState({ hasErrored: true, errorMessage: err.message });

@@ -52,7 +52,7 @@ export default class BillSplitProcess extends Component {
                 sum = sum + parseFloat(userFlatList[i].items[j].addedPrice);
             }
             this.setState({ total: sum });
-            userFlatList[i].price = sum;
+            userFlatList[i].price = sum.toFixed(2);
         }
     };
 

@@ -24,7 +24,9 @@ import ViewChargedScreen from './ViewChargedScreen';
 import ViewRequestScreen from './ViewRequestScreen';
 import ChargePeople from './billsplit/ChargePeople';
 import EditProfile from './profilePage/EditProfile';
+import { pushNotifications } from "../services/ind";
 
+pushNotifications.configure();
 
 const Navigation = createStackNavigator({
     Home: { screen: Home, navigationOptions: () => ({

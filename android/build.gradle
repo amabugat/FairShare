@@ -2,11 +2,23 @@
 
 buildscript {
     ext {
+        googlePlayServicesVersion = "+" // default: "+"
+        firebaseVersion = "+"
+
+        compileSdkVersion = 28 // default: 23
+        buildToolsVersion = "28.0.2" // default: "23.0.1"
+        targetSdkVersion = 27 // default: 23
+        supportLibVersion = "28.0.0" // default: 23.1.1
         buildToolsVersion = "28.0.2"
         minSdkVersion = 16
         compileSdkVersion = 28
         targetSdkVersion = 27
         supportLibVersion = "28.0.0"
+//        buildToolsVersion = "28.0.2"
+//        minSdkVersion = 16
+//        compileSdkVersion = 28
+//        targetSdkVersion = 27
+//        supportLibVersion = "28.0.0"
     }
     repositories {
         google()

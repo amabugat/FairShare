@@ -102,9 +102,7 @@ class UserListItem extends Component {
                                  ) {
                                     flatListData[
                                        this.props.userFlatList.props.index
-                                    ].user[i].newPrice = (least / 100).toFixed(
-                                       2
-                                    );
+                                    ].user[i].newPrice = least / 100;
                                  }
                                  if (rem > 0) {
                                     for (var i = 0; i < rem; i++) {
@@ -122,7 +120,7 @@ class UserListItem extends Component {
                                           );
                                           console.log(
                                              "least price: " +
-                                                (least / 100).toFixed(2)
+                                                least / 100
                                           );
 
                                           if (
@@ -130,7 +128,7 @@ class UserListItem extends Component {
                                                 this.props.userFlatList.props
                                                    .index
                                              ].user[random].newPrice ==
-                                             (least / 100).toFixed(2)
+                                             least / 100
                                           ) {
                                              console.log(
                                                 parseFloat(
@@ -219,10 +217,10 @@ class FlatListItem extends Component {
    }
 
    createFnc = () => {
-      var price = (
+      var price = parseFloat((
          flatListData[this.props.index].itemPrice /
          (flatListData[this.props.index].user.length + 1)
-      ).toFixed(2);
+      ));
       const newUserName = {
          newUser: this.state.PickerValue,
          newPrice: price
@@ -258,9 +256,8 @@ class FlatListItem extends Component {
             (itemPrice - rem) / flatListData[this.props.index].user.length;
          console.log("least: " + least);
          for (var i = 0; i < flatListData[this.props.index].user.length; i++) {
-            flatListData[this.props.index].user[i].newPrice = (
-               least / 100
-            ).toFixed(2);
+            flatListData[this.props.index].user[i].newPrice =
+               least / 100;
          }
          if (rem > 0) {
             for (var i = 0; i < rem; i++) {
@@ -271,11 +268,11 @@ class FlatListItem extends Component {
                      "random user price: " +
                         flatListData[this.props.index].user[random].newPrice
                   );
-                  console.log("least price: " + (least / 100).toFixed(2));
+                  console.log("least price: " + least / 100);
 
                   if (
                      flatListData[this.props.index].user[random].newPrice ==
-                     (least / 100).toFixed(2)
+                     least / 100
                   ) {
                      console.log(
                         parseFloat(
@@ -285,7 +282,7 @@ class FlatListItem extends Component {
                      flatListData[this.props.index].user[random].newPrice =
                         (least + 1) / 100;
 
-                     flatListData[this.props.index].user[random].bol = true;
+                     //flatListData[this.props.index].user[random].bol = true;
                      break;
                   }
                }

@@ -11,6 +11,7 @@ import {
    Component,
    FlatList
 } from "react-native";
+import { pushNotifications } from "../services/ind";
 import ProfileImage from "../screens/profilePage/ProfileImage";
 import userFlatList from "../data/userFlatList";
 import flatListData from "../data/flatListData";
@@ -34,7 +35,13 @@ export default class ChargeUnevenly extends React.Component {
          emailID: "",
          email: "",
          chargeDescription: "",
-         chargingPeople: data
+         chargingPeople: data,
+         interest: "NONE",
+         interestRate: 0,
+         tax: 0,
+         tip: 0,
+         fullName: "",
+         userID: 0
       };
       this.chargePeople = this.chargePeople.bind(this);
       this.selectPhotoTapped = this.selectPhotoTapped.bind(this);
@@ -103,105 +110,184 @@ export default class ChargeUnevenly extends React.Component {
          alert("not logged in");
          return;
       }
-      alert("in charge people");
-      const image = this.state.avatarSource.uri;
-
-      const Blob = RNFetchBlob.polyfill.Blob;
-      const fs = RNFetchBlob.fs;
-      window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest;
-      window.Blob = Blob;
-      //    alert("after window blob")
-
-      let uploadBlob = null;
-      var paymentuidkey = firebase
-         .database()
-         .ref("/NewKey")
-         .push().key;
-      const imageRef = firebase
-         .storage()
-         .ref("reciepts")
-         .child(paymentuidkey);
-      //  alert("do i even get here")
-
-      let mime = "image/jpg";
+      console.log(uid);
+      //  alert("in charge people")
       var currentTimeStamp = new Date().getTime();
-      //  alert(currentTimeStamp)
+      if (this.state.avatarSource != null) {
+         const image = this.state.avatarSource.uri;
 
-      fs.readFile(image, "base64")
-         .then(data => {
-            //        alert("return blob")
-            return Blob.build(data, { type: `${mime};BASE64` });
-         })
-         .then(blob => {
-            uploadBlob = blob;
-            //        alert("put blob")
-            //      alert(blob)
-            return imageRef.put(blob, { contentType: mime });
-         })
-         .then(() => {
-            uploadBlob.close();
-            //      alert("close blob")
-            return imageRef.getDownloadURL();
-         })
-         .then(url => {
-            // URL of the image uploaded on Firebase storage
-            console.log(url);
-            //  alert(url)
-            //  alert("current time" + currentTimeStamp)
-            //    alert("chariging people length " +  that.state.chargingPeople.length)
-            // alert(url);
-            var receiptpicURL = url;
-            var userRequestRef = firebase
-               .database()
-               .ref("/Payments")
-               .child(uid)
-               .child("/Requesting");
-            for (i = 0; i < that.state.chargingPeople.length; i++) {
-               var chargedRef = firebase
+         const Blob = RNFetchBlob.polyfill.Blob;
+         const fs = RNFetchBlob.fs;
+         window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest;
+         window.Blob = Blob;
+         //    alert("after window blob")
+
+         let uploadBlob = null;
+         var paymentuidkey = firebase
+            .database()
+            .ref("/NewKey")
+            .push().key;
+         const imageRef = firebase
+            .storage()
+            .ref("reciepts")
+            .child(paymentuidkey);
+         //  alert("do i even get here")
+
+         let mime = "image/jpg";
+         //var currentTimeStamp = new Date().getTime()
+         //  alert(currentTimeStamp)
+
+         fs.readFile(image, "base64")
+            .then(data => {
+               //        alert("return blob")
+               return Blob.build(data, { type: `${mime};BASE64` });
+            })
+            .then(blob => {
+               uploadBlob = blob;
+               //        alert("put blob")
+               //      alert(blob)
+               return imageRef.put(blob, { contentType: mime });
+            })
+            .then(() => {
+               uploadBlob.close();
+               //      alert("close blob")
+               return imageRef.getDownloadURL();
+            })
+            .then(url => {
+               // URL of the image uploaded on Firebase storage
+               console.log(url);
+               //  alert(url)
+               //  alert("current time" + currentTimeStamp)
+               //    alert("chariging people length " +  that.state.chargingPeople.length)
+               // alert(url);
+               var receiptpicURL = url;
+               var userRequestRef = firebase
                   .database()
                   .ref("/Payments")
-                  .child(that.state.chargingPeople[i].userID)
-                  .child("/GettingCharged");
-               var key = chargedRef.push().key;
-               alert(key);
-               chargedRef.child(key).set({
-                  PaymentTitle: that.state.paymentTitle,
-                  ReceiptID: key,
-                  Description: that.state.chargeDescription,
-                  Amount: that.state.result,
-                  Tip: that.state.tip,
-                  Tax: that.state.tax,
-                  Requester: uid,
-                  Charged: that.state.chargingPeople[i].userID,
-                  RequesterName: that.state.fullName,
-                  ChargedName: that.state.chargingPeople[i].fullName,
-                  ReceiptPic: receiptpicURL,
-                  PhotoKey: paymentuidkey,
-                  TimeStamp: currentTimeStamp,
-                  Paid: false
-               });
-               userRequestRef.child(key).set({
-                  PaymentTitle: that.state.paymentTitle,
-                  ReceiptID: key,
-                  Description: that.state.chargeDescription,
-                  Amount: that.state.result,
-                  Tip: that.state.tip,
-                  Tax: that.state.tax,
-                  Requester: uid,
-                  Charged: that.state.chargingPeople[i].userID,
-                  RequesterName: that.state.fullName,
-                  ChargedName: that.state.chargingPeople[i].fullName,
-                  ReceiptPic: receiptpicURL,
-                  PhotoKey: paymentuidkey,
-                  TimeStamp: currentTimeStamp,
-                  Paid: false
-               });
+                  .child(uid)
+                  .child("/Requesting");
+               for (i = 0; i < userFlatList.length; i++) {
+                  var chargedRef = firebase
+                     .database()
+                     .ref("/Payments")
+                     .child(userFlatList[i].userID)
+                     .child("/GettingCharged");
+                  var key = chargedRef.push().key;
+                  //  alert(key)
+                  chargedRef.child(key).set({
+                     PaymentTitle: that.state.paymentTitle,
+                     ReceiptID: key,
+                     Description: that.state.chargeDescription,
+                     Amount: userFlatList[i].price,
+                     OriginalAmount: userFlatList[i].price,
+                     Tip: that.state.tip,
+                     Tax: that.state.tax,
+                     Requester: uid,
+                     Charged: userFlatList[i].userID,
+                     RequesterName: that.state.fullName,
+                     ChargedName: userFlatList[i].name,
+                     ReceiptPic: receiptpicURL,
+                     PhotoKey: paymentuidkey,
+                     TimeStamp: currentTimeStamp,
+                     InterestTimeStamp: currentTimeStamp,
+                     Interest: that.state.interest,
+                     InterestRate: that.state.interestRate * 0.01,
+                     Paid: false
+                  });
+                  userRequestRef.child(key).set({
+                     PaymentTitle: that.state.paymentTitle,
+                     ReceiptID: key,
+                     Description: that.state.chargeDescription,
+                     Amount: userFlatList[i].price,
+                     OriginalAmount: userFlatList[i].price,
+                     Tip: that.state.tip,
+                     Tax: that.state.tax,
+                     Requester: uid,
+                     Charged: userFlatList[i].userID,
+                     RequesterName: that.state.fullName,
+                     ChargedName: userFlatList[i].name,
+                     ReceiptPic: receiptpicURL,
+                     PhotoKey: paymentuidkey,
+                     TimeStamp: currentTimeStamp,
+                     InterestTimeStamp: currentTimeStamp,
+                     Interest: that.state.interest,
+                     InterestRate: that.state.interestRate * 0.01,
+                     Paid: false
+                  });
+
+                  if (user.uid == userFlatList[i].userID) {
+                     console.log(userFlatList[i].userID);
+                     pushNotifications.localNotification();
+                  }
+               }
+               this.props.navigation.navigate("Activity");
+            })
+            .catch(error => {
+               console.log(error);
+            });
+      } else {
+         var userRequestRef = firebase
+            .database()
+            .ref("/Payments")
+            .child(uid)
+            .child("/Requesting");
+
+         for (i = 0; i < userFlatList.length; i++) {
+            var chargedRef = firebase
+               .database()
+               .ref("/Payments")
+               .child(userFlatList[i].userID)
+               .child("/GettingCharged");
+            var key = chargedRef.push().key;
+
+            //  alert(key)
+            chargedRef.child(key).set({
+               PaymentTitle: that.state.paymentTitle,
+               ReceiptID: key,
+               Description: that.state.chargeDescription,
+               Amount: userFlatList[i].price,
+               OriginalAmount: userFlatList[i].price,
+               Tip: that.state.tip,
+               Tax: that.state.tax,
+               Requester: uid,
+               Charged: userFlatList[i].userID,
+               RequesterName: that.state.fullName,
+               ChargedName: userFlatList[i].name,
+               ReceiptPic: null,
+               PhotoKey: null,
+               TimeStamp: currentTimeStamp,
+               InterestTimeStamp: currentTimeStamp,
+               Interest: that.state.interest,
+               InterestRate: that.state.interestRate * 0.01,
+               Paid: false
+            });
+            userRequestRef.child(key).set({
+               PaymentTitle: that.state.paymentTitle,
+               ReceiptID: key,
+               Description: that.state.chargeDescription,
+               Amount: userFlatList[i].price,
+               OriginalAmount: userFlatList[i].price,
+               Tip: that.state.tip,
+               Tax: that.state.tax,
+               Requester: uid,
+               Charged: userFlatList[i].userID,
+               RequesterName: that.state.fullName,
+               ChargedName: userFlatList[i].name,
+               ReceiptPic: null,
+               PhotoKey: null,
+               TimeStamp: currentTimeStamp,
+               InterestTimeStamp: currentTimeStamp,
+               Interest: that.state.interest,
+               InterestRate: that.state.interestRate * 0.01,
+               Paid: false
+            });
+
+            if (user.uid == userFlatList[i].userID) {
+               pushNotifications.localNotification();
             }
-            this.props.navigation.navigate("Activity");
-         })
-         .catch(error => {
-            console.log(error);
-         });
+         }
+         this.props.navigation.navigate("Activity");
+      }
    }
 
    render() {
@@ -243,7 +329,10 @@ export default class ChargeUnevenly extends React.Component {
                   >
                      <Text style={styles.UserListItem}> {item.name} </Text>
                      <Text style={styles.UserListItem}> pays </Text>
-                     <Text style={styles.UserListItem}> ${item.price}</Text>
+                     <Text style={styles.UserListItem}>
+                        {" "}
+                        ${item.price.toFixed(2)}
+                     </Text>
                   </View>
                )}
             />
@@ -262,17 +351,7 @@ export default class ChargeUnevenly extends React.Component {
                   this.setState({ chargeDescription })
                }
             />
-            <TextInput
-               style={styles.textInput1}
-               placeholder="Email "
-               onChangeText={email => this.setState({ email })}
-            />
-            <TouchableOpacity
-               style={styles.button1}
-               onPress={() => this.findUID(this.state.email)}
-            >
-               <Text> Find emailID </Text>
-            </TouchableOpacity>
+
             <TouchableOpacity
                style={styles.button1}
                onPress={this.chargePeople.bind(this)}
@@ -289,44 +368,6 @@ export default class ChargeUnevenly extends React.Component {
          </View>
       );
    }
-
-   findUID = async email => {
-      var ref = firebase.database().ref("/Users");
-      var uid = "";
-      var that = this;
-
-      await ref
-         .orderByChild("Email")
-         .equalTo(email)
-         .limitToFirst(1)
-         .once("value", snapshot => {
-            if (snapshot.numChildren() === 0) {
-               alert("User not found");
-               return;
-            } else {
-               snapshot.forEach(user => {
-                  // console.log(user.key);
-                  if (user.child("userID").val()) {
-                     var newData = [...that.state.chargingPeople];
-                     var dataDic = {
-                        userID: user.child("userID").val(),
-                        fullName: user.child("FullName").val()
-                     };
-                     newData.push(dataDic);
-
-                     that.setState({
-                        emailID: user.child("userID").val(),
-                        chargingPeople: newData
-                     });
-                     // that.state.chargingPeople.append(user.child("userID").val()) //dont know if will work
-                  } else {
-                     alert("User with email " + email + " does not have a uid");
-                  }
-               });
-            }
-         });
-      return;
-   };
 }
 
 const styles = StyleSheet.create({

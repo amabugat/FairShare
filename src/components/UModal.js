@@ -12,6 +12,10 @@ import {
    Dimensions,
    TextInput
 } from "react-native";
+import firebase from "@firebase/app";
+import "@firebase/auth";
+import "@firebase/database";
+import "@firebase/storage";
 import Modal from "react-native-modalbox";
 import Button from "react-native-button";
 import userFlatList from "../data/userFlatList";
@@ -85,27 +89,51 @@ export default class UModal extends Component {
                   backgroundColor: "mediumseagreen"
                }}
                onPress={() => {
-                  if (this.state.newItemName.length == 0) {
-                     alert("You Must Enter Person's Name");
-                     return;
-                  } else if (this.state.newItemName == "item") {
-                     alert("You Must Enter a Proper Name for Item");
-                     return;
-                  }
-                  const newName = this.state.newItemName;
-                  const newItem = {
-                     name: newName,
-                     price: 0,
-                     items: []
-                  };
-                  userFlatList.push(newItem);
-                  console.log(userFlatList);
-                  this.props.parentFlatList.refreshFlatList(newName);
-                  //this.props.userFlatList.refreshUserFlatList(newName);
+                  var ref = firebase.database().ref("/Users");
+                  var uid = "";
+                  var that = this;
+
+                  ref.orderByChild("Email")
+                     .equalTo(this.state.newItemName)
+                     .limitToFirst(1)
+                     .once("value", snapshot => {
+                        if (snapshot.numChildren() === 0) {
+                           alert("User not found");
+                           return;
+                        } else {
+                           snapshot.forEach(user => {
+                              // console.log(user.key);
+                              if (user.child("userID").val()) {
+                                 var dataDic = {
+                                    userID: user.child("userID").val(),
+                                    name: user.child("FullName").val(),
+                                    items: [],
+                                    price: 0
+                                 };
+                                 userFlatList.push(dataDic);
+                                 console.log(userFlatList);
+                                 this.props.parentFlatList.refreshFlatList(
+                                    user.child("FullName").val()
+                                 );
+                                 this.setState({
+                                    newItemName: ""
+                                 });
+                                 this.refs.myModal.close();
+                                 // that.state.chargingPeople.append(user.child("userID").val()) //dont know if will work
+                              } else {
+                                 alert(
+                                    "User with email " +
+                                       email +
+                                       " does not have a uid"
+                                 );
+                              }
+                           });
+                        }
+                     });
+
                   this.setState({
                      newItemName: ""
                   });
-
                   this.refs.myModal.close();
                }}
             >

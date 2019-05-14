@@ -6,8 +6,68 @@ type Props = {};
 export default class NoSplit extends Component{
     constructor(props) {
         super(props);
-        this.state = { subtotal: null, tax: null, tip: null, people: null, result: null, split: null};
+        this.state = { subtotal: null, tax: null, tip: null, people: null, result: null, split: null, zip: 0, lat:0, lng:0 };
     }
+
+    async componentWillMount(){
+        var that = this;
+        await navigator.geolocation.getCurrentPosition(position => {
+          console.log(position)
+          that.setState({
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          })
+           fetch("https://maps.googleapis.com/maps/api/geocode/json?latlng="+ position.coords.latitude +","+ position.coords.longitude+"&key=AIzaSyDfAZDo1UpXtkp2dO9VaZ1VIWrLtc7TjQc")
+          .then(response => response.json())
+          .then((responseJson)=> {
+            var result = responseJson.results[0].address_components[6].long_name;
+            console.log(result)
+            that.setState({
+              zip: result,
+            })
+            fetch("https://api.zip-tax.com/request/v40?key=FQMDodzmaEHJcRy3&postalcode=" + result)
+                .then(response => response.json())
+                .then((responseJson)=> {
+                //  console.log(responseJson.results)
+                  var decimalTax = responseJson.results[0].taxSales*100;
+                  console.log(decimalTax)
+                  that.setState({
+                   tax: decimalTax,
+                  })
+                })
+                .catch(error=>console.log(error))
+          })
+
+          .catch(error=>console.log(error)) //to catch the errors if any
+        })
+        console.log(this.state.tax)
+
+        if(that.state.zip == 0){
+          console.log("can;t find zip");
+        }
+        // await fetch("https://maps.googleapis.com/maps/api/geocode/json?latlng="+ this.state.lat +","+ this.state.lng+"&key=AIzaSyDfAZDo1UpXtkp2dO9VaZ1VIWrLtc7TjQc")
+        // .then(response => response.json())
+        // .then((responseJson)=> {
+        //   //var result = responseJson.results[0].address_components[6].long_name;
+        //   console.log(responseJson)
+        //   // that.setState({
+        //   //   zip: result,
+        //   // })
+        //    })
+        //
+        // .catch(error=>console.log(error)) //to catch the errors if any
+        //
+         // fetch("https://api.zip-tax.com/request/v40?key=FQMDodzmaEHJcRy3&postalcode=" + this.state.zip)
+         //     .then(response => response.json())
+         //     .then((responseJson)=> {
+         //       console.log(responseJson.results)
+         //       var decimalTax = responseJson.results[0].taxSales*100;
+         //       this.setState({
+         //        tax: decimalTax,
+         //       })
+         //     })
+         //     .catch(error=>console.log(error)) //to catch the errors if any
+        }
 
     render() {
         return (
@@ -15,7 +75,7 @@ export default class NoSplit extends Component{
                 <View style={styles.container}>
                     <ScrollView>
                         <View style={styles.row}>
-                            <Text> </Text>
+                            <Text>{this.state.tax} </Text>
                             <View style={styles.change}>
                                 <TouchableOpacity onPress={() => {
                                     if(this.state.split === null){
@@ -50,7 +110,8 @@ export default class NoSplit extends Component{
                                 style={styles.box}
                                 keyboardType = 'numeric'
                                 returnKeyType='done'
-                                ref={ta => { this.taxInput = ta }}
+                                value={this.state.tax}
+                                ref={ta => { this.taxInput = this.state.tax }}
                                 onChangeText={(tax) => this.setState({tax: parseFloat(tax)})}
                             />
                         </View>

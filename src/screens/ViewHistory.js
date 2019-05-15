@@ -78,7 +78,7 @@ export default class ViewHistoryScreen extends React.Component {
                                     <Thumbnail source={logo} />
                                     <Body>
                                     <Text>{data.val().ChargedName} Paid {data.val().RequesterName}</Text>
-                                    <Text note>Total: {data.val().Amount.toFixed(2)}</Text>
+                                    <Text note>Total: {data.val().Amount}</Text>
                                     </Body>
                                 </Left>
                             </CardItem>

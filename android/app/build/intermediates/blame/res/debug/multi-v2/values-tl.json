@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ziduchen/FairShareNew/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml",
+            "outputFile": "/Users/ziduchen/FairShare/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml",
             "map": [
                 {
                     "source": "/Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/69bd8c296b89ae771a66a15f0cd7e60a/res/values-tl/values.xml",

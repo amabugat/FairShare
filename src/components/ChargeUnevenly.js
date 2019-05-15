@@ -11,7 +11,6 @@ import {
    Component,
    FlatList
 } from "react-native";
-import { pushNotifications } from "../services/ind";
 import ProfileImage from "../screens/profilePage/ProfileImage";
 import userFlatList from "../data/userFlatList";
 import flatListData from "../data/flatListData";
@@ -217,7 +216,6 @@ export default class ChargeUnevenly extends React.Component {
 
                   if (user.uid == userFlatList[i].userID) {
                      console.log(userFlatList[i].userID);
-                     pushNotifications.localNotification();
                   }
                }
                this.props.navigation.navigate("Activity");
@@ -283,7 +281,6 @@ export default class ChargeUnevenly extends React.Component {
             });
 
             if (user.uid == userFlatList[i].userID) {
-               pushNotifications.localNotification();
             }
          }
          this.props.navigation.navigate("Activity");

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ziduchen/FairShareNew/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
+            "outputFile": "/Users/ziduchen/FairShare/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "/Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/98e6bf88a7df924e53baede747c7fdc8/res/values-bg/values-bg.xml",

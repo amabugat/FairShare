@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ziduchen/FairShareNew/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
+            "outputFile": "/Users/ziduchen/FairShare/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml",
             "map": [
                 {
                     "source": "/Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/39b651b200e9013170b80a047bc6fd05/res/values-uk/values.xml",

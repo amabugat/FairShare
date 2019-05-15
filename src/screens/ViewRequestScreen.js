@@ -77,7 +77,7 @@ export default class ViewRequestScreen extends React.Component {
                                     <Body>
                                     {/*Switch back later*/}
                                     <Text>YOU ARE REQUESTING: {data.val().ChargedName}</Text>
-                                    <Text note>Total: {data.val().Amount.toFixed(2)}</Text>
+                                    <Text note>Total: {data.val().Amount}</Text>
                                     </Body>
                                 </Left>
                             </CardItem>

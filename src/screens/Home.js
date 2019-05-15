@@ -8,20 +8,50 @@ import {
    KeyboardAvoidingView,
    TouchableWithoutFeedback,
    Keyboard,
-   ScrollView
+   ScrollView,
+   AsyncStorage,
+   Alert,
 } from "react-native";
 import ProfileImage from "./profilePage/ProfileImage";
 import firebase from "@firebase/app";
 import "@firebase/auth";
 import "@firebase/database";
+import NotifService from "../services/pushNotifications";
 
-
+type Props = {};
 export default class Home extends React.Component {
-   state = {
-      email: "",
-      password: "",
-      loggedIn: null
-   };
+   constructor(props) {
+      super(props);
+      this.state = {
+         email: "",
+         password: "",
+         loggedIn: null,
+         senderId: "283024795409"
+      };
+      this.notif = new NotifService(
+         this.onRegister.bind(this),
+         this.onNotif.bind(this)
+      );
+   }
+
+   componentDidMount() {
+      this.notif.configure(this.onRegister.bind(this), this.onNotif.bind(this), this.state.senderId)
+   }
+
+   onRegister(token) {
+      Alert.alert("Registered !", JSON.stringify(token));
+      console.log(token);
+      this.setState({ registerToken: token.token, gcmRegistered: true });
+   }
+
+   onNotif(notif) {
+      console.log(notif);
+      Alert.alert(notif.title, notif.message);
+   }
+
+   handlePerm(perms) {
+      Alert.alert("Permissions", JSON.stringify(perms));
+   }
 
    componentWillMount() {
       firebase.auth().onAuthStateChanged(user => {
@@ -37,8 +67,8 @@ export default class Home extends React.Component {
       switch (this.state.loggedIn) {
          case true:
             return this.props.navigation.navigate("Activity");
-            // this.props.navigation.navigate('Home')
-            //this.props.navigation.navigate('NoSplit')
+         // this.props.navigation.navigate('Home')
+         //this.props.navigation.navigate('NoSplit')
          case false:
             return this.renderContent();
          default:
@@ -52,7 +82,7 @@ export default class Home extends React.Component {
             behavior="padding"
             style={styles.wrapper}
             enabled
-         >          
+         >
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                <View style={styles.container}>
                   <ProfileImage />

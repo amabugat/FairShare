@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ziduchen/FairShareNew/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/ziduchen/FairShare/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/02bdf049d061771c97ba2ecf10c9397b/res/values-v21/values-v21.xml",

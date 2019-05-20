@@ -13,8 +13,8 @@
 # Bundle artifact
 *.jsbundle
 
-build/
-.idea
-.gradle
-local.properties
-*.iml
+#build/
+#.idea
+#.gradle
+#local.properties
+#*.iml

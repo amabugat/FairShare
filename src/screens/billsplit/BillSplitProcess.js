@@ -13,6 +13,7 @@ import userFlatList from "../../data/userFlatList";
 import flatListData from "../../data/flatListData";
 import BasicFlatList from "../../components/BasicFlatList";
 import ChargeUnevenly from "../../components/ChargeUnevenly";
+
 export default class BillSplitProcess extends Component {
    constructor() {
       super();
@@ -72,6 +73,7 @@ export default class BillSplitProcess extends Component {
                   <TouchableOpacity
                      onPress={() => {
                         this.createCalc();
+                        console.log(userFlatList);
                         this.props.navigation.navigate("ChargeUnevenly");
                      }}
                   >

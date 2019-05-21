@@ -69,6 +69,32 @@ export default class ChargeUnevenly extends React.Component {
       });
    }
 
+   sendNotification(token, price) {
+      console.log("pressed");
+      let body = {
+         to: token,
+         notification: {
+            title: "Pay Your Recent Bill",
+            body: "You are charged for " + "$" + price,
+            sound: "default",
+         },
+         priority: 10
+      };
+      this._send(JSON.stringify(body), "notification");
+   }
+
+   _send(body, type) {
+      console.log("close to send");
+      let headers = new Headers({
+         "Content-Type": "application/json",
+       "Authorization": "key=AIzaSyCIn2th7KX6-5quHBnI4OudKTVPL9jwmNg"
+      });
+ 
+      fetch('https://gcm-http.googleapis.com/gcm/send', { method: "POST", headers: headers, body: body });
+
+      console.log("fetched");
+   }
+
    selectPhotoTapped() {
       const options = {
          quality: 1.0,
@@ -101,6 +127,7 @@ export default class ChargeUnevenly extends React.Component {
       });
    }
 
+
    chargePeople() {
       var user = firebase.auth().currentUser;
       var uid = user.uid;
@@ -109,7 +136,7 @@ export default class ChargeUnevenly extends React.Component {
          alert("not logged in");
          return;
       }
-      console.log(uid);
+      var userRef = firebase.database().ref('/Users').child(uid);
       //  alert("in charge people")
       var currentTimeStamp = new Date().getTime();
       if (this.state.avatarSource != null) {
@@ -154,7 +181,7 @@ export default class ChargeUnevenly extends React.Component {
             })
             .then(url => {
                // URL of the image uploaded on Firebase storage
-               console.log(url);
+               //console.log(url);
                //  alert(url)
                //  alert("current time" + currentTimeStamp)
                //    alert("chariging people length " +  that.state.chargingPeople.length)
@@ -214,9 +241,7 @@ export default class ChargeUnevenly extends React.Component {
                      Paid: false
                   });
 
-                  if (user.uid == userFlatList[i].userID) {
-                     console.log(userFlatList[i].userID);
-                  }
+                  this.sendNotification(userFlatList[i].deviceId, userFlatList[i].price);
                }
                this.props.navigation.navigate("Activity");
             })
@@ -280,8 +305,7 @@ export default class ChargeUnevenly extends React.Component {
                Paid: false
             });
 
-            if (user.uid == userFlatList[i].userID) {
-            }
+            this.sendNotification(userFlatList[i].deviceId, userFlatList[i].price);
          }
          this.props.navigation.navigate("Activity");
       }

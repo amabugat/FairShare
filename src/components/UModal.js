@@ -107,6 +107,7 @@ export default class UModal extends Component {
                                  var dataDic = {
                                     userID: user.child("userID").val(),
                                     name: user.child("FullName").val(),
+                                    deviceId: user.child("DeviceId").val(),
                                     items: [],
                                     price: 0
                                  };

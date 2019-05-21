@@ -10,7 +10,7 @@ import {
    Keyboard,
    ScrollView,
    AsyncStorage,
-   Alert,
+   Alert
 } from "react-native";
 import ProfileImage from "./profilePage/ProfileImage";
 import firebase from "@firebase/app";
@@ -34,12 +34,42 @@ export default class Home extends React.Component {
       );
    }
 
+   /*sendNotification(token) {
+      console.log("pressed");
+      let body = {
+         to: token,
+         notification: {
+            title: "Simple FCM Client",
+            body: "This is a notification with only NOTIFICATION.",
+            sound: "default",
+         },
+         priority: 10
+      };
+      this._send(JSON.stringify(body), "notification");
+   }
+
+   _send(body, type) {
+      console.log("close to send");
+      let headers = new Headers({
+         "Content-Type": "application/json",
+       "Authorization": "key=AIzaSyCIn2th7KX6-5quHBnI4OudKTVPL9jwmNg"
+      });
+ 
+      fetch('https://gcm-http.googleapis.com/gcm/send', { method: "POST", headers: headers, body: body });
+
+      console.log("fetched");
+   }*/
+
    componentDidMount() {
-      this.notif.configure(this.onRegister.bind(this), this.onNotif.bind(this), this.state.senderId)
+      this.notif.configure(
+         this.onRegister.bind(this),
+         this.onNotif.bind(this),
+         this.state.senderId
+      );
    }
 
    onRegister(token) {
-      Alert.alert("Registered !", JSON.stringify(token));
+      //Alert.alert("Registered !", JSON.stringify(token));
       console.log(token);
       this.setState({ registerToken: token.token, gcmRegistered: true });
    }
@@ -116,7 +146,7 @@ export default class Home extends React.Component {
 
                   <TouchableOpacity
                      onPress={() =>
-                        this.signup(this.state.email, this.state.password)
+                        this.signup(this.state.email, this.state.password, this.state.registerToken)
                      }
                      style={styles.button2}
                   >
@@ -124,7 +154,9 @@ export default class Home extends React.Component {
                   </TouchableOpacity>
 
                   <TouchableOpacity
-                     onPress={() => this.props.navigation.navigate("Camera")}
+                     onPress={() =>
+                        this.sendNotification(this.state.registerToken)
+                     }
                      style={styles.button2}
                   >
                      <Text style={styles.buttonText}> Camera Fcn </Text>
@@ -135,6 +167,7 @@ export default class Home extends React.Component {
       );
    }
    login = (email, password) => {
+      console.log("pressed login");
       var that = this;
       firebase
          .auth()
@@ -142,14 +175,14 @@ export default class Home extends React.Component {
          .then(function(user) {
             that.setState({ password: "" });
             console.log(user);
-            // that.props.navigation.navigate('Activity');
+            that.props.navigation.navigate('Activity');
          })
          .catch(function(error) {
             alert(error.toString());
          });
    };
 
-   signup = (email, password) => {
+   signup = (email, password, id) => {
       var that = this;
       firebase
          .auth()
@@ -169,6 +202,7 @@ export default class Home extends React.Component {
                   FirstName: "",
                   LastName: "",
                   FullName: "",
+                  DeviceId: id,
                   //JoinDate: new Date().getTime(),
                   DateofBirth: "",
                   Groups: {},

@@ -54,9 +54,6 @@ export default class ChargePeople extends React.Component {
                 fullName: userData.FullName,
             });
         })
-
-
-
     }
 
     selectPhotoTapped() {
@@ -200,59 +197,60 @@ export default class ChargePeople extends React.Component {
                 .catch((error) => {
                     console.log(error);
 
-                })}else{
-            var userRequestRef = firebase.database().ref('/Payments').child(uid).child('/Requesting')
-            for(i = 0; i < that.state.chargingPeople.length; i++){
-                var chargedRef = firebase.database().ref('/Payments').child(that.state.chargingPeople[i].userID).child('/GettingCharged')
-                var key = chargedRef.push().key;
-                //  alert(key)
-                chargedRef.child(key).set(
-                    {
-                        PaymentTitle: that.state.paymentTitle,
-                        ReceiptID: key,
-                        Description: that.state.chargeDescription,
-                        Amount: that.state.result,
-                        OriginalAmount:that.state.result,
-                        Tip: that.state.tip,
-                        Tax: that.state.tax,
-                        Requester: uid,
-                        Charged: that.state.chargingPeople[i].userID,
-                        RequesterName: that.state.fullName,
-                        ChargedName: that.state.chargingPeople[i].fullName,
-                        ReceiptPic: null,
-                        PhotoKey: null,
-                        TimeStamp: currentTimeStamp,
-                        InterestTimeStamp: currentTimeStamp,
-                        Interest: that.state.interest,
-                        InterestRate: (that.state.interestRate*.01),
-                        Paid: false,
-                    }
-                );
-                userRequestRef.child(key).set(
-                    {
-                        PaymentTitle: that.state.paymentTitle,
-                        ReceiptID: key,
-                        Description: that.state.chargeDescription,
-                        Amount: that.state.result,
-                        OriginalAmount:that.state.result,
-                        Tip: that.state.tip,
-                        Tax: that.state.tax,
-                        Requester: uid,
-                        Charged: that.state.chargingPeople[i].userID,
-                        RequesterName: that.state.fullName,
-                        ChargedName: that.state.chargingPeople[i].fullName,
-                        ReceiptPic: null,
-                        PhotoKey: null,
-                        TimeStamp: currentTimeStamp,
-                        InterestTimeStamp: currentTimeStamp,
-                        Interest: that.state.interest,
-                        InterestRate: (that.state.interestRate*.01),
-                        Paid: false,
-                    }
-                );
+                })
+              }else{
+                  var userRequestRef = firebase.database().ref('/Payments').child(uid).child('/Requesting')
+                  for(i = 0; i < that.state.chargingPeople.length; i++){
+                      var chargedRef = firebase.database().ref('/Payments').child(that.state.chargingPeople[i].userID).child('/GettingCharged')
+                      var key = chargedRef.push().key;
+                      //  alert(key)
+                      chargedRef.child(key).set(
+                          {
+                              PaymentTitle: that.state.paymentTitle,
+                              ReceiptID: key,
+                              Description: that.state.chargeDescription,
+                              Amount: that.state.result,
+                              OriginalAmount:that.state.result,
+                              Tip: that.state.tip,
+                              Tax: that.state.tax,
+                              Requester: uid,
+                              Charged: that.state.chargingPeople[i].userID,
+                              RequesterName: that.state.fullName,
+                              ChargedName: that.state.chargingPeople[i].fullName,
+                              ReceiptPic: null,
+                              PhotoKey: null,
+                              TimeStamp: currentTimeStamp,
+                              InterestTimeStamp: currentTimeStamp,
+                              Interest: that.state.interest,
+                              InterestRate: (that.state.interestRate*.01),
+                              Paid: false,
+                          }
+                      );
+                      userRequestRef.child(key).set(
+                          {
+                              PaymentTitle: that.state.paymentTitle,
+                              ReceiptID: key,
+                              Description: that.state.chargeDescription,
+                              Amount: that.state.result,
+                              OriginalAmount:that.state.result,
+                              Tip: that.state.tip,
+                              Tax: that.state.tax,
+                              Requester: uid,
+                              Charged: that.state.chargingPeople[i].userID,
+                              RequesterName: that.state.fullName,
+                              ChargedName: that.state.chargingPeople[i].fullName,
+                              ReceiptPic: null,
+                              PhotoKey: null,
+                              TimeStamp: currentTimeStamp,
+                              InterestTimeStamp: currentTimeStamp,
+                              Interest: that.state.interest,
+                              InterestRate: (that.state.interestRate*.01),
+                              Paid: false,
+                          }
+                      );
+              }
+              this.props.navigation.navigate('Activity')
             }
-            this.props.navigation.navigate('Activity')
-        }
 
     }
 

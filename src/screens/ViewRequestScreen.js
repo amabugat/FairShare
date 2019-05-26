@@ -98,7 +98,7 @@ export default class ViewRequestScreen extends React.Component {
         await requestRef.on('child_removed', function(data){
             var newData = [... that.state.items]
             for(var i = newData.length - 1; i >= 0; i--){
-                if(newData[i].val().ReceiptID == data.val().ReceiptID){
+                if(newData[i].ReceiptID == data.ReceiptID){
                     newData.splice(i, 1);
                     break;
                 }

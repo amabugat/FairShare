@@ -1,3 +1,143 @@
+// import React from 'react';
+// import {StyleSheet, Text, View, Button, TouchableOpacity, Image, PermissionsAndroid} from 'react-native';
+// import {
+//     Container,
+//     Header,
+//     Title,
+//     Content,
+//     Icon,
+//     Card,
+//     CardItem,
+//     Thumbnail,
+//     Left,
+//     Body,
+//     Right
+// } from "native-base";
+// import Geocoder from 'react-native-geocoding';
+// //import {PermissionsAndroid} from 'react-native';
+// export default class Camera extends React.Component {
+//     constructor(props){
+//         super(props);
+//         this.state = {
+//           lat: 0,
+//           lng: 0,
+//           address: "",
+//           tax: 0,
+//           zip: 0,
+//         }
+//     }
+//
+//   async componentWillMount(){
+//         var that = this;
+//
+//       await navigator.geolocation.getCurrentPosition(position => {
+//         that.setState({
+//           lat: position.coords.latitude,
+//           lng: position.coords.longitude,
+//         })
+//
+//
+//       })
+//
+//       //geolocation.requestAuthorization();
+//   //    var that = this;
+//
+//     //  Geocoder.init("AIzaSyDFyouQS3-6HaTjtyRp-wpEVogv6EVC_0s");
+//       // await navigator.geolocation.getCurrentPosition(position => {
+//       //   that.setState({
+//       //     lat: position.coords.latitude,
+//       //     lng: position.coords.longitude,
+//       //   })
+//       //
+//       //
+//       // })
+//       // await fetch('https://maps.googleapis.com/maps/api/geocode/json?latlng=34.1397,-118.0353&key=AIzaSyDfAZDo1UpXtkp2dO9VaZ1VIWrLtc7TjQc')
+//       // .then(response => response.json())
+//       // .then((responseJson)=> {
+//       //   // this.setState({
+//       //   //  tax: responseJson.taxSales,
+//       //   // })
+//       //   //alert(responseJson)
+//       //   var addy = responseJson.results[0].address_components[0].long_name;
+//       //   var result = responseJson.results[0].address_components[6].long_name;
+//       //   console.log(result)
+//       //   that.setState({
+//       //     zip: result,
+//       //     address: addy
+//       //   })
+//       //   // fetch("https://api.zip-tax.com/request/v40?key=FQMDodzmaEHJcRy3&postalcode="+ result)
+//       //   //      .then(response => response.json())
+//       //   //      .then((responseJson)=> {
+//       //   //        this.setState({
+//       //   //         tax: responseJson.taxSales,
+//       //   //        })
+//       //   //      })
+//       //   //      .catch(error=>console.log(error)) //to catch the errors if any
+//       //    })
+//       //    // .catch(error => console.log(error));
+//       // .catch(error=>console.log(error)) //to catch the errors if any
+//       //
+//       //  fetch("https://api.zip-tax.com/request/v40?key=FQMDodzmaEHJcRy3&postalcode=" + this.state.zip)
+//       //      .then(response => response.json())
+//       //      .then((responseJson)=> {
+//       //        console.log(responseJson.results)
+//       //        var decimalTax = responseJson.results[0].taxSales*100;
+//       //        this.setState({
+//       //         tax: decimalTax,
+//       //        })
+//       //      })
+//       //      .catch(error=>console.log(error)) //to catch the errors if any
+//       }
+//
+//
+//     render() {
+//         return (
+//             <View style={styles.container}>
+//               <Text>Lat: {this.state.lat} </Text>
+//               <Text>Lng: {this.state.lng} </Text>
+//               <Text> Address: {this.state.address} </Text>
+//               <Text> Tax: {this.state.tax} </Text>
+//               <Text> Tax: {this.state.zip} </Text>
+//
+//             </View>
+//
+//         );
+//     }
+//
+//
+//
+//
+// }
+// const styles = StyleSheet.create({
+//     container: {
+//         flex: 1,
+//         backgroundColor: '#3d3e52',
+//         alignItems: 'center',
+//         justifyContent: 'flex-start',
+//     },
+//     cardStyle: {
+//         width: "80%",
+//         // height:"50%",
+//         // paddingVertical: 5,
+//     },
+//     button1: {
+//         // width: '30%',
+//         backgroundColor: '#559535',
+//         // paddingTop: 10,
+//         // paddingBottom: 10,
+//         padding:10,
+//         justifyContent: 'center',
+//         alignItems: 'center',
+//         // marginBottom:10,
+//         // marginTop:10,
+//         elevation: 3,
+//     },
+//     buttonText: {
+//         fontFamily: "Raleway-Regular",
+//         color: 'white',
+//     },
+// });
+
 import React, { Component } from 'react';
 import {
     ActivityIndicator,
@@ -11,6 +151,9 @@ import {
 } from 'react-native';
 import ImagePicker from 'react-native-image-picker';
 import RNTesseractOcr from 'react-native-tesseract-ocr';
+import firebase from '@firebase/app';
+import '@firebase/auth';
+import '@firebase/database';
 
 const Button = (Platform.OS === 'android') ? TouchableNativeFeedback : TouchableOpacity;
 const imagePickerOptions = {
@@ -37,6 +180,33 @@ class Camera extends Component {
             isLoading: false,
         };
         this.selectImage = this.selectImage.bind(this);
+    }
+    componentDidMount(){
+      console.log("in mount")
+      var exstring= 'Spagetti pasta      2.00'
+      if(/(?=\d\.\d{2})/.test(exstring)){
+        console.log("its true")
+      }
+      ///Roger(?= Waters)/.test('Roger is my dog') //false
+      const re = /((\w+\s)+)(\s+)(\d\.\d{2})/
+      //\d{2}
+      const hehe = re.exec(exstring)
+      console.log(hehe);
+      console.log(hehe.length)
+      console.log(hehe[1])
+      console.log(hehe[hehe.length-1])
+
+      var that = this
+      var uid = '1R1vjOJ10dOAVjUta1WPKSFTqQI3'
+      var userRef = firebase.database().ref('/Users').child(uid);
+      userRef.on('value', function(data){
+        console.log(data.val())
+        // that.setState({
+        //   deviceID: data.val().DeviceID
+        // })
+      })
+
+
     }
 
     selectImage() {
@@ -82,16 +252,40 @@ class Camera extends Component {
                 var item = [];
                 var price = [];
                 var test = 0;
+                // const re = /(\w+)\s(\d\.\d{2})/
+                // const hehe = re.exec('Spagetti     2.00')
+                // console.log(hehe);
                 for(var i = 0; i < output.length; i++)
                 {
-                    if(output[i].includes('Grand'))
-                    {
-                        item.push(output[i]);
-
-                            price.push(output[i].split(' '));
+                    // if(output[i].includes('Grand'))
+                    // {
+                    //     item.push(output[i]);
+                    //
+                    //         price.push(output[i].split(' '));
+                    //  }
+                    if(/(?=\d\.\d{2})/.test(output[i])){
+                      console.log("its true")
+                      const re = /((\w+\s)+)(\s+)(\d\.\d{2})/
+                      //\d{2}
+                      const hehe = re.exec(output[i])
+                      console.log(hehe);
+                      console.log(hehe[1])
+                      console.log(hehe[hehe.length-1])
+                      item.push(hehe[1]);
+                      price.push(hehe[hehe.length-1]);
                     }
+
+                    // const re = /((\w+\s)+)(\s+)(\d\.\d{2})/
+                    // //\d{2}
+                    // const hehe = re.exec(exstring)
+                    // console.log(hehe);
+                    // console.log(hehe.length)
+                    // console.log(hehe[1])
+                    // console.log(hehe[hehe.length-1])
+
+
                 }
-                test = price[0][2];
+              //  test = price[0][2];
                 console.log(test);
                 console.log(price);
                 // console.log(item);
@@ -175,6 +369,10 @@ Camera.navigationOptions = {
 };
 
 export default Camera;
+
+
+
+
 // // import React from 'react';
 // // import {StyleSheet, Text, View, Button, TouchableOpacity, Image} from 'react-native';
 // // import {

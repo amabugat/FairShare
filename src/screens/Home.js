@@ -24,6 +24,7 @@ export default class Home extends React.Component {
     };
 
     componentWillMount() {
+    //  firebase.auth().signOut();
         firebase.auth().onAuthStateChanged(user => {
             if (user) {
                 this.setState({ loggedIn: true });

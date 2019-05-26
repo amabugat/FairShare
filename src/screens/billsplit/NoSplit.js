@@ -19,9 +19,55 @@ export default class NoSplit extends Component {
             tip: null,
             people: null,
             result: null,
-            split: null
+            split: null,
+            zip: 0,
+            lat:0,
+            lng:0
         };
     }
+    async componentWillMount(){
+        var that = this;
+        await navigator.geolocation.getCurrentPosition(position => {
+          console.log(position)
+          that.setState({
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          })
+           fetch("https://maps.googleapis.com/maps/api/geocode/json?latlng="+ position.coords.latitude +","+ position.coords.longitude+"&key=AIzaSyDfAZDo1UpXtkp2dO9VaZ1VIWrLtc7TjQc")
+          .then(response => response.json())
+          .then((responseJson)=> {
+            var result = responseJson.results[0].address_components[6].long_name;
+            console.log(result)
+            that.setState({
+              zip: result,
+            })
+            fetch("https://api.zip-tax.com/request/v40?key=FQMDodzmaEHJcRy3&postalcode=" + result)
+                .then(response => response.json())
+                .then((responseJson)=> {
+                //  console.log(responseJson.results)
+                  var decimalTax = responseJson.results[0].taxSales*100;
+                  console.log(decimalTax)
+                  that.setState({
+                   tax: decimalTax,
+                  })
+                })
+                .catch(error=>console.log(error))
+          })
+
+          .catch(error=>console.log(error)) //to catch the errors if any
+        }, (error) => console.log(JSON.stringify(error)),
+         {enableHighAccuracy: true, timeout: 5000 }
+        )
+        console.log(this.state.tax)
+
+        if(that.state.zip == 0){
+          console.log("can't find zip");
+        }
+
+    }
+
+
+
 
     render() {
         return (
@@ -70,17 +116,23 @@ export default class NoSplit extends Component {
 
                         <View style={styles.row}>
                             <Text style={styles.fontSet}>%Tax</Text>
-                            <TextInput
-                                style={styles.box}
-                                keyboardType="numeric"
-                                returnKeyType="done"
-                                ref={ta => {
-                                    this.taxInput = ta;
-                                }}
-                                onChangeText={tax =>
-                                    this.setState({ tax: parseFloat(tax) })
-                                }
-                            />
+                            {this.state.tax == null ? (
+                              <TextInput
+                                  style={styles.box}
+                                  keyboardType="numeric"
+                                  returnKeyType="done"
+                                  ref={ta => {
+                                      this.taxInput = ta;
+                                  }}
+                                  onChangeText={tax =>
+                                      this.setState({ tax: parseFloat(tax) })
+                                  }
+                              />
+                            ): (
+                              <Text style={styles.box}> {this.state.tax}</Text>
+                            )
+                            }
+
                         </View>
 
                         <View style={styles.row}>

@@ -230,9 +230,7 @@ export default class ViewChargedScreen extends React.Component {
         //remove the item
         chargedUserTable.child(data.val().ReceiptID).remove();
         userRequestingRef.child(data.val().ReceiptID).remove();
-
     }
-
 }
 
 

@@ -51,6 +51,7 @@ export default class ViewRequestScreen extends React.Component {
         await requestRef.on('child_added', function(data){
             var dic= {};
             dic = data.val();
+            dic.ShowMore = false;
             if(data.val().Interest != "NONE"){
                 //  alert(interestTime)
                 var interestTime = 1000;
@@ -106,6 +107,40 @@ export default class ViewRequestScreen extends React.Component {
         });
     }
 
+
+    toggleShowMore(index){
+      console.log(index)
+      console.log(this.state.items[index])
+      var newArray = this.state.items
+      if(this.state.items[index].ShowMore){
+        newArray[index].ShowMore = false;
+        //console.log(newArray[index])
+      //  this.state.items[index].ShowMore = false;
+      }else{
+        newArray[index].ShowMore = true;
+      //  this.state.items[index].ShowMore = true;
+      }
+      this.setState({
+        items: newArray
+      })
+    }
+
+    cancelRequest(data){
+        var user = firebase.auth().currentUser;
+        var uid = user.uid;
+        var paymentsRef = firebase.database().ref('/Payments');
+        var paymentsUserRef = paymentsRef.child(data.Requester);
+        var userRequestingRef = paymentsUserRef.child('/Requesting');
+        var userHistoryRef = paymentsUserRef.child('/History');
+
+        var chargedUserRef = paymentsRef.child(data.Charged);
+        var chargedUserTable = chargedUserRef.child('/GettingCharged');
+        var chargedUserHistory = chargedUserRef.child('/History');
+
+        chargedUserTable.child(data.ReceiptID).remove();
+        userRequestingRef.child(data.ReceiptID).remove();
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -140,12 +175,67 @@ export default class ViewRequestScreen extends React.Component {
                                 </CardItem>
                             )}
 
+                            {data.ShowMore == true ? (
 
-                            <CardItem key={index}>
-                                <View>
-                                    <Text>Description: {data.Description}</Text>
-                                </View>
+
+                                  <CardItem>
+                                        <Text>Description: {data.Description}{"\n"}
+
+
+
+                                        Tax: {data.Tax}{"\n"}
+
+
+
+
+                                        Interest: {data.Interest}{"\n"}
+
+
+
+
+                                        Tip: {data.Tip}{"\n"}
+
+
+
+
+                                        Timestamp: {data.TimeStamp}{"\n"}</Text>
+
+
+
+                                        <Left>
+                                            <TouchableOpacity
+                                                onPress={() =>
+                                                    this.toggleShowMore(index)
+                                                }
+                                            >
+                                                <Text style={{color:'blue'}}> Show Less! </Text>
+                                            </TouchableOpacity>
+                                        </Left>
+                                    </CardItem>
+
+
+                            ) : (
+                                <CardItem cardBody key = {index}>
+                                  <TouchableOpacity
+                                      onPress={() =>
+                                          this.toggleShowMore(index)
+                                      }
+                                  >
+                                      <Text style={{color:'blue'}}> Show More! </Text>
+                                  </TouchableOpacity>
+                                </CardItem>
+                            )}
+
+                            <CardItem>
+                              <TouchableOpacity
+                                  onPress={() =>
+                                      this.cancelRequest(data)
+                                  }
+                              >
+                                  <Text style={{color:'red'}}> Cancel </Text>
+                              </TouchableOpacity>
                             </CardItem>
+
                         </Card>
                     );
                 })}

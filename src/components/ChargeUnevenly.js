@@ -331,7 +331,7 @@ export default class ChargeUnevenly extends React.Component {
                             <Text style={styles.UserListItem}> pays </Text>
                             <Text style={styles.UserListItem}>
                                 {" "}
-                                ${item.price.toFixed(2)}
+                                ${item.price}
                             </Text>
                         </View>
                     )}

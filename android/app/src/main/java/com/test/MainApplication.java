@@ -3,6 +3,7 @@ package com.test;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.reactlibrary.RNTesseractOcrPackage;
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import com.smarkets.paypal.RNPaypalPackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
@@ -33,6 +34,7 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
+            new RNTesseractOcrPackage(),
             new ReactNativePushNotificationPackage(),
             new RNPaypalPackage(),
             new RNFetchBlobPackage(),
@@ -40,8 +42,7 @@ public class MainApplication extends Application implements ReactApplication {
             new RNPaypalWrapperPackage(),
             new ReanimatedPackage(),
             new VectorIconsPackage(),
-            new RNGestureHandlerPackage(),
-            new RNTesseractOcrPackage()
+            new RNGestureHandlerPackage()
             );
         }
 

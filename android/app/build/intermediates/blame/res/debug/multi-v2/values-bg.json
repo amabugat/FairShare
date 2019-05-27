@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\admin\\IdeaProjects\\fairshare_2\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
+            "outputFile": "C:\\Users\\admin\\IdeaProjects\\fairshare_new\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
             "map": [
                 {
                     "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-18.0.0.aar\\05a60c1aefa0db423d4ca672f6e41656\\res\\values-bg\\values.xml",

@@ -56,60 +56,49 @@ class Camera extends Component {
 
     extractTextFromImage(imagePath) {
         RNTesseractOcr.recognize(imagePath, 'LANG_ENGLISH', tessOptions)
-            // .then((result)=> {
-            //     const regex = /\d+.?\d*$/; //regex matching decimal value at end of line
-            //     let newResult = result;
-            //     console.log(newResult);
-            //
-            //     return newResult
-            //         .replace(/[|'"]+/g, '')
-            //         .split('\n')
-            //         .map(line => {
-            //             line = line.trim(); //trim whitespace
-            //             let index = line.search(regex); //returns index of beginning of match
-            //             return [
-            //                 line
-            //                     .substring(0, index)
-            //                     .trim(),
-            //                 line
-            //                    s .substring(index)
-            //                     .trim()
-            //             ]; //return array of two trimmed strings
-            //         });
-            // })
             .then((result) => {
                 var output = result.split('\n');
                 var item = [];
                 var price = [];
-                var test = 0;
+                var total = [];
+                let flag = false;
                 for(var i = 0; i < output.length; i++)
                 {
-                    if(output[i].includes('Grand'))
-                    {
-                        item.push(output[i]);
-
-                            price.push(output[i].split(' '));
-                    }
-                    // if(/(?=\d\.\d{2})/.test(output[i])){
-                    //     console.log("its true")
-                    //     const re = /((\w+\s)+)(\s+)(\d\.\d{2})/
-                    //     //\d{2}
-                    //     const hehe = re.exec(exstring)
-                    //     console.log(hehe);
-                    //     console.log(hehe[1])
-                    //     console.log(hehe[hehe.length-1])
-                    //     item.push(hehe[1]);
-                    //     price.push(hehe[hehe.length-1]);
+                    // if(/\b(\w*Total\w*)\b(\s*)(\d*\.\d{2})/.test(output[i]))
+                    // {
+                    //     console.log("Found total")
+                    //     flag = true;
                     // }
+                    if(/(?=\d\.\d{2})/.test(output[i])){
+                        console.log("its true")
+                        console.log(output[i])
+                        const re = /((\s*\w+\s)+)(\s*)(\d*\.\d{2})/
+                        const hehe = re.exec(output[i])
+                        console.log(hehe);
+                        console.log(hehe[1])
+                        console.log(hehe[hehe.length-1])
+                        item.push(hehe[1]);
+                        price.push(hehe[hehe.length-1]);
+                        flag = true;
+                    }
+                    else{
+                        console.log("false");
+                    }
                 }
-                test = price[0][2];
-                console.log(test);
                 console.log(price);
-                // console.log(item);
-                this.setState({ isLoading: false, extractedText: result});
-                // var test = output.match(/(.*)\sTotal.+/g);
-                // console.log(test);
-                // console.log(result.split('\n'));
+                console.log(item);
+
+                if(flag == true)
+                {
+                    this.setState({ isLoading: false, extractedText: result});
+                    flag = false;
+                }
+                else{
+                    this.setState({ isLoading: false, hasErrored: true, errorMessage: "ERROR" });
+                    flag = false;
+                }
+
+
             })
             .catch((err) => {
                 this.setState({ hasErrored: true, errorMessage: err.message });
@@ -135,8 +124,7 @@ class Camera extends Component {
                         : (
                             hasErrored
                                 ? <Text>{errorMessage}</Text>
-                                : <Text>{extractedText}</Text>
-                        )
+                                : this.props.navigation.navigate('NotEvenValidation'))
                 }
             </View>
         );

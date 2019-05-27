@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\admin\\IdeaProjects\\fairshare_2\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
+            "outputFile": "C:\\Users\\admin\\IdeaProjects\\fairshare_new\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-gcm-16.1.0.aar\\67d28a57b67ecab353401b04a852b92e\\res\\values-fi\\values.xml",

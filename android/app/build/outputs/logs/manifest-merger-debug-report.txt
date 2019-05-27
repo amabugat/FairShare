@@ -1,36 +1,36 @@
 -- Merging decision tree log ---
 permission#com.test.permission.C2D_MESSAGE
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:12:5-14:51
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:12:5-14:51
 	android:protectionLevel
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:14:13-48
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:14:13-48
 	android:name
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:13:13-67
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:13:13-67
 uses-permission#com.test.permission.C2D_MESSAGE
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:15:5-79
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:15:5-79
 	android:name
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:15:22-76
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:15:22-76
 category#com.test
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:45:17-61
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:45:17-61
 	android:name
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:45:27-58
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:45:27-58
 manifest
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12
-MERGED from [:react-native-tesseract-ocr] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-tesseract-ocr\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-13:12
-MERGED from [:react-native-push-notification] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-push-notification\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-29:12
-MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
-MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-paypal-wrapper] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\5572da03f48bc95ca9214f9007a6aa94\AndroidManifest.xml:2:1-15:12
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12
+MERGED from [:react-native-tesseract-ocr] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-tesseract-ocr\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-push-notification] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-push-notification\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-29:12
+MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
+MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-paypal-wrapper] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\d354dd94aae3be126eea571f052380a1\AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\a0e325e4774cb661beb419a767f46c9f\AndroidManifest.xml:17:1-22:12
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:2:1-26:12
 MERGED from [com.rmtheis:tess-two:7.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\tess-two-7.0.0.aar\b769644ef99f3fc8bc308fc878bb5546\AndroidManifest.xml:17:1-26:12
@@ -88,27 +88,27 @@ MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms
 MERGED from [com.braintreepayments:browser-switch:0.1.5] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.5.aar\9e2eac563707cd92529d97b1bc63e948\AndroidManifest.xml:2:1-12:12
 MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\ce223c3ddd5f440c1d9a9f1fc89fcc72\AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\4632076009bb3e2cf2880939cf5fb1a3\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12
 	package
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:2:5-23
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:2:5-23
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
-MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-67
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:12:5-67
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:12:5-67
 MERGED from [com.google.android.gms:play-services-gcm:16.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\play-services-gcm-16.1.0.aar\67d28a57b67ecab353401b04a852b92e\AndroidManifest.xml:24:5-67
@@ -124,51 +124,51 @@ MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] C:\Users\admin\.gra
 MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\ce223c3ddd5f440c1d9a9f1fc89fcc72\AndroidManifest.xml:11:5-67
 MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\ce223c3ddd5f440c1d9a9f1fc89fcc72\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\5572da03f48bc95ca9214f9007a6aa94\AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\5572da03f48bc95ca9214f9007a6aa94\AndroidManifest.xml:11:5-78
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\d354dd94aae3be126eea571f052380a1\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\d354dd94aae3be126eea571f052380a1\AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:5:22-75
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:5:22-75
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:7:5-65
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:7:5-65
 MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:9:5-65
 MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:7:22-62
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:7:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:8:5-80
-MERGED from [:react-native-tesseract-ocr] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-tesseract-ocr\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-81
-MERGED from [:react-native-tesseract-ocr] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-tesseract-ocr\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-81
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:8:5-80
+MERGED from [:react-native-tesseract-ocr] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-tesseract-ocr\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-81
+MERGED from [:react-native-tesseract-ocr] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-tesseract-ocr\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:8:22-78
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:11:5-68
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:11:5-68
 MERGED from [com.google.firebase:firebase-iid:18.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\firebase-iid-18.0.0.aar\e0a587fb801ec28d7dbca4d522c4b106\AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:18.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\firebase-iid-18.0.0.aar\e0a587fb801ec28d7dbca4d522c4b106\AndroidManifest.xml:24:5-68
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:11:22-65
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:11:22-65
 uses-permission#android.permission.VIBRATE
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:18:5-66
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:18:5-66
 MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:10:5-66
 MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:10:5-66
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:18:22-63
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:18:22-63
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:19:5-80
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:19:5-80
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:19:22-78
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:19:22-78
 application
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:22:5-90:19
-MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
-MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
-MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\5572da03f48bc95ca9214f9007a6aa94\AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\5572da03f48bc95ca9214f9007a6aa94\AndroidManifest.xml:13:5-20
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:22:5-90:19
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:5-27:19
+MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\d354dd94aae3be126eea571f052380a1\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\d354dd94aae3be126eea571f052380a1\AndroidManifest.xml:13:5-20
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:14:5-24:19
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:14:5-24:19
 MERGED from [com.google.android.gms:play-services-gcm:16.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\play-services-gcm-16.1.0.aar\67d28a57b67ecab353401b04a852b92e\AndroidManifest.xml:26:5-20
@@ -212,135 +212,135 @@ MERGED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\861204fc298965b69786028304a98187\AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:24:7-39
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:24:7-39
 	android:roundIcon
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:26:7-52
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:26:7-52
 	android:icon
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:25:7-41
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:25:7-41
 	android:allowBackup
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:27:7-34
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:27:7-34
 	android:theme
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:28:7-38
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:28:7-38
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:23:7-38
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:23:7-38
 meta-data#com.dieam.reactnativepushnotification.notification_channel_name
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:30:9-31:69
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:30:9-31:69
 	android:value
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:31:21-67
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:31:21-67
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:30:21-99
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:30:21-99
 meta-data#com.dieam.reactnativepushnotification.notification_channel_description
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:32:9-33:76
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:32:9-33:76
 	android:value
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:33:21-74
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:33:21-74
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:32:21-106
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:32:21-106
 meta-data#com.dieam.reactnativepushnotification.notification_color
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:35:9-36:62
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:35:9-36:62
 	android:resource
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:36:21-60
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:36:21-60
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:35:21-92
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:35:21-92
 receiver#com.google.android.gms.gcm.GcmReceiver
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:39:9-47:20
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:39:9-47:20
 	android:exported
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:41:17-40
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:41:17-40
 	android:permission
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:42:17-77
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:42:17-77
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:40:17-70
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:40:17-70
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.test
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:43:13-46:29
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:43:13-46:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:44:17-81
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:44:17-81
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:44:25-78
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:44:25-78
 receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:50:9-110
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:50:9-110
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:50:19-107
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:50:19-107
 receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:51:9-55:20
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:51:9-55:20
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:51:19-115
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:51:19-115
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:52:13-54:29
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:52:13-54:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:53:17-79
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:53:17-79
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:53:25-76
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:53:25-76
 service#com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:56:9-118
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:56:9-118
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:56:18-116
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:56:18-116
 service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerServiceGcm
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:59:9-65:19
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:59:9-65:19
 	android:exported
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:61:17-41
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:61:17-41
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:60:17-114
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:60:17-114
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:62:13-64:29
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:62:13-64:29
 service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:69:9-75:19
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:69:9-75:19
 	android:exported
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:71:17-41
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:71:17-41
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:70:17-111
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:70:17-111
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:72:13-74:29
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:72:13-74:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:73:17-78
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:73:17-78
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:73:25-75
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:73:25-75
 activity#com.test.MainActivity
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:79:7-88:18
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:79:7-88:18
 	android:label
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:81:9-41
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:81:9-41
 	android:windowSoftInputMode
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:83:9-51
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:83:9-51
 	android:configChanges
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:82:9-79
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:82:9-79
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:80:9-37
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:80:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:84:9-87:25
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:84:9-87:25
 action#android.intent.action.MAIN
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:85:13-65
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:85:13-65
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:85:21-62
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:85:21-62
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:86:13-73
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:86:13-73
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:86:23-70
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:86:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:89:7-84
+ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:89:7-84
 	android:name
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:89:17-81
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:89:17-81
 uses-sdk
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-MERGED from [:react-native-tesseract-ocr] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-tesseract-ocr\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-tesseract-ocr] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-tesseract-ocr\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-push-notification] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-push-notification\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-push-notification] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-push-notification\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal-wrapper] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal-wrapper] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\5572da03f48bc95ca9214f9007a6aa94\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\5572da03f48bc95ca9214f9007a6aa94\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-tesseract-ocr] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-tesseract-ocr\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-tesseract-ocr] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-tesseract-ocr\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-push-notification\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-push-notification\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-fetch-blob\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal-wrapper] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal-wrapper] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal-wrapper\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-reanimated\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\d354dd94aae3be126eea571f052380a1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.3] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\react-native-0.58.3.aar\d354dd94aae3be126eea571f052380a1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\a0e325e4774cb661beb419a767f46c9f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\a0e325e4774cb661beb419a767f46c9f\AndroidManifest.xml:20:5-44
 MERGED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:7:5-9:41
@@ -453,64 +453,64 @@ MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\admin\.gradl
 MERGED from [com.paypal.android.sdk:data-collector:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\data-collector-2.17.0.aar\ce223c3ddd5f440c1d9a9f1fc89fcc72\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\4632076009bb3e2cf2880939cf5fb1a3\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\4632076009bb3e2cf2880939cf5fb1a3\AndroidManifest.xml:5:5-7:41
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\0c49da13179794b83a5c1cc0ad0c58f5\AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12 reason: com.reactlibrary requested WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12 reason: com.reactlibrary requested WRITE_EXTERNAL_STORAGE
 activity#com.braintreepayments.api.BraintreeBrowserSwitchActivity
-ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:9-26:20
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:9-26:20
 	android:launchMode
-		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-44
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-44
 	android:theme
-		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-72
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-72
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-84
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-84
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:${applicationId}.braintree
-ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:com.test.braintree
-ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:13-25:29
 action#android.intent.action.VIEW
-ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-69
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:25-66
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:25-66
 category#android.intent.category.DEFAULT
-ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:17-76
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:17-76
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:27-73
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:21:27-73
 category#android.intent.category.BROWSABLE
-ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:17-78
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:17-78
 	android:name
-		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:27-75
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:22:27-75
 data
-ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:17-69
+ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:17-69
 	android:scheme
-		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:23-66
+		ADDED from [:react-native-paypal] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-paypal\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:24:23-66
 provider#com.imagepicker.FileProvider
-ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:13-60
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:13-60
 	android:exported
-		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:13-56
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:13-56
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-19:58
+ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:13-19:58
 	android:resource
-		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-55
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:19:17-55
 	android:name
-		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_2\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:17-67
+		ADDED from [:react-native-image-picker] C:\Users\admin\IdeaProjects\fairshare_new\node_modules\react-native-image-picker\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.braintreepayments.api:braintree:2.17.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\braintree-2.17.0.aar\a62243f40fbc740a4b33c74f5e675492\AndroidManifest.xml:11:5-79
 MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\paypal-android-sdk-2.15.1.aar\5f13e48ed4db764d218f987d3796fcd6\AndroidManifest.xml:9:5-79
@@ -692,7 +692,7 @@ MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\admin\.gr
 	android:name
 		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\0c49da13179794b83a5c1cc0ad0c58f5\AndroidManifest.xml:27:13-51
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from C:\Users\admin\IdeaProjects\fairshare_2\android\app\src\main\AndroidManifest.xml:1:1-94:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from C:\Users\admin\IdeaProjects\fairshare_new\android\app\src\main\AndroidManifest.xml:1:1-94:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-feature#android.hardware.camera
 ADDED from [io.card:android-sdk:5.4.2] C:\Users\admin\.gradle\caches\transforms-1\files-1.1\android-sdk-5.4.2.aar\c36ffd9d47eec66a780c7391cdce346f\AndroidManifest.xml:12:5-14:36
 	android:required

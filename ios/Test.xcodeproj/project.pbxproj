@@ -87,6 +87,7 @@
 		87CD1B58B2B54CFFAD294241 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B360C73563486EBF6978F9 /* libRNImagePicker.a */; };
 		106881A11D9247E99CB9ED3D /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C18F1279AE7040579D525E72 /* libRNFetchBlob.a */; };
 		24AE8C305E6045BEAA7D49CD /* libRNPaypal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC72254EE0E438CA0726D5C /* libRNPaypal.a */; };
+		6C0710A97C02450E9CC024AE /* libRNTesseractOcr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69879B8D09DE4D0E9B8CDD83 /* libRNTesseractOcr.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -451,6 +452,8 @@
 		C18F1279AE7040579D525E72 /* libRNFetchBlob.a */ = {isa = PBXFileReference; name = "libRNFetchBlob.a"; path = "libRNFetchBlob.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		1DAA22DC5F8B4942AFF9DDF4 /* RNPaypal.xcodeproj */ = {isa = PBXFileReference; name = "RNPaypal.xcodeproj"; path = "../node_modules/react-native-paypal/ios/RNPaypal.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		9DC72254EE0E438CA0726D5C /* libRNPaypal.a */ = {isa = PBXFileReference; name = "libRNPaypal.a"; path = "libRNPaypal.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		F50EC7F6EA2A41199C5102E2 /* RNTesseractOcr.xcodeproj */ = {isa = PBXFileReference; name = "RNTesseractOcr.xcodeproj"; path = "../node_modules/react-native-tesseract-ocr/ios/RNTesseractOcr.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		69879B8D09DE4D0E9B8CDD83 /* libRNTesseractOcr.a */ = {isa = PBXFileReference; name = "libRNTesseractOcr.a"; path = "libRNTesseractOcr.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -489,6 +492,7 @@
 				87CD1B58B2B54CFFAD294241 /* libRNImagePicker.a in Frameworks */,
 				106881A11D9247E99CB9ED3D /* libRNFetchBlob.a in Frameworks */,
 				24AE8C305E6045BEAA7D49CD /* libRNPaypal.a in Frameworks */,
+				6C0710A97C02450E9CC024AE /* libRNTesseractOcr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +692,7 @@
 				B5FB2657980E41419890624F /* RNImagePicker.xcodeproj */,
 				DCAD2AB751C24DAAA853C877 /* RNFetchBlob.xcodeproj */,
 				1DAA22DC5F8B4942AFF9DDF4 /* RNPaypal.xcodeproj */,
+				F50EC7F6EA2A41199C5102E2 /* RNTesseractOcr.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1409,6 +1414,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1421,6 +1427,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-paypal\ios",
+					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 				);
 			};
 			name = Debug;
@@ -1453,6 +1460,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1465,6 +1473,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-paypal\ios",
+					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 				);
 			};
 			name = Release;
@@ -1496,6 +1505,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-paypal\ios",
+					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 				);
 			};
 			name = Debug;
@@ -1526,6 +1536,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-paypal\ios",
+					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 				);
 			};
 			name = Release;
@@ -1566,6 +1577,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1578,6 +1590,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-paypal\ios",
+					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 				);
 			};
 			name = Debug;
@@ -1618,6 +1631,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1630,6 +1644,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-paypal\ios",
+					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 				);
 			};
 			name = Release;
@@ -1669,6 +1684,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1681,6 +1697,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-paypal\ios",
+					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 				);
 			};
 			name = Debug;
@@ -1720,6 +1737,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1732,6 +1750,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-paypal\ios",
+					"$(SRCROOT)\..\node_modules\react-native-tesseract-ocr\ios",
 				);
 			};
 			name = Release;

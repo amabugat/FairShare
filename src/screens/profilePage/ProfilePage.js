@@ -24,7 +24,6 @@ export default class ProfilePage extends React.Component {
         var userDBref = firebase.database().ref('/Users').child(uid);
         var that = this;
         var userData = '';
-//  const snapshot = userDBref.once('value')
         await userDBref.on('value', function(snapshot){
             userData = snapshot.val();
             //  alert(userData.PhotoURL)

@@ -127,7 +127,7 @@ export default class ViewChargedScreen extends React.Component {
                                     <Thumbnail source={logo} />
                                     <Body>
                                     <Text>YOU ARE BEING CHARGED: {data.RequesterName}</Text>
-                                    <Text note>Total: {data.Amount.toFixed(2)}</Text>
+                                    <Text note>Total: {data.Amount}</Text>
                                     </Body>
                                 </Left>
                             </CardItem>

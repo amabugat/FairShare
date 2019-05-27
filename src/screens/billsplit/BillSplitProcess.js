@@ -20,7 +20,9 @@ export default class BillSplitProcess extends Component {
 
       this.state = {
          currentPage: 0,
-         total: 0
+         total: 0,
+         tax: null,
+         tip: null
       };
    }
 
@@ -72,9 +74,13 @@ export default class BillSplitProcess extends Component {
                <View style={styles.change}>
                   <TouchableOpacity
                      onPress={() => {
-                        this.createCalc();
-                        console.log(userFlatList);
-                        this.props.navigation.navigate("ChargeUnevenly");
+                     //   if (this.state.tax == null || this.state.tip == null) {
+                     //      Alert("Enter Tip or Tax");
+                    //    } else {
+                           this.createCalc();
+                           console.log(userFlatList);
+                           this.props.navigation.navigate("ChargeUnevenly");
+                    //    }
                      }}
                   >
                      <Text style={styles.buttonFont}>Charge</Text>
@@ -83,6 +89,30 @@ export default class BillSplitProcess extends Component {
             </View>
 
             <BasicFlatList style={{ marginTop: 10 }} />
+            <View style={styles.row}>
+               <View
+                  style={{
+                     borderBottomColor: "grey",
+                     borderBottomWidth: 8,
+                     width: "96%",
+                     marginLeft: "2%",
+                     marginRight: 20
+                  }}
+               />
+            </View>
+
+            <View style={styles.row}>
+               <Text style={styles.fontSet}>%Tip</Text>
+               <View style={styles.outputBox}>
+                  <Text style={styles.output}>{}</Text>
+               </View>
+            </View>
+            <View style={styles.row}>
+               <Text style={styles.fontSet}>%Tax</Text>
+               <View style={styles.outputBox}>
+                  <Text style={styles.output}>{}</Text>
+               </View>
+            </View>
          </View>
       );
    }
@@ -143,6 +173,17 @@ const styles = StyleSheet.create({
       marginTop: 7,
       textAlign: "center",
       color: "#000000",
+      fontFamily: "Raleway-Bold"
+   },
+   outputBox: {
+      borderRadius: 100,
+      fontSize: 20,
+      textAlign: "center",
+      margin: 10,
+      backgroundColor: "#82b85a",
+      color: "#000000",
+      width: 120,
+      height: 40,
       fontFamily: "Raleway-Bold"
    },
    change: {

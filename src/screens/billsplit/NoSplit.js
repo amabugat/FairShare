@@ -7,7 +7,8 @@ import {
    TextInput,
    KeyboardAvoidingView,
    ScrollView,
-   TouchableOpacity
+   TouchableOpacity,
+   Image
 } from "react-native";
 
 export default class NoSplit extends Component {
@@ -22,6 +23,10 @@ export default class NoSplit extends Component {
          split: null
       };
    }
+   /*<Image
+                        style={styles.profilepic}
+                        source={require("../../images/cam.png")}
+                     />*/
 
    render() {
       return (
@@ -29,7 +34,14 @@ export default class NoSplit extends Component {
             <View style={styles.container}>
                <ScrollView>
                   <View style={styles.row}>
-                     <Text> </Text>
+                     <View style={styles.cam}>
+                        <TouchableOpacity onPress={() => {}}>
+                           <Image
+                              style={styles.profilepic}
+                              source={require("../../images/cam.png")}
+                           />
+                        </TouchableOpacity>
+                     </View>
                      <View style={styles.change}>
                         <TouchableOpacity
                            onPress={() => {
@@ -212,7 +224,6 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: "#FFFFFF"
    },
-
    change: {
       margin: 20,
       borderRadius: 90,
@@ -224,6 +235,17 @@ const styles = StyleSheet.create({
       marginRight: "2%",
       elevation: 3
    },
+   cam: {
+      margin: 20,
+      borderRadius: 90,
+      width: 60,
+      height: 60,
+      backgroundColor: "#6C7A89",
+      color: "#FFFFFF",
+      fontFamily: "Raleway-Bold",
+      elevation: 3
+   },
+
 
    container: {
       flex: 1,

@@ -69,7 +69,7 @@ export default class Home extends React.Component {
    }
 
    onRegister(token) {
-      //Alert.alert("Registered !", JSON.stringify(token));
+      Alert.alert("Registered !", JSON.stringify(token));
       console.log(token);
       this.setState({ registerToken: token.token, gcmRegistered: true });
    }
@@ -87,6 +87,23 @@ export default class Home extends React.Component {
       firebase.auth().onAuthStateChanged(user => {
          if (user) {
             this.setState({ loggedIn: true });
+            var user = firebase.auth().currentUser;
+            user
+               .updateProfile({
+                  displayName: "zidu"
+               })
+               .then(
+                  function() {
+                     // Profile updated successfully!
+                     // "Jane Q. User"
+                     var displayName = user.displayName;
+                     console.log(displayName);
+                     var photoURL = user.photoURL;
+                  },
+                  function(error) {
+                     // An error happened.
+                  }
+               );
          } else {
             this.setState({ loggedIn: false });
          }
@@ -146,7 +163,11 @@ export default class Home extends React.Component {
 
                   <TouchableOpacity
                      onPress={() =>
-                        this.signup(this.state.email, this.state.password, this.state.registerToken)
+                        this.signup(
+                           this.state.email,
+                           this.state.password,
+                           this.state.registerToken
+                        )
                      }
                      style={styles.button2}
                   >
@@ -175,7 +196,7 @@ export default class Home extends React.Component {
          .then(function(user) {
             that.setState({ password: "" });
             console.log(user);
-            that.props.navigation.navigate('Activity');
+            that.props.navigation.navigate("Activity");
          })
          .catch(function(error) {
             alert(error.toString());

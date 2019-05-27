@@ -35,7 +35,7 @@ export default class ChargeUnevenly extends React.Component {
          email: "",
          chargeDescription: "",
          chargingPeople: data,
-         interest: "NONE",
+         interest: 0,
          interestRate: 0,
          tax: 0,
          tip: 0,
@@ -69,13 +69,13 @@ export default class ChargeUnevenly extends React.Component {
       });
    }
 
-   sendNotification(token, price) {
+   sendNotification(token, name, price) {
       console.log("pressed");
       let body = {
          to: token,
          notification: {
             title: "Pay Your Recent Bill",
-            body: "You are charged for " + "$" + price,
+            body: "You are charged " + "by " + name + " for " + "$" + price,
             sound: "default",
          },
          priority: 10
@@ -241,7 +241,7 @@ export default class ChargeUnevenly extends React.Component {
                      Paid: false
                   });
 
-                  this.sendNotification(userFlatList[i].deviceId, userFlatList[i].price);
+                  this.sendNotification(userFlatList[i].deviceId, user.displayName, userFlatList[i].price);
                }
                this.props.navigation.navigate("Activity");
             })
@@ -305,7 +305,7 @@ export default class ChargeUnevenly extends React.Component {
                Paid: false
             });
 
-            this.sendNotification(userFlatList[i].deviceId, userFlatList[i].price);
+            this.sendNotification(userFlatList[i].deviceId, user.displayName, userFlatList[i].price);
          }
          this.props.navigation.navigate("Activity");
       }
@@ -351,9 +351,11 @@ export default class ChargeUnevenly extends React.Component {
                      <Text style={styles.UserListItem}> {item.name} </Text>
                      <Text style={styles.UserListItem}> pays </Text>
                      <Text style={styles.UserListItem}>
-                        {" "}
                         ${item.price.toFixed(2)}
                      </Text>
+                     <TextInput style={styles.UserListItem} onChangeText={interest =>
+                           this.setState({ interest: parseFloat(interest) })
+                        } placeholder="Interest"></TextInput>
                   </View>
                )}
             />

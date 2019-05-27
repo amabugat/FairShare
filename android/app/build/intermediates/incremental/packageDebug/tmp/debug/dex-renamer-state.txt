@@ -1,4 +1,4 @@
-#Tue May 14 22:59:09 PDT 2019
-base.0=/Users/ziduchen/FairShare/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Mon May 27 15:28:40 PDT 2019
+base.0=C\:\\Users\\Andy\\Desktop\\cmps117\\trying\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

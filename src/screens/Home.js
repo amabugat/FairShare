@@ -18,14 +18,12 @@ import "@firebase/auth";
 import "@firebase/database";
 import NotifService from "../services/pushNotifications";
 
-type Props = {};
 export default class Home extends React.Component {
    constructor(props) {
       super(props);
       this.state = {
          email: "",
          password: "",
-         loggedIn: null,
          senderId: "283024795409"
       };
       this.notif = new NotifService(
@@ -33,32 +31,6 @@ export default class Home extends React.Component {
          this.onNotif.bind(this)
       );
    }
-
-   /*sendNotification(token) {
-      console.log("pressed");
-      let body = {
-         to: token,
-         notification: {
-            title: "Simple FCM Client",
-            body: "This is a notification with only NOTIFICATION.",
-            sound: "default",
-         },
-         priority: 10
-      };
-      this._send(JSON.stringify(body), "notification");
-   }
-
-   _send(body, type) {
-      console.log("close to send");
-      let headers = new Headers({
-         "Content-Type": "application/json",
-       "Authorization": "key=AIzaSyCIn2th7KX6-5quHBnI4OudKTVPL9jwmNg"
-      });
- 
-      fetch('https://gcm-http.googleapis.com/gcm/send', { method: "POST", headers: headers, body: body });
-
-      console.log("fetched");
-   }*/
 
    componentDidMount() {
       this.notif.configure(
@@ -69,13 +41,13 @@ export default class Home extends React.Component {
    }
 
    onRegister(token) {
-      Alert.alert("Registered !", JSON.stringify(token));
+      //Alert.alert("Registered !", JSON.stringify(token));
       console.log(token);
       this.setState({ registerToken: token.token, gcmRegistered: true });
    }
 
    onNotif(notif) {
-      console.log(notif);
+      //console.log(notif);
       Alert.alert(notif.title, notif.message);
    }
 
@@ -83,47 +55,7 @@ export default class Home extends React.Component {
       Alert.alert("Permissions", JSON.stringify(perms));
    }
 
-   componentWillMount() {
-      firebase.auth().onAuthStateChanged(user => {
-         if (user) {
-            this.setState({ loggedIn: true });
-            var user = firebase.auth().currentUser;
-            user
-               .updateProfile({
-                  displayName: "zidu"
-               })
-               .then(
-                  function() {
-                     // Profile updated successfully!
-                     // "Jane Q. User"
-                     var displayName = user.displayName;
-                     console.log(displayName);
-                     var photoURL = user.photoURL;
-                  },
-                  function(error) {
-                     // An error happened.
-                  }
-               );
-         } else {
-            this.setState({ loggedIn: false });
-         }
-      });
-   }
-
    render() {
-      switch (this.state.loggedIn) {
-         case true:
-            return this.props.navigation.navigate("Activity");
-         // this.props.navigation.navigate('Home')
-         //this.props.navigation.navigate('NoSplit')
-         case false:
-            return this.renderContent();
-         default:
-            return this.renderContent();
-      }
-   }
-
-   renderContent() {
       return (
          <KeyboardAvoidingView
             behavior="padding"
@@ -155,6 +87,7 @@ export default class Home extends React.Component {
                   <TouchableOpacity
                      onPress={() =>
                         this.login(this.state.email, this.state.password)
+                        
                      }
                      style={styles.button1}
                   >
@@ -173,15 +106,6 @@ export default class Home extends React.Component {
                   >
                      <Text style={styles.buttonText}> SIGN UP </Text>
                   </TouchableOpacity>
-
-                  <TouchableOpacity
-                     onPress={() =>
-                        this.sendNotification(this.state.registerToken)
-                     }
-                     style={styles.button2}
-                  >
-                     <Text style={styles.buttonText}> Camera Fcn </Text>
-                  </TouchableOpacity>
                </View>
             </TouchableWithoutFeedback>
          </KeyboardAvoidingView>
@@ -194,6 +118,7 @@ export default class Home extends React.Component {
          .auth()
          .signInWithEmailAndPassword(email, password)
          .then(function(user) {
+            that.setState({email: ""})
             that.setState({ password: "" });
             console.log(user);
             that.props.navigation.navigate("Activity");
@@ -211,6 +136,7 @@ export default class Home extends React.Component {
          .then(function(user) {
             console.log(user.user.uid);
             console.log(user);
+            console.log(id);
             var userid = user.user.uid;
             firebase
                .database()

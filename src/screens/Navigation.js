@@ -24,9 +24,16 @@ import ViewChargedScreen from "./ViewChargedScreen";
 import ViewRequestScreen from "./ViewRequestScreen";
 import ChargePeople from "./billsplit/ChargePeople";
 import EditProfile from "./profilePage/EditProfile";
+import Splash from "./Splash"
 
 
 const Navigation = createStackNavigator({
+   Splash: {
+      screen: Splash,
+      navigationOptions: () => ({
+         header: null
+      })
+   },
    Home: {
       screen: Home,
       navigationOptions: () => ({

@@ -1,88 +1,82 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12
-INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12
-INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12
-INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12
-MERGED from [:react-native-push-notification] /Users/ziduchen/FairShare/node_modules/react-native-push-notification/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-29:12
-MERGED from [:react-native-fetch-blob] /Users/ziduchen/FairShare/node_modules/react-native-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-14:12
-MERGED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-23:12
-MERGED from [:react-native-paypal-wrapper] /Users/ziduchen/FairShare/node_modules/react-native-paypal-wrapper/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-reanimated] /Users/ziduchen/FairShare/node_modules/react-native-reanimated/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12
+INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12
+INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12
+INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12
 MERGED from [:react-native-vector-icons] /Users/ziduchen/FairShare/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] /Users/ziduchen/FairShare/node_modules/react-native-reanimated/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-push-notification] /Users/ziduchen/FairShare/node_modules/react-native-push-notification/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-paypal-wrapper] /Users/ziduchen/FairShare/node_modules/react-native-paypal-wrapper/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-29:12
+MERGED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-23:12
 MERGED from [:react-native-gesture-handler] /Users/ziduchen/FairShare/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/46d3b1855f63d9b3ba9458723c2a6142/AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/88696164493dbd2e1fbc4db00a75fff5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:2:1-26:12
-MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/41064051f9ace5c66c0e4f9c4a4c4030/AndroidManifest.xml:17:1-28:12
-MERGED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:2:1-41:12
-MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/69bd8c296b89ae771a66a15f0cd7e60a/AndroidManifest.xml:17:1-37:12
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:2:1-28:12
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/4c7962f4912b6f767228b93828e5d9bf/AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:17:1-47:12
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/5bd3180644553c0251171851d7251cec/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/39b651b200e9013170b80a047bc6fd05/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/15d0805313b38ef56369e8bdf03b1aed/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/dd1c773b90ded04232e80cd83a067dd7/AndroidManifest.xml:2:1-19:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/dbfecfcb9e7ef5a8d03c54438a2b5bc7/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/a82f3d431707abc4dcd0a30c87d014a0/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/e917eaf420b6efd7aced192d274d2f9a/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/f3bd4bfe2daf906a464454c7aa02a9de/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/c02a1ae06f19cf8231318efac914e0bf/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/4f6078eab9bba6e29559aae34449474c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1d505db062d44e6331765112605b27de/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/af558136f4ce1dd0e69fa848cc1d97e1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/fbd53199570241c8018c713cc790c5cb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/4b56054d6319282a46e3402d86b2caae/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d7705be811d5644c4bd2cd0e55c7aa61/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8c2f0688b84306ee04103fd873f3e636/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/f64d587f9e61afbfef610d6667522028/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/e13c2efacd76c171c068ce99c11400a7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/feefd9b6f190fc840476a25491a9b02a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/e3b027d9be6e8f3371e64e7122b372c3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/5d31eabfbd0a227fe884a4feb2d78973/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/02bdf049d061771c97ba2ecf10c9397b/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/98e6bf88a7df924e53baede747c7fdc8/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/bd39735f3e1f28214bbfea8a3afb48f0/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/9d432bd9a98d5e8063b3e2844501f4cb/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c6a73f9c95335f9a4baa1c5ce32b4c9e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/3d24391fbb159bfff531eac4ff05e67d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/9e0bca766e6a99d3c80adf54aeafc5b6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/aeb50a973923bb092f37fe5f7e276f85/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/0cf09c424b0bf29258a0b33b53df405b/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f1a18a52788176a9ad3785d8845fa1be/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/bc584fd52498cd05cf8d67d15ea914c6/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/aa11078f4463a8843b49816d49f6dabb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/0ef8b787f7e3a0f67af12cafe70a5d89/AndroidManifest.xml:17:1-22:12
-MERGED from [com.braintreepayments.api:visa-checkout:1.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/visa-checkout-1.0.0.aar/ae211bfedce0b23b53a88fcd7dfa656f/AndroidManifest.xml:2:1-12:12
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-one-touch-2.17.0.aar/18af8f027f7feb452ff87ac99ec957ff/AndroidManifest.xml:2:1-13:12
-MERGED from [com.braintreepayments.api:core:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/core-2.17.0.aar/e0304383118c4647e9318d02af68924d/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/2b819878a87b52e52a3bb1b48a59f510/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/c85cca52a3269e9cbb08a7718ffeae61/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/a48a8be1e57004065d6eacbf5eb3e94d/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/37d64f249a6069f8e67d8043f1b47acc/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/f97042495508be2899dc7e5ac6599372/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/c67afdb0f39ba34414f3d77741af75b8/AndroidManifest.xml:2:1-13:12
-MERGED from [org.webkit:android-jsc:r174650] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/8eec026000521e730bd494206284f045/AndroidManifest.xml:1:1-3:12
-MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:2:1-26:12
-MERGED from [com.braintreepayments:browser-switch:0.1.5] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/browser-switch-0.1.5.aar/9623dc4bc9edc658774d986c4960bbf4/AndroidManifest.xml:2:1-12:12
-MERGED from [com.paypal.android.sdk:data-collector:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/data-collector-2.17.0.aar/c532020161b3e4cb3ea52d6867eed587/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/2511325fed4e04cf0220e597a565ce91/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12
-INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12
-INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12
+MERGED from [:react-native-fetch-blob] /Users/ziduchen/FairShare/node_modules/react-native-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-14:12
+MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/a9639314c7f6bd11a84129a9e75f4207/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b31a546a3c0b6a3060a01b51a9374a34/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/6a6f9d99560772b9dfcfe78e9f0323f0/AndroidManifest.xml:17:1-28:12
+MERGED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:2:1-41:12
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/339c534ef6a39666b7a64684f1c29210/AndroidManifest.xml:17:1-37:12
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:2:1-28:12
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/2f418a303b3c842ba2b12e1eca6b8274/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/dd0b320e08b3830f95aac8fe5199acf8/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/58459e7c50813b75681857d579fcbf7e/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/d8c10a7ab3260943182a589ee8cd4167/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/63ea20910d3decddf1da993fc54cd35a/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/a104c6e2db03d824cd739f666abf553d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/25cb5bc564e2a0caf9fa27434a65bdb4/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c2cba02a5d8475055acb30a7b9dc8a29/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/99a7c3adc3be7e3e303c851404cf6a0d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/6a0943908919ab9ad0878c32657b5c77/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/657f8711f809e73850b2e9a0512f248c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/076feeb6f992898605b5a0b5700c1c7a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/d889705377d07078159cd1184db51bca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/fa4fa46c2525b94835f69f82adad4d4a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a401333afb8568cf7046e2529fa2cad8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f63963f8c4d72f1afdc0d436efe0bdc3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0b451587f0a69965f97e3c13d2af1b86/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/9a1e7160ba7eb98637e2715d389c2f9a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/1c267b0826e0b9e12a75008395eecf48/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/23be17cc46eca196d0deed4f856abb1b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/5a0b7a90db804770657a17371b6328c6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/6c6d4006796b4ae98217d3b7536bae4f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/22271124a21aed58666bd8a9de3a1de8/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e7541c4d93cc286b9f494b927ab960c9/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/499c9b190da470e20bfe589abe7af485/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/3e6d2536f72af350361da0c564e1b5d6/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e87c0dd6df3b7f627ba91f2480b35280/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/0e8c4c8ef156e96e44b75e4dd40105ab/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/ef5fac81b61a9531167866e2eeb19362/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7e2a96920754328d669b10818ab6069a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/a99425b6bf5ed600c033a4b99bd91b1c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/772192d4d83b5d9d9691355c7f421416/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/2f9119dccc151c2644d50c925b7600d0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/9169f87c51d5be901d9e3cb766341b82/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/927aa524047b0816565197e6a7deb725/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/ef0b5529570e18854607305a020ca266/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/b112ce3f6cb8854c466ed338b69bb6b2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/cb41bd564bf88b93f4761eb3b3fc359f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/e8f725c60ce3a1e0b93e85882b76dd91/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/25d381337d97768d2e26f19887da5d76/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/af6da7574e58991ff4adc8cb7cbb0f21/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/022fa855017c7762042b570c2fc1e262/AndroidManifest.xml:1:1-3:12
+MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:2:1-26:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/50f19671094b8903c5beff1dc17d45fa/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12
+INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12
+INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12
 	package
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:2:5-23
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:2:5-28
 		INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12
 		INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12
 		INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -90,362 +84,358 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:4:5-67
 MERGED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-67
 MERGED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-67
-MERGED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:12:5-67
-MERGED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:12:5-67
-MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/41064051f9ace5c66c0e4f9c4a4c4030/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/41064051f9ace5c66c0e4f9c4a4c4030/AndroidManifest.xml:24:5-67
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:10:5-67
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:10:5-67
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/4c7962f4912b6f767228b93828e5d9bf/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/4c7962f4912b6f767228b93828e5d9bf/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:23:5-67
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-one-touch-2.17.0.aar/18af8f027f7feb452ff87ac99ec957ff/AndroidManifest.xml:11:5-67
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-one-touch-2.17.0.aar/18af8f027f7feb452ff87ac99ec957ff/AndroidManifest.xml:11:5-67
-MERGED from [com.paypal.android.sdk:data-collector:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/data-collector-2.17.0.aar/c532020161b3e4cb3ea52d6867eed587/AndroidManifest.xml:11:5-67
-MERGED from [com.paypal.android.sdk:data-collector:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/data-collector-2.17.0.aar/c532020161b3e4cb3ea52d6867eed587/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/6a6f9d99560772b9dfcfe78e9f0323f0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/6a6f9d99560772b9dfcfe78e9f0323f0/AndroidManifest.xml:24:5-67
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:10:5-67
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:10:5-67
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/2f418a303b3c842ba2b12e1eca6b8274/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/2f418a303b3c842ba2b12e1eca6b8274/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/46d3b1855f63d9b3ba9458723c2a6142/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/46d3b1855f63d9b3ba9458723c2a6142/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/a9639314c7f6bd11a84129a9e75f4207/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/a9639314c7f6bd11a84129a9e75f4207/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.CAMERA
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:7:5-65
-MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:9:5-65
-MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:9:5-65
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:6:5-65
+MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:9:5-65
+MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:9:5-65
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:7:22-62
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:6:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:8:5-80
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:10:5-68
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:24:5-68
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:24:5-68
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:9:5-68
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:24:5-68
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:10:22-65
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:9:22-65
 permission#com.test.permission.C2D_MESSAGE
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:11:5-13:47
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:10:5-12:47
 	android:protectionLevel
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:13:9-44
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:12:9-44
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:12:9-55
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:11:9-55
 uses-permission#com.test.permission.C2D_MESSAGE
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:14:5-71
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:13:5-71
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:14:22-68
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:13:22-68
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:17:5-66
-MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:10:5-66
-MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:10:5-66
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:16:5-66
+MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:10:5-66
+MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:10:5-66
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:17:22-63
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:16:22-63
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:18:5-80
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:17:5-80
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:18:22-78
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:17:22-78
 application
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:20:5-80:19
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:19:5-91:19
 MERGED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:5-27:19
 MERGED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:13:5-27:19
-MERGED from [:react-native-fetch-blob] /Users/ziduchen/FairShare/node_modules/react-native-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-fetch-blob] /Users/ziduchen/FairShare/node_modules/react-native-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-12:19
 MERGED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-21:19
 MERGED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/46d3b1855f63d9b3ba9458723c2a6142/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/46d3b1855f63d9b3ba9458723c2a6142/AndroidManifest.xml:13:5-20
-MERGED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:14:5-24:19
-MERGED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:14:5-24:19
-MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/41064051f9ace5c66c0e4f9c4a4c4030/AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/41064051f9ace5c66c0e4f9c4a4c4030/AndroidManifest.xml:26:5-20
-MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/69bd8c296b89ae771a66a15f0cd7e60a/AndroidManifest.xml:22:5-35:19
-MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/69bd8c296b89ae771a66a15f0cd7e60a/AndroidManifest.xml:22:5-35:19
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:12:5-26:19
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:12:5-26:19
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/4c7962f4912b6f767228b93828e5d9bf/AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/4c7962f4912b6f767228b93828e5d9bf/AndroidManifest.xml:26:5-20
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:28:5-45:19
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:28:5-45:19
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/5bd3180644553c0251171851d7251cec/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/5bd3180644553c0251171851d7251cec/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/39b651b200e9013170b80a047bc6fd05/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/39b651b200e9013170b80a047bc6fd05/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/15d0805313b38ef56369e8bdf03b1aed/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/15d0805313b38ef56369e8bdf03b1aed/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/dd1c773b90ded04232e80cd83a067dd7/AndroidManifest.xml:11:5-17:19
-MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/dd1c773b90ded04232e80cd83a067dd7/AndroidManifest.xml:11:5-17:19
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/dbfecfcb9e7ef5a8d03c54438a2b5bc7/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/dbfecfcb9e7ef5a8d03c54438a2b5bc7/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/a82f3d431707abc4dcd0a30c87d014a0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/a82f3d431707abc4dcd0a30c87d014a0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/e917eaf420b6efd7aced192d274d2f9a/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/e917eaf420b6efd7aced192d274d2f9a/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/f3bd4bfe2daf906a464454c7aa02a9de/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/f3bd4bfe2daf906a464454c7aa02a9de/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/02bdf049d061771c97ba2ecf10c9397b/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/02bdf049d061771c97ba2ecf10c9397b/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/98e6bf88a7df924e53baede747c7fdc8/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/98e6bf88a7df924e53baede747c7fdc8/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/bd39735f3e1f28214bbfea8a3afb48f0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/bd39735f3e1f28214bbfea8a3afb48f0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/c67afdb0f39ba34414f3d77741af75b8/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/c67afdb0f39ba34414f3d77741af75b8/AndroidManifest.xml:11:5-20
-MERGED from [org.webkit:android-jsc:r174650] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/8eec026000521e730bd494206284f045/AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/8eec026000521e730bd494206284f045/AndroidManifest.xml:2:3-17
-MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:19:5-24:19
-MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:19:5-24:19
+MERGED from [:react-native-fetch-blob] /Users/ziduchen/FairShare/node_modules/react-native-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-12:19
+MERGED from [:react-native-fetch-blob] /Users/ziduchen/FairShare/node_modules/react-native-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:5-12:19
+MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/a9639314c7f6bd11a84129a9e75f4207/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/a9639314c7f6bd11a84129a9e75f4207/AndroidManifest.xml:13:5-20
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/6a6f9d99560772b9dfcfe78e9f0323f0/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/6a6f9d99560772b9dfcfe78e9f0323f0/AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/339c534ef6a39666b7a64684f1c29210/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/339c534ef6a39666b7a64684f1c29210/AndroidManifest.xml:22:5-35:19
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:12:5-26:19
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:12:5-26:19
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/2f418a303b3c842ba2b12e1eca6b8274/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/2f418a303b3c842ba2b12e1eca6b8274/AndroidManifest.xml:26:5-20
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/dd0b320e08b3830f95aac8fe5199acf8/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/dd0b320e08b3830f95aac8fe5199acf8/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/58459e7c50813b75681857d579fcbf7e/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/58459e7c50813b75681857d579fcbf7e/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/d8c10a7ab3260943182a589ee8cd4167/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/d8c10a7ab3260943182a589ee8cd4167/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/63ea20910d3decddf1da993fc54cd35a/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/63ea20910d3decddf1da993fc54cd35a/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/a104c6e2db03d824cd739f666abf553d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/a104c6e2db03d824cd739f666abf553d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/25cb5bc564e2a0caf9fa27434a65bdb4/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/25cb5bc564e2a0caf9fa27434a65bdb4/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c2cba02a5d8475055acb30a7b9dc8a29/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c2cba02a5d8475055acb30a7b9dc8a29/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/99a7c3adc3be7e3e303c851404cf6a0d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/99a7c3adc3be7e3e303c851404cf6a0d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/22271124a21aed58666bd8a9de3a1de8/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/22271124a21aed58666bd8a9de3a1de8/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e7541c4d93cc286b9f494b927ab960c9/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e7541c4d93cc286b9f494b927ab960c9/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/499c9b190da470e20bfe589abe7af485/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/499c9b190da470e20bfe589abe7af485/AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/af6da7574e58991ff4adc8cb7cbb0f21/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/af6da7574e58991ff4adc8cb7cbb0f21/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/022fa855017c7762042b570c2fc1e262/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/022fa855017c7762042b570c2fc1e262/AndroidManifest.xml:2:3-17
+MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:19:5-24:19
+MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:19:5-24:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/98e6bf88a7df924e53baede747c7fdc8/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e7541c4d93cc286b9f494b927ab960c9/AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:22:7-39
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:21:7-39
 	android:roundIcon
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:24:7-52
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:23:7-39
 	android:icon
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:23:7-41
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:22:7-34
 	android:allowBackup
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:25:7-34
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:24:7-34
 	android:theme
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:26:7-38
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:25:7-41
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:21:7-38
-meta-data#com.dieam.reactnativepushnotification.notification_channel_name
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:27:7-28:65
-	android:value
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:28:17-63
-	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:27:19-97
-meta-data#com.dieam.reactnativepushnotification.notification_channel_description
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:29:9-30:76
-	android:value
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:30:21-74
-	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:29:21-106
-meta-data#com.dieam.reactnativepushnotification.notification_color
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:32:9-33:62
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:20:7-38
+meta-data#com.google.firebase.messaging.default_notification_icon
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:27:7-134
 	android:resource
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:33:21-60
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:27:89-131
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:32:21-92
-activity#com.test.MainActivity
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:34:7-43:18
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:27:18-88
+meta-data#com.dieam.reactnativepushnotification.notification_channel_name
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:29:7-30:65
+	android:value
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:30:17-63
+	android:name
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:29:19-97
+meta-data#com.dieam.reactnativepushnotification.notification_channel_description
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:31:9-32:76
+	android:value
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:32:21-74
+	android:name
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:31:21-106
+meta-data#com.dieam.reactnativepushnotification.notification_color
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:34:9-35:62
+	android:resource
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:35:21-60
+	android:name
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:34:21-92
+activity#com.fairshare.SplashActivity
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:37:7-45:20
 	android:label
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:36:9-41
-	android:windowSoftInputMode
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:38:9-51
-	android:configChanges
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:37:9-79
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:40:13-45
+	android:theme
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:39:13-47
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:35:9-37
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:38:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:39:9-42:25
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:41:13-44:29
 action#android.intent.action.MAIN
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:40:13-65
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:40:21-62
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:41:13-73
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:41:23-70
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:43:27-74
+activity#com.fairshare.MainActivity
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:47:7-53:18
+	android:label
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:49:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:51:9-51
+	android:exported
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:52:13-36
+	android:configChanges
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:50:9-79
+	android:name
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:48:9-37
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:44:7-84
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:54:7-84
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:44:17-81
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:54:17-81
 receiver#com.google.android.gms.gcm.GcmReceiver
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:45:7-53:20
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:55:9-63:20
 	android:exported
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:47:13-36
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:57:13-36
 	android:permission
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:48:13-73
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:58:13-73
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:46:13-66
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:56:13-66
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.test
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:49:13-52:29
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:59:13-62:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:50:17-81
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:60:17-81
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:50:25-78
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:60:25-78
 category#com.test
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:51:17-53
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:61:17-53
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:51:27-50
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:61:27-50
 receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationPublisher
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:55:7-108
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:65:11-112
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:55:17-105
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:65:21-109
 receiver#com.dieam.reactnativepushnotification.modules.RNPushNotificationBootEventReceiver
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:56:9-60:20
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:66:9-70:20
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:56:19-115
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:66:19-115
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:57:13-59:29
-action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:58:17-79
-	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:58:25-76
-service#com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:61:7-116
-	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:61:16-114
-service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerServiceGcm
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:64:9-70:19
-	android:exported
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:66:13-37
-	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:65:13-110
-intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
 ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:67:13-69:29
-service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:72:9-78:19
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:68:17-79
+	android:name
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:68:25-76
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationRegistrationService
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:72:9-118
+	android:name
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:72:18-116
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerServiceGcm
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:75:9-81:19
 	android:exported
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:74:13-37
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:77:13-37
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:73:13-107
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:76:13-110
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:78:13-80:29
+service#com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:83:9-89:19
+	android:exported
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:85:13-37
+	android:name
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:84:13-107
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:75:13-77:29
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:86:13-88:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:76:17-78
+ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:87:17-78
 	android:name
-		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:76:25-75
+		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:87:25-75
 uses-sdk
 INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-push-notification] /Users/ziduchen/FairShare/node_modules/react-native-push-notification/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-push-notification] /Users/ziduchen/FairShare/node_modules/react-native-push-notification/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] /Users/ziduchen/FairShare/node_modules/react-native-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] /Users/ziduchen/FairShare/node_modules/react-native-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal-wrapper] /Users/ziduchen/FairShare/node_modules/react-native-paypal-wrapper/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-paypal-wrapper] /Users/ziduchen/FairShare/node_modules/react-native-paypal-wrapper/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /Users/ziduchen/FairShare/node_modules/react-native-reanimated/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /Users/ziduchen/FairShare/node_modules/react-native-reanimated/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/ziduchen/FairShare/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /Users/ziduchen/FairShare/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/ziduchen/FairShare/node_modules/react-native-reanimated/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/ziduchen/FairShare/node_modules/react-native-reanimated/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /Users/ziduchen/FairShare/node_modules/react-native-push-notification/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-push-notification] /Users/ziduchen/FairShare/node_modules/react-native-push-notification/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal-wrapper] /Users/ziduchen/FairShare/node_modules/react-native-paypal-wrapper/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal-wrapper] /Users/ziduchen/FairShare/node_modules/react-native-paypal-wrapper/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /Users/ziduchen/FairShare/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-gesture-handler] /Users/ziduchen/FairShare/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/46d3b1855f63d9b3ba9458723c2a6142/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/46d3b1855f63d9b3ba9458723c2a6142/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/88696164493dbd2e1fbc4db00a75fff5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/88696164493dbd2e1fbc4db00a75fff5/AndroidManifest.xml:20:5-44
-MERGED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:7:5-9:41
-MERGED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/41064051f9ace5c66c0e4f9c4a4c4030/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/41064051f9ace5c66c0e4f9c4a4c4030/AndroidManifest.xml:20:5-44
-MERGED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:7:5-9:41
-MERGED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/69bd8c296b89ae771a66a15f0cd7e60a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/69bd8c296b89ae771a66a15f0cd7e60a/AndroidManifest.xml:20:5-44
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:5:5-7:41
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/4c7962f4912b6f767228b93828e5d9bf/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/4c7962f4912b6f767228b93828e5d9bf/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/5bd3180644553c0251171851d7251cec/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/5bd3180644553c0251171851d7251cec/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/39b651b200e9013170b80a047bc6fd05/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/39b651b200e9013170b80a047bc6fd05/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/15d0805313b38ef56369e8bdf03b1aed/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/15d0805313b38ef56369e8bdf03b1aed/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/dd1c773b90ded04232e80cd83a067dd7/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/dd1c773b90ded04232e80cd83a067dd7/AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/dbfecfcb9e7ef5a8d03c54438a2b5bc7/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/dbfecfcb9e7ef5a8d03c54438a2b5bc7/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/a82f3d431707abc4dcd0a30c87d014a0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/a82f3d431707abc4dcd0a30c87d014a0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/e917eaf420b6efd7aced192d274d2f9a/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/e917eaf420b6efd7aced192d274d2f9a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/f3bd4bfe2daf906a464454c7aa02a9de/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/f3bd4bfe2daf906a464454c7aa02a9de/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/c02a1ae06f19cf8231318efac914e0bf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/c02a1ae06f19cf8231318efac914e0bf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/4f6078eab9bba6e29559aae34449474c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/4f6078eab9bba6e29559aae34449474c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1d505db062d44e6331765112605b27de/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/1d505db062d44e6331765112605b27de/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/af558136f4ce1dd0e69fa848cc1d97e1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/af558136f4ce1dd0e69fa848cc1d97e1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/fbd53199570241c8018c713cc790c5cb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/fbd53199570241c8018c713cc790c5cb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/4b56054d6319282a46e3402d86b2caae/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/4b56054d6319282a46e3402d86b2caae/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d7705be811d5644c4bd2cd0e55c7aa61/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d7705be811d5644c4bd2cd0e55c7aa61/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8c2f0688b84306ee04103fd873f3e636/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/8c2f0688b84306ee04103fd873f3e636/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/f64d587f9e61afbfef610d6667522028/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/f64d587f9e61afbfef610d6667522028/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/e13c2efacd76c171c068ce99c11400a7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/e13c2efacd76c171c068ce99c11400a7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/feefd9b6f190fc840476a25491a9b02a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/feefd9b6f190fc840476a25491a9b02a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/e3b027d9be6e8f3371e64e7122b372c3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/e3b027d9be6e8f3371e64e7122b372c3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/5d31eabfbd0a227fe884a4feb2d78973/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/5d31eabfbd0a227fe884a4feb2d78973/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/02bdf049d061771c97ba2ecf10c9397b/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/02bdf049d061771c97ba2ecf10c9397b/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/98e6bf88a7df924e53baede747c7fdc8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/98e6bf88a7df924e53baede747c7fdc8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/bd39735f3e1f28214bbfea8a3afb48f0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/bd39735f3e1f28214bbfea8a3afb48f0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/9d432bd9a98d5e8063b3e2844501f4cb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/9d432bd9a98d5e8063b3e2844501f4cb/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c6a73f9c95335f9a4baa1c5ce32b4c9e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/c6a73f9c95335f9a4baa1c5ce32b4c9e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/3d24391fbb159bfff531eac4ff05e67d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/3d24391fbb159bfff531eac4ff05e67d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/9e0bca766e6a99d3c80adf54aeafc5b6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/9e0bca766e6a99d3c80adf54aeafc5b6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/aeb50a973923bb092f37fe5f7e276f85/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/aeb50a973923bb092f37fe5f7e276f85/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/0cf09c424b0bf29258a0b33b53df405b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/0cf09c424b0bf29258a0b33b53df405b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f1a18a52788176a9ad3785d8845fa1be/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f1a18a52788176a9ad3785d8845fa1be/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/bc584fd52498cd05cf8d67d15ea914c6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/bc584fd52498cd05cf8d67d15ea914c6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/aa11078f4463a8843b49816d49f6dabb/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/aa11078f4463a8843b49816d49f6dabb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/0ef8b787f7e3a0f67af12cafe70a5d89/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/0ef8b787f7e3a0f67af12cafe70a5d89/AndroidManifest.xml:20:5-44
-MERGED from [com.braintreepayments.api:visa-checkout:1.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/visa-checkout-1.0.0.aar/ae211bfedce0b23b53a88fcd7dfa656f/AndroidManifest.xml:8:5-10:41
-MERGED from [com.braintreepayments.api:visa-checkout:1.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/visa-checkout-1.0.0.aar/ae211bfedce0b23b53a88fcd7dfa656f/AndroidManifest.xml:8:5-10:41
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-one-touch-2.17.0.aar/18af8f027f7feb452ff87ac99ec957ff/AndroidManifest.xml:7:5-9:41
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-one-touch-2.17.0.aar/18af8f027f7feb452ff87ac99ec957ff/AndroidManifest.xml:7:5-9:41
-MERGED from [com.braintreepayments.api:core:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/core-2.17.0.aar/e0304383118c4647e9318d02af68924d/AndroidManifest.xml:7:5-9:41
-MERGED from [com.braintreepayments.api:core:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/core-2.17.0.aar/e0304383118c4647e9318d02af68924d/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/2b819878a87b52e52a3bb1b48a59f510/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/2b819878a87b52e52a3bb1b48a59f510/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/c85cca52a3269e9cbb08a7718ffeae61/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/c85cca52a3269e9cbb08a7718ffeae61/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/a48a8be1e57004065d6eacbf5eb3e94d/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/a48a8be1e57004065d6eacbf5eb3e94d/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/37d64f249a6069f8e67d8043f1b47acc/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/37d64f249a6069f8e67d8043f1b47acc/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/f97042495508be2899dc7e5ac6599372/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/f97042495508be2899dc7e5ac6599372/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/c67afdb0f39ba34414f3d77741af75b8/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/c67afdb0f39ba34414f3d77741af75b8/AndroidManifest.xml:7:5-9:41
-MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:5:5-7:41
-MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:5:5-7:41
-MERGED from [com.braintreepayments:browser-switch:0.1.5] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/browser-switch-0.1.5.aar/9623dc4bc9edc658774d986c4960bbf4/AndroidManifest.xml:8:5-10:41
-MERGED from [com.braintreepayments:browser-switch:0.1.5] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/browser-switch-0.1.5.aar/9623dc4bc9edc658774d986c4960bbf4/AndroidManifest.xml:8:5-10:41
-MERGED from [com.paypal.android.sdk:data-collector:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/data-collector-2.17.0.aar/c532020161b3e4cb3ea52d6867eed587/AndroidManifest.xml:7:5-9:41
-MERGED from [com.paypal.android.sdk:data-collector:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/data-collector-2.17.0.aar/c532020161b3e4cb3ea52d6867eed587/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/2511325fed4e04cf0220e597a565ce91/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/2511325fed4e04cf0220e597a565ce91/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-fetch-blob] /Users/ziduchen/FairShare/node_modules/react-native-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fetch-blob] /Users/ziduchen/FairShare/node_modules/react-native-fetch-blob/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/a9639314c7f6bd11a84129a9e75f4207/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.3] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/react-native-0.58.3.aar/a9639314c7f6bd11a84129a9e75f4207/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b31a546a3c0b6a3060a01b51a9374a34/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/b31a546a3c0b6a3060a01b51a9374a34/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/6a6f9d99560772b9dfcfe78e9f0323f0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/6a6f9d99560772b9dfcfe78e9f0323f0/AndroidManifest.xml:20:5-44
+MERGED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/339c534ef6a39666b7a64684f1c29210/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/339c534ef6a39666b7a64684f1c29210/AndroidManifest.xml:20:5-44
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:5:5-7:41
+MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/2f418a303b3c842ba2b12e1eca6b8274/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/2f418a303b3c842ba2b12e1eca6b8274/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/dd0b320e08b3830f95aac8fe5199acf8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/dd0b320e08b3830f95aac8fe5199acf8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/58459e7c50813b75681857d579fcbf7e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/58459e7c50813b75681857d579fcbf7e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/d8c10a7ab3260943182a589ee8cd4167/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/d8c10a7ab3260943182a589ee8cd4167/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/63ea20910d3decddf1da993fc54cd35a/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/63ea20910d3decddf1da993fc54cd35a/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/a104c6e2db03d824cd739f666abf553d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/a104c6e2db03d824cd739f666abf553d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/25cb5bc564e2a0caf9fa27434a65bdb4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/25cb5bc564e2a0caf9fa27434a65bdb4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c2cba02a5d8475055acb30a7b9dc8a29/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c2cba02a5d8475055acb30a7b9dc8a29/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/99a7c3adc3be7e3e303c851404cf6a0d/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/99a7c3adc3be7e3e303c851404cf6a0d/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/6a0943908919ab9ad0878c32657b5c77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/6a0943908919ab9ad0878c32657b5c77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/657f8711f809e73850b2e9a0512f248c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/657f8711f809e73850b2e9a0512f248c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/076feeb6f992898605b5a0b5700c1c7a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/076feeb6f992898605b5a0b5700c1c7a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/d889705377d07078159cd1184db51bca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/d889705377d07078159cd1184db51bca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/fa4fa46c2525b94835f69f82adad4d4a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/fa4fa46c2525b94835f69f82adad4d4a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a401333afb8568cf7046e2529fa2cad8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a401333afb8568cf7046e2529fa2cad8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f63963f8c4d72f1afdc0d436efe0bdc3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f63963f8c4d72f1afdc0d436efe0bdc3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0b451587f0a69965f97e3c13d2af1b86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0b451587f0a69965f97e3c13d2af1b86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/9a1e7160ba7eb98637e2715d389c2f9a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/9a1e7160ba7eb98637e2715d389c2f9a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/1c267b0826e0b9e12a75008395eecf48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/1c267b0826e0b9e12a75008395eecf48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/23be17cc46eca196d0deed4f856abb1b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/23be17cc46eca196d0deed4f856abb1b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/5a0b7a90db804770657a17371b6328c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/5a0b7a90db804770657a17371b6328c6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/6c6d4006796b4ae98217d3b7536bae4f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/6c6d4006796b4ae98217d3b7536bae4f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/22271124a21aed58666bd8a9de3a1de8/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/22271124a21aed58666bd8a9de3a1de8/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e7541c4d93cc286b9f494b927ab960c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/e7541c4d93cc286b9f494b927ab960c9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/499c9b190da470e20bfe589abe7af485/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/499c9b190da470e20bfe589abe7af485/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/3e6d2536f72af350361da0c564e1b5d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/3e6d2536f72af350361da0c564e1b5d6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e87c0dd6df3b7f627ba91f2480b35280/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e87c0dd6df3b7f627ba91f2480b35280/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/0e8c4c8ef156e96e44b75e4dd40105ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/0e8c4c8ef156e96e44b75e4dd40105ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/ef5fac81b61a9531167866e2eeb19362/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/ef5fac81b61a9531167866e2eeb19362/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7e2a96920754328d669b10818ab6069a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7e2a96920754328d669b10818ab6069a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/a99425b6bf5ed600c033a4b99bd91b1c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/a99425b6bf5ed600c033a4b99bd91b1c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/772192d4d83b5d9d9691355c7f421416/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/772192d4d83b5d9d9691355c7f421416/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/2f9119dccc151c2644d50c925b7600d0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/2f9119dccc151c2644d50c925b7600d0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/9169f87c51d5be901d9e3cb766341b82/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/9169f87c51d5be901d9e3cb766341b82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/927aa524047b0816565197e6a7deb725/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/927aa524047b0816565197e6a7deb725/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/ef0b5529570e18854607305a020ca266/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/ef0b5529570e18854607305a020ca266/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/b112ce3f6cb8854c466ed338b69bb6b2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/b112ce3f6cb8854c466ed338b69bb6b2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/cb41bd564bf88b93f4761eb3b3fc359f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/cb41bd564bf88b93f4761eb3b3fc359f/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/e8f725c60ce3a1e0b93e85882b76dd91/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/e8f725c60ce3a1e0b93e85882b76dd91/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/25d381337d97768d2e26f19887da5d76/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/25d381337d97768d2e26f19887da5d76/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/af6da7574e58991ff4adc8cb7cbb0f21/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/af6da7574e58991ff4adc8cb7cbb0f21/AndroidManifest.xml:7:5-9:41
+MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:5:5-7:41
+MERGED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/50f19671094b8903c5beff1dc17d45fa/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/50f19671094b8903c5beff1dc17d45fa/AndroidManifest.xml:5:5-7:41
 INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/f3bd4bfe2daf906a464454c7aa02a9de/AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/99a7c3adc3be7e3e303c851404cf6a0d/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		INJECTED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
 		ADDED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml
@@ -464,7 +454,7 @@ ADDED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-n
 		ADDED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:15:13-84
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:${applicationId}.braintree
 ADDED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:18:13-25:29
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:com.test.braintree
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:com.fairshare.braintree
 ADDED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:18:13-25:29
 action#android.intent.action.VIEW
 ADDED from [:react-native-paypal] /Users/ziduchen/FairShare/node_modules/react-native-paypal/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:19:17-69
@@ -498,209 +488,187 @@ ADDED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/r
 		ADDED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:19:17-55
 	android:name
 		ADDED from [:react-native-image-picker] /Users/ziduchen/FairShare/node_modules/react-native-image-picker/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:18:17-67
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:11:5-79
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:9:5-79
-MERGED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:22:5-79
-	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:11:22-76
-activity#com.braintreepayments.api.AndroidPayActivity
-ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:15:9-17:62
-	android:theme
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:17:13-59
-	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:16:13-72
-activity#com.braintreepayments.api.GooglePaymentActivity
-ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:18:9-20:62
-	android:theme
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:20:13-59
-	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:19:13-75
-activity#com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity
-ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:21:9-103
-	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:21:19-100
-service#com.braintreepayments.api.internal.AnalyticsIntentService
-ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:23:9-93
-	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.17.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/braintree-2.17.0.aar/40af23388c0a183953f5f79a608dda43/AndroidManifest.xml:23:18-90
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/41064051f9ace5c66c0e4f9c4a4c4030/AndroidManifest.xml:23:5-82
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/4c7962f4912b6f767228b93828e5d9bf/AndroidManifest.xml:23:5-82
-MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/4c7962f4912b6f767228b93828e5d9bf/AndroidManifest.xml:23:5-82
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:26:5-82
-MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:26:5-82
+ADDED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/6a6f9d99560772b9dfcfe78e9f0323f0/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/2f418a303b3c842ba2b12e1eca6b8274/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-iid:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-iid-16.0.1.aar/2f418a303b3c842ba2b12e1eca6b8274/AndroidManifest.xml:23:5-82
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:26:5-82
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:26:5-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/41064051f9ace5c66c0e4f9c4a4c4030/AndroidManifest.xml:23:22-79
+		ADDED from [com.google.android.gms:play-services-gcm:16.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-gcm-16.1.0.aar/6a6f9d99560772b9dfcfe78e9f0323f0/AndroidManifest.xml:23:22-79
 uses-permission#com.sec.android.provider.badge.permission.READ
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:19:5-86
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:19:5-86
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:19:22-83
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:19:22-83
 uses-permission#com.sec.android.provider.badge.permission.WRITE
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:20:5-87
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:20:5-87
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:20:22-84
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:20:22-84
 uses-permission#com.htc.launcher.permission.READ_SETTINGS
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:23:5-81
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:23:5-81
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:23:22-78
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:23:22-78
 uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:24:5-83
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:24:5-83
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:24:22-80
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:24:22-80
 uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:27:5-88
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:27:5-88
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:27:22-85
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:27:22-85
 uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:28:5-92
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:28:5-92
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:28:22-89
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:28:22-89
 uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:31:5-84
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:31:5-84
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:31:22-81
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:31:22-81
 uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:34:5-83
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:34:5-83
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:34:22-80
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:34:22-80
 uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:37:5-91
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:37:5-91
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:37:22-88
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:37:22-88
 uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:38:5-92
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:38:5-92
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:38:22-89
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:38:22-89
 uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
-ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:39:5-93
+ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:39:5-93
 	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/b50aacd13fbcb8c041ed13c17c728ba1/AndroidManifest.xml:39:22-90
+		ADDED from [me.leolin:ShortcutBadger:1.1.8] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.8.aar/6438d74df0b87c003d35462e54f3c440/AndroidManifest.xml:39:22-90
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/69bd8c296b89ae771a66a15f0cd7e60a/AndroidManifest.xml:28:9-34:19
+ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/339c534ef6a39666b7a64684f1c29210/AndroidManifest.xml:28:9-34:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/69bd8c296b89ae771a66a15f0cd7e60a/AndroidManifest.xml:30:13-37
+		ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/339c534ef6a39666b7a64684f1c29210/AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/69bd8c296b89ae771a66a15f0cd7e60a/AndroidManifest.xml:29:13-82
+		ADDED from [com.google.firebase:firebase-messaging:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-messaging-18.0.0.aar/339c534ef6a39666b7a64684f1c29210/AndroidManifest.xml:29:13-82
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:9:22-76
 activity#com.paypal.android.sdk.payments.PaymentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:13:9-84
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:13:9-84
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:13:19-81
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:13:19-81
 activity#com.paypal.android.sdk.payments.PaymentMethodActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:14:9-90
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:14:9-90
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:14:19-87
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:14:19-87
 activity#com.paypal.android.sdk.payments.PaymentConfirmActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:15:9-91
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:15:9-91
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:15:19-88
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:15:19-88
 activity#com.paypal.android.sdk.payments.LoginActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:16:9-82
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:16:9-82
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:16:19-79
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:16:19-79
 activity#com.paypal.android.sdk.payments.PayPalFuturePaymentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:17:9-96
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:17:9-96
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:17:19-93
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:17:19-93
 activity#com.paypal.android.sdk.payments.FuturePaymentConsentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:18:9-97
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:18:9-97
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:18:19-94
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:18:19-94
 activity#com.paypal.android.sdk.payments.FuturePaymentInfoActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:19:9-94
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:19:9-94
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:19:19-91
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:19:19-91
 activity#com.paypal.android.sdk.payments.PayPalProfileSharingActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:20:9-97
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:20:9-97
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:20:19-94
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:20:19-94
 activity#com.paypal.android.sdk.payments.ProfileSharingConsentActivity
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:21:9-98
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:21:9-98
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:21:19-95
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:21:19-95
 service#com.paypal.android.sdk.payments.PayPalService
-ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:23:9-25:40
+ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:23:9-25:40
 	android:exported
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:25:13-37
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/c5d86dd9c010071a9f13d550bfca04a8/AndroidManifest.xml:24:13-73
+		ADDED from [com.paypal.sdk:paypal-android-sdk:2.15.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/paypal-android-sdk-2.15.1.aar/95bcf6cb8b0e0707b643daed7df7cfba/AndroidManifest.xml:24:13-73
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:29:9-35:19
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:29:9-35:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:31:13-37
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:30:13-84
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:30:13-84
 meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
-ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:32:13-34:85
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:32:13-34:85
 	android:value
-		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:34:17-82
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:34:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:33:17-96
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:33:17-96
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:37:9-44:20
+ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:37:9-44:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:39:13-36
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:39:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:40:13-73
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:40:13-73
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/835ade0328a7f8c3cc3923f56a61a926/AndroidManifest.xml:38:13-78
+		ADDED from [com.google.firebase:firebase-iid:18.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-iid-18.0.0.aar/4d373f36f79b6478eb71c002b7e93d3e/AndroidManifest.xml:38:13-78
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/39b651b200e9013170b80a047bc6fd05/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/58459e7c50813b75681857d579fcbf7e/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/39b651b200e9013170b80a047bc6fd05/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/58459e7c50813b75681857d579fcbf7e/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/39b651b200e9013170b80a047bc6fd05/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/58459e7c50813b75681857d579fcbf7e/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/39b651b200e9013170b80a047bc6fd05/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/58459e7c50813b75681857d579fcbf7e/AndroidManifest.xml:24:13-79
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/dd1c773b90ded04232e80cd83a067dd7/AndroidManifest.xml:12:9-16:39
+ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/63ea20910d3decddf1da993fc54cd35a/AndroidManifest.xml:12:9-16:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/dd1c773b90ded04232e80cd83a067dd7/AndroidManifest.xml:14:13-72
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/63ea20910d3decddf1da993fc54cd35a/AndroidManifest.xml:14:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/dd1c773b90ded04232e80cd83a067dd7/AndroidManifest.xml:15:13-37
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/63ea20910d3decddf1da993fc54cd35a/AndroidManifest.xml:15:13-37
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/dd1c773b90ded04232e80cd83a067dd7/AndroidManifest.xml:16:13-36
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/63ea20910d3decddf1da993fc54cd35a/AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/dd1c773b90ded04232e80cd83a067dd7/AndroidManifest.xml:13:13-77
+		ADDED from [com.google.firebase:firebase-common:17.0.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/firebase-common-17.0.0.aar/63ea20910d3decddf1da993fc54cd35a/AndroidManifest.xml:13:13-77
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/e917eaf420b6efd7aced192d274d2f9a/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c2cba02a5d8475055acb30a7b9dc8a29/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/e917eaf420b6efd7aced192d274d2f9a/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c2cba02a5d8475055acb30a7b9dc8a29/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/e917eaf420b6efd7aced192d274d2f9a/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/c2cba02a5d8475055acb30a7b9dc8a29/AndroidManifest.xml:24:13-58
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/f3bd4bfe2daf906a464454c7aa02a9de/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/02bdf049d061771c97ba2ecf10c9397b/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/02bdf049d061771c97ba2ecf10c9397b/AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/99a7c3adc3be7e3e303c851404cf6a0d/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/22271124a21aed58666bd8a9de3a1de8/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/22271124a21aed58666bd8a9de3a1de8/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/f3bd4bfe2daf906a464454c7aa02a9de/AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/99a7c3adc3be7e3e303c851404cf6a0d/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/f3bd4bfe2daf906a464454c7aa02a9de/AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/99a7c3adc3be7e3e303c851404cf6a0d/AndroidManifest.xml:27:13-51
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-82:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/ziduchen/FairShare/android/app/src/main/AndroidManifest.xml:1:1-93:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
 uses-feature#android.hardware.camera
-ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:12:5-14:36
+ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:12:5-14:36
 	android:required
-		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:14:9-33
+		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:14:9-33
 	android:name
-		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:13:9-47
+		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:13:9-47
 uses-feature#android.hardware.camera.autofocus
-ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:15:5-17:36
+ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:15:5-17:36
 	android:required
-		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:17:9-33
+		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:17:9-33
 	android:name
-		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:16:9-57
+		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:16:9-57
 activity#io.card.payment.CardIOActivity
-ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:20:9-22:66
+ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:20:9-22:66
 	android:configChanges
-		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:22:13-63
+		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:22:13-63
 	android:name
-		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:21:13-58
+		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:21:13-58
 activity#io.card.payment.DataEntryActivity
-ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:23:9-70
+ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:23:9-70
 	android:name
-		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/5be5aff9c51d59fba0578c13a11878c4/AndroidManifest.xml:23:19-67
+		ADDED from [io.card:android-sdk:5.4.2] /Users/ziduchen/.gradle/caches/transforms-1/files-1.1/android-sdk-5.4.2.aar/d9b76ab09ace1373af37c50f98e4d855/AndroidManifest.xml:23:19-67

@@ -76,7 +76,7 @@ export default class ChargeUnevenly extends React.Component {
          notification: {
             title: "Pay Your Recent Bill",
             body: "You are charged " + "by " + name + " for " + "$" + price,
-            sound: "default",
+            soundName: "default",
          },
          priority: 10
       };

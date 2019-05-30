@@ -21,7 +21,8 @@ class UserListItem extends Component {
       this.state = {
          activeRowKey: null,
          total: null,
-         data: null
+         data: null,
+         userFlatList: []
       };
    }
 

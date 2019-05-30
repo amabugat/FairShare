@@ -24,7 +24,7 @@ class UserListItem extends Component {
       this.state = {
          activeRowKey: null,
          total: null,
-         PickerValue: ""
+         PickerValue: "",
       };
    }
 

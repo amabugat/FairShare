@@ -8,9 +8,7 @@ import {
    KeyboardAvoidingView,
    TouchableWithoutFeedback,
    Keyboard,
-   ScrollView,
-   AsyncStorage,
-   Alert
+   StatusBar
 } from "react-native";
 import ProfileImage from "./profilePage/ProfileImage";
 import firebase from "@firebase/app";
@@ -18,7 +16,6 @@ import "@firebase/auth";
 import "@firebase/database";
 import NotifService from "../services/pushNotifications";
 
-type Props = {};
 export default class Home extends React.Component {
    constructor(props) {
       super(props);
@@ -26,7 +23,8 @@ export default class Home extends React.Component {
          email: "",
          password: "",
          loggedIn: null,
-         senderId: "283024795409"
+         senderId: "283024795409",
+         timePassed: false
       };
       this.notif = new NotifService(
          this.onRegister.bind(this),
@@ -69,7 +67,7 @@ export default class Home extends React.Component {
    }
 
    onRegister(token) {
-      Alert.alert("Registered !", JSON.stringify(token));
+      //Alert.alert("Registered !", JSON.stringify(token));
       console.log(token);
       this.setState({ registerToken: token.token, gcmRegistered: true });
    }
@@ -111,17 +109,31 @@ export default class Home extends React.Component {
    }
 
    render() {
-      switch (this.state.loggedIn) {
-         case true:
-            return this.props.navigation.navigate("Activity");
-         // this.props.navigation.navigate('Home')
-         //this.props.navigation.navigate('NoSplit')
-         case false:
-            return this.renderContent();
-         default:
-            return this.renderContent();
-      }
-   }
+      /*let that = this;
+      setTimeout(function() {
+         that.setState({ timePassed: true });
+      }, 2000);
+      if (!that.state.timePassed) {
+         return (
+            <View style={styles.container2}>
+               <StatusBar barStyle="light-content" backgroundColor="#82b85a" />
+               <ProfileImage />
+            </View>
+         );
+      }else {*/
+         switch (this.state.loggedIn) {
+            case true:
+               return this.props.navigation.navigate("Activity");
+            // this.props.navigation.navigate('Home')
+            //this.props.navigation.navigate('NoSplit')
+            case false:
+               return this.renderContent();
+            default:
+               return this.renderContent();
+         }
+  /* }*/
+}
+
 
    renderContent() {
       return (
@@ -172,15 +184,6 @@ export default class Home extends React.Component {
                      style={styles.button2}
                   >
                      <Text style={styles.buttonText}> SIGN UP </Text>
-                  </TouchableOpacity>
-
-                  <TouchableOpacity
-                     onPress={() =>
-                        this.sendNotification(this.state.registerToken)
-                     }
-                     style={styles.button2}
-                  >
-                     <Text style={styles.buttonText}> Camera Fcn </Text>
                   </TouchableOpacity>
                </View>
             </TouchableWithoutFeedback>
@@ -242,7 +245,15 @@ export default class Home extends React.Component {
 const styles = StyleSheet.create({
    container: {
       flex: 1,
+      backgroundColor: "#82b85a",
       backgroundColor: "#fcfcfe",
+      alignItems: "center",
+      justifyContent: "center",
+      flexDirection: "column"
+   },
+   container2: {
+      flex: 1,
+      backgroundColor: "#82b85a",
       alignItems: "center",
       justifyContent: "center",
       flexDirection: "column"

@@ -8,7 +8,8 @@ import {
    KeyboardAvoidingView,
    TouchableWithoutFeedback,
    Keyboard,
-   StatusBar
+   StatusBar,
+   Alert,
 } from "react-native";
 import ProfileImage from "./profilePage/ProfileImage";
 import firebase from "@firebase/app";

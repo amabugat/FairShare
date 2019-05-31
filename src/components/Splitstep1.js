@@ -22,7 +22,6 @@ class UserListItem extends Component {
          activeRowKey: null,
          total: null,
          data: null,
-         userFlatList: []
       };
    }
 

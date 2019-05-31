@@ -9,9 +9,7 @@ import Activity from "./Activity";
 import BillPrompt from "./billsplit/BillPrompt";
 import Splitstep1 from "../components/Splitstep1";
 import ChargeUnevenly from "../components/ChargeUnevenly";
-import SplitStep1 from "./billsplit/SplitStep1";
-import SplitStep2 from "./billsplit/SplitStep2";
-import SplitStep3 from "./billsplit/SplitStep3";
+import SplitStep2 from "../screens/billsplit/SplitStep2";
 import NoSplit from "./billsplit/NoSplit";
 import Groups from "./groups/Groups.js";
 import SearchFriends from "./groups/SearchFriends.js";
@@ -75,11 +73,9 @@ const Navigation = createStackNavigator({
          headerStyle: { backgroundColor: "#82b85a", elevation: 0 }
       })
    },
+   SplitStep2: { screen: SplitStep2 },
    Splitstep1: { screen: Splitstep1 },
    ChargeUnevenly: { screen: ChargeUnevenly },
-   SplitStep1: { screen: SplitStep1 },
-   SplitStep2: { screen: SplitStep2 },
-   SplitStep3: { screen: SplitStep3 },
    NoSplit: { screen: NoSplit },
    BillSplitProcess: { screen: BillSplitProcess },
    ProfilePage: {

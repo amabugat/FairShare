@@ -7,7 +7,6 @@ import {
    TouchableOpacity
 } from "react-native";
 import ProfileImage from "../profilePage/ProfileImage";
-import Splitstep1 from "../../components/Splitstep1";
 //Menu for asking how bill is being split
 export default class BillPrompt extends React.Component {
    render() {
@@ -17,7 +16,7 @@ export default class BillPrompt extends React.Component {
             <Text style={styles.name}>Will the bill be split evenly?</Text>
 
             <TouchableOpacity
-               onPress={() => this.props.navigation.navigate("NoSplit")}
+               onPress={() => this.props.navigation.navigate("SplitStep2")}
                style={styles.button1}
             >
                <Text style={styles.buttonText}> Yes </Text>

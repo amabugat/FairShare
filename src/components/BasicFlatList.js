@@ -394,7 +394,7 @@ class FlatListItem extends Component {
                         }
                      }}
                   >
-                     <Text style={styles.buttonFont}> ADD TO </Text>
+                     <Text style={styles.buttonFont2}> ADD TO </Text>
                   </TouchableOpacity>
                   <Picker
                      style={{
@@ -483,8 +483,8 @@ const styles = StyleSheet.create({
    },
    calcContainer: {
       borderRadius: 90,
-      width: 100,
-      height: 40,
+      width: 80,
+      height: 30,
       backgroundColor: "#26A65B",
       marginLeft: "2%",
       fontFamily: "Raleway-Bold",
@@ -493,8 +493,8 @@ const styles = StyleSheet.create({
    },
    cancelContainer: {
       borderRadius: 90,
-      width: 100,
-      height: 40,
+      width: 80,
+      height: 30,
       backgroundColor: "#F47983",
       marginRight: "2%",
       fontFamily: "Raleway-Bold",
@@ -503,6 +503,13 @@ const styles = StyleSheet.create({
    },
    buttonFont: {
       fontSize: 18,
+      marginTop: 7,
+      fontFamily: "Raleway-Bold",
+      color: "#FFFFFF",
+      textAlign: "center"
+   },
+   buttonFont2: {
+      fontSize: 14,
       marginTop: 7,
       fontFamily: "Raleway-Bold",
       color: "#FFFFFF",

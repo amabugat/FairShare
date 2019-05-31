@@ -13,21 +13,20 @@ import userFlatList from "../../data/userFlatList";
 import flatListData from "../../data/flatListData";
 import BasicFlatList from "../../components/BasicFlatList";
 import ChargeUnevenly from "../../components/ChargeUnevenly";
-import ImagePicker from 'react-native-image-picker';
-import RNTesseractOcr from 'react-native-tesseract-ocr';
-
+import ImagePicker from "react-native-image-picker";
+import RNTesseractOcr from "react-native-tesseract-ocr";
 
 const imagePickerOptions = {
-    quality: 1.0,
-    maxWidth: 2000,
-    maxHeight: 3000,
-    storageOptions: {
-        skipBackup: true,
-    },
+   quality: 1.0,
+   maxWidth: 2000,
+   maxHeight: 3000,
+   storageOptions: {
+      skipBackup: true
+   }
 };
 const tessOptions = {
-    whitelist: null,
-    blacklist: null
+   whitelist: null,
+   blacklist: null
 };
 
 export default class BillSplitProcess extends Component {
@@ -43,9 +42,9 @@ export default class BillSplitProcess extends Component {
          extractedText: null,
          hasErrored: false,
          imageSource: null,
-         isLoading: false,
+         isLoading: false
       };
-       this.selectImage = this.selectImage.bind(this);
+      this.selectImage = this.selectImage.bind(this);
    }
 
    componentWillReceiveProps(nextProps, nextState) {
@@ -57,86 +56,93 @@ export default class BillSplitProcess extends Component {
    }
 
    selectImage() {
-     this.setState({ isLoading: true });
+      this.setState({ isLoading: true });
 
-     ImagePicker.showImagePicker(imagePickerOptions, (response) => {
+      ImagePicker.showImagePicker(imagePickerOptions, response => {
          if (response.didCancel) {
-             this.setState({ isLoading: false });
+            this.setState({ isLoading: false });
          } else if (response.error) {
-             this.setState({ isLoading: false, hasErrored: true, errorMessage: response.error });
+            this.setState({
+               isLoading: false,
+               hasErrored: true,
+               errorMessage: response.error
+            });
          } else {
-             const source = { uri: response.uri };
-             this.setState({ imageSource: source, hasErrored: false, errorMessage: null }, this.extractTextFromImage(response.path));
+            const source = { uri: response.uri };
+            this.setState(
+               { imageSource: source, hasErrored: false, errorMessage: null },
+               this.extractTextFromImage(response.path)
+            );
          }
-     });
+      });
    }
 
    extractTextFromImage(imagePath) {
-        RNTesseractOcr.recognize(imagePath, 'LANG_ENGLISH', tessOptions)
-            .then((result) => {
-                var output = result.split('\n');
-                var item = [];
-                var price = [];
-                var curTotal = 0;
-                var recieptTotal = 0;
-                flatListData.length = 0;
-                let flag = false;
-                for(var i = 0; i < output.length; i++)
-                {
-                    if(/\b(\w*Total\w*)\b(\s*)(\d*\.\d{2})/.test(output[i]))
-                    {
-                        console.log("Found total")
-                        flag = true;
-                    }
-                    if(/(?=\d\.\d{2})/.test(output[i])){
-                        console.log("its true")
-                        console.log(output[i])
-                        const re = /((\s*\w+\s)+)(\s*)(\d*\.\d{2})/
-                        const hehe = re.exec(output[i])
-                        console.log(hehe);
-                        console.log(hehe[1])
-                        console.log(hehe[hehe.length-1])
-                        if(hehe[1].includes("Subtotal")){
-                            recieptTotal = hehe[hehe.length-1]
-                        }else if(hehe[1].includes("Total") || hehe[1].includes( "Tax")){
-                            console.log("got tax amount and tital")
-                        }else {
-                            const newItem = {
-                                name: hehe[1],
-                                itemPrice: parseFloat(hehe[hehe.length - 1]),
-                                user: []
-                            };
-                            curTotal += parseFloat(hehe[hehe.length - 1]);
-                            flatListData.push(newItem)
-                            flag = true;
-                        }
-                    }
-                    else{
-                        console.log("false");
-                    }
-                }
-                if(curTotal != recieptTotal){
-                    console.log("hhh"+ curTotal);
-                    console.log("fff" + recieptTotal);
-                    alert("we have a problem");
-                }
+      RNTesseractOcr.recognize(imagePath, "LANG_ENGLISH", tessOptions)
+         .then(result => {
+            var output = result.split("\n");
+            var item = [];
+            var price = [];
+            var curTotal = 0;
+            var recieptTotal = 0;
+            flatListData.length = 0;
+            let flag = false;
+            for (var i = 0; i < output.length; i++) {
+               if (/\b(\w*Total\w*)\b(\s*)(\d*\.\d{2})/.test(output[i])) {
+                  console.log("Found total");
+                  flag = true;
+               }
+               if (/(?=\d\.\d{2})/.test(output[i])) {
+                  console.log("its true");
+                  console.log(output[i]);
+                  const re = /((\s*\w+\s)+)(\s*)(\d*\.\d{2})/;
+                  const hehe = re.exec(output[i]);
+                  console.log(hehe);
+                  console.log(hehe[1]);
+                  console.log(hehe[hehe.length - 1]);
+                  if (hehe[1].includes("Subtotal")) {
+                     recieptTotal = hehe[hehe.length - 1];
+                  } else if (
+                     hehe[1].includes("Total") ||
+                     hehe[1].includes("Tax")
+                  ) {
+                     console.log("got tax amount and tital");
+                  } else {
+                     const newItem = {
+                        name: hehe[1],
+                        itemPrice: parseFloat(hehe[hehe.length - 1]),
+                        user: []
+                     };
+                     curTotal += parseFloat(hehe[hehe.length - 1]);
+                     flatListData.push(newItem);
+                     flag = true;
+                  }
+               } else {
+                  console.log("false");
+               }
+            }
+            if (curTotal != recieptTotal) {
+               console.log("hhh" + curTotal);
+               console.log("fff" + recieptTotal);
+               alert("we have a problem");
+            }
 
-                if(flag == true)
-                {
-                    this.setState({ isLoading: false, extractedText: result});
-                    flag = false;
-                }
-                else{
-                    this.setState({ isLoading: false, hasErrored: true, errorMessage: "ERROR" });
-                    flag = false;
-                }
-
-
-            })
-            .catch((err) => {
-                this.setState({ hasErrored: true, errorMessage: err.message });
-            });
-    }
+            if (flag == true) {
+               this.setState({ isLoading: false, extractedText: result });
+               flag = false;
+            } else {
+               this.setState({
+                  isLoading: false,
+                  hasErrored: true,
+                  errorMessage: "ERROR"
+               });
+               flag = false;
+            }
+         })
+         .catch(err => {
+            this.setState({ hasErrored: true, errorMessage: err.message });
+         });
+   }
 
    createCalc = () => {
       for (var i = 0; i < userFlatList.length; i++) {
@@ -174,28 +180,25 @@ export default class BillSplitProcess extends Component {
             }}
          >
             <View style={styles.row}>
-                <View style={styles.container}>
-                        <View style={styles.change2}>
-                            <TouchableOpacity
-                                onPress={() => {
-                                    this.selectImage();
-                                }}
-                            >
-                                <Text style={styles.buttonFont}>Scan Receipt</Text>
-                            </TouchableOpacity>
-                        </View>
-                  </View>
-               <Text> </Text>
                <View style={styles.change}>
                   <TouchableOpacity
                      onPress={() => {
-                     //   if (this.state.tax == null || this.state.tip == null) {
-                     //      Alert("Enter Tip or Tax");
-                    //    } else {
-                           this.createCalc();
-                           console.log(userFlatList);
-                           this.props.navigation.navigate("ChargeUnevenly");
-                    //    }
+                        this.selectImage();
+                     }}
+                  >
+                     <Text style={styles.buttonFont}>Scan</Text>
+                  </TouchableOpacity>
+               </View>
+               <View style={styles.change}>
+                  <TouchableOpacity
+                     onPress={() => {
+                        //   if (this.state.tax == null || this.state.tip == null) {
+                        //      Alert("Enter Tip or Tax");
+                        //    } else {
+                        this.createCalc();
+                        console.log(userFlatList);
+                        this.props.navigation.navigate("ChargeUnevenly");
+                        //    }
                      }}
                   >
                      <Text style={styles.buttonFont}>Charge</Text>
@@ -309,7 +312,6 @@ const styles = StyleSheet.create({
       backgroundColor: "#6C7A89",
       color: "#FFFFFF",
       fontFamily: "Raleway-Bold",
-      marginRight: "2%",
       elevation: 3
    },
    buttonFont: {

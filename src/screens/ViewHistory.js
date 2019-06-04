@@ -77,8 +77,8 @@ export default class ViewHistoryScreen extends React.Component {
                                 <Left>
                                     <Thumbnail source={logo} />
                                     <Body>
-                                    <Text>{data.val().ChargedName} Paid {data.val().RequesterName}</Text>
-                                    <Text note>Total: {data.val().Amount}</Text>
+                                    <Text style = {styles.screenText}>{data.val().ChargedName} Paid {data.val().RequesterName}</Text>
+                                    <Text  style = {styles.screenText}note>Total: {data.val().Amount}</Text>
                                     </Body>
                                 </Left>
                             </CardItem>
@@ -103,7 +103,7 @@ export default class ViewHistoryScreen extends React.Component {
 
                             <CardItem key={index}>
                                 <View>
-                                    <Text>Description: {data.val().Description}</Text>
+                                    <Text style = {styles.screenText}>Description: {data.val().Description}</Text>
                                 </View>
                             </CardItem>
 
@@ -145,8 +145,9 @@ const styles = StyleSheet.create({
         // marginTop:10,
         elevation: 3,
     },
-    buttonText: {
+    screenText: {
+        margin: 5,
         fontFamily: "Raleway-Regular",
-        color: 'white',
+        color: 'grey',
     },
 });

@@ -186,6 +186,14 @@ export default class Home extends React.Component {
                   >
                      <Text style={styles.buttonText}> SIGN UP </Text>
                   </TouchableOpacity>
+
+                  <TouchableOpacity
+                     onPress={()=>{}
+                     }
+                     style={styles.button3}
+                  >
+                     <Text style={styles.buttonText}> FACEBOOK </Text>
+                  </TouchableOpacity>
                </View>
             </TouchableWithoutFeedback>
          </KeyboardAvoidingView>
@@ -273,6 +281,7 @@ const styles = StyleSheet.create({
    button1: {
       fontFamily: "Raleway-Regular",
       width: "30%",
+      borderRadius: 90,
       backgroundColor: "#559535",
       paddingTop: 10,
       paddingBottom: 10,
@@ -285,7 +294,21 @@ const styles = StyleSheet.create({
    button2: {
       fontFamily: "Raleway-Regular",
       width: "30%",
+      borderRadius: 90,
       backgroundColor: "#3d3e52",
+      paddingTop: 10,
+      paddingBottom: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      marginBottom: 10,
+      marginTop: 10,
+      elevation: 3
+   },
+   button3: {
+      fontFamily: "Raleway-Regular",
+      width: "30%",
+      borderRadius: 90,
+      backgroundColor: "rgb(60,90,153)",
       paddingTop: 10,
       paddingBottom: 10,
       justifyContent: "center",
@@ -299,11 +322,21 @@ const styles = StyleSheet.create({
    },
    textInput1: {
       fontFamily: "Raleway-Regular",
-      marginTop: 10
+      marginTop: 10,
+      borderRadius: 100,
+      backgroundColor: "rgba(117,125,117,0.2)",
+      width: "50%",
+      textAlign: "center",
+      height: 35,
    },
    textInput2: {
       fontFamily: "Raleway-Regular",
       marginBottom: 10,
-      marginTop: 10
+      marginTop: 10,
+      borderRadius: 100,
+      textAlign: "center",
+      backgroundColor: "rgba(117,125,117,0.2)",
+      width: "50%",
+      height: 35,
    }
 });

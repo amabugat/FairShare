@@ -106,7 +106,7 @@ export default class ViewChargedScreen extends React.Component {
         await requestRef.on('child_removed', function(data){
             var newData = [... that.state.items]
             for(var i = newData.length - 1; i >= 0; i--){
-                if(newData[i].val().ReceiptID == data.val().ReceiptID){
+                if(newData[i].ReceiptID == data.val().ReceiptID){
                     newData.splice(i, 1);
                     break;
                 }
@@ -126,15 +126,15 @@ export default class ViewChargedScreen extends React.Component {
                                 <Left>
                                     <Thumbnail source={logo} />
                                     <Body>
-                                    <Text>YOU ARE BEING CHARGED: {data.RequesterName}</Text>
-                                    <Text note>Total: {data.Amount}</Text>
+                                    <Text style = {styles.screenText}>YOU ARE BEING CHARGED BY: {data.RequesterName}</Text>
+                                    <Text style = {styles.screenText} note>Total: {data.Amount}</Text>
                                     </Body>
                                 </Left>
                             </CardItem>
 
                             {data.ReceiptPic == null ? (
                                 <CardItem cardBody key = {index}>
-                                    <Text>No Photo</Text>
+                                    <Text style = {styles.screenText}>No Photo</Text>
                                 </CardItem>
                             ) : (
                                 <CardItem cardBody key = {index}>
@@ -152,7 +152,7 @@ export default class ViewChargedScreen extends React.Component {
 
                             <CardItem key={index}>
                                 <View>
-                                    <Text>Description: {data.Description}</Text>
+                                    <Text style = {styles.screenText}>Description: {data.Description}</Text>
                                 </View>
                             </CardItem>
 
@@ -175,9 +175,9 @@ export default class ViewChargedScreen extends React.Component {
     payment = (data) => {
         PayPal.initialize(PayPal.SANDBOX, "AZoR-_FPTqdYVrW0pk5dZ_wFEPji2ptMc6AyM-VdqIyOmaefQr69uw5piF4AoFXfeWb3zs5j72edRWay");
         PayPal.pay({
-            price: data.val().Amount.toString(),
+            price: data.Amount.toString(),
             currency: 'USD',
-            description: data.val().Description,
+            description: data.Description,
         }).then(confirm => console.log(confirm),
             this.markAsPaid(data))
             .catch(error => console.log(error));
@@ -187,49 +187,49 @@ export default class ViewChargedScreen extends React.Component {
         var user = firebase.auth().currentUser;
         var uid = user.uid;
         var paymentsRef = firebase.database().ref('/Payments');
-        var paymentsUserRef = paymentsRef.child(data.val().Requester);
+        var paymentsUserRef = paymentsRef.child(data.Requester);
         var userRequestingRef = paymentsUserRef.child('/Requesting');
         var userHistoryRef = paymentsUserRef.child('/History');
 
-        var chargedUserRef = paymentsRef.child(data.val().Charged);
+        var chargedUserRef = paymentsRef.child(data.Charged);
         var chargedUserTable = chargedUserRef.child('/GettingCharged');
         var chargedUserHistory = chargedUserRef.child('/History');
 
-        chargedUserHistory.child(data.val().ReceiptID).set(
+        chargedUserHistory.child(data.ReceiptID).set(
             {
-                PaymentTitle: data.val().PaymentTitle,
-                ReceiptID: data.val().ReceiptID,
-                Description: data.val().Description,
-                Amount: data.val().Amount,
-                Tip: data.val().Tip,
-                Tax: data.val().Tax,
-                Requester: data.val().Requester,
-                Charged: data.val().Charged,
-                RequesterName: data.val().RequesterName,
-                ChargedName: data.val().ChargedName,
+                PaymentTitle: data.PaymentTitle,
+                ReceiptID: data.ReceiptID,
+                Description: data.Description,
+                Amount: data.Amount,
+                Tip: data.Tip,
+                Tax: data.Tax,
+                Requester: data.Requester,
+                Charged: data.Charged,
+                RequesterName: data.RequesterName,
+                ChargedName: data.ChargedName,
                 ReceiptPic: "",
                 Paid: true,
             }
         );
-        userHistoryRef.child(data.val().ReceiptID).set(
+        userHistoryRef.child(data.ReceiptID).set(
             {
-                PaymentTitle: data.val().PaymentTitle,
-                ReceiptID: data.val().ReceiptID,
-                Description: data.val().Description,
-                Amount: data.val().Amount,
-                Tip: data.val().Tip,
-                Tax: data.val().Tax,
-                Requester: data.val().Requester,
-                Charged: data.val().Charged,
-                RequesterName: data.val().RequesterName,
-                ChargedName: data.val().ChargedName,
+                PaymentTitle: data.PaymentTitle,
+                ReceiptID: data.ReceiptID,
+                Description: data.Description,
+                Amount: data.Amount,
+                Tip: data.Tip,
+                Tax: data.Tax,
+                Requester: data.Requester,
+                Charged: data.Charged,
+                RequesterName: data.RequesterName,
+                ChargedName: data.ChargedName,
                 ReceiptPic: "",
                 Paid: true,
             }
         );
         //remove the item
-        chargedUserTable.child(data.val().ReceiptID).remove();
-        userRequestingRef.child(data.val().ReceiptID).remove();
+        chargedUserTable.child(data.ReceiptID).remove();
+        userRequestingRef.child(data.ReceiptID).remove();
     }
 }
 
@@ -248,6 +248,7 @@ const styles = StyleSheet.create({
         // paddingVertical: 5,
     },
     button1: {
+        borderRadius: 90,
         backgroundColor: '#559535',
         padding:10,
         justifyContent: 'center',
@@ -257,6 +258,11 @@ const styles = StyleSheet.create({
     buttonText: {
         fontFamily: "Raleway-Regular",
         color: 'white',
+    },
+    screenText: {
+        margin: 5,
+        fontFamily: "Raleway-Regular",
+        color: 'grey',
     },
 });
 

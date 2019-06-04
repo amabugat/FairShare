@@ -36,8 +36,8 @@ export default class BillSplitProcess extends Component {
       this.state = {
          currentPage: 0,
          total: 0,
-         tax: null,
-         tip: null,
+         tax: 9,
+         tip: 15,
          errorMessage: null,
          extractedText: null,
          hasErrored: false,
@@ -165,7 +165,7 @@ export default class BillSplitProcess extends Component {
             sum = sum + parseFloat(userFlatList[i].items[j].addedPrice);
          }
          this.setState({ total: sum });
-         userFlatList[i].price = sum;
+         userFlatList[i].price = sum + sum*0.01*this.state.tip + sum*0.01*this.state.tax;
       }
    };
 
@@ -222,13 +222,13 @@ export default class BillSplitProcess extends Component {
             <View style={styles.row}>
                <Text style={styles.fontSet}>%Tip</Text>
                <View style={styles.outputBox}>
-                  <Text style={styles.output}>{}</Text>
+                  <Text style={styles.output}>{this.state.tip}</Text>
                </View>
             </View>
             <View style={styles.row}>
                <Text style={styles.fontSet}>%Tax</Text>
                <View style={styles.outputBox}>
-                  <Text style={styles.output}>{}</Text>
+                  <Text style={styles.output}>{this.state.tax}</Text>
                </View>
             </View>
          </View>

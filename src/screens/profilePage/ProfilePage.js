@@ -157,8 +157,7 @@ export default class ProfilePage extends React.Component {
     render() {
         return (
             <Container style = {styles.container}>
-                <Content>
-                    <View>
+                    <View style = {{alignItems: 'center'}}>
                       {this.state.profileImage === null ? (
                         <ProfileImage/>
                       ) : (
@@ -186,8 +185,6 @@ export default class ProfilePage extends React.Component {
                         </View>
 
                     </View>
-
-                </Content>
             </Container>
 
 
@@ -210,6 +207,7 @@ const styles = StyleSheet.create({
     },
     button1: {
         // width: '30%',
+        borderRadius: 90,
         backgroundColor: '#559535',
         padding:10,
         justifyContent: 'center',

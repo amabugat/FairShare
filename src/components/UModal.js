@@ -108,6 +108,8 @@ export default class UModal extends Component {
                                     userID: user.child("userID").val(),
                                     name: user.child("FullName").val(),
                                     deviceId: user.child("DeviceId").val(),
+                                    interest: "NONE",
+                                    interestRate: 0,
                                     items: [],
                                     price: 0
                                  };

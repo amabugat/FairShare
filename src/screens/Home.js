@@ -122,6 +122,10 @@ export default class Home extends React.Component {
             </View>
          );
       }else {*/
+        <View style={styles.container2}>
+           <StatusBar barStyle="light-content" backgroundColor="#82b85a" />
+           <ProfileImage />
+        </View>
          switch (this.state.loggedIn) {
             case true:
                return this.props.navigation.navigate("Activity");

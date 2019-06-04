@@ -14,6 +14,7 @@ import NoSplit from "./billsplit/NoSplit";
 import Groups from "./groups/Groups.js";
 import SearchFriends from "./groups/SearchFriends.js";
 import ProfilePage from "./profilePage/ProfilePage.js";
+import ViewProfile from "./profilePage/ViewProfile.js";
 import BillSplitProcess from "./billsplit/BillSplitProcess";
 import Row from "./Row";
 import Landing from "./Landing";
@@ -92,6 +93,12 @@ const Navigation = createStackNavigator({
          //     </Button>
          //
          // ),
+      })
+   },
+   ViewProfile: {
+      screen: ViewProfile,
+      navigationOptions: () => ({
+         headerStyle: { backgroundColor: "#fcfcfe", elevation: 0 }
       })
    },
    Row: { screen: Row },

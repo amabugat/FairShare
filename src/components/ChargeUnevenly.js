@@ -37,8 +37,9 @@ export default class ChargeUnevenly extends React.Component {
          chargingPeople: data,
          interest: 0,
          interestRate: 0,
-         tax: 0,
-         tip: 0,
+         avatarSource: this.props.navigation.state.params.imageURI,
+         tip: this.props.navigation.state.params.tip,
+         tax: this.props.navigation.state.params.tax,
          fullName: "",
          userID: 0
       };
@@ -91,7 +92,7 @@ export default class ChargeUnevenly extends React.Component {
          "Content-Type": "application/json",
        "Authorization": "key=AIzaSyCIn2th7KX6-5quHBnI4OudKTVPL9jwmNg"
       });
- 
+
       fetch('https://gcm-http.googleapis.com/gcm/send', { method: "POST", headers: headers, body: body });
 
       console.log("fetched");

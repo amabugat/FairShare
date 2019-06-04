@@ -53,7 +53,7 @@ export default class Home extends React.Component {
          "Content-Type": "application/json",
        "Authorization": "key=AIzaSyCIn2th7KX6-5quHBnI4OudKTVPL9jwmNg"
       });
- 
+
       fetch('https://gcm-http.googleapis.com/gcm/send', { method: "POST", headers: headers, body: body });
 
       console.log("fetched");
@@ -87,22 +87,22 @@ export default class Home extends React.Component {
          if (user) {
             this.setState({ loggedIn: true });
             var user = firebase.auth().currentUser;
-            user
-               .updateProfile({
-                  displayName: "zidu"
-               })
-               .then(
-                  function() {
-                     // Profile updated successfully!
-                     // "Jane Q. User"
-                     var displayName = user.displayName;
-                     console.log(displayName);
-                     var photoURL = user.photoURL;
-                  },
-                  function(error) {
-                     // An error happened.
-                  }
-               );
+            // user
+            //    .updateProfile({
+            //       displayName: "zidu"
+            //    })
+            //    .then(
+            //       function() {
+            //          // Profile updated successfully!
+            //          // "Jane Q. User"
+            //          var displayName = user.displayName;
+            //          console.log(displayName);
+            //          var photoURL = user.photoURL;
+            //       },
+            //       function(error) {
+            //          // An error happened.
+            //       }
+            //    );
          } else {
             this.setState({ loggedIn: false });
          }

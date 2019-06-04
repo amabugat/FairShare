@@ -108,7 +108,9 @@ export default class SModal extends Component {
                                     userID: user.child("userID").val(),
                                     name: user.child("FullName").val(),
                                     deviceId: user.child("DeviceId").val(),
-                                    price: 0
+                                    price: 0,
+                                    interest: "NONE",
+                                    interestRate: 0
                                  };
                                  userSplitList.push(dataDic);
                                  console.log(userSplitList);

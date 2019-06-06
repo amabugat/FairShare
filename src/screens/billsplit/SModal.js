@@ -56,9 +56,9 @@ export default class SModal extends Component {
             <Text
                style={{
                   fontSize: 16,
-                  fontWeight: "bold",
                   textAlign: "center",
-                  marginTop: 40
+                  marginTop: 40,
+                  fontFamily: "Raleway-Bold"
                }}
             >
                New Person's Name
@@ -71,7 +71,9 @@ export default class SModal extends Component {
                   marginRight: 30,
                   marginTop: 20,
                   marginBottom: 10,
-                  borderBottomWidth: 1
+                  borderBottomWidth: 1,
+                  fontFamily: "Raleway-Regular",
+                  textAlign: "center",
                }}
                onChangeText={text => this.setState({ newItemName: text })}
                placeholder="Enter new person's name"
@@ -79,14 +81,15 @@ export default class SModal extends Component {
             />
 
             <Button
-               style={{ fontSize: 18, color: "white" }}
+               style={{ fontSize: 18, color: "white", fontFamily: "Raleway-Bold" }}
                containerStyle={{
                   padding: 8,
                   marginLeft: 70,
                   marginRight: 70,
                   height: 40,
                   borderRadius: 6,
-                  backgroundColor: "mediumseagreen"
+                  backgroundColor: "mediumseagreen",
+                  
                }}
                onPress={() => {
                   var ref = firebase.database().ref("/Users");

@@ -75,9 +75,19 @@ export default class ChargePeople extends React.Component {
          to: token,
          notification: {
             title: "Pay Your Recent Bill",
-            body: "You are charged " + "by " + name + " for " + "$" + price.toFixed(2) + '\n'
-                    + "Payment Title: " + this.state.paymentTitle + '\n'
-                    + "Describtion: " + this.state.chargeDescription,
+            body:
+               "You are charged " +
+               "by " +
+               name +
+               " for " +
+               "$" +
+               price.toFixed(2) +
+               "\n" +
+               "Payment Title: " +
+               this.state.paymentTitle +
+               "\n" +
+               "Describtion: " +
+               this.state.chargeDescription,
             sound: "default"
          },
          priority: 10
@@ -368,7 +378,7 @@ export default class ChargePeople extends React.Component {
                         <Text style={styles.UserListItem}> {item.name} </Text>
                         <Text style={styles.UserListItem}> pays </Text>
                         <Text style={styles.UserListItem}>
-                           ${(item.price).toFixed(2)}
+                           ${item.price.toFixed(2)}
                         </Text>
                      </View>
                   )}
@@ -390,7 +400,7 @@ export default class ChargePeople extends React.Component {
 
                <Picker
                   selectedValue={this.state.interest}
-                  style={{ height: 50, width: 100 }}
+                  style={{ height: 50, width: 150 }}
                   onValueChange={(itemValue, itemIndex) =>
                      this.setState({ interest: itemValue })
                   }
@@ -417,7 +427,7 @@ export default class ChargePeople extends React.Component {
                   style={styles.button1}
                   onPress={this.chargePeople.bind(this)}
                >
-                  <Text> Charge Users </Text>
+                  <Text style={styles.buttonText}>Charge</Text>
                </TouchableOpacity>
 
                <View>
@@ -471,14 +481,14 @@ export default class ChargePeople extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    UserListItem: {
-        fontFamily: "Raleway-Bold",
-        color: "black",
-        padding: 25,
-        paddingLeft: 15,
-        fontSize: 15
-     },
-     textInput1: {
+   UserListItem: {
+      fontFamily: "Raleway-Bold",
+      color: "black",
+      padding: 25,
+      paddingLeft: 15,
+      fontSize: 15
+   },
+   textInput1: {
       fontFamily: "Raleway-Regular",
       marginTop: 10,
       borderRadius: 100,
@@ -497,73 +507,65 @@ const styles = StyleSheet.create({
       width: "50%",
       height: 35
    },
-     container: {
-        flex: 1,
-        backgroundColor: "#fcfcfe",
-        alignItems: "center",
-        justifyContent: "space-around",
-        flexDirection: "column"
-     },
-     wrapper: {
-        flex: 1
-     },
-     avatarContainer: {
-        borderColor: "#9B9B9B",
-        borderWidth: 1 / PixelRatio.get(),
-        justifyContent: "center",
-        alignItems: "center"
-     },
-     avatar: {
-        borderRadius: 75,
-        width: 150,
-        height: 150
-     },
-     name: {
-        fontFamily: "Raleway-Regular",
-        marginTop: 20,
-        fontSize: 20,
-        color: "#3d3e52",
-        fontWeight: "bold"
-     },
-     button1: {
-        fontFamily: "Raleway-Regular",
-        width: "30%",
-        backgroundColor: "#559535",
-        paddingTop: 10,
-        paddingBottom: 10,
-        justifyContent: "center",
-        alignItems: "center",
-        marginBottom: 10,
-        marginTop: 10,
-        elevation: 3,
-        color: "#fcfcfe",
-        borderRadius: 90,
-     },
-     button2: {
-        fontFamily: "Raleway-Regular",
-        width: "30%",
-        backgroundColor: "#3d3e52",
-        paddingTop: 10,
-        paddingBottom: 10,
-        justifyContent: "center",
-        alignItems: "center",
-        marginBottom: 10,
-        marginTop: 10,
-        elevation: 3,
-        borderRadius: 90,
-     },
-     buttonText: {
-        color: "white"
-     },
-     textInput1: {
-        fontFamily: "Raleway-Regular",
-        marginTop: 10
-     },
-     textInput2: {
-        fontFamily: "Raleway-Regular",
-        marginBottom: 10,
-        marginTop: 10
-     }
+   container: {
+      flex: 1,
+      backgroundColor: "#fcfcfe",
+      alignItems: "center",
+      justifyContent: "space-around",
+      flexDirection: "column"
+   },
+   wrapper: {
+      flex: 1
+   },
+   avatarContainer: {
+      borderColor: "#9B9B9B",
+      borderWidth: 1 / PixelRatio.get(),
+      justifyContent: "center",
+      alignItems: "center"
+   },
+   avatar: {
+      borderRadius: 75,
+      width: 150,
+      height: 150
+   },
+   name: {
+      fontFamily: "Raleway-Regular",
+      marginTop: 20,
+      fontSize: 20,
+      color: "#3d3e52",
+      fontWeight: "bold"
+   },
+   button1: {
+      fontFamily: "Raleway-Regular",
+      width: "30%",
+      backgroundColor: "#559535",
+      paddingTop: 10,
+      paddingBottom: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      marginBottom: 10,
+      marginTop: 10,
+      elevation: 3,
+      color: "#fcfcfe",
+      borderRadius: 90
+   },
+   button2: {
+      fontFamily: "Raleway-Regular",
+      width: "30%",
+      backgroundColor: "#3d3e52",
+      paddingTop: 10,
+      paddingBottom: 10,
+      justifyContent: "center",
+      alignItems: "center",
+      marginBottom: 10,
+      marginTop: 10,
+      elevation: 3,
+      borderRadius: 90
+   },
+   buttonText: {
+      color: "white",
+      fontFamily: "Raleway-Regular",
+   }
 });
 
 //

@@ -175,7 +175,7 @@ export default class NoSplit extends Component {
                            }
                         />
                      ) : (
-                        <Text style={styles.box}> {this.state.tax}</Text>
+                        <Text style={styles.box2}> {this.state.tax}</Text>
                      )}
                   </View>
 
@@ -196,7 +196,7 @@ export default class NoSplit extends Component {
 
                   <View style={styles.row}>
                      <Text style={styles.fontSet}>Total People</Text>
-                     <Text style={styles.box}>{this.state.people}</Text>
+                     <Text style={styles.box2}>{this.state.people}</Text>
                   </View>
 
                   <View style={styles.row}>
@@ -312,7 +312,7 @@ const styles = StyleSheet.create({
       height: 40,
       backgroundColor: "#6C7A89",
       color: "#FFFFFF",
-      fontFamily: "Raleway-Bold",
+      fontFamily: "Raleway-Regular",
       marginRight: "2%",
       elevation: 3
    },
@@ -323,7 +323,7 @@ const styles = StyleSheet.create({
       height: 60,
       backgroundColor: "#6C7A89",
       color: "#FFFFFF",
-      fontFamily: "Raleway-Bold",
+      fontFamily: "Raleway-Regular",
       elevation: 3
    },
 
@@ -340,7 +340,7 @@ const styles = StyleSheet.create({
    buttonFont: {
       fontSize: 20,
       marginTop: 7,
-      fontFamily: "Raleway-Bold",
+      fontFamily: "Raleway-Regular",
       color: "#FFFFFF",
       textAlign: "center"
    },
@@ -348,7 +348,7 @@ const styles = StyleSheet.create({
       fontSize: 23,
       textAlign: "left",
       margin: 10,
-      fontFamily: "Raleway-Bold",
+      fontFamily: "Raleway-Regular",
       color: "#26A65B"
    },
    box: {
@@ -360,7 +360,19 @@ const styles = StyleSheet.create({
       color: "#000000",
       width: 120,
       height: 40,
-      fontFamily: "Raleway-Bold"
+      fontFamily: "Raleway-Regular"
+   },
+   box2: {
+      borderRadius: 100,
+      fontSize: 18,
+      textAlign: "center",
+      margin: 5,
+      paddingTop: 5, 
+      backgroundColor: "rgba(117,125,117,0.2)",
+      color: "#000000",
+      width: 120,
+      height: 40,
+      fontFamily: "Raleway-Regular"
    },
    outputBox: {
       borderRadius: 100,
@@ -371,7 +383,7 @@ const styles = StyleSheet.create({
       color: "#000000",
       width: 120,
       height: 40,
-      fontFamily: "Raleway-Bold"
+      fontFamily: "Raleway-Regular"
    },
    calcContainer: {
       borderRadius: 90,
@@ -379,9 +391,8 @@ const styles = StyleSheet.create({
       height: 40,
       backgroundColor: "#26A65B",
       marginLeft: "2%",
-      fontFamily: "Raleway-Bold",
+      fontFamily: "Raleway-Regular",
       margin: 20,
-      elevation: 3
    },
    cancelContainer: {
       borderRadius: 90,
@@ -389,15 +400,14 @@ const styles = StyleSheet.create({
       height: 40,
       backgroundColor: "#F47983",
       marginRight: "2%",
-      fontFamily: "Raleway-Bold",
+      fontFamily: "Raleway-Regular",
       margin: 20,
-      elevation: 3
    },
    output: {
       fontSize: 20,
       marginTop: 7,
       textAlign: "center",
       color: "#000000",
-      fontFamily: "Raleway-Bold"
+      fontFamily: "Raleway-Regular"
    }
 });

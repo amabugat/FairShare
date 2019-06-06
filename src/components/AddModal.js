@@ -52,9 +52,9 @@ export default class UserModal extends Component {
             <Text
                style={{
                   fontSize: 16,
-                  fontWeight: "bold",
                   textAlign: "center",
-                  marginTop: 40
+                  marginTop: 40,
+                  fontFamily: "Raleway-Bold"
                }}
             >
                New Item's Name
@@ -67,7 +67,9 @@ export default class UserModal extends Component {
                   marginRight: 30,
                   marginTop: 20,
                   marginBottom: 10,
-                  borderBottomWidth: 1
+                  borderBottomWidth: 1,
+                  fontFamily: "Raleway-Regular",
+                  textAlign: "center",
                }}
                onChangeText={text => this.setState({ newItemName: text })}
                placeholder="Enter new item's name"
@@ -81,7 +83,9 @@ export default class UserModal extends Component {
                   marginRight: 30,
                   marginTop: 10,
                   marginBottom: 20,
-                  borderBottomWidth: 1
+                  borderBottomWidth: 1,
+                  textAlign: "center",
+                  fontFamily: "Raleway-Regular"
                }}
                keyboardType="numeric"
                onChangeText={text => this.setState({ newItemPrice: text })}
@@ -89,7 +93,7 @@ export default class UserModal extends Component {
                value={this.state.newItemPrice}
             />
             <Button
-               style={{ fontSize: 18, color: "white" }}
+               style={{ fontSize: 18, color: "white", fontFamily: "Raleway-Bold" }}
                containerStyle={{
                   padding: 8,
                   marginLeft: 70,

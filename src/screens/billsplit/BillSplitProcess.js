@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
       height: 40,
       backgroundColor: "#26A65B",
       marginLeft: "2%",
-      fontFamily: "Raleway-Bold",
+      fontFamily: "Raleway-Regular",
       margin: 20,
       elevation: 3
    },
@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
       height: 40,
       backgroundColor: "#F47983",
       marginRight: "2%",
-      fontFamily: "Raleway-Bold",
+      fontFamily: "Raleway-Regular",
       margin: 20,
       elevation: 3
    },
@@ -272,7 +272,7 @@ const styles = StyleSheet.create({
       fontSize: 23,
       textAlign: "left",
       margin: 10,
-      fontFamily: "Raleway-Bold",
+      fontFamily: "Raleway-Regular",
       color: "#26A65B"
    },
    box: {
@@ -284,14 +284,14 @@ const styles = StyleSheet.create({
       color: "#000000",
       width: 120,
       height: 40,
-      fontFamily: "Raleway-Bold"
+      fontFamily: "Raleway-Regular"
    },
    output: {
       fontSize: 20,
       marginTop: 7,
       textAlign: "center",
       color: "#000000",
-      fontFamily: "Raleway-Bold"
+      fontFamily: "Raleway-Regular"
    },
    outputBox: {
       borderRadius: 100,
@@ -302,7 +302,7 @@ const styles = StyleSheet.create({
       color: "#000000",
       width: 120,
       height: 40,
-      fontFamily: "Raleway-Bold"
+      fontFamily: "Raleway-Regular"
    },
    change: {
       margin: 20,
@@ -311,13 +311,12 @@ const styles = StyleSheet.create({
       height: 40,
       backgroundColor: "#6C7A89",
       color: "#FFFFFF",
-      fontFamily: "Raleway-Bold",
-      elevation: 3
+      fontFamily: "Raleway-Regular",
    },
    buttonFont: {
       fontSize: 20,
       marginTop: 7,
-      fontFamily: "Raleway-Bold",
+      fontFamily: "Raleway-Regular",
       color: "#FFFFFF",
       textAlign: "center"
    }

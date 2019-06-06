@@ -622,29 +622,7 @@ export default class ChargePeople extends React.Component {
                   }
                />
 
-               <Picker
-                  selectedValue={this.state.interest}
-                  style={{ height: 50, width: 100 }}
-                  onValueChange={(itemValue, itemIndex) =>
-                     this.setState({ interest: itemValue })
-                  }
-               >
-                  <Picker.Item label="No Interest" value="NONE" />
-                  <Picker.Item label="Daily" value="DAY" />
-                  <Picker.Item label="Weekly" value="WEEK" />
-                  <Picker.Item label="Monthly" value="MONTH" />
-               </Picker>
 
-               {this.state.interest != "NONE" && (
-                  <TextInput
-                     style={styles.textInput1}
-                     keyboardType="numeric"
-                     placeholder="interest rate %"
-                     onChangeText={interestRate =>
-                        this.setState({ interestRate })
-                     }
-                  />
-               )}
 
                <TouchableOpacity
                   style={styles.button1}
@@ -653,11 +631,7 @@ export default class ChargePeople extends React.Component {
                   <Text> Charge All </Text>
                </TouchableOpacity>
 
-               <View>
-                  {this.state.chargingPeople.map((data, index) => {
-                     return <Text>{data.fullName}</Text>;
-                  })}
-               </View>
+               
                {/*</ScrollView>*/}
             </View>
          </ScrollView>

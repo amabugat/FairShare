@@ -51,13 +51,20 @@ export default class ViewRequestScreen extends React.Component {
         await requestRef.on('child_added', function(data){
             var dic= {};
             dic = data.val();
+          //  dic.TimeStamp =   dic.TimeStamp.toDateString()
+            var userRef = firebase.database().ref('/Users').child(data.val().Charged)
+            userRef.on('value', function(snapshot){
+              console.log("userData " +userData)
+                var userData = snapshot.val();
+                //dic.picture = userData.PhotoURL
+            })
             dic.ShowMore = false;
             if(data.val().Interest != "NONE"){
                 //  alert(interestTime)
                 var interestTime = 1000;
                 var timeStamp = data.val().InterestTimeStamp;
                 var newAmount = data.val().Amount;
-                //  alert(interestTime);
+
                 var todayTime = new Date().getTime();
                 if(data.val().Interest == "MIN"){
                     interestTime = (60*1000);
@@ -150,6 +157,7 @@ export default class ViewRequestScreen extends React.Component {
                             <CardItem key = {index}>
                                 <Left>
                                     <Thumbnail source={logo} />
+
                                     <Body>
                                     {/*Switch back later*/}
                                     <Text>YOU ARE REQUESTING: {data.ChargedName}</Text>

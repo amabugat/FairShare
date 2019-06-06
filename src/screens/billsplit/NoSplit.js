@@ -17,6 +17,7 @@ export default class NoSplit extends Component {
       super(props);
       this.state = {
          subtotal: null,
+         autoTax: null,
          tax: null,
          tip: null,
          people: userSplitList.length,
@@ -62,7 +63,7 @@ export default class NoSplit extends Component {
                         var decimalTax = responseJson.results[0].taxSales * 100;
                         console.log(decimalTax);
                         that.setState({
-                           tax: decimalTax
+                           autoTax: decimalTax
                         });
                      })
                      .catch(error => console.log(error));
@@ -162,7 +163,7 @@ export default class NoSplit extends Component {
 
                   <View style={styles.row}>
                      <Text style={styles.fontSet}>%Tax</Text>
-                     {this.state.tax == null ? (
+                     {this.state.autoTax == null ? (
                         <TextInput
                            style={styles.box}
                            keyboardType="numeric"
@@ -175,7 +176,7 @@ export default class NoSplit extends Component {
                            }
                         />
                      ) : (
-                        <Text style={styles.box2}> {this.state.tax}</Text>
+                        <Text style={styles.box2}> {this.state.autoTax}</Text>
                      )}
                   </View>
 
@@ -285,7 +286,6 @@ export default class NoSplit extends Component {
                            onPress={() => {
                               this.subInput.clear();
                               this.tipInput.clear();
-                              this.pInput.clear();
                               this.setState({ result: null, split: null });
                            }}
                         >
@@ -360,19 +360,19 @@ const styles = StyleSheet.create({
       color: "#000000",
       width: 120,
       height: 40,
-      fontFamily: "Raleway-Regular"
+      fontFamily: "Raleway-Bold"
    },
    box2: {
       borderRadius: 100,
       fontSize: 18,
       textAlign: "center",
       margin: 5,
-      paddingTop: 5, 
+      paddingTop: 7, 
       backgroundColor: "rgba(117,125,117,0.2)",
       color: "#000000",
       width: 120,
       height: 40,
-      fontFamily: "Raleway-Regular"
+      fontFamily: "Raleway-Bold"
    },
    outputBox: {
       borderRadius: 100,
@@ -408,6 +408,6 @@ const styles = StyleSheet.create({
       marginTop: 7,
       textAlign: "center",
       color: "#000000",
-      fontFamily: "Raleway-Regular"
+      fontFamily: "Raleway-Bold"
    }
 });

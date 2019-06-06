@@ -24,7 +24,7 @@ class UserListItem extends Component {
       this.state = {
          activeRowKey: null,
          total: null,
-         PickerValue: "",
+         PickerValue: ""
       };
    }
 
@@ -119,8 +119,7 @@ class UserListItem extends Component {
                                                 ].user[random].newPrice
                                           );
                                           console.log(
-                                             "least price: " +
-                                                least / 100
+                                             "least price: " + least / 100
                                           );
 
                                           if (
@@ -182,6 +181,7 @@ class UserListItem extends Component {
                      backgroundColor: "white"
                   }}
                >
+                  <Text style={styles.flatListItem}    />
                   <Text style={styles.UserListItem}>-</Text>
                   <Text style={styles.UserListItem}>
                      {this.props.item.newUser}
@@ -217,10 +217,10 @@ class FlatListItem extends Component {
    }
 
    createFnc = () => {
-      var price = parseFloat((
+      var price = parseFloat(
          flatListData[this.props.index].itemPrice /
-         (flatListData[this.props.index].user.length + 1)
-      ));
+            (flatListData[this.props.index].user.length + 1)
+      );
       const newUserName = {
          newUser: this.state.PickerValue,
          newPrice: price
@@ -256,8 +256,7 @@ class FlatListItem extends Component {
             (itemPrice - rem) / flatListData[this.props.index].user.length;
          console.log("least: " + least);
          for (var i = 0; i < flatListData[this.props.index].user.length; i++) {
-            flatListData[this.props.index].user[i].newPrice =
-               least / 100;
+            flatListData[this.props.index].user[i].newPrice = least / 100;
          }
          if (rem > 0) {
             for (var i = 0; i < rem; i++) {
@@ -381,6 +380,19 @@ class FlatListItem extends Component {
                   <Text style={styles.flatListItem}>
                      ${this.props.item.itemPrice}
                   </Text>
+                  <Text style={styles.flatListItem} />
+               </View>
+
+               <View
+                  style={{
+                     flex: 1,
+                     flexDirection: "row",
+                     justifyContent: "space-around",
+                     backgroundColor: "white"
+                  }}
+               >
+                  <Text style={styles.flatListItem} />
+                  <Text style={styles.flatListItem}>-</Text>
                   <TouchableOpacity
                      style={styles.calcContainer}
                      onPress={() => {
@@ -488,8 +500,7 @@ const styles = StyleSheet.create({
       backgroundColor: "#26A65B",
       marginLeft: "2%",
       fontFamily: "Raleway-Regular",
-      margin: 20,
-      elevation: 3
+      margin: 20
    },
    cancelContainer: {
       borderRadius: 90,
@@ -498,8 +509,7 @@ const styles = StyleSheet.create({
       backgroundColor: "#F47983",
       marginRight: "2%",
       fontFamily: "Raleway-Regular",
-      margin: 20,
-      elevation: 3
+      margin: 20
    },
    buttonFont: {
       fontSize: 18,
@@ -523,8 +533,7 @@ const styles = StyleSheet.create({
       backgroundColor: "#6C7A89",
       color: "#FFFFFF",
       fontFamily: "Raleway-Regular",
-      marginRight: "2%",
-      elevation: 3
+      marginRight: "2%"
    }
 });
 

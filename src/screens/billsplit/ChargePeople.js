@@ -367,19 +367,47 @@ export default class ChargePeople extends React.Component {
                   extraData={userSplitList}
                   keyExtractor={index => index.toString()}
                   renderItem={({ item }) => (
-                     <View
-                        style={{
-                           flex: 1,
-                           flexDirection: "row",
-                           justifyContent: "space-around",
-                           backgroundColor: "white"
-                        }}
-                     >
-                        <Text style={styles.UserListItem}> {item.name} </Text>
-                        <Text style={styles.UserListItem}> pays </Text>
-                        <Text style={styles.UserListItem}>
-                           ${item.price.toFixed(2)}
-                        </Text>
+                     <View>
+                        <View
+                           style={{
+                              flex: 1,
+                              flexDirection: "row",
+                              justifyContent: "space-around",
+                              backgroundColor: "white"
+                           }}
+                        >
+                           <Text style={styles.UserListItem}>
+                              {" "}
+                              {item.name}{" "}
+                           </Text>
+                           <Text style={styles.UserListItem}> pays </Text>
+                           <Text style={styles.UserListItem}>
+                              ${item.price.toFixed(2)}
+                           </Text>
+                        </View>
+                        <View
+                           style={{
+                              flex: 1,
+                              flexDirection: "row",
+                              justifyContent: "space-between",
+                              backgroundColor: "white"
+                           }}
+                        >
+                           <Text>    </Text>
+                           <Picker
+                              selectedValue={this.state.interest}
+                              style={{ height: 50, width: 150 }}
+                              onValueChange={(itemValue, itemIndex) =>
+                                 this.setState({ interest: itemValue })
+                              }
+                           >
+                              <Picker.Item label="No Interest" value="NONE" />
+                              <Picker.Item label="minute" value="MIN" />
+                              <Picker.Item label="24 Hrs" value="DAY" />
+                              <Picker.Item label="1 Week" value="WEEK" />
+                              <Picker.Item label="1 Month" value="MONTH" />
+                           </Picker>
+                        </View>
                      </View>
                   )}
                />
@@ -398,19 +426,6 @@ export default class ChargePeople extends React.Component {
                   }
                />
 
-               <Picker
-                  selectedValue={this.state.interest}
-                  style={{ height: 50, width: 150 }}
-                  onValueChange={(itemValue, itemIndex) =>
-                     this.setState({ interest: itemValue })
-                  }
-               >
-                  <Picker.Item label="No Interest" value="NONE" />
-                  <Picker.Item label="minute" value="MIN" />
-                  <Picker.Item label="24 Hrs" value="DAY" />
-                  <Picker.Item label="1 Week" value="WEEK" />
-                  <Picker.Item label="1 Month" value="MONTH" />
-               </Picker>
 
                {this.state.interest != "NONE" && (
                   <TextInput
@@ -564,7 +579,7 @@ const styles = StyleSheet.create({
    },
    buttonText: {
       color: "white",
-      fontFamily: "Raleway-Regular",
+      fontFamily: "Raleway-Regular"
    }
 });
 

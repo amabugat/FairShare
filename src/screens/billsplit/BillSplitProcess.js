@@ -291,7 +291,7 @@ const styles = StyleSheet.create({
       marginTop: 7,
       textAlign: "center",
       color: "#000000",
-      fontFamily: "Raleway-Regular"
+      fontFamily: "Raleway-Bold"
    },
    outputBox: {
       borderRadius: 100,

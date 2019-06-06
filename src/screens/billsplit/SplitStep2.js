@@ -164,7 +164,6 @@ const styles = StyleSheet.create({
       marginLeft: "2%",
       fontFamily: "Raleway-Bold",
       margin: 20,
-      elevation: 3
    },
    cancelContainer: {
       borderRadius: 90,
@@ -174,7 +173,6 @@ const styles = StyleSheet.create({
       marginRight: "2%",
       fontFamily: "Raleway-Bold",
       margin: 20,
-      elevation: 3
    },
    buttonFont: {
       fontSize: 20,

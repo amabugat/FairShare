@@ -327,191 +327,204 @@ export default class ChargePeople extends React.Component {
       }
    }
 
-   chargeUser(index){
-     var user = firebase.auth().currentUser;
-     var uid = user.uid;
-     var that = this;
-     if (user == null) {
-        alert("not logged in");
-        return;
+   // chargeUser(index){
+   //   var user = firebase.auth().currentUser;
+   //   var uid = user.uid;
+   //   var that = this;
+   //   if (user == null) {
+   //      alert("not logged in");
+   //      return;
+   //   }
+   //   var userRef = firebase
+   //      .database()
+   //      .ref("/Users")
+   //      .child(uid);
+   //   //  alert("in charge people")
+   //   var currentTimeStamp = new Date().getTime();
+   //   if (this.state.avatarSource != null) {
+   //      const image = this.state.avatarSource.uri;
+   //
+   //      const Blob = RNFetchBlob.polyfill.Blob;
+   //      const fs = RNFetchBlob.fs;
+   //      window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest;
+   //      window.Blob = Blob;
+   //      //    alert("after window blob")
+   //
+   //      let uploadBlob = null;
+   //      var paymentuidkey = firebase
+   //         .database()
+   //         .ref("/NewKey")
+   //         .push().key;
+   //      const imageRef = firebase
+   //         .storage()
+   //         .ref("reciepts")
+   //         .child(paymentuidkey);
+   //      //  alert("do i even get here")
+   //
+   //      let mime = "image/jpg";
+   //      //var currentTimeStamp = new Date().getTime()
+   //      //  alert(currentTimeStamp)
+   //
+   //      fs.readFile(image, "base64")
+   //         .then(data => {
+   //            //        alert("return blob")
+   //            return Blob.build(data, { type: `${mime};BASE64` });
+   //         })
+   //         .then(blob => {
+   //            uploadBlob = blob;
+   //            //        alert("put blob")
+   //            //      alert(blob)
+   //            return imageRef.put(blob, { contentType: mime });
+   //         })
+   //         .then(() => {
+   //            uploadBlob.close();
+   //            //      alert("close blob")
+   //            return imageRef.getDownloadURL();
+   //         })
+   //         .then(url => {
+   //
+   //            var receiptpicURL = url;
+   //            var userRequestRef = firebase
+   //               .database()
+   //               .ref("/Payments")
+   //               .child(uid)
+   //               .child("/Requesting");
+   //               var chargedRef = firebase
+   //                  .database()
+   //                  .ref("/Payments")
+   //                  .child(userSplitList[index].userID)
+   //                  .child("/GettingCharged");
+   //               var key = chargedRef.push().key;
+   //               //  alert(key)
+   //               chargedRef.child(key).set({
+   //                  PaymentTitle: that.state.paymentTitle,
+   //                  ReceiptID: key,
+   //                  Description: that.state.chargeDescription,
+   //                  Amount: userSplitList[index].price,
+   //                  OriginalAmount: userSplitList[index].price,
+   //                  Tip: that.state.tip,
+   //                  Tax: that.state.tax,
+   //                  Requester: uid,
+   //                  Charged: userSplitList[index].userID,
+   //                  RequesterName: that.state.fullName,
+   //                  ChargedName: userSplitList[index].name,
+   //                  ReceiptPic: receiptpicURL,
+   //                  PhotoKey: paymentuidkey,
+   //                  TimeStamp: currentTimeStamp,
+   //                  InterestTimeStamp: currentTimeStamp,
+   //                  Interest: userSplitList[index].interest,
+   //                  InterestRate: userSplitList[index].interestRate * 0.01,
+   //                  Paid: false
+   //               });
+   //               userRequestRef.child(key).set({
+   //                  PaymentTitle: that.state.paymentTitle,
+   //                  ReceiptID: key,
+   //                  Description: that.state.chargeDescription,
+   //                  Amount: userSplitList[index].price,
+   //                  OriginalAmount: userSplitList[index].price,
+   //                  Tip: that.state.tip,
+   //                  Tax: that.state.tax,
+   //                  Requester: uid,
+   //                  Charged: userSplitList[index].userID,
+   //                  RequesterName: that.state.fullName,
+   //                  ChargedName: userSplitList[index].name,
+   //                  ReceiptPic: receiptpicURL,
+   //                  PhotoKey: paymentuidkey,
+   //                  TimeStamp: currentTimeStamp,
+   //                  InterestTimeStamp: currentTimeStamp,
+   //                  Interest: userSplitList[index].interest,
+   //                  InterestRate: userSplitList[index].interestRate * 0.01,
+   //                  Paid: false
+   //               });
+   //
+   //               this.sendNotification(
+   //                  userSplitList[index].deviceId,
+   //                  user.displayName,
+   //                  userSplitList[index].price
+   //               );
+   //
+   //            this.props.navigation.navigate("Activity");
+   //         })
+   //         .catch(error => {
+   //            console.log(error);
+   //         });
+   //   } else {
+   //      var userRequestRef = firebase
+   //         .database()
+   //         .ref("/Payments")
+   //         .child(uid)
+   //         .child("/Requesting");
+   //
+   //         var chargedRef = firebase
+   //            .database()
+   //            .ref("/Payments")
+   //            .child(userSplitList[index].userID)
+   //            .child("/GettingCharged");
+   //         var key = chargedRef.push().key;
+   //
+   //         //  alert(key)
+   //         chargedRef.child(key).set({
+   //            PaymentTitle: that.state.paymentTitle,
+   //            ReceiptID: key,
+   //            Description: that.state.chargeDescription,
+   //            Amount: userSplitList[index].price,
+   //            OriginalAmount: userSplitList[index].price,
+   //            Tip: that.state.tip,
+   //            Tax: that.state.tax,
+   //            Requester: uid,
+   //            Charged: userSplitList[index].userID,
+   //            RequesterName: that.state.fullName,
+   //            ChargedName: userSplitList[index].name,
+   //            ReceiptPic: null,
+   //            PhotoKey: null,
+   //            TimeStamp: currentTimeStamp,
+   //            InterestTimeStamp: currentTimeStamp,
+   //            Interest: userSplitList[index].interest,
+   //            InterestRate: userSplitList[index].interestRate * 0.01,
+   //            Paid: false
+   //         });
+   //         userRequestRef.child(key).set({
+   //            PaymentTitle: that.state.paymentTitle,
+   //            ReceiptID: key,
+   //            Description: that.state.chargeDescription,
+   //            Amount: userSplitList[index].price,
+   //            OriginalAmount: userSplitList[index].price,
+   //            Tip: that.state.tip,
+   //            Tax: that.state.tax,
+   //            Requester: uid,
+   //            Charged: userSplitList[index].userID,
+   //            RequesterName: that.state.fullName,
+   //            ChargedName: userSplitList[index].name,
+   //            ReceiptPic: null,
+   //            PhotoKey: null,
+   //            TimeStamp: currentTimeStamp,
+   //            InterestTimeStamp: currentTimeStamp,
+   //            Interest: userSplitList[index].interest,
+   //            InterestRate: userSplitList[index].interestRate * 0.01,
+   //            Paid: false
+   //         });
+   //
+   //         this.sendNotification(
+   //            userSplitList[index].deviceId,
+   //            user.displayName,
+   //            userSplitList[index].price
+   //         );
+   //
+   //      this.props.navigation.navigate("Activity");
+   //   }
+   // }
+
+   setInterest(value, userID){
+     for(var i = 0; i < userSplitList.length; i++){
+       if(userSplitList[i].userID == userID){
+         userSplitList[i].interest = value;
+         break;
+       }
      }
-     var userRef = firebase
-        .database()
-        .ref("/Users")
-        .child(uid);
-     //  alert("in charge people")
-     var currentTimeStamp = new Date().getTime();
-     if (this.state.avatarSource != null) {
-        const image = this.state.avatarSource.uri;
-
-        const Blob = RNFetchBlob.polyfill.Blob;
-        const fs = RNFetchBlob.fs;
-        window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest;
-        window.Blob = Blob;
-        //    alert("after window blob")
-
-        let uploadBlob = null;
-        var paymentuidkey = firebase
-           .database()
-           .ref("/NewKey")
-           .push().key;
-        const imageRef = firebase
-           .storage()
-           .ref("reciepts")
-           .child(paymentuidkey);
-        //  alert("do i even get here")
-
-        let mime = "image/jpg";
-        //var currentTimeStamp = new Date().getTime()
-        //  alert(currentTimeStamp)
-
-        fs.readFile(image, "base64")
-           .then(data => {
-              //        alert("return blob")
-              return Blob.build(data, { type: `${mime};BASE64` });
-           })
-           .then(blob => {
-              uploadBlob = blob;
-              //        alert("put blob")
-              //      alert(blob)
-              return imageRef.put(blob, { contentType: mime });
-           })
-           .then(() => {
-              uploadBlob.close();
-              //      alert("close blob")
-              return imageRef.getDownloadURL();
-           })
-           .then(url => {
-
-              var receiptpicURL = url;
-              var userRequestRef = firebase
-                 .database()
-                 .ref("/Payments")
-                 .child(uid)
-                 .child("/Requesting");
-                 var chargedRef = firebase
-                    .database()
-                    .ref("/Payments")
-                    .child(userSplitList[index].userID)
-                    .child("/GettingCharged");
-                 var key = chargedRef.push().key;
-                 //  alert(key)
-                 chargedRef.child(key).set({
-                    PaymentTitle: that.state.paymentTitle,
-                    ReceiptID: key,
-                    Description: that.state.chargeDescription,
-                    Amount: userSplitList[index].price,
-                    OriginalAmount: userSplitList[index].price,
-                    Tip: that.state.tip,
-                    Tax: that.state.tax,
-                    Requester: uid,
-                    Charged: userSplitList[index].userID,
-                    RequesterName: that.state.fullName,
-                    ChargedName: userSplitList[index].name,
-                    ReceiptPic: receiptpicURL,
-                    PhotoKey: paymentuidkey,
-                    TimeStamp: currentTimeStamp,
-                    InterestTimeStamp: currentTimeStamp,
-                    Interest: userSplitList[index].interest,
-                    InterestRate: userSplitList[index].interestRate * 0.01,
-                    Paid: false
-                 });
-                 userRequestRef.child(key).set({
-                    PaymentTitle: that.state.paymentTitle,
-                    ReceiptID: key,
-                    Description: that.state.chargeDescription,
-                    Amount: userSplitList[index].price,
-                    OriginalAmount: userSplitList[index].price,
-                    Tip: that.state.tip,
-                    Tax: that.state.tax,
-                    Requester: uid,
-                    Charged: userSplitList[index].userID,
-                    RequesterName: that.state.fullName,
-                    ChargedName: userSplitList[index].name,
-                    ReceiptPic: receiptpicURL,
-                    PhotoKey: paymentuidkey,
-                    TimeStamp: currentTimeStamp,
-                    InterestTimeStamp: currentTimeStamp,
-                    Interest: userSplitList[index].interest,
-                    InterestRate: userSplitList[index].interestRate * 0.01,
-                    Paid: false
-                 });
-
-                 this.sendNotification(
-                    userSplitList[index].deviceId,
-                    user.displayName,
-                    userSplitList[index].price
-                 );
-
-              this.props.navigation.navigate("Activity");
-           })
-           .catch(error => {
-              console.log(error);
-           });
-     } else {
-        var userRequestRef = firebase
-           .database()
-           .ref("/Payments")
-           .child(uid)
-           .child("/Requesting");
-
-           var chargedRef = firebase
-              .database()
-              .ref("/Payments")
-              .child(userSplitList[index].userID)
-              .child("/GettingCharged");
-           var key = chargedRef.push().key;
-
-           //  alert(key)
-           chargedRef.child(key).set({
-              PaymentTitle: that.state.paymentTitle,
-              ReceiptID: key,
-              Description: that.state.chargeDescription,
-              Amount: userSplitList[index].price,
-              OriginalAmount: userSplitList[index].price,
-              Tip: that.state.tip,
-              Tax: that.state.tax,
-              Requester: uid,
-              Charged: userSplitList[index].userID,
-              RequesterName: that.state.fullName,
-              ChargedName: userSplitList[index].name,
-              ReceiptPic: null,
-              PhotoKey: null,
-              TimeStamp: currentTimeStamp,
-              InterestTimeStamp: currentTimeStamp,
-              Interest: userSplitList[index].interest,
-              InterestRate: userSplitList[index].interestRate * 0.01,
-              Paid: false
-           });
-           userRequestRef.child(key).set({
-              PaymentTitle: that.state.paymentTitle,
-              ReceiptID: key,
-              Description: that.state.chargeDescription,
-              Amount: userSplitList[index].price,
-              OriginalAmount: userSplitList[index].price,
-              Tip: that.state.tip,
-              Tax: that.state.tax,
-              Requester: uid,
-              Charged: userSplitList[index].userID,
-              RequesterName: that.state.fullName,
-              ChargedName: userSplitList[index].name,
-              ReceiptPic: null,
-              PhotoKey: null,
-              TimeStamp: currentTimeStamp,
-              InterestTimeStamp: currentTimeStamp,
-              Interest: userSplitList[index].interest,
-              InterestRate: userSplitList[index].interestRate * 0.01,
-              Paid: false
-           });
-
-           this.sendNotification(
-              userSplitList[index].deviceId,
-              user.displayName,
-              userSplitList[index].price
-           );
-
-        this.props.navigation.navigate("Activity");
-     }
+     console.log(this.state.refresh)
+     this.setState({
+       refresh: !this.state.refresh
+     });
    }
 
    render() {
@@ -541,7 +554,7 @@ export default class ChargePeople extends React.Component {
                <FlatList
                   data={userSplitList}
                   width="100%"
-                  extraData={userSplitList}
+                  extraData={this.state}
                   keyExtractor={index => index.toString()}
                   renderItem={({ item }) => (
                      <View
@@ -562,7 +575,8 @@ export default class ChargePeople extends React.Component {
                            selectedValue={item.interest}
                            style={{ height: 50, width: 100 }}
                            onValueChange={(itemValue, itemIndex) =>
-                              this.setState({ interest: itemValue })
+                             this.setInterest(itemValue, item.userID)
+
                            }
                         >
                            <Picker.Item label="No Interest" value="NONE" />
@@ -571,7 +585,7 @@ export default class ChargePeople extends React.Component {
                            <Picker.Item label="Monthly" value="MONTH" />
                         </Picker>
 
-                        {this.state.interest != "NONE" && (
+                        {item.interest != "NONE" && (
                            <TextInput
                               style={styles.textInput1}
                               keyboardType="numeric"
@@ -586,7 +600,7 @@ export default class ChargePeople extends React.Component {
 
                         <TouchableOpacity
                            style={styles.button1}
-                           onPress={this.chargeUser(index).bind(this)}
+                           onPress={this.chargePeople.bind(this)}
                         >
                            <Text> Charge </Text>
                         </TouchableOpacity>

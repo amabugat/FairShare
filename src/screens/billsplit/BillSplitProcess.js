@@ -197,7 +197,7 @@ export default class BillSplitProcess extends Component {
                         //    } else {
                         this.createCalc();
                         console.log(userFlatList);
-                        this.props.navigation.navigate("ChargeUnevenly", ,
+                        this.props.navigation.navigate("ChargeUnevenly",
                         {
                            imageURI: this.state.imageSource,
                            tax: this.state.tax,

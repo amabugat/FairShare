@@ -489,6 +489,7 @@ const styles = StyleSheet.create({
         marginBottom:10,
         marginTop:10,
         elevation: 3,
+        borderRadius: 100,
     },
     button2: {
         fontFamily: "Raleway-Regular",
@@ -501,6 +502,7 @@ const styles = StyleSheet.create({
         marginBottom:10,
         marginTop:10,
         elevation: 3,
+        borderRadius: 100,
     },
     buttonText: {
         color: 'white',

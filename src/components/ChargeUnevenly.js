@@ -398,7 +398,7 @@ export default class ChargeUnevenly extends React.Component {
                onChangeText={paymentTitle => this.setState({ paymentTitle })}
             />
             <TextInput
-               style={styles.textInput1}
+               style={styles.textInput2}
                placeholder="Description "
                onChangeText={chargeDescription =>
                   this.setState({ chargeDescription })
@@ -491,11 +491,21 @@ const styles = StyleSheet.create({
    },
    textInput1: {
       fontFamily: "Raleway-Regular",
-      marginTop: 10
+      marginTop: 10,
+      borderRadius: 100,
+      backgroundColor: "rgba(117,125,117,0.2)",
+      width: "50%",
+      textAlign: "center",
+      height: 35
    },
    textInput2: {
       fontFamily: "Raleway-Regular",
       marginBottom: 10,
-      marginTop: 10
-   }
+      marginTop: 10,
+      borderRadius: 100,
+      textAlign: "center",
+      backgroundColor: "rgba(117,125,117,0.2)",
+      width: "50%",
+      height: 35
+   },
 });

@@ -115,12 +115,12 @@ export default class NoSplit extends Component {
                                              )
                                           );
                                           if (
-                                             userSplitList[j].price ==
+                                             userSplitList[random].price ==
                                              this.state.split
                                           ) {
-                                             userSplitList[j].price =
+                                             userSplitList[random].price =
                                                 parseFloat(
-                                                   userSplitList[j].price
+                                                   userSplitList[random].price
                                                 ) + 0.01;
                                              break;
                                           }

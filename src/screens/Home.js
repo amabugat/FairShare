@@ -9,7 +9,7 @@ import {
    TouchableWithoutFeedback,
    Keyboard,
    StatusBar,
-   Alert,
+   Alert
 } from "react-native";
 import ProfileImage from "./profilePage/ProfileImage";
 import firebase from "@firebase/app";
@@ -110,32 +110,26 @@ export default class Home extends React.Component {
    }
 
    render() {
-      /*let that = this;
-      setTimeout(function() {
-         that.setState({ timePassed: true });
-      }, 2000);
-      if (!that.state.timePassed) {
-         return (
-            <View style={styles.container2}>
-               <StatusBar barStyle="light-content" backgroundColor="#82b85a" />
-               <ProfileImage />
-            </View>
-         );
-      }else {*/
-         switch (this.state.loggedIn) {
-            case true:
-               return this.props.navigation.navigate("Activity");
-            // this.props.navigation.navigate('Home')
-            //this.props.navigation.navigate('NoSplit')
-            case false:
-               return this.renderContent();
-            default:
-               return this.renderContent();
-         }
-  /* }*/
-}
+      switch (this.state.loggedIn) {
+         case true:
+            return this.props.navigation.navigate("Activity");
+         // this.props.navigation.navigate('Home')
+         //this.props.navigation.navigate('NoSplit')
+         case false:
+            return this.renderContent();
+         default:
+            return this.renderSplash();
+      }
+   }
 
-
+   renderSplash() {
+      return (
+         <View style={styles.container2}>
+            <StatusBar barStyle="light-content" backgroundColor="#82b85a" />
+            <ProfileImage />
+         </View>
+      );
+   }
    renderContent() {
       return (
          <KeyboardAvoidingView
@@ -187,11 +181,7 @@ export default class Home extends React.Component {
                      <Text style={styles.buttonText}> SIGN UP </Text>
                   </TouchableOpacity>
 
-                  <TouchableOpacity
-                     onPress={()=>{}
-                     }
-                     style={styles.button3}
-                  >
+                  <TouchableOpacity onPress={() => {}} style={styles.button3}>
                      <Text style={styles.buttonText}> FACEBOOK </Text>
                   </TouchableOpacity>
                </View>
@@ -254,7 +244,6 @@ export default class Home extends React.Component {
 const styles = StyleSheet.create({
    container: {
       flex: 1,
-      backgroundColor: "#82b85a",
       backgroundColor: "#fcfcfe",
       alignItems: "center",
       justifyContent: "center",
@@ -327,7 +316,7 @@ const styles = StyleSheet.create({
       backgroundColor: "rgba(117,125,117,0.2)",
       width: "50%",
       textAlign: "center",
-      height: 35,
+      height: 35
    },
    textInput2: {
       fontFamily: "Raleway-Regular",
@@ -337,6 +326,6 @@ const styles = StyleSheet.create({
       textAlign: "center",
       backgroundColor: "rgba(117,125,117,0.2)",
       width: "50%",
-      height: 35,
+      height: 35
    }
 });

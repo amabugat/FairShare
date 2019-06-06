@@ -32,56 +32,52 @@ export default class Activity extends React.Component {
    //Rendering the main activity page with tab view, Action button and dynamic cards
    render() {
       return (
-         <Container>
-            <Content>
-               <View>
-                  <Friends />
-                  <ActionButton buttonColor="#559535" position="right">
-                     <ActionButton.Item
-                        buttonColor="#ff0000"
-                        title="Log Out"
-                        onPress={() => {
-                           if (this.state.loggedIn) {
-                              firebase.auth().signOut();
-                              this.props.navigation.navigate("Home");
-                           } else {
-                              this.props.navigation.navigate("Home");
-                           }
-                        }}
-                     >
-                        <Icon name="home" style={styles.actionButtonIcon} />
-                     </ActionButton.Item>
-                     <ActionButton.Item
-                        buttonColor="#9b59b6"
-                        title="Profile"
-                        style={styles.actionButtonText}
-                        onPress={() =>
-                           this.props.navigation.navigate("ProfilePage")
-                        }
-                     >
-                        <Icon name="face" style={styles.actionButtonIcon} />
-                     </ActionButton.Item>
-                     <ActionButton.Item
-                        buttonColor="#1abc9c"
-                        title="History"
-                        onPress={() =>
-                           this.props.navigation.navigate("ViewHistory")
-                        }
-                     >
-                        <Icon name="group" style={styles.actionButtonIcon} />
-                     </ActionButton.Item>
-                     <ActionButton.Item
-                        buttonColor="#3498db"
-                        title="Split New Bill"
-                        onPress={() =>
-                           this.props.navigation.navigate("BillPrompt")
-                        }
-                     >
-                        <Icon name="receipt" style={styles.actionButtonIcon} />
-                     </ActionButton.Item>
-                  </ActionButton>
-               </View>
-            </Content>
+         <Container style={styles.mainConatinerStyle}>
+            <ScrollView>
+               <Friends />
+            </ScrollView>
+            <ActionButton
+               style={styles.floatingMenuButtonStyle}
+               buttonColor="#559535"
+               position="right"
+            >
+               <ActionButton.Item
+                  buttonColor="#ff0000"
+                  title="Log Out"
+                  onPress={() => {
+                     if (this.state.loggedIn) {
+                        firebase.auth().signOut();
+                        this.props.navigation.navigate("Home");
+                     } else {
+                        this.props.navigation.navigate("Home");
+                     }
+                  }}
+               >
+                  <Icon name="home" style={styles.actionButtonIcon} />
+               </ActionButton.Item>
+               <ActionButton.Item
+                  buttonColor="#9b59b6"
+                  title="Profile"
+                  style={styles.actionButtonText}
+                  onPress={() => this.props.navigation.navigate("ProfilePage")}
+               >
+                  <Icon name="face" style={styles.actionButtonIcon} />
+               </ActionButton.Item>
+               <ActionButton.Item
+                  buttonColor="#1abc9c"
+                  title="History"
+                  onPress={() => this.props.navigation.navigate("ViewHistory")}
+               >
+                  <Icon name="group" style={styles.actionButtonIcon} />
+               </ActionButton.Item>
+               <ActionButton.Item
+                  buttonColor="#3498db"
+                  title="Split New Bill"
+                  onPress={() => this.props.navigation.navigate("BillPrompt")}
+               >
+                  <Icon name="receipt" style={styles.actionButtonIcon} />
+               </ActionButton.Item>
+            </ActionButton>
          </Container>
       );
    }
@@ -127,5 +123,15 @@ const styles = StyleSheet.create({
       fontSize: 20,
       height: 22,
       color: "white"
+   },
+   mainConatinerStyle: {
+      flexDirection: "column",
+      justifyContent: "center"
+   },
+   floatingMenuButtonStyle: {
+      alignSelf: "flex-end",
+      position: "absolute",
+      bottom: 35,
+      flex: 1
    }
 });

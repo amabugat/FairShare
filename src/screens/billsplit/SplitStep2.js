@@ -214,7 +214,7 @@ export default class SplitStep2 extends Component {
 
    _onPressAdd() {
       // alert("You add Item");
-      this.refs.addModal.showAddModal();
+      this.refs.Modal.showAddModal();
    }
 
    render() {
@@ -243,7 +243,7 @@ export default class SplitStep2 extends Component {
                   );
                }}
             />
-            <Modal ref={"addModal"} parentFlatList={this} />
+            <Modal ref={"Modal"} parentFlatList={this} />
             <View style={{ alignItems: "center" }}>
                <TouchableOpacity
                   style={{ marginRight: 10 }}

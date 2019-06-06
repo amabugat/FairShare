@@ -50,7 +50,8 @@ const styles = StyleSheet.create({
       alignItems: "center",
       marginBottom: 10,
       marginTop: 30,
-      elevation: 3
+      elevation: 3,
+      borderRadius: 90,
    },
    button2: {
       width: "30%",
@@ -61,7 +62,8 @@ const styles = StyleSheet.create({
       alignItems: "center",
       marginBottom: 10,
       marginTop: 10,
-      elevation: 3
+      elevation: 3,
+      borderRadius: 90,
    },
    buttonText: {
       fontFamily: "Raleway-Regular",

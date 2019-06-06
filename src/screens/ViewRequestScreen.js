@@ -160,88 +160,92 @@ export default class ViewRequestScreen extends React.Component {
       return (
          <View style={styles.container}>
             {this.state.items.map((data, index) => {
-               return (
-                  <Card style={styles.cardStyle}>
-                     <CardItem key={index}>
-                        <Left>
-                           <Thumbnail source={logo} />
-                           <Body>
-                              {/*Switch back later*/}
-                              <Text style={styles.screenText}>
-                                 YOU ARE REQUESTING: {data.ChargedName}
-                              </Text>
-                              <Text style={styles.screenText} note>
-                                 Total: {data.Amount.toFixed(2)}
-                              </Text>
-                           </Body>
-                        </Left>
-                     </CardItem>
-                     {data.ReceiptPic == null ? (
-                        <CardItem cardBody key={index}>
-                           <Text style={styles.screenText}>No Photo</Text>
-                        </CardItem>
-                     ) : (
-                        <CardItem cardBody key={index}>
-                           <Image
-                              style={{
-                                 resizeMode: "cover",
-                                 width: null,
-                                 height: 200,
-                                 flex: 1
-                              }}
-                              source={{ uri: data.ReceiptPic }}
-                           />
-                        </CardItem>
-                     )}
-
-                     {data.ShowMore == true ? (
-                        <CardItem>
-                           <Text style={styles.screenText}>
-                              Description: {data.Description}
-                              {"\n"}
-                              Tax: {data.Tax}
-                              {"\n"}
-                              Interest: {data.Interest}
-                              {"\n"}
-                              Tip: {data.Tip}
-                              {"\n"}
-                              Timestamp: {data.TimeStamp}
-                              {"\n"}
-                           </Text>
-
+                  return (
+                     <Card style={styles.cardStyle}>
+                        <CardItem key={index}>
                            <Left>
+                              <Thumbnail source={logo} />
+                              <Body>
+                                 {/*Switch back later*/}
+                                 <Text style={styles.screenText}>
+                                    YOU ARE REQUESTING: {data.ChargedName}
+                                 </Text>
+                                 <Text style={styles.screenText} note>
+                                    Total: {data.Amount.toFixed(2)}
+                                 </Text>
+                              </Body>
+                           </Left>
+                        </CardItem>
+                        {data.ReceiptPic == null ? (
+                           <CardItem cardBody key={index}>
+                              <Text style={styles.screenText}>No Photo</Text>
+                           </CardItem>
+                        ) : (
+                           <CardItem cardBody key={index}>
+                              <Image
+                                 style={{
+                                    resizeMode: "cover",
+                                    width: null,
+                                    height: 200,
+                                    flex: 1
+                                 }}
+                                 source={{ uri: data.ReceiptPic }}
+                              />
+                           </CardItem>
+                        )}
+
+                        {data.ShowMore == true ? (
+                           <CardItem>
+                              <Text style={styles.screenText}>
+                                 Description: {data.Description}
+                                 {"\n"}
+                                 Tax: {data.Tax}
+                                 {"\n"}
+                                 Interest: {data.Interest}
+                                 {"\n"}
+                                 Tip: {data.Tip}
+                                 {"\n"}
+                                 Timestamp: {data.TimeStamp}
+                                 {"\n"}
+                              </Text>
+
+                              <Left>
+                                 <TouchableOpacity
+                                    onPress={() => this.toggleShowMore(index)}
+                                    style={styles.button1}
+                                 >
+                                    <Text style={styles.buttonText}>
+                                       {" "}
+                                       Less{" "}
+                                    </Text>
+                                 </TouchableOpacity>
+                              </Left>
+                           </CardItem>
+                        ) : (
+                           <CardItem cardBody key={index}>
                               <TouchableOpacity
                                  onPress={() => this.toggleShowMore(index)}
                                  style={styles.button1}
                               >
-                                 <Text style={styles.buttonText}> Less </Text>
+                                 <Text style={styles.buttonText}> More </Text>
                               </TouchableOpacity>
-                           </Left>
-                        </CardItem>
-                     ) : (
-                        <CardItem cardBody key={index}>
-                           <TouchableOpacity
-                              onPress={() => this.toggleShowMore(index)}
-                              style={styles.button1}
-                           >
-                              <Text style={styles.buttonText}> More </Text>
-                           </TouchableOpacity>
-                        </CardItem>
-                     )}
-                     <View style={styles.row}>
-                        <Text> </Text>
-                        <CardItem>
-                           <TouchableOpacity
-                              onPress={() => this.cancelRequest(data)}
-                              style={styles.button2}
-                           >
-                              <Text style={styles.buttonText}> Cancel </Text>
-                           </TouchableOpacity>
-                        </CardItem>
-                     </View>
-                  </Card>
-               );
-            })}
+                           </CardItem>
+                        )}
+                        <View style={styles.row}>
+                           <Text> </Text>
+                           <CardItem>
+                              <TouchableOpacity
+                                 onPress={() => this.cancelRequest(data)}
+                                 style={styles.button2}
+                              >
+                                 <Text style={styles.buttonText}> Cancel </Text>
+                              </TouchableOpacity>
+                           </CardItem>
+                        </View>
+                     </Card>
+                  );
+               }
+            )}
          </View>
       );
    }

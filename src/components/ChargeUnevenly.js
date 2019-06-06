@@ -75,10 +75,20 @@ export default class ChargeUnevenly extends React.Component {
          to: token,
          notification: {
             title: "Pay Your Recent Bill",
-            body: "You are charged " + "by " + name + " for " + "$" + price.toFixed(2) + '\n'
-                    + "Payment Title: " + this.state.paymentTitle + '\n'
-                    + "Describtion: " + this.state.chargeDescription,
-            sound: "default",
+            body:
+               "You are charged " +
+               "by " +
+               name +
+               " for " +
+               "$" +
+               price.toFixed(2) +
+               "\n" +
+               "Payment Title: " +
+               this.state.paymentTitle +
+               "\n" +
+               "Describtion: " +
+               this.state.chargeDescription,
+            sound: "default"
          },
          priority: 10
       };
@@ -89,10 +99,14 @@ export default class ChargeUnevenly extends React.Component {
       console.log("close to send");
       let headers = new Headers({
          "Content-Type": "application/json",
-       "Authorization": "key=AIzaSyCIn2th7KX6-5quHBnI4OudKTVPL9jwmNg"
+         Authorization: "key=AIzaSyCIn2th7KX6-5quHBnI4OudKTVPL9jwmNg"
       });
- 
-      fetch('https://gcm-http.googleapis.com/gcm/send', { method: "POST", headers: headers, body: body });
+
+      fetch("https://gcm-http.googleapis.com/gcm/send", {
+         method: "POST",
+         headers: headers,
+         body: body
+      });
 
       console.log("fetched");
    }
@@ -129,7 +143,6 @@ export default class ChargeUnevenly extends React.Component {
       });
    }
 
-
    chargePeople() {
       var user = firebase.auth().currentUser;
       var uid = user.uid;
@@ -138,7 +151,10 @@ export default class ChargeUnevenly extends React.Component {
          alert("not logged in");
          return;
       }
-      var userRef = firebase.database().ref('/Users').child(uid);
+      var userRef = firebase
+         .database()
+         .ref("/Users")
+         .child(uid);
       //  alert("in charge people")
       var currentTimeStamp = new Date().getTime();
       if (this.state.avatarSource != null) {
@@ -243,7 +259,11 @@ export default class ChargeUnevenly extends React.Component {
                      Paid: false
                   });
 
-                  this.sendNotification(userFlatList[i].deviceId, user.displayName, userFlatList[i].price);
+                  this.sendNotification(
+                     userFlatList[i].deviceId,
+                     user.displayName,
+                     userFlatList[i].price
+                  );
                }
                this.props.navigation.navigate("Activity");
             })
@@ -307,7 +327,11 @@ export default class ChargeUnevenly extends React.Component {
                Paid: false
             });
 
-            this.sendNotification(userFlatList[i].deviceId, user.displayName, userFlatList[i].price);
+            this.sendNotification(
+               userFlatList[i].deviceId,
+               user.displayName,
+               userFlatList[i].price
+            );
          }
          this.props.navigation.navigate("Activity");
       }
@@ -355,9 +379,13 @@ export default class ChargeUnevenly extends React.Component {
                      <Text style={styles.UserListItem}>
                         ${item.price.toFixed(2)}
                      </Text>
-                     <TextInput style={styles.UserListItem} onChangeText={interest =>
+                     <TextInput
+                        style={styles.UserListItem}
+                        onChangeText={interest =>
                            this.setState({ interest: parseFloat(interest) })
-                        } placeholder="Interest"></TextInput>
+                        }
+                        placeholder="Interest"
+                     />
                   </View>
                )}
             />
@@ -434,6 +462,7 @@ const styles = StyleSheet.create({
    button1: {
       fontFamily: "Raleway-Regular",
       width: "30%",
+      borderRadius: 90,
       backgroundColor: "#559535",
       paddingTop: 10,
       paddingBottom: 10,
@@ -449,6 +478,7 @@ const styles = StyleSheet.create({
       width: "30%",
       backgroundColor: "#3d3e52",
       paddingTop: 10,
+      borderRadius: 90,
       paddingBottom: 10,
       justifyContent: "center",
       alignItems: "center",

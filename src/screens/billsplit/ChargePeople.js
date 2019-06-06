@@ -368,7 +368,7 @@ export default class ChargePeople extends React.Component {
                         <Text style={styles.UserListItem}> {item.name} </Text>
                         <Text style={styles.UserListItem}> pays </Text>
                         <Text style={styles.UserListItem}>
-                           ${item.price.toFixed(2)}
+                           ${(item.price).toFixed(2)}
                         </Text>
                      </View>
                   )}
@@ -516,7 +516,8 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         marginTop: 10,
         elevation: 3,
-        color: "#fcfcfe"
+        color: "#fcfcfe",
+        borderRadius: 90,
      },
      button2: {
         fontFamily: "Raleway-Regular",
@@ -528,7 +529,8 @@ const styles = StyleSheet.create({
         alignItems: "center",
         marginBottom: 10,
         marginTop: 10,
-        elevation: 3
+        elevation: 3,
+        borderRadius: 90,
      },
      buttonText: {
         color: "white"

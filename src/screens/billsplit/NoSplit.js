@@ -250,7 +250,7 @@ export default class NoSplit extends Component {
                                        0.01 *
                                        this.state.tip,
                                  split:
-                                    ((this.state.subtotal +
+                                    (((this.state.subtotal +
                                        this.state.subtotal *
                                           0.01 *
                                           this.state.tax +
@@ -259,9 +259,9 @@ export default class NoSplit extends Component {
                                              0.01 *
                                              this.state.tax) *
                                           0.01 *
-                                          this.state.tip) *
+                                          this.state.tip).toFixed(2)) *
                                        100 -
-                                       (((this.state.subtotal +
+                                       ((((this.state.subtotal +
                                           this.state.subtotal *
                                              0.01 *
                                              this.state.tax +
@@ -270,11 +270,10 @@ export default class NoSplit extends Component {
                                                 0.01 *
                                                 this.state.tax) *
                                              0.01 *
-                                             this.state.tip) *
+                                             this.state.tip).toFixed(2)) *
                                           100) %
                                           this.state.people)) /
-                                    this.state.people /
-                                    100
+                                    this.state.people/100
                               });
                            }}
                         >
@@ -286,7 +285,6 @@ export default class NoSplit extends Component {
                            onPress={() => {
                               this.subInput.clear();
                               this.tipInput.clear();
-                              this.taxInput.clear();
                               this.pInput.clear();
                               this.setState({ result: null, split: null });
                            }}

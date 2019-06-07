@@ -411,6 +411,21 @@ export default class EditProfile extends React.Component {
    editProfile = (firstName, lastName, phoneNum, date) => {
       var that = this;
       var user = firebase.auth().currentUser;
+      user.updateProfile({
+               displayName: firstName + " " + lastName
+            })
+            .then(
+               function() {
+                  // Profile updated successfully!
+                  // "Jane Q. User"
+                  var displayName = user.displayName;
+                  console.log(displayName);
+               },
+               function(error) {
+                  // An error happened.
+                  console.log(error)
+               }
+            );
       var uid = user.uid;
       var userDBref = firebase
          .database()

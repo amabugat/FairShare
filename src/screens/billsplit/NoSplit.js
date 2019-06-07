@@ -31,6 +31,7 @@ export default class NoSplit extends Component {
 
    async componentWillMount() {
       var that = this;
+      console.log("in did mount")
       await navigator.geolocation.getCurrentPosition(
          position => {
             console.log(position);
@@ -74,11 +75,9 @@ export default class NoSplit extends Component {
          error => console.log(JSON.stringify(error)),
          { enableHighAccuracy: true, timeout: 5000 }
       );
-      console.log(this.state.tax);
+      console.log(this.state.autotax);
 
-      if (that.state.zip == 0) {
-         console.log("can't find zip");
-      }
+
    }
 
    render() {
@@ -367,7 +366,7 @@ const styles = StyleSheet.create({
       fontSize: 18,
       textAlign: "center",
       margin: 5,
-      paddingTop: 7, 
+      paddingTop: 7,
       backgroundColor: "rgba(117,125,117,0.2)",
       color: "#000000",
       width: 120,

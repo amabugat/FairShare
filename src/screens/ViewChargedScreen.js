@@ -52,20 +52,23 @@ export default class ViewChargedScreen extends React.Component {
         var todayTime = new Date().getTime();
         console.log(" todayTime " + todayTime)
         await requestRef.on('child_added', function(data){
-            //  console.log(data)
-            var dic = {}
-            dic = data.val();
-            //alert("adding")
+          var dic = {};
+          dic = data.val();
+          dic.ShowMore = false;
+          dic.PhotoUrl = 0;
+          var requesterRef = firebase
+             .database()
+             .ref("/Users")
+             .child(data.val().Requester);
+          await requesterRef.on('value', function(snapshot){
+            dic.PhotoUrl = snapshot.val().PhotoURL
+          })
             if(data.val().Interest != "NONE"){
-                //  alert(interestTime)
                 var interestTime = 1000;
                 var timeStamp = data.val().InterestTimeStamp;
                 var newAmount = data.val().Amount;
-                //  alert(interestTime);
                 var todayTime = new Date().getTime();
-                if(data.val().Interest == "MIN"){
-                    interestTime = (60*1000);
-                }else if(data.val().Interest == "DAY"){
+                if(data.val().Interest == "DAY"){
                     interestTime = (24*60*60*1000);
                 }else if(data.val().Interest == "WEEK"){
                     interestTime = (24*60*60*1000*7);
@@ -115,6 +118,29 @@ export default class ViewChargedScreen extends React.Component {
         });
     }
 
+    toggleShowMore(index) {
+       console.log(index);
+       console.log(this.state.items[index]);
+       var newArray = this.state.items;
+       if (this.state.items[index].ShowMore) {
+          newArray[index].ShowMore = false;
+       } else {
+          newArray[index].ShowMore = true;
+       }
+
+       this.setState({
+          items: newArray
+       });
+    }
+
+    getDate(timestamp){
+     var todate=new Date(timestamp).getDate()-1;
+     var tomonth=new Date(timestamp).getMonth()+1;
+     var toyear=new Date(timestamp).getFullYear();
+     var original_date=tomonth+'/'+todate+'/'+toyear;
+     return original_date
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -124,7 +150,15 @@ export default class ViewChargedScreen extends React.Component {
                         <Card style = {styles.cardStyle}>
                             <CardItem key = {index}>
                                 <Left>
-                                    <Thumbnail source={logo} />
+                                    {data.PhotoUrl == 0 ? (
+                                      <Thumbnail source={logo} />
+                                    ):
+                                      (
+                                        <Image
+                                           style={styles.avatar}
+                                           source={{ uri: data.PhotoUrl}}
+                                        />
+                                      )}
                                     <Body>
                                     <Text style = {styles.screenText}>YOU ARE BEING CHARGED BY: {data.RequesterName}</Text>
                                     <Text style = {styles.screenText} note>Total: {data.Amount}</Text>
@@ -132,22 +166,18 @@ export default class ViewChargedScreen extends React.Component {
                                 </Left>
                             </CardItem>
 
-                            {data.ReceiptPic == null ? (
-                                <CardItem cardBody key = {index}>
-                                    <Text style = {styles.screenText}>No Photo</Text>
-                                </CardItem>
-                            ) : (
-                                <CardItem cardBody key = {index}>
-                                    <Image
-                                        style={{
-                                            resizeMode: "cover",
-                                            width: null,
-                                            height: 200,
-                                            flex: 1
-                                        }}
-                                        source={{ uri: data.ReceiptPic}}
-                                    />
-                                </CardItem>
+                            {data.ReceiptPic != null && (
+                               <CardItem cardBody key={index}>
+                                  <Image
+                                     style={{
+                                        resizeMode: "cover",
+                                        width: null,
+                                        height: 200,
+                                        flex: 1
+                                     }}
+                                     source={{ uri: data.ReceiptPic }}
+                                  />
+                               </CardItem>
                             )}
 
                             <CardItem key={index}>
@@ -155,6 +185,53 @@ export default class ViewChargedScreen extends React.Component {
                                     <Text style = {styles.screenText}>Description: {data.Description}</Text>
                                 </View>
                             </CardItem>
+                            {data.ShowMore == true ? (
+                               <CardItem>
+                                  <View
+                                     style={{
+                                        flexDirection: "column",
+                                        justifyContent: "space-between"
+                                     }}
+                                  >
+                                     <Text style={styles.screenText}>
+                                        Description: {data.Description}
+                                        {"\n"}
+                                        Tax: {data.Tax}%
+                                        {"\n"}
+                                        Tip: {data.Tip}%
+                                        {"\n"}
+                                        Timestamp: {this.getDate(data.TimeStamp)}
+                                        </Text>
+                                        {data.Interest == "NONE" ? (
+                                          <Text> Interest: {data.Interest} </Text>
+                                        ):(
+                                          <Text style={styles.screenText}>
+                                          Interest: {data.Interest}{"\n"}
+                                          Interest Rate: {data.InterestRate}{"\n"}
+                                          Original Amount: {data.OriginalAmount.toFixed(2)}
+                                          </Text>
+                                        )}
+
+
+
+                                     <TouchableOpacity
+                                        onPress={() => this.toggleShowMore(index)}
+                                        style={styles.button1}
+                                     >
+                                        <Text style={styles.buttonText}> Less </Text>
+                                     </TouchableOpacity>
+                                  </View>
+                               </CardItem>
+                            ) : (
+                               <CardItem cardBody key={index}>
+                                  <TouchableOpacity
+                                     onPress={() => this.toggleShowMore(index)}
+                                     style={styles.button1}
+                                  >
+                                     <Text style={styles.buttonText}> More </Text>
+                                  </TouchableOpacity>
+                               </CardItem>
+                            )}
 
                             <CardItem key={index}>
                                 <View>
@@ -252,17 +329,28 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
     },
     cardStyle: {
-        width: "80%",
+        width: "85%",
         // height:"50%",
         // paddingVertical: 5,
     },
     button1: {
-        borderRadius: 90,
-        backgroundColor: '#559535',
-        padding:10,
-        justifyContent: 'center',
-        alignItems: 'center',
-        elevation: 3,
+       margin: 5,
+       borderRadius: 90,
+       backgroundColor: "#559535",
+       padding: 10,
+       width: 80,
+       justifyContent: "center",
+       alignItems: "center",
+       elevation: 3
+    },
+    button2: {
+       borderRadius: 90,
+       backgroundColor: "#F47983",
+       padding: 10,
+       width: 80,
+       justifyContent: "center",
+       alignItems: "center",
+       elevation: 3
     },
     buttonText: {
         fontFamily: "Raleway-Regular",
@@ -272,6 +360,15 @@ const styles = StyleSheet.create({
         margin: 5,
         fontFamily: "Raleway-Regular",
         color: 'grey',
+    },
+    avatar: {
+       borderRadius: 45,
+       width: 50,
+       height: 50
+    },
+    row: {
+       flexDirection: "row",
+       justifyContent: "space-between"
     },
 });
 

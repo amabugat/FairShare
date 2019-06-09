@@ -114,7 +114,6 @@ export default class ViewRequestScreen extends React.Component {
             }
          }
 
-         //console.log("dic " +dic)
          newData.push(dic);
          that.setState({ items: newData });
     //    console.log("dic " +dic)

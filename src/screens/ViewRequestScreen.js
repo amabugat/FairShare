@@ -58,10 +58,18 @@ export default class ViewRequestScreen extends React.Component {
          .ref("/Payments")
          .child(uid)
          .child("/Requesting");
-      await requestRef.on("child_added", function(data) {
+      await requestRef.on("child_added", async function(data) {
          var dic = {};
          dic = data.val();
          dic.ShowMore = false;
+         dic.PhotoUrl = 0;
+         var chargedRef = firebase
+            .database()
+            .ref("/Users")
+            .child(data.val().Charged);
+         await chargedRef.on('value', function(snapshot){
+           dic.PhotoUrl = snapshot.val().PhotoURL
+         })
          if (data.val().Interest != "NONE") {
             //  alert(interestTime)
             var interestTime = 1000;
@@ -69,9 +77,7 @@ export default class ViewRequestScreen extends React.Component {
             var newAmount = data.val().Amount;
             //  alert(interestTime);
             var todayTime = new Date().getTime();
-            if (data.val().Interest == "MIN") {
-               interestTime = 60 * 1000;
-            } else if (data.val().Interest == "DAY") {
+            if (data.val().Interest == "DAY") {
                interestTime = 24 * 60 * 60 * 1000;
             } else if (data.val().Interest == "WEEK") {
                interestTime = 24 * 60 * 60 * 1000 * 7;
@@ -107,20 +113,43 @@ export default class ViewRequestScreen extends React.Component {
                dic.Amount = newAmount;
             }
          }
+
+         //console.log("dic " +dic)
          newData.push(dic);
          that.setState({ items: newData });
+    //    console.log("dic " +dic)
+
+        // this.getPhotos();
       });
+
 
       await requestRef.on("child_removed", function(data) {
          var newData = [...that.state.items];
          for (var i = newData.length - 1; i >= 0; i--) {
-            if (newData[i].ReceiptID == data.ReceiptID) {
+            if (newData[i].ReceiptID == data.val().ReceiptID) {
                newData.splice(i, 1);
                break;
             }
          }
          that.setState({ items: newData });
       });
+
+      console.log(this.state.item)
+
+   }
+
+   async getPhotos(){
+     var newData = [...that.state.items];
+     for(var i =0; i < newData.length; i++){
+       var chargedRef = firebase
+          .database()
+          .ref("/Users")
+          .child(newData[i].Charged);
+       await chargedRef.on('value', function(snapshot){
+         newData[i].PhotoUrl = snapshot.val().PhotoURL
+       })
+     }
+      that.setState({ items: newData });
    }
 
    toggleShowMore(index) {
@@ -129,32 +158,40 @@ export default class ViewRequestScreen extends React.Component {
       var newArray = this.state.items;
       if (this.state.items[index].ShowMore) {
          newArray[index].ShowMore = false;
-         //console.log(newArray[index])
-         //  this.state.items[index].ShowMore = false;
       } else {
          newArray[index].ShowMore = true;
-         //  this.state.items[index].ShowMore = true;
       }
+
       this.setState({
          items: newArray
       });
    }
 
    cancelRequest(data) {
+
+      console.log(data);
       var user = firebase.auth().currentUser;
       var uid = user.uid;
       var paymentsRef = firebase.database().ref("/Payments");
       var paymentsUserRef = paymentsRef.child(data.Requester);
       var userRequestingRef = paymentsUserRef.child("/Requesting");
-      var userHistoryRef = paymentsUserRef.child("/History");
 
       var chargedUserRef = paymentsRef.child(data.Charged);
       var chargedUserTable = chargedUserRef.child("/GettingCharged");
-      var chargedUserHistory = chargedUserRef.child("/History");
 
       chargedUserTable.child(data.ReceiptID).remove();
-      userRequestingRef.child(data.ReceiptID).remove();
+      userRequestingRef.child(data.ReceiptID).remove()
    }
+
+   getDate(timestamp){
+    var todate=new Date(timestamp).getDate();
+    var tomonth=new Date(timestamp).getMonth()+1;
+    var toyear=new Date(timestamp).getFullYear();
+    var original_date=tomonth+'/'+todate+'/'+toyear;
+    return original_date
+   }
+
+
 
    render() {
       return (
@@ -164,23 +201,33 @@ export default class ViewRequestScreen extends React.Component {
                   <Card style={styles.cardStyle}>
                      <CardItem key={index}>
                         <Left>
-                           <Thumbnail source={logo} />
+                           {data.PhotoUrl == 0 ? (
+                             <Thumbnail source={logo} />
+                           ):
+                             (
+                               <Image
+                                  style={styles.avatar}
+                                  source={{ uri: data.PhotoUrl}}
+                               />
+                             )}
+
                            <Body>
                               {/*Switch back later*/}
                               <Text style={styles.screenText}>
-                                 YOU ARE REQUESTING: {data.ChargedName}
+                                 PhotoURL: {data.PhotoUrl}
                               </Text>
+
+                                <Text style={styles.screenText}>
+                                   YOU ARE REQUESTING: {data.ChargedName}
+                                </Text>
+
                               <Text style={styles.screenText} note>
                                  Total: {data.Amount.toFixed(2)}
                               </Text>
                            </Body>
                         </Left>
                      </CardItem>
-                     {data.ReceiptPic == null ? (
-                        <CardItem cardBody key={index}>
-                           <Text style={styles.screenText}>No Photo</Text>
-                        </CardItem>
-                     ) : (
+                     {data.ReceiptPic != null && (
                         <CardItem cardBody key={index}>
                            <Image
                               style={{
@@ -205,15 +252,23 @@ export default class ViewRequestScreen extends React.Component {
                               <Text style={styles.screenText}>
                                  Description: {data.Description}
                                  {"\n"}
-                                 Tax: {data.Tax}
+                                 Tax: {data.Tax}%
                                  {"\n"}
-                                 Interest: {data.Interest}
+                                 Tip: {data.Tip}%
                                  {"\n"}
-                                 Tip: {data.Tip}
-                                 {"\n"}
-                                 Timestamp: {data.TimeStamp}
-                                 {"\n"}
-                              </Text>
+                                 Timestamp: {this.getDate(data.TimeStamp)}
+                                 </Text>
+                                 {data.Interest == "NONE" ? (
+                                   <Text> Interest: {data.Interest} </Text>
+                                 ):(
+                                   <Text style={styles.screenText}>
+                                   Interest: {data.Interest}{"\n"}
+                                   Interest Rate: {data.InterestRate}{"\n"}
+                                   Original Amount: {data.OriginalAmount.toFixed(2)}
+                                   </Text>
+                                 )}
+
+
 
                               <TouchableOpacity
                                  onPress={() => this.toggleShowMore(index)}
@@ -292,6 +347,11 @@ const styles = StyleSheet.create({
    row: {
       flexDirection: "row",
       justifyContent: "space-between"
+   },
+   avatar: {
+      borderRadius: 45,
+      width: 50,
+      height: 50
    }
 });
 

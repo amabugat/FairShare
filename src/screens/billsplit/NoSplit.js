@@ -17,7 +17,6 @@ export default class NoSplit extends Component {
       super(props);
       this.state = {
          subtotal: null,
-         autoTax: null,
          tax: null,
          tip: null,
          people: userSplitList.length,
@@ -64,7 +63,7 @@ export default class NoSplit extends Component {
                         var decimalTax = responseJson.results[0].taxSales * 100;
                         console.log(decimalTax);
                         that.setState({
-                           autoTax: decimalTax
+                           tax: decimalTax.toString()
                         });
                      })
                      .catch(error => console.log(error));
@@ -162,7 +161,6 @@ export default class NoSplit extends Component {
 
                   <View style={styles.row}>
                      <Text style={styles.fontSet}>%Tax</Text>
-                     {this.state.autoTax == null ? (
                         <TextInput
                            style={styles.box}
                            keyboardType="numeric"
@@ -170,13 +168,12 @@ export default class NoSplit extends Component {
                            ref={ta => {
                               this.taxInput = ta;
                            }}
+                           value={this.state.tax}
                            onChangeText={tax =>
                               this.setState({ tax: parseFloat(tax) })
                            }
                         />
-                     ) : (
-                        <Text style={styles.box2}> {this.state.autoTax}</Text>
-                     )}
+
                   </View>
 
                   <View style={styles.row}>

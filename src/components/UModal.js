@@ -111,7 +111,9 @@ export default class UModal extends Component {
                                     name: user.child("FullName").val(),
                                     deviceId: user.child("DeviceId").val(),
                                     items: [],
-                                    price: 0
+                                    price: 0,
+                                    interest: "NONE",
+                                    interestRate: 0
                                  };
                                  userFlatList.push(dataDic);
                                  console.log(userFlatList);

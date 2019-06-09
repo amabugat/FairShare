@@ -9,7 +9,8 @@ import {
    PixelRatio,
    Image,
    Component,
-   FlatList
+   FlatList,
+    Picker,
 } from "react-native";
 import ProfileImage from "../screens/profilePage/ProfileImage";
 import userFlatList from "../data/userFlatList";
@@ -24,9 +25,6 @@ import "@firebase/storage";
 var data = [];
 
 export default class ChargeUnevenly extends React.Component {
-   state = {
-      avatarSource: null
-   };
    constructor(props) {
       super(props);
       this.state = {
@@ -40,9 +38,11 @@ export default class ChargeUnevenly extends React.Component {
          tax: 0,
          tip: 0,
          fullName: "",
-         userID: 0
+         userID: 0,
+         refresh: false,
+         avatarSource: this.props.navigation.state.params.imageSource
       };
-      this.chargePeople = this.chargePeople.bind(this);
+      this.chargeALL = this.chargeALL.bind(this);
       this.selectPhotoTapped = this.selectPhotoTapped.bind(this);
    }
    componentDidMount() {
@@ -143,7 +143,7 @@ export default class ChargeUnevenly extends React.Component {
       });
    }
 
-   chargePeople() {
+   chargeALL() {
       var user = firebase.auth().currentUser;
       var uid = user.uid;
       var that = this;
@@ -155,7 +155,6 @@ export default class ChargeUnevenly extends React.Component {
          .database()
          .ref("/Users")
          .child(uid);
-      //  alert("in charge people")
       var currentTimeStamp = new Date().getTime();
       if (this.state.avatarSource != null) {
          const image = this.state.avatarSource.uri;
@@ -198,12 +197,6 @@ export default class ChargeUnevenly extends React.Component {
                return imageRef.getDownloadURL();
             })
             .then(url => {
-               // URL of the image uploaded on Firebase storage
-               //console.log(url);
-               //  alert(url)
-               //  alert("current time" + currentTimeStamp)
-               //    alert("chariging people length " +  that.state.chargingPeople.length)
-               // alert(url);
                var receiptpicURL = url;
                var userRequestRef = firebase
                   .database()
@@ -211,6 +204,9 @@ export default class ChargeUnevenly extends React.Component {
                   .child(uid)
                   .child("/Requesting");
                for (i = 0; i < userFlatList.length; i++) {
+                 if(uid == userFlatList[i].userID){
+                   continue;
+                 }
                   var chargedRef = firebase
                      .database()
                      .ref("/Payments")
@@ -278,6 +274,9 @@ export default class ChargeUnevenly extends React.Component {
             .child("/Requesting");
 
          for (i = 0; i < userFlatList.length; i++) {
+           if(uid == userFlatList[i].userID){
+             continue;
+           }
             var chargedRef = firebase
                .database()
                .ref("/Payments")
@@ -337,6 +336,228 @@ export default class ChargeUnevenly extends React.Component {
       }
    }
 
+   chargeUser(data){
+     var user = firebase.auth().currentUser;
+     var uid = user.uid;
+     var that = this;
+     if (user == null) {
+        alert("not logged in");
+        return;
+     }
+
+     var index = 0;
+     for(var i=0; i < userFlatList.length; i++){
+       if(userFlatList[i].userID == data){
+         index = i;
+         break;
+       }
+     }
+     if(data == uid){
+       userFlatList.splice(index, 1);
+       this.setState({
+         refresh: !this.state.refresh
+       });
+       return;
+     }
+
+     var userRef = firebase
+        .database()
+        .ref("/Users")
+        .child(uid);
+     //  alert("in charge people")
+     var currentTimeStamp = new Date().getTime();
+     if (this.state.avatarSource != null) {
+        const image = this.state.avatarSource.uri;
+
+        const Blob = RNFetchBlob.polyfill.Blob;
+        const fs = RNFetchBlob.fs;
+        window.XMLHttpRequest = RNFetchBlob.polyfill.XMLHttpRequest;
+        window.Blob = Blob;
+        //    alert("after window blob")
+
+        let uploadBlob = null;
+        var paymentuidkey = firebase
+           .database()
+           .ref("/NewKey")
+           .push().key;
+        const imageRef = firebase
+           .storage()
+           .ref("reciepts")
+           .child(paymentuidkey);
+        //  alert("do i even get here")
+
+        let mime = "image/jpg";
+        //var currentTimeStamp = new Date().getTime()
+        //  alert(currentTimeStamp)
+
+        fs.readFile(image, "base64")
+           .then(data => {
+              //        alert("return blob")
+              return Blob.build(data, { type: `${mime};BASE64` });
+           })
+           .then(blob => {
+              uploadBlob = blob;
+              //        alert("put blob")
+              //      alert(blob)
+              return imageRef.put(blob, { contentType: mime });
+           })
+           .then(() => {
+              uploadBlob.close();
+              //      alert("close blob")
+              return imageRef.getDownloadURL();
+           })
+           .then(url => {
+
+              var receiptpicURL = url;
+              var userRequestRef = firebase
+                 .database()
+                 .ref("/Payments")
+                 .child(uid)
+                 .child("/Requesting");
+                 var chargedRef = firebase
+                    .database()
+                    .ref("/Payments")
+                    .child(userFlatList[index].userID)
+                    .child("/GettingCharged");
+                 var key = chargedRef.push().key;
+                 //  alert(key)
+                 chargedRef.child(key).set({
+                    PaymentTitle: that.state.paymentTitle,
+                    ReceiptID: key,
+                    Description: that.state.chargeDescription,
+                    Amount: userFlatList[index].price,
+                    OriginalAmount: userFlatList[index].price,
+                    Tip: that.state.tip,
+                    Tax: that.state.tax,
+                    Requester: uid,
+                    Charged: userFlatList[index].userID,
+                    RequesterName: that.state.fullName,
+                    ChargedName: userFlatList[index].name,
+                    ReceiptPic: receiptpicURL,
+                    PhotoKey: paymentuidkey,
+                    TimeStamp: currentTimeStamp,
+                    InterestTimeStamp: currentTimeStamp,
+                    Interest: userFlatList[index].interest,
+                    InterestRate: userFlatList[index].interestRate * 0.01,
+                    Paid: false
+                 });
+                 userRequestRef.child(key).set({
+                    PaymentTitle: that.state.paymentTitle,
+                    ReceiptID: key,
+                    Description: that.state.chargeDescription,
+                    Amount: userFlatList[index].price,
+                    OriginalAmount: userFlatList[index].price,
+                    Tip: that.state.tip,
+                    Tax: that.state.tax,
+                    Requester: uid,
+                    Charged: userFlatList[index].userID,
+                    RequesterName: that.state.fullName,
+                    ChargedName: userFlatList[index].name,
+                    ReceiptPic: receiptpicURL,
+                    PhotoKey: paymentuidkey,
+                    TimeStamp: currentTimeStamp,
+                    InterestTimeStamp: currentTimeStamp,
+                    Interest: userFlatList[index].interest,
+                    InterestRate: userFlatList[index].interestRate * 0.01,
+                    Paid: false
+                 });
+
+                 this.sendNotification(
+                    userFlatList[index].deviceId,
+                    user.displayName,
+                    userFlatList[index].price
+                 );
+
+
+           })
+           .catch(error => {
+              console.log(error);
+           });
+     } else {
+        var userRequestRef = firebase
+           .database()
+           .ref("/Payments")
+           .child(uid)
+           .child("/Requesting");
+
+           var chargedRef = firebase
+              .database()
+              .ref("/Payments")
+              .child(userFlatList[index].userID)
+              .child("/GettingCharged");
+           var key = chargedRef.push().key;
+
+           //  alert(key)
+           chargedRef.child(key).set({
+              PaymentTitle: that.state.paymentTitle,
+              ReceiptID: key,
+              Description: that.state.chargeDescription,
+              Amount: userFlatList[index].price,
+              OriginalAmount: userFlatList[index].price,
+              Tip: that.state.tip,
+              Tax: that.state.tax,
+              Requester: uid,
+              Charged: userFlatList[index].userID,
+              RequesterName: that.state.fullName,
+              ChargedName: userFlatList[index].name,
+              ReceiptPic: null,
+              PhotoKey: null,
+              TimeStamp: currentTimeStamp,
+              InterestTimeStamp: currentTimeStamp,
+              Interest: userFlatList[index].interest,
+              InterestRate: userFlatList[index].interestRate * 0.01,
+              Paid: false
+           });
+           userRequestRef.child(key).set({
+              PaymentTitle: that.state.paymentTitle,
+              ReceiptID: key,
+              Description: that.state.chargeDescription,
+              Amount: userFlatList[index].price,
+              OriginalAmount: userFlatList[index].price,
+              Tip: that.state.tip,
+              Tax: that.state.tax,
+              Requester: uid,
+              Charged: userFlatList[index].userID,
+              RequesterName: that.state.fullName,
+              ChargedName: userFlatList[index].name,
+              ReceiptPic: null,
+              PhotoKey: null,
+              TimeStamp: currentTimeStamp,
+              InterestTimeStamp: currentTimeStamp,
+              Interest: userFlatList[index].interest,
+              InterestRate: userFlatList[index].interestRate * 0.01,
+              Paid: false
+           });
+
+           this.sendNotification(
+              userFlatList[index].deviceId,
+              user.displayName,
+              userFlatList[index].price
+           );
+
+     }
+       userFlatList.splice(index, 1);
+       this.setState({
+         refresh: !this.state.refresh
+       });
+       if(userFlatList.length == 0){
+         this.props.navigation.navigate("Activity");
+       }
+   }
+
+   setInterest(value, userID){
+     for(var i = 0; i < userFlatList.length; i++){
+       if(userFlatList[i].userID == userID){
+         userFlatList[i].interest = value;
+         break;
+       }
+     }
+     console.log(this.state.refresh)
+     this.setState({
+       refresh: !this.state.refresh
+     });
+   }
+
    render() {
       return (
          <View style={styles.container}>
@@ -363,9 +584,10 @@ export default class ChargeUnevenly extends React.Component {
             <FlatList
                data={userFlatList}
                width="100%"
-               extraData={userFlatList}
+               extraData={this.state}
                keyExtractor={index => index.toString()}
                renderItem={({ item }) => (
+                 <View>
                   <View
                      style={{
                         flex: 1,
@@ -379,13 +601,50 @@ export default class ChargeUnevenly extends React.Component {
                      <Text style={styles.UserListItem}>
                         ${item.price.toFixed(2)}
                      </Text>
-                     <TextInput
-                        style={styles.UserListItem}
-                        onChangeText={interest =>
-                           this.setState({ interest: parseFloat(interest) })
-                        }
-                        placeholder="Interest"
-                     />
+                      </View>
+                     <View
+                        style={{
+                           flex: 1,
+                           flexDirection: "row",
+                           justifyContent: "space-between",
+                           backgroundColor: "white"
+                        }}
+                     >
+                        <Text>    </Text>
+                        <Picker
+                           selectedValue={item.interest}
+                           style={{ height: 50, width: 100 }}
+                           onValueChange={(itemValue, itemIndex) =>
+                             this.setInterest(itemValue, item.userID)
+
+                           }
+                        >
+                           <Picker.Item label="No Interest" value="NONE" />
+                           <Picker.Item label="Daily" value="DAY" />
+                           <Picker.Item label="Weekly" value="WEEK" />
+                           <Picker.Item label="Monthly" value="MONTH" />
+                        </Picker>
+
+                        {item.interest != "NONE" && (
+                           <TextInput
+                              style={styles.textInput1}
+                              keyboardType="numeric"
+                              placeholder="interest rate %"
+                              onChangeText={interestRate =>
+                                 item.interestRate = interestRate
+                              }
+                           />
+                        )}
+
+
+
+                        <TouchableOpacity
+                           style={styles.button1}
+                           onPress={() => this.chargeUser(item.userID)}
+                        >
+                           <Text> Charge </Text>
+                        </TouchableOpacity>
+                     </View>
                   </View>
                )}
             />
@@ -407,7 +666,7 @@ export default class ChargeUnevenly extends React.Component {
 
             <TouchableOpacity
                style={styles.button1}
-               onPress={this.chargePeople.bind(this)}
+               onPress={this.chargeALL.bind(this)}
             >
                <Text> Charge Users </Text>
             </TouchableOpacity>

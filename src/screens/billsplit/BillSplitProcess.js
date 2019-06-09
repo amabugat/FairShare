@@ -85,7 +85,7 @@ export default class BillSplitProcess extends Component {
                         var decimalTax = responseJson.results[0].taxSales * 100;
                         console.log(decimalTax);
                         that.setState({
-                           autotax: decimalTax
+                           tax: decimalTax.toString()
                         });
                      })
                      .catch(error => console.log(error));
@@ -253,7 +253,9 @@ export default class BillSplitProcess extends Component {
                         //    } else {
                         this.createCalc();
                         console.log(userFlatList);
-                        this.props.navigation.navigate("ChargeUnevenly");
+                        this.props.navigation.navigate("ChargeUnevenly",{
+                          imageSource: this.state.imageSource
+                        });
                         //    }
                      }}
                   >
@@ -284,14 +286,14 @@ export default class BillSplitProcess extends Component {
             <View style={styles.row}>
                <Text style={styles.fontSet}>%Tax</Text>
                <View style={styles.outputBox}>
-                {/*   <TextInput
+                <TextInput
                       style={styles.output}
                       keyboardType="numeric"
-                      value={this.state.autotax}
-                      onChangeText={autotax => this.setState({ autotax })}
+                      value={this.state.tax}
+                      onChangeText={tax => this.setState({ tax })}
                       placeholder="tax%"
-                   />*/}
-                <Text style={styles.output}>{this.state.autotax}</Text>
+                   />
+                  {/*<Text style={styles.output}>{this.state.autotax}</Text>*/}
                </View>
             </View>
          </View>

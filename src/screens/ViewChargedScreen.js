@@ -178,12 +178,21 @@ export default class ViewChargedScreen extends React.Component {
             price: data.Amount.toString(),
             currency: 'USD',
             description: data.Description,
-        }).then(confirm => console.log(confirm),
-            this.markAsPaid(data))
+        }).then(confirm => {
+          console.log(confirm)
+          console.log(confirm.response_type)
+            console.log(confirm.response.state)
+          if(confirm.response_type == 'payment'){
+            if(confirm.response.state == 'approved'){
+              this.markAsPaid(data)
+            }
+          }
+            //  this.markAsPaid(data))
+        })
             .catch(error => console.log(error));
     };
 
-    markAsPaid = async (data) => {
+    async markAsPaid(data) {
         var user = firebase.auth().currentUser;
         var uid = user.uid;
         var paymentsRef = firebase.database().ref('/Payments');

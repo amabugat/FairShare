@@ -217,7 +217,7 @@ export default class ViewRequestScreen extends React.Component {
                                 </Text>
 
                               <Text style={styles.screenText} note>
-                                 Total: {data.Amount.toFixed(2)}
+                                 Total: ${(data.Amount*1).toFixed(2)}
                               </Text>
                            </Body>
                         </Left>
@@ -259,7 +259,7 @@ export default class ViewRequestScreen extends React.Component {
                                    <Text style={styles.screenText}>
                                    Interest: {data.Interest}{"\n"}
                                    Interest Rate: {data.InterestRate}{"\n"}
-                                   Original Amount: {data.OriginalAmount.toFixed(2)}
+                                   Original Amount: ${(data.OriginalAmount*1).toFixed(2)}
                                    </Text>
                                  )}
 

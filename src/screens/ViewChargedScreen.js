@@ -180,7 +180,7 @@ export default class ViewChargedScreen extends React.Component {
                               </Text>
 
                               <Text style={styles.screenText} note>
-                                 Total: {data.Amount}
+                                 Total: ${(data.Amount*1).toFixed(2)}
                               </Text>
                            </Body>
                         </Left>
@@ -223,7 +223,7 @@ export default class ViewChargedScreen extends React.Component {
                                     Interest Rate: {data.InterestRate}
                                     {"\n"}
                                     Original Amount:{" "}
-                                    {data.OriginalAmount.toFixed(2)}
+                                    ${data.OriginalAmount.toFixed(2)}
                                  </Text>
                               )}
 

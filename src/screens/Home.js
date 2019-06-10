@@ -86,23 +86,6 @@ export default class Home extends React.Component {
       firebase.auth().onAuthStateChanged(user => {
          if (user) {
             this.setState({ loggedIn: true });
-            var user = firebase.auth().currentUser;
-            user
-               .updateProfile({
-                  displayName: "zidu"
-               })
-               .then(
-                  function() {
-                     // Profile updated successfully!
-                     // "Jane Q. User"
-                     var displayName = user.displayName;
-                     console.log(displayName);
-                     var photoURL = user.photoURL;
-                  },
-                  function(error) {
-                     // An error happened.
-                  }
-               );
          } else {
             this.setState({ loggedIn: false });
          }

@@ -188,7 +188,7 @@ class UserListItem extends Component {
                   </Text>
                   <Text style={styles.UserListItem}>pays</Text>
                   <Text style={styles.UserListItem}>
-                     ${this.props.item.newPrice}
+                     ${(this.props.item.newPrice * 1).toFixed(2)}
                   </Text>
                </View>
 
@@ -378,7 +378,7 @@ class FlatListItem extends Component {
                      {this.props.item.name}
                   </Text>
                   <Text style={styles.flatListItem}>
-                     ${this.props.item.itemPrice}
+                     ${(this.props.item.itemPrice * 1).toFixed(2)}
                   </Text>
                   <Text style={styles.flatListItem} />
                </View>

@@ -51,7 +51,7 @@ export default class ViewChargedScreen extends React.Component {
         var requestRef = firebase.database().ref('/Payments').child(uid).child('/GettingCharged');
         var todayTime = new Date().getTime();
         console.log(" todayTime " + todayTime)
-        await requestRef.on('child_added', function(data){
+        await requestRef.on('child_added', async function(data){
           var dic = {};
           dic = data.val();
           dic.ShowMore = false;
@@ -146,104 +146,112 @@ export default class ViewChargedScreen extends React.Component {
             <View style={styles.container}>
                 {/*<Text style = {styles.buttonText}> You're Getting Charged </Text>*/}
                 {this.state.items.map((data, index) => {
-                    return(
-                        <Card style = {styles.cardStyle}>
-                            <CardItem key = {index}>
-                                <Left>
-                                    {data.PhotoUrl == 0 ? (
-                                      <Thumbnail source={logo} />
-                                    ):
-                                      (
-                                        <Image
-                                           style={styles.avatar}
-                                           source={{ uri: data.PhotoUrl}}
-                                        />
-                                      )}
-                                    <Body>
-                                    <Text style = {styles.screenText}>YOU ARE BEING CHARGED BY: {data.RequesterName}</Text>
-                                    <Text style = {styles.screenText} note>Total: {data.Amount}</Text>
-                                    </Body>
-                                </Left>
-                            </CardItem>
-
-                            {data.ReceiptPic != null && (
-                               <CardItem cardBody key={index}>
+                  return (
+                     <Card style={styles.cardStyle}>
+                        <CardItem key={index}>
+                           <Left>
+                              {data.PhotoUrl == 0 ? (
+                                <Thumbnail source={logo} />
+                              ):
+                                (
                                   <Image
-                                     style={{
-                                        resizeMode: "cover",
-                                        width: null,
-                                        height: 200,
-                                        flex: 1
-                                     }}
-                                     source={{ uri: data.ReceiptPic }}
+                                     style={styles.avatar}
+                                     source={{ uri: data.PhotoUrl}}
                                   />
-                               </CardItem>
-                            )}
+                                )}
 
-                            <CardItem key={index}>
-                                <View>
-                                    <Text style = {styles.screenText}>Description: {data.Description}</Text>
-                                </View>
-                            </CardItem>
-                            {data.ShowMore == true ? (
-                               <CardItem>
-                                  <View
-                                     style={{
-                                        flexDirection: "column",
-                                        justifyContent: "space-between"
-                                     }}
-                                  >
-                                     <Text style={styles.screenText}>
-                                        Description: {data.Description}
-                                        {"\n"}
-                                        Tax: {data.Tax}%
-                                        {"\n"}
-                                        Tip: {data.Tip}%
-                                        {"\n"}
-                                        Timestamp: {this.getDate(data.TimeStamp)}
-                                        </Text>
-                                        {data.Interest == "NONE" ? (
-                                          <Text> Interest: {data.Interest} </Text>
-                                        ):(
-                                          <Text style={styles.screenText}>
-                                          Interest: {data.Interest}{"\n"}
-                                          Interest Rate: {data.InterestRate}{"\n"}
-                                          Original Amount: {data.OriginalAmount.toFixed(2)}
-                                          </Text>
-                                        )}
+                              <Body>
+                                 {/*Switch back later*/}
+                                 <Text style={styles.screenText}>
+                                    PhotoURL: {data.PhotoUrl}
+                                 </Text>
+
+                                   <Text style={styles.screenText}>
+                                      YOU ARE CHARGED BY: {data.RequesterName}
+                                   </Text>
+
+                                 <Text style={styles.screenText} note>
+                                    Total: {data.Amount}
+                                 </Text>
+                              </Body>
+                           </Left>
+                        </CardItem>
+                        {data.ReceiptPic != null && (
+                           <CardItem cardBody key={index}>
+                              <Image
+                                 style={{
+                                    resizeMode: "cover",
+                                    width: null,
+                                    height: 200,
+                                    flex: 1
+                                 }}
+                                 source={{ uri: data.ReceiptPic }}
+                              />
+                           </CardItem>
+                        )}
+
+                        {data.ShowMore == true ? (
+                           <CardItem>
+                              <View
+                                 style={{
+                                    flexDirection: "column",
+                                    justifyContent: "space-between"
+                                 }}
+                              >
+                                 <Text style={styles.screenText}>
+                                    Description: {data.Description}
+                                    {"\n"}
+                                    Tax: {data.Tax}%
+                                    {"\n"}
+                                    Tip: {data.Tip}%
+                                    {"\n"}
+                                    Timestamp: {this.getDate(data.TimeStamp)}
+                                    </Text>
+                                    {data.Interest == "NONE" ? (
+                                      <Text> Interest: {data.Interest} </Text>
+                                    ):(
+                                      <Text style={styles.screenText}>
+                                      Interest: {data.Interest}{"\n"}
+                                      Interest Rate: {data.InterestRate}{"\n"}
+                                      Original Amount: {data.OriginalAmount}
+                                      </Text>
+                                    )}
 
 
 
-                                     <TouchableOpacity
-                                        onPress={() => this.toggleShowMore(index)}
-                                        style={styles.button1}
-                                     >
-                                        <Text style={styles.buttonText}> Less </Text>
-                                     </TouchableOpacity>
-                                  </View>
-                               </CardItem>
-                            ) : (
-                               <CardItem cardBody key={index}>
-                                  <TouchableOpacity
-                                     onPress={() => this.toggleShowMore(index)}
-                                     style={styles.button1}
-                                  >
-                                     <Text style={styles.buttonText}> More </Text>
-                                  </TouchableOpacity>
-                               </CardItem>
-                            )}
+                                 <TouchableOpacity
+                                    onPress={() => this.toggleShowMore(index)}
+                                    style={styles.button1}
+                                 >
+                                    <Text style={styles.buttonText}> Less </Text>
+                                 </TouchableOpacity>
+                              </View>
+                           </CardItem>
+                        ) : (
+                           <CardItem cardBody key={index}>
+                              <TouchableOpacity
+                                 onPress={() => this.toggleShowMore(index)}
+                                 style={styles.button1}
+                              >
+                                 <Text style={styles.buttonText}> More </Text>
+                              </TouchableOpacity>
+                           </CardItem>
+                        )}
 
-                            <CardItem key={index}>
-                                <View>
-                                    <TouchableOpacity onPress={() =>
-                                        this.payment(data)
-                                    } style={styles.button1}>
-                                        <Text style={styles.buttonText}> Pay Now </Text>
-                                    </TouchableOpacity>
-                                </View>
-                            </CardItem>
-                        </Card>
-                    );
+                           <CardItem key={index}>
+                               <View style={styles.row}>
+                                       <Text> </Text>
+                                   <TouchableOpacity onPress={() =>
+                                       this.payment(data)
+                                   } style={styles.button1}>
+                                       <Text style={styles.buttonText}> Pay Now </Text>
+                                   </TouchableOpacity>
+                               </View>
+                           </CardItem>
+
+                     </Card>
+                  );
+
                 })}
             </View>
         );

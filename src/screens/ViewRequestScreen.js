@@ -212,10 +212,6 @@ export default class ViewRequestScreen extends React.Component {
 
                            <Body>
                               {/*Switch back later*/}
-                              <Text style={styles.screenText}>
-                                 PhotoURL: {data.PhotoUrl}
-                              </Text>
-
                                 <Text style={styles.screenText}>
                                    YOU ARE REQUESTING: {data.ChargedName}
                                 </Text>

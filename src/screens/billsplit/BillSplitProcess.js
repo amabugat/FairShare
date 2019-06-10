@@ -221,7 +221,8 @@ export default class BillSplitProcess extends Component {
             sum = sum + parseFloat(userFlatList[i].items[j].addedPrice);
          }
          this.setState({ total: sum });
-         userFlatList[i].price = sum + sum*0.01*this.state.tip + sum*0.01*this.state.tax;
+         userFlatList[i].price =
+            sum + sum * 0.01 * this.state.tip + sum * 0.01 * this.state.tax;
       }
    };
 
@@ -253,8 +254,8 @@ export default class BillSplitProcess extends Component {
                         //    } else {
                         this.createCalc();
                         console.log(userFlatList);
-                        this.props.navigation.navigate("ChargeUnevenly",{
-                          imageSource: this.state.imageSource
+                        this.props.navigation.navigate("ChargeUnevenly", {
+                           imageSource: this.state.imageSource
                         });
                         //    }
                      }}
@@ -279,20 +280,26 @@ export default class BillSplitProcess extends Component {
 
             <View style={styles.row}>
                <Text style={styles.fontSet}>%Tip</Text>
-               <View style={styles.outputBox}>
-                  <Text style={styles.output}>{this.state.tip}</Text>
-               </View>
+               <TextInput
+                  style={styles.box}
+                  keyboardType="numeric"
+                  returnKeyType="done"
+                  ref={ti => {
+                     this.tipInput = ti;
+                  }}
+                  onChangeText={tip => this.setState({ tip: parseFloat(tip) })}
+               />
             </View>
             <View style={styles.row}>
                <Text style={styles.fontSet}>%Tax</Text>
                <View style={styles.outputBox}>
-                <TextInput
-                      style={styles.output}
-                      keyboardType="numeric"
-                      value={this.state.tax}
-                      onChangeText={tax => this.setState({ tax })}
-                      placeholder="tax%"
-                   />
+                  <TextInput
+                     style={styles.output}
+                     keyboardType="numeric"
+                     value={this.state.tax}
+                     onChangeText={tax => this.setState({ tax })}
+                     placeholder="tax%"
+                  />
                   {/*<Text style={styles.output}>{this.state.autotax}</Text>*/}
                </View>
             </View>
@@ -342,7 +349,7 @@ const styles = StyleSheet.create({
    },
    box: {
       borderRadius: 100,
-      fontSize: 20,
+      fontSize: 18,
       textAlign: "center",
       margin: 10,
       backgroundColor: "rgba(117,125,117,0.2)",
@@ -352,15 +359,15 @@ const styles = StyleSheet.create({
       fontFamily: "Raleway-Regular"
    },
    output: {
-      fontSize: 20,
-      marginTop: 7,
+      fontSize: 18,
+      padding: 3,
       textAlign: "center",
       color: "#000000",
-      fontFamily: "Raleway-Bold"
+      fontFamily: "Raleway-Regular"
    },
    outputBox: {
       borderRadius: 100,
-      fontSize: 20,
+      fontSize: 18,
       textAlign: "center",
       margin: 10,
       backgroundColor: "#82b85a",
@@ -376,7 +383,7 @@ const styles = StyleSheet.create({
       height: 40,
       backgroundColor: "#6C7A89",
       color: "#FFFFFF",
-      fontFamily: "Raleway-Regular",
+      fontFamily: "Raleway-Regular"
    },
    buttonFont: {
       fontSize: 20,

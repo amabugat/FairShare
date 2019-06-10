@@ -236,7 +236,7 @@ export default class NoSplit extends Component {
                            onPress={() => {
                               this.setState({
                                  result:
-                                    this.state.subtotal +
+                                    parseFloat((this.state.subtotal +
                                     this.state.subtotal *
                                        0.01 *
                                        this.state.tax +
@@ -245,7 +245,7 @@ export default class NoSplit extends Component {
                                           0.01 *
                                           this.state.tax) *
                                        0.01 *
-                                       this.state.tip,
+                                       this.state.tip).toFixed(2)),
                                  split:
                                     (((this.state.subtotal +
                                        this.state.subtotal *

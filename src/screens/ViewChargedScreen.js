@@ -301,7 +301,10 @@ export default class ViewChargedScreen extends React.Component {
                 Charged: data.Charged,
                 RequesterName: data.RequesterName,
                 ChargedName: data.ChargedName,
-                ReceiptPic: "",
+                ReceiptPic: data.ReceiptPic,
+                Interest: data.Interest,
+                InterestRate: data.InterestRate,
+                OriginalAmount: data.OriginalAmount,
                 Paid: true,
             }
         );
@@ -317,7 +320,10 @@ export default class ViewChargedScreen extends React.Component {
                 Charged: data.Charged,
                 RequesterName: data.RequesterName,
                 ChargedName: data.ChargedName,
-                ReceiptPic: "",
+                ReceiptPic: data.ReceiptPic,
+                Interest: data.Interest,
+                InterestRate: data.InterestRate,
+                OriginalAmount: data.OriginalAmount,
                 Paid: true,
             }
         );

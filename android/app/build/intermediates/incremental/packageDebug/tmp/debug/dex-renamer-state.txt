@@ -1,0 +1,4 @@
+#Mon Jun 10 20:14:36 PDT 2019
+base.0=C\:\\Users\\Danny Phan\\Desktop\\FairShare-new_master\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

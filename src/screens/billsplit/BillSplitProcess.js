@@ -141,6 +141,7 @@ export default class BillSplitProcess extends Component {
             var price = [];
             var curTotal = 0;
             var recieptTotal = 0;
+            var subTotal = 0;
             flatListData.length = 0;
             let flag = false;
             for (var i = 0; i < output.length; i++) {
@@ -157,12 +158,15 @@ export default class BillSplitProcess extends Component {
                   console.log(hehe[1]);
                   console.log(hehe[hehe.length - 1]);
                   if (hehe[1].includes("Subtotal")) {
-                     recieptTotal = hehe[hehe.length - 1];
+                     subTotal = parseFloat(hehe[hehe.length - 1]);
                   } else if (
                      hehe[1].includes("Total") ||
-                     hehe[1].includes("Tax")
+                     hehe[1].includes("BALANCE")
                   ) {
                      console.log("got tax amount and tital");
+                     recieptTotal = parseFloat(hehe[hehe.length - 1]);
+                  } else if (hehe[1].includes("Tax")) {
+                     console.log("tax");
                   } else {
                      const newItem = {
                         name: hehe[1],
@@ -180,7 +184,13 @@ export default class BillSplitProcess extends Component {
             if (curTotal != recieptTotal) {
                console.log("hhh" + curTotal);
                console.log("fff" + recieptTotal);
-               alert("we have a problem");
+               alert("items don't add up correctly, please double check");
+            }
+            if (recieptTotal != 0 && subTotal != 0) {
+               var taxrate = ((subTotal / recieptTotal) * 100).toFixed(2);
+               this.setState({
+                  tax: taxrate
+               });
             }
 
             if (flag == true) {

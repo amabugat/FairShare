@@ -179,7 +179,7 @@ export default class ViewHistoryScreen extends React.Component {
                                           <Text style={styles.screenText}>
                                           Interest: {data.Interest}{"\n"}
                                           Interest Rate: {data.InterestRate}{"\n"}
-                                          Original Amount: {data.OriginalAmount}
+                                          Original Amount: {(data.OriginalAmount*1).toFixed(2)}
                                           </Text>
                                         )}
 

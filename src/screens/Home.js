@@ -33,32 +33,6 @@ export default class Home extends React.Component {
       );
    }
 
-   /*sendNotification(token) {
-      console.log("pressed");
-      let body = {
-         to: token,
-         notification: {
-            title: "Simple FCM Client",
-            body: "This is a notification with only NOTIFICATION.",
-            sound: "default",
-         },
-         priority: 10
-      };
-      this._send(JSON.stringify(body), "notification");
-   }
-
-   _send(body, type) {
-      console.log("close to send");
-      let headers = new Headers({
-         "Content-Type": "application/json",
-       "Authorization": "key=AIzaSyCIn2th7KX6-5quHBnI4OudKTVPL9jwmNg"
-      });
- 
-      fetch('https://gcm-http.googleapis.com/gcm/send', { method: "POST", headers: headers, body: body });
-
-      console.log("fetched");
-   }*/
-
    componentDidMount() {
       this.notif.configure(
          this.onRegister.bind(this),
@@ -216,7 +190,7 @@ export default class Home extends React.Component {
                   PhoneNum: ""
                });
 
-            that.props.navigation.navigate("EditProfile");
+            that.props.navigation.navigate("Activity");
          })
          .catch(function(error) {
             alert(error.toString());

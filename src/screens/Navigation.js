@@ -16,7 +16,6 @@ import SearchFriends from "./groups/SearchFriends.js";
 import ProfilePage from "./profilePage/ProfilePage.js";
 import ViewProfile from "./profilePage/ViewProfile.js";
 import BillSplitProcess from "./billsplit/BillSplitProcess";
-import Row from "./Row";
 import Landing from "./Landing";
 import ViewHistory from "./ViewHistory";
 import ViewChargedScreen from "./ViewChargedScreen";
@@ -98,7 +97,6 @@ const Navigation = createStackNavigator({
    ViewProfile: {
       screen: ViewProfile,
    },
-   Row: { screen: Row },
    Landing: {
       screen: Landing,
       navigationOptions: () => ({

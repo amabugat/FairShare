@@ -1,4 +1,4 @@
-#Mon Jun 10 17:39:12 PDT 2019
+#Mon Jun 10 20:12:54 PDT 2019
 base.0=/Users/ziduchen/FairShare/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
